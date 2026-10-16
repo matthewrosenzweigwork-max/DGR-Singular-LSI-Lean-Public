@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "repository": "matthewrosenzweigwork-max/DGR-Singular-LSI-Lean-Public",
+  "candidate_commit": "587bf340cfd5fcf808d37105532d470dd3552b3b",
+  "candidate_branch": "palomar-migration-2026-10-16",
+  "accepted_baseline_commit": "933ab9a859aaa54a26246a4aeac1d92972c20c2d",
+  "scope": "Exact-commit full mechanical preflight; no intake or registry registration.",
+  "records": [
+    {
+      "commit": "587bf340cfd5fcf808d37105532d470dd3552b3b",
+      "run_id": 38946980451,
+      "job_id": 117128523868,
+      "artifact_id": 12067049849,
+      "artifact_sha256": "98ac021f43abbbfcaa8b2ba2c52584150b9d8bc47eda7eecbeea607836688daf",
+      "report_path": "docs/palomar/reports/periodic-mechanical-report.json",
+      "report_sha256": "78e45f686313704d561f0af453b17dfe8c13e29192228fc777b1a6b43a796a24",
+      "workflow_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44",
+      "status": "pass",
+      "stage": "complete",
+      "challenge_trust_level": "high",
+      "warnings": [],
+      "component": "periodic",
+      "theorem_names": [
+        "UniformFullGradientInequalities",
+        "ModulatedFullGradientInequalities",
+        "ExternalPotentialFullGradientInequalities"
+      ],
+      "definition_names": [],
+      "challenge_sha256": "7b77ad7b30b65b54e4db5e8f21a16ac09dee92e5717929dfcd4e17d5b1cd31e2"
+    },
+    {
+      "commit": "587bf340cfd5fcf808d37105532d470dd3552b3b",
+      "run_id": 38946980451,
+      "job_id": 117128512078,
+      "artifact_id": 12067528150,
+      "artifact_sha256": "514eaf3310229deb83069781fb21ca9086768eb53aeeff09418cc5808a677740",
+      "report_path": "docs/palomar/reports/whole-space-mechanical-report.json",
+      "report_sha256": "60c91246a1bd4a26c21bda5a30138ec6d131a6736153f62bde8a50d6c6001e6c",
+      "workflow_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44",
+      "status": "pass",
+      "stage": "complete",
+      "challenge_trust_level": "high",
+      "warnings": [],
+      "component": "whole-space",
+      "theorem_names": [
+        "BoundedHessianAllCutoffsClosedPI",
+        "GrowthClassPositiveCutoffClosedPI",
+        "GrowthClassZeroCutoffClosedPI"
+      ],
+      "definition_names": [],
+      "challenge_sha256": "7050ed2b11b1b80830e338c97bb5d0fb326a4c38df82842168cd905ad877da75"
+    }
+  ]
+}

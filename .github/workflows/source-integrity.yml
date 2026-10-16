@@ -13,5 +13,10 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
+          fetch-depth: 0
       - name: Check accepted source manifest bytes
         run: python3 scripts/check-source-integrity.py
+      - name: Check recorded exact-commit full reports
+        run: |
+          python3 scripts/check-full-report-evidence.py docs/palomar/reports/periodic-mechanical-report.json . 587bf340cfd5fcf808d37105532d470dd3552b3b periodic
+          python3 scripts/check-full-report-evidence.py docs/palomar/reports/whole-space-mechanical-report.json . 587bf340cfd5fcf808d37105532d470dd3552b3b whole-space

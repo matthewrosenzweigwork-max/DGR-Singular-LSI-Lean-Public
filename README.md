@@ -49,4 +49,6 @@ python3 scripts/check-source-integrity.py
 
 The original repository code is licensed under [Apache-2.0](LICENSE). Existing third-party source notices and dependency licenses remain in force; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
-See the [release inventory and staged submission plan](docs/RELEASE_PREPARATION.md). The metadata draft there is incomplete and is not a submission. Current registry compatibility requires a separate migration of Lean, Mathlib, and module interfaces; the frozen snapshot and its historical verification evidence remain identified independently.
+Both components of the separate compatibility candidate passed full Palomar preflight at [`587bf340cfd5fcf808d37105532d470dd3552b3b`](https://github.com/matthewrosenzweigwork-max/DGR-Singular-LSI-Lean-Public/tree/587bf340cfd5fcf808d37105532d470dd3552b3b). See the [preserved reports, exact pins and build commands](docs/palomar/FULL_PREFLIGHT_EVIDENCE.md). No intake, registration, or main update has been performed.
+
+The [release inventory and staged plan](docs/RELEASE_PREPARATION.md) describe this frozen baseline branch. Its historical metadata draft is retained as a reference; the verified candidate contains the active metadata, Challenge/Solution pairs, compatibility ledger and review records.
