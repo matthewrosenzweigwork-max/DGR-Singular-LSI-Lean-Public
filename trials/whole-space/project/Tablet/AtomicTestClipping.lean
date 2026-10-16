@@ -1,13 +1,17 @@
-import Tablet.AtomicLawTestControls
-import Tablet.AtomicLocalCutoffEnergy
-import Tablet.CriticalNormControls
-import Tablet.GaussianConfinementIntegral
-import Mathlib.Analysis.Calculus.BumpFunction.InnerProduct
-import Mathlib.Analysis.Calculus.Deriv.Support
-import Mathlib.Analysis.Normed.Group.Bounded
-import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
-import Mathlib.MeasureTheory.Integral.MeanInequalities
-import Mathlib.Tactic
+module
+
+public import Tablet.AtomicLawTestControls
+public import Tablet.AtomicLocalCutoffEnergy
+public import Tablet.CriticalNormControls
+public import Tablet.GaussianConfinementIntegral
+public import Mathlib.Analysis.Calculus.BumpFunction.InnerProduct
+public import Mathlib.Analysis.Calculus.Deriv.Support
+public import Mathlib.Analysis.Normed.Group.Bounded
+public import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+public import Mathlib.MeasureTheory.Integral.MeanInequalities
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Set Filter
 open scoped ContDiff NNReal Topology
 set_option maxHeartbeats 1600000

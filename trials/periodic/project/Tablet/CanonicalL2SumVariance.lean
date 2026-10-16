@@ -1,7 +1,11 @@
-import Tablet.Preamble
-import Mathlib.Probability.Independence.Integration
-import Mathlib.MeasureTheory.Integral.Pi
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import Tablet.Preamble
+public import Mathlib.Probability.Independence.Integration
+public import Mathlib.MeasureTheory.Integral.Pi
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 -- [TABLET NODE: CanonicalL2SumVariance]
 theorem CanonicalL2SumVariance {Ω : Type*} [MeasurableSpace Ω]

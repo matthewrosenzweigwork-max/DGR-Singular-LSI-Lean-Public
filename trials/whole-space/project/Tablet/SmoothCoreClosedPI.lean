@@ -1,6 +1,10 @@
-import Tablet.LpVarianceContinuity
-import Tablet.ClosedGradientGraph
-import Tablet.ClosedPhysicalEnergy
+module
+
+public import Tablet.LpVarianceContinuity
+public import Tablet.ClosedGradientGraph
+public import Tablet.ClosedPhysicalEnergy
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped Topology ContDiff
 

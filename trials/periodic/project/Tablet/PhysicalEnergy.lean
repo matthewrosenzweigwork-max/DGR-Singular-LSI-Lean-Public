@@ -1,4 +1,8 @@
-import Tablet.CoordinateGradient
+module
+
+public import Tablet.CoordinateGradient
+
+@[expose] public section
 -- [TABLET NODE: PhysicalEnergy]
 noncomputable def PhysicalEnergy {d N : ℕ}
     (P : MeasureTheory.Measure (Configuration d N))

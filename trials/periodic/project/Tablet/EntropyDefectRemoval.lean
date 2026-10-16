@@ -1,5 +1,9 @@
-import Tablet.EntropyFiniteCentering
-import Mathlib.Tactic
+module
+
+public import Tablet.EntropyFiniteCentering
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: EntropyDefectRemoval]
 theorem EntropyDefectRemoval {Ω : Type*} [MeasurableSpace Ω]

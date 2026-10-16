@@ -1,5 +1,9 @@
-import Tablet.HeatKernelFacts
-import Mathlib.Analysis.Convolution
+module
+
+public import Tablet.HeatKernelFacts
+public import Mathlib.Analysis.Convolution
+
+@[expose] public section
 -- [TABLET NODE: HeatOperatorBounds]
 theorem HeatOperatorBounds (d : ℕ) (t : ℝ) (ht : 0 < t)
     (f : UnitAddTorus (Fin d) → ℝ) (hf : Measurable f)

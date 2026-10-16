@@ -1,7 +1,11 @@
-import Tablet.ParticleConfig
-import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
-import Mathlib.MeasureTheory.Measure.Haar.Unique
-import Mathlib.MeasureTheory.Integral.Pi
+module
+
+public import Tablet.ParticleConfig
+public import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
+public import Mathlib.MeasureTheory.Measure.Haar.Unique
+public import Mathlib.MeasureTheory.Integral.Pi
+
+@[expose] public section
 open MeasureTheory Set
 open scoped BigOperators
 

@@ -1,7 +1,11 @@
-import Tablet.TwoSidedPotential
-import Tablet.GrowthClassPotential
-import Tablet.HessianMinimizer
-import Tablet.EuclideanDerivativeCoordinates
+module
+
+public import Tablet.TwoSidedPotential
+public import Tablet.GrowthClassPotential
+public import Tablet.HessianMinimizer
+public import Tablet.EuclideanDerivativeCoordinates
+
+@[expose] public section
 
 -- [TABLET NODE: BoundedHessianGrowthData]
 theorem BoundedHessianGrowthData {d : ℕ} (V : OneParticle d → ℝ)

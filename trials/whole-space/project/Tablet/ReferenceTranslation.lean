@@ -1,8 +1,12 @@
-import Tablet.ReferenceLaw
-import Tablet.ShiftedReference
-import Mathlib.MeasureTheory.Group.Integral
-import Mathlib.MeasureTheory.Group.LIntegral
-import Mathlib.Tactic.Ring
+module
+
+public import Tablet.ReferenceLaw
+public import Tablet.ShiftedReference
+public import Mathlib.MeasureTheory.Group.Integral
+public import Mathlib.MeasureTheory.Group.LIntegral
+public import Mathlib.Tactic.Ring
+
+@[expose] public section
 open MeasureTheory
 open scoped ENNReal
 

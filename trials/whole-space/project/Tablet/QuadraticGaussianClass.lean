@@ -1,9 +1,13 @@
-import Tablet.TwoSidedPotential
-import Tablet.GrowthClassPotential
-import Tablet.EuclideanDerivativeCoordinates
-import Mathlib.Analysis.Calculus.FDeriv.Mul
-import Mathlib.Analysis.InnerProductSpace.Calculus
-import Mathlib.Tactic.Ring
+module
+
+public import Tablet.TwoSidedPotential
+public import Tablet.GrowthClassPotential
+public import Tablet.EuclideanDerivativeCoordinates
+public import Mathlib.Analysis.Calculus.FDeriv.Mul
+public import Mathlib.Analysis.InnerProductSpace.Calculus
+public import Mathlib.Tactic.Ring
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter Metric

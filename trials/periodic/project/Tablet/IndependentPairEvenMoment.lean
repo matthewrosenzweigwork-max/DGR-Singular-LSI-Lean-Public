@@ -1,6 +1,10 @@
-import Tablet.FiniteRademacherEvenMoment
-import Mathlib.MeasureTheory.Constructions.Pi
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import Tablet.FiniteRademacherEvenMoment
+public import Mathlib.MeasureTheory.Constructions.Pi
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 open MeasureTheory
 open scoped BigOperators
 -- [TABLET NODE: IndependentPairEvenMoment]

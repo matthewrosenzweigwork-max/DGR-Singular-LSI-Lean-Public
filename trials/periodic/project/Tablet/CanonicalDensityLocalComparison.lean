@@ -1,8 +1,12 @@
-import Tablet.CanonicalLawUniformBounds
-import Tablet.RieszLocalStructure
-import Tablet.CollisionSet
-import Mathlib.Topology.Algebra.Group.Quotient
-import Mathlib.Topology.Order.Compact
+module
+
+public import Tablet.CanonicalLawUniformBounds
+public import Tablet.RieszLocalStructure
+public import Tablet.CollisionSet
+public import Mathlib.Topology.Algebra.Group.Quotient
+public import Mathlib.Topology.Order.Compact
+
+@[expose] public section
 open MeasureTheory Set
 open scoped ContDiff
 -- [TABLET NODE: CanonicalDensityLocalComparison]

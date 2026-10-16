@@ -1,5 +1,9 @@
-import Tablet.Preamble
-import Mathlib.Topology.Order.IsLUB
+module
+
+public import Tablet.Preamble
+public import Mathlib.Topology.Order.IsLUB
+
+@[expose] public section
 
 open Filter
 open scoped Topology

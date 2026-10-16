@@ -1,4 +1,8 @@
-import Tablet.Preamble
+module
+
+public import Tablet.Preamble
+
+@[expose] public section
 -- [TABLET NODE: HeatKernel]
 noncomputable def HeatKernel (d : ℕ) (t : ℝ) (x : UnitAddTorus (Fin d)) : ℝ :=
 -- BODY

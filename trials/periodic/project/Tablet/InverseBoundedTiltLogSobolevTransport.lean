@@ -1,5 +1,9 @@
-import Tablet.NormalizedTiltInverse
-import Tablet.BoundedDensityComparison
+module
+
+public import Tablet.NormalizedTiltInverse
+public import Tablet.BoundedDensityComparison
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: InverseBoundedTiltLogSobolevTransport]
 theorem InverseBoundedTiltLogSobolevTransport {Ω:Type*}[MeasurableSpace Ω]

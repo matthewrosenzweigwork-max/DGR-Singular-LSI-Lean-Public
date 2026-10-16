@@ -1,5 +1,9 @@
-import Tablet.ExternalPotentialClosedGradientPoincare
-import Tablet.ExternalPotentialClosedGradientLogSobolev
+module
+
+public import Tablet.ExternalPotentialClosedGradientPoincare
+public import Tablet.ExternalPotentialClosedGradientLogSobolev
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory Set
 -- [TABLET NODE: ExternalPotentialFullGradientInequalities]
 theorem ExternalPotentialFullGradientInequalities (d : ℕ) (hd : 2≤d) (s a B L : ℝ)

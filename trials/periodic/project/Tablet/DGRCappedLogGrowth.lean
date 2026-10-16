@@ -1,6 +1,10 @@
-import Tablet.Preamble
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
-import Mathlib.Tactic
+module
+
+public import Tablet.Preamble
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
+public import Mathlib.Tactic
+
+@[expose] public section
 -- [TABLET NODE: DGRCappedLogGrowth]
 theorem DGRCappedLogGrowth (N C u m A : ℝ)
     (hN : 1≤N) (hC : 1≤C) (hu : 1≤u) (hm : 0≤m) (hA : 0≤A)

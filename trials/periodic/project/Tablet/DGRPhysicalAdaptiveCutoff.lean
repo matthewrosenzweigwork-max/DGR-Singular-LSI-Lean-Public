@@ -1,6 +1,10 @@
-import Tablet.RieszMellinCoefficientBounds
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.Tactic
+module
+
+public import Tablet.RieszMellinCoefficientBounds
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.Tactic
+
+@[expose] public section
 open scoped BigOperators
 -- [TABLET NODE: DGRPhysicalAdaptiveCutoff]
 theorem DGRPhysicalAdaptiveCutoff (d N : ℕ) (hN : 1≤N)

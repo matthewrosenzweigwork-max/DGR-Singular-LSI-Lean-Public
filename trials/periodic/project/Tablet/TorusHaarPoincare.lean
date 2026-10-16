@@ -1,15 +1,19 @@
-import Tablet.TorusGradient
-import Tablet.TorusSmooth
-import Tablet.TorusFourierLaplacian
-import Mathlib.Topology.Constructions
-import Mathlib.Topology.Algebra.Group.Quotient
-import Mathlib.Analysis.Calculus.ContDiff.WithLp
-import Mathlib.Analysis.Calculus.FDeriv.WithLp
-import Mathlib.MeasureTheory.Group.Integral
-import Mathlib.MeasureTheory.Integral.Prod
-import Tablet.TorusIntegrationByParts
-import Mathlib.Topology.Algebra.InfiniteSum.Order
-import Mathlib.Analysis.Real.Pi.Bounds
+module
+
+public import Tablet.TorusGradient
+public import Tablet.TorusSmooth
+public import Tablet.TorusFourierLaplacian
+public import Mathlib.Topology.Constructions
+public import Mathlib.Topology.Algebra.Group.Quotient
+public import Mathlib.Analysis.Calculus.ContDiff.WithLp
+public import Mathlib.Analysis.Calculus.FDeriv.WithLp
+public import Mathlib.MeasureTheory.Group.Integral
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Tablet.TorusIntegrationByParts
+public import Mathlib.Topology.Algebra.InfiniteSum.Order
+public import Mathlib.Analysis.Real.Pi.Bounds
+
+@[expose] public section
 open MeasureTheory
 open scoped ComplexConjugate ContDiff
 -- [TABLET NODE: TorusHaarPoincare]

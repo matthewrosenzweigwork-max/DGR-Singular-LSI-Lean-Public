@@ -1,6 +1,10 @@
-import Tablet.Preamble
-import Mathlib.Analysis.Complex.Basic
-import Mathlib.Topology.Algebra.InfiniteSum.Real
+module
+
+public import Tablet.Preamble
+public import Mathlib.Analysis.Complex.Basic
+public import Mathlib.Topology.Algebra.InfiniteSum.Real
+
+@[expose] public section
 open scoped BigOperators ComplexConjugate
 -- [TABLET NODE: SummableGramEnergyBound]
 theorem SummableGramEnergyBound {ι : Type*} (N : ℕ) (hN : 1≤N)

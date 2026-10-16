@@ -1,6 +1,10 @@
-import Tablet.InteractionWeightCutoffLimit
-import Tablet.SingularGibbsNormalization
-import Tablet.SoftGibbsNormalization
+module
+
+public import Tablet.InteractionWeightCutoffLimit
+public import Tablet.SingularGibbsNormalization
+public import Tablet.SoftGibbsNormalization
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped Topology
 

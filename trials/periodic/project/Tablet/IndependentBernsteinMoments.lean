@@ -1,7 +1,11 @@
-import Tablet.IndependentVarianceMGF
-import Tablet.MomentFromExponential
-import Mathlib.Data.Nat.Factorial.Basic
-import Mathlib.Analysis.Complex.ExponentialBounds
+module
+
+public import Tablet.IndependentVarianceMGF
+public import Tablet.MomentFromExponential
+public import Mathlib.Data.Nat.Factorial.Basic
+public import Mathlib.Analysis.Complex.ExponentialBounds
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: IndependentBernsteinMoments]
 theorem IndependentBernsteinMoments {Ω : Type*} [MeasurableSpace Ω]

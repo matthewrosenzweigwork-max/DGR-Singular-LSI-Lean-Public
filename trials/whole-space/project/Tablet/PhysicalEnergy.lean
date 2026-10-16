@@ -1,5 +1,9 @@
-import Tablet.ParticleConfig
-import Tablet.EuclideanGradient
+module
+
+public import Tablet.ParticleConfig
+public import Tablet.EuclideanGradient
+
+@[expose] public section
 
 -- [TABLET NODE: PhysicalEnergy]
 noncomputable def PhysicalEnergy {d N : ℕ}

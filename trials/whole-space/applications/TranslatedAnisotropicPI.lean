@@ -1,7 +1,11 @@
-import RoughMultiplierPI
-import Tablet.QuadraticGaussianClass
-import Tablet.CenteredPotentialDerivatives
-import Collective140
+module
+
+public import RoughMultiplierPI
+public import Tablet.QuadraticGaussianClass
+public import Tablet.CenteredPotentialDerivatives
+public import Collective140
+
+@[expose] public section
 
 set_option autoImplicit false
 set_option maxHeartbeats 1600000

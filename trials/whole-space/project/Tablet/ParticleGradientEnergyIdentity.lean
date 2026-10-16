@@ -1,6 +1,10 @@
-import Tablet.PhysicalEnergy
-import Tablet.GradientNormIdentity
-import Tablet.ParticlePosition
+module
+
+public import Tablet.PhysicalEnergy
+public import Tablet.GradientNormIdentity
+public import Tablet.ParticlePosition
+
+@[expose] public section
 
 -- [TABLET NODE: ParticleGradientEnergyIdentity]
 theorem ParticleGradientEnergyIdentity {d N : ℕ}

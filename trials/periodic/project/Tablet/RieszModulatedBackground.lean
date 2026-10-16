@@ -1,6 +1,10 @@
-import Tablet.RieszBackgroundConvolutionBounds
-import Tablet.ThermalDensityBounds
-import Tablet.TiltNormalization
+module
+
+public import Tablet.RieszBackgroundConvolutionBounds
+public import Tablet.ThermalDensityBounds
+public import Tablet.TiltNormalization
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: RieszModulatedBackground]
 theorem RieszModulatedBackground (d : ℕ) (hd : 2 ≤ d) (s a l u B : ℝ)

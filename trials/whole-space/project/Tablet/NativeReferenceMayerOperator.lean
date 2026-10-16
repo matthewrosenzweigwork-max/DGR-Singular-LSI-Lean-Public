@@ -1,8 +1,12 @@
-import Tablet.ReferenceOffsetDensity
-import Tablet.MayerUniformRemainder
-import Tablet.SoftRieszReferencePositive
-import Tablet.ReferenceKernelSchur
-import Mathlib.Tactic
+module
+
+public import Tablet.ReferenceOffsetDensity
+public import Tablet.MayerUniformRemainder
+public import Tablet.SoftRieszReferencePositive
+public import Tablet.ReferenceKernelSchur
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped InnerProduct
 set_option autoImplicit false

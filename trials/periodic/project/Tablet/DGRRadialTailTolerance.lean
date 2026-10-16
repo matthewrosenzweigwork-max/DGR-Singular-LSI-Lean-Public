@@ -1,6 +1,10 @@
-import Tablet.Preamble
-import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
-import Mathlib.Tactic
+module
+
+public import Tablet.Preamble
+public import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+public import Mathlib.Tactic
+
+@[expose] public section
 open Filter Set
 open scoped Topology
 -- [TABLET NODE: DGRRadialTailTolerance]

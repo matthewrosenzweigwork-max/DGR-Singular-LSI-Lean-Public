@@ -1,7 +1,11 @@
-import Tablet.Preamble
-import Mathlib.MeasureTheory.Integral.Pi
-import Mathlib.Probability.Moments.Basic
-import Mathlib.Analysis.Complex.Exponential
+module
+
+public import Tablet.Preamble
+public import Mathlib.MeasureTheory.Integral.Pi
+public import Mathlib.Probability.Moments.Basic
+public import Mathlib.Analysis.Complex.Exponential
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 -- [TABLET NODE: IndependentVarianceMGF]
 theorem IndependentVarianceMGF {Ω : Type*} [MeasurableSpace Ω]

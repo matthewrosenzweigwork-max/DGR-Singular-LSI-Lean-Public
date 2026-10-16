@@ -1,4 +1,8 @@
-import Tablet.CanonicalLaw
+module
+
+public import Tablet.CanonicalLaw
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: ModulatedPotentialLawRewrite]
 theorem ModulatedPotentialLawRewrite (d N : ℕ)

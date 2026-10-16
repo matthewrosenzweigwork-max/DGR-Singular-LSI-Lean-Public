@@ -1,4 +1,8 @@
-import Tablet.ClosedGradientGraph
+module
+
+public import Tablet.ClosedGradientGraph
+
+@[expose] public section
 
 -- [TABLET NODE: ClosedPhysicalEnergy]
 noncomputable def ClosedPhysicalEnergy {d N : ℕ}

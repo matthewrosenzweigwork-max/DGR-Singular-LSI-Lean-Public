@@ -1,7 +1,11 @@
-import Tablet.NativeGibbsJumpOperator
-import Mathlib.MeasureTheory.Constructions.Pi
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan
-import Mathlib.Tactic
+module
+
+public import Tablet.NativeGibbsJumpOperator
+public import Mathlib.MeasureTheory.Constructions.Pi
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped InnerProduct ENNReal BigOperators
 set_option autoImplicit false

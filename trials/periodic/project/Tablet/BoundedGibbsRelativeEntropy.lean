@@ -1,6 +1,10 @@
-import Tablet.NormalizedTilt
-import Mathlib.InformationTheory.KullbackLeibler.Basic
-import Mathlib.MeasureTheory.Measure.LogLikelihoodRatio
+module
+
+public import Tablet.NormalizedTilt
+public import Mathlib.InformationTheory.KullbackLeibler.Basic
+public import Mathlib.MeasureTheory.Measure.LogLikelihoodRatio
+
+@[expose] public section
 open MeasureTheory InformationTheory
 
 -- [TABLET NODE: BoundedGibbsRelativeEntropy]

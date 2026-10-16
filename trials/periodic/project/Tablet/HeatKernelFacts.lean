@@ -1,10 +1,14 @@
-import Tablet.HeatSemigroup
-import Mathlib.Analysis.Normed.Ring.InfiniteSum
-import Mathlib.Topology.Algebra.InfiniteSum.NatInt
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
-import Mathlib.Analysis.SpecialFunctions.Gaussian.PoissonSummation
-import Tablet.Preamble
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+module
+
+public import Tablet.HeatSemigroup
+public import Mathlib.Analysis.Normed.Ring.InfiniteSum
+public import Mathlib.Topology.Algebra.InfiniteSum.NatInt
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+public import Mathlib.Analysis.SpecialFunctions.Gaussian.PoissonSummation
+public import Tablet.Preamble
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+
+@[expose] public section
 open scoped Topology
 open MeasureTheory
 -- [TABLET NODE: HeatKernelFacts]

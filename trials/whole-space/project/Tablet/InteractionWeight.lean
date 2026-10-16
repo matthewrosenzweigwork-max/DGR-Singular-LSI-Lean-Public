@@ -1,5 +1,9 @@
-import Tablet.PairInteraction
-import Tablet.CollisionSet
+module
+
+public import Tablet.PairInteraction
+public import Tablet.CollisionSet
+
+@[expose] public section
 
 -- [TABLET NODE: InteractionWeight]
 noncomputable def InteractionWeight {d N : ℕ} (s coupling ε : ℝ)

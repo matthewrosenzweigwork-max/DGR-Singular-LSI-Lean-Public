@@ -1,4 +1,8 @@
-import Tablet.BoundedBackground
+module
+
+public import Tablet.BoundedBackground
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: ExternalPotentialBackground]
 theorem ExternalPotentialBackground (d : ℕ)

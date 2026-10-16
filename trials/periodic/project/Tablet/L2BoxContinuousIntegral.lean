@@ -1,7 +1,11 @@
-import Tablet.Preamble
-import Mathlib.MeasureTheory.Function.ConvergenceInMeasure
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
-import Mathlib.Topology.Sequences
+module
+
+public import Tablet.Preamble
+public import Mathlib.MeasureTheory.Function.ConvergenceInMeasure
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+public import Mathlib.Topology.Sequences
+
+@[expose] public section
 
 open MeasureTheory Filter
 open scoped Topology

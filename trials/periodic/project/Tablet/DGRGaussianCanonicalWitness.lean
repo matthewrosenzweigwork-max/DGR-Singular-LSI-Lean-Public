@@ -1,6 +1,10 @@
-import Tablet.DGRGaussianHighSeries
-import Tablet.ScaledBoundedCenteredCanonicalKernel
-import Tablet.CenteredDeletionEnergySum
+module
+
+public import Tablet.DGRGaussianHighSeries
+public import Tablet.ScaledBoundedCenteredCanonicalKernel
+public import Tablet.CenteredDeletionEnergySum
+
+@[expose] public section
 open MeasureTheory Filter
 open scoped BigOperators ComplexConjugate
 -- [TABLET NODE: DGRGaussianCanonicalWitness]

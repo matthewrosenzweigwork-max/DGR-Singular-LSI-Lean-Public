@@ -1,6 +1,10 @@
-import Tablet.NativeGibbsLargeNJumpGap
-import Tablet.GibbsJumpPhysicalComparison
-import Tablet.LawVariance
+module
+
+public import Tablet.NativeGibbsLargeNJumpGap
+public import Tablet.GibbsJumpPhysicalComparison
+public import Tablet.LawVariance
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped ENNReal BigOperators ContDiff
 set_option autoImplicit false

@@ -1,7 +1,11 @@
-import Tablet.TiltNormalization
-import Tablet.BoundedTiltBounds
-import Tablet.VarianceVariational
-import Tablet.EntropyVariational
+module
+
+public import Tablet.TiltNormalization
+public import Tablet.BoundedTiltBounds
+public import Tablet.VarianceVariational
+public import Tablet.EntropyVariational
+
+@[expose] public section
 -- [TABLET NODE: BoundedDensityComparison]
 theorem BoundedDensityComparison {Ω : Type*} [MeasurableSpace Ω]
     (μ : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure μ]

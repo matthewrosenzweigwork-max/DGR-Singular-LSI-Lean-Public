@@ -1,6 +1,10 @@
-import Tablet.ConditionalFisherAggregation
-import Tablet.Entropy
-import Mathlib.Analysis.SpecialFunctions.Log.NegMulLog
+module
+
+public import Tablet.ConditionalFisherAggregation
+public import Tablet.Entropy
+public import Mathlib.Analysis.SpecialFunctions.Log.NegMulLog
+
+@[expose] public section
 open MeasureTheory
 open scoped ContDiff
 -- [TABLET NODE: ConditionalEntropyAggregation]

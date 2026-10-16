@@ -1,5 +1,9 @@
-import Tablet.GibbsConditionalKernelProbability
-import Mathlib.Probability.Kernel.Composition.MeasureCompProd
+module
+
+public import Tablet.GibbsConditionalKernelProbability
+public import Mathlib.Probability.Kernel.Composition.MeasureCompProd
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 
 -- [TABLET NODE: GibbsConditionalKernelCompProd]

@@ -1,5 +1,9 @@
-import Tablet.BoundedTiltBounds
-import Tablet.TiltNormalization
+module
+
+public import Tablet.BoundedTiltBounds
+public import Tablet.TiltNormalization
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: NormalizedTiltInverse]
 theorem NormalizedTiltInverse {Ω : Type*} [MeasurableSpace Ω]

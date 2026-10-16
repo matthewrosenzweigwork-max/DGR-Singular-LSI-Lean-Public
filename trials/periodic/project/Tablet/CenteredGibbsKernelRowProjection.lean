@@ -1,6 +1,10 @@
-import Tablet.CenteredDeletionPotentialControls
-import Tablet.GibbsConditionalKernelProbability
-import Tablet.TiltPushforwardEquivalence
+module
+
+public import Tablet.CenteredDeletionPotentialControls
+public import Tablet.GibbsConditionalKernelProbability
+public import Tablet.TiltPushforwardEquivalence
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 
 -- [TABLET NODE: CenteredGibbsKernelRowProjection]

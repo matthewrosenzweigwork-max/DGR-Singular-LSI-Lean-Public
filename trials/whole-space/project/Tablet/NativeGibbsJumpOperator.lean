@@ -1,10 +1,14 @@
-import Tablet.RawL2OperatorDescent
-import Tablet.WeightedJointRowL2
-import Tablet.NativeGibbsReplacementBalance
-import Mathlib.MeasureTheory.Function.L2Space
-import Mathlib.MeasureTheory.Function.LpSpace.Complete
-import Mathlib.Analysis.InnerProductSpace.Adjoint
-import Mathlib.Tactic
+module
+
+public import Tablet.RawL2OperatorDescent
+public import Tablet.WeightedJointRowL2
+public import Tablet.NativeGibbsReplacementBalance
+public import Mathlib.MeasureTheory.Function.L2Space
+public import Mathlib.MeasureTheory.Function.LpSpace.Complete
+public import Mathlib.Analysis.InnerProductSpace.Adjoint
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped InnerProduct ENNReal BigOperators
 set_option autoImplicit false

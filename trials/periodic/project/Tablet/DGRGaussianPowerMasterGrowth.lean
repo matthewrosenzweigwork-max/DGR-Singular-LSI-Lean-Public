@@ -1,6 +1,10 @@
-import Tablet.DGRGaussianDiagonalProfile
-import Tablet.DGRPhysicalPowerEnvelope
-import Tablet.DGRCappedPowerGrowth
+module
+
+public import Tablet.DGRGaussianDiagonalProfile
+public import Tablet.DGRPhysicalPowerEnvelope
+public import Tablet.DGRCappedPowerGrowth
+
+@[expose] public section
 open scoped BigOperators
 -- [TABLET NODE: DGRGaussianPowerMasterGrowth]
 theorem DGRGaussianPowerMasterGrowth (d : ℕ) (hd : 2≤d) (s a M t : ℝ)

@@ -1,7 +1,11 @@
-import Tablet.HeatCenteredKernelAveraging
-import Tablet.ProductDisjointBlockLaw
-import Mathlib.MeasureTheory.Integral.Prod
-import Tablet.CenteredPairEnergy
+module
+
+public import Tablet.HeatCenteredKernelAveraging
+public import Tablet.ProductDisjointBlockLaw
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Tablet.CenteredPairEnergy
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: HeatCenteredEnergyAveraging]
 theorem HeatCenteredEnergyAveraging (d N : ℕ) (t : ℝ) (ht : 0<t)

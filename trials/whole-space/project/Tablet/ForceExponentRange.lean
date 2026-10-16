@@ -1,6 +1,10 @@
-import Tablet.ForceExponent
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.NormNum
+module
+
+public import Tablet.ForceExponent
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+
+@[expose] public section
 
 -- [TABLET NODE: ForceExponentRange]
 theorem ForceExponentRange (s : ℝ) (hs : 0 < s) :

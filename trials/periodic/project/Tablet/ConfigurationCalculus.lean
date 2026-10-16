@@ -1,20 +1,24 @@
-import Tablet.ConfigurationFlatten
-import Tablet.SmoothCore
-import Tablet.PhysicalEnergy
-import Tablet.TorusGradient
-import Tablet.TorusSmooth
-import Tablet.Replacement
-import Tablet.TorusLift
-import Tablet.ConfigurationLift
-import Tablet.CoordinateGradient
-import Mathlib.Analysis.Normed.Module.FiniteDimension
-import Mathlib.MeasureTheory.Constructions.Pi
-import Mathlib.Analysis.InnerProductSpace.PiL2
-import Mathlib.Topology.Constructions
-import Mathlib.Topology.Algebra.Group.Quotient
-import Mathlib.Topology.Order.Compact
-import Mathlib.Analysis.Calculus.ContDiff.WithLp
-import Mathlib.Analysis.Calculus.FDeriv.WithLp
+module
+
+public import Tablet.ConfigurationFlatten
+public import Tablet.SmoothCore
+public import Tablet.PhysicalEnergy
+public import Tablet.TorusGradient
+public import Tablet.TorusSmooth
+public import Tablet.Replacement
+public import Tablet.TorusLift
+public import Tablet.ConfigurationLift
+public import Tablet.CoordinateGradient
+public import Mathlib.Analysis.Normed.Module.FiniteDimension
+public import Mathlib.MeasureTheory.Constructions.Pi
+public import Mathlib.Analysis.InnerProductSpace.PiL2
+public import Mathlib.Topology.Constructions
+public import Mathlib.Topology.Algebra.Group.Quotient
+public import Mathlib.Topology.Order.Compact
+public import Mathlib.Analysis.Calculus.ContDiff.WithLp
+public import Mathlib.Analysis.Calculus.FDeriv.WithLp
+
+@[expose] public section
 open MeasureTheory
 open scoped ContDiff
 -- [TABLET NODE: ConfigurationCalculus]

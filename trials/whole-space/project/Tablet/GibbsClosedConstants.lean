@@ -1,8 +1,12 @@
-import Tablet.SpatialCutoffApproximation
-import Tablet.ClosedGradientGraph
-import Tablet.ConvexReferenceNormalization
-import Tablet.SingularGibbsNormalization
-import Tablet.SoftGibbsNormalization
+module
+
+public import Tablet.SpatialCutoffApproximation
+public import Tablet.ClosedGradientGraph
+public import Tablet.ConvexReferenceNormalization
+public import Tablet.SingularGibbsNormalization
+public import Tablet.SoftGibbsNormalization
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped Topology ContDiff
 

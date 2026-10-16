@@ -1,8 +1,12 @@
-import Tablet.NativeGibbsBochner
-import Tablet.NativeGibbsJumpKernel
-import Mathlib.Analysis.InnerProductSpace.Symmetric
-import Mathlib.Analysis.InnerProductSpace.Projection.Submodule
-import Mathlib.Tactic
+module
+
+public import Tablet.NativeGibbsBochner
+public import Tablet.NativeGibbsJumpKernel
+public import Mathlib.Analysis.InnerProductSpace.Symmetric
+public import Mathlib.Analysis.InnerProductSpace.Projection.Submodule
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped InnerProduct InnerProductSpace ENNReal BigOperators
 set_option autoImplicit false

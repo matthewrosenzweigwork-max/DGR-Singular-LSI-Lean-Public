@@ -1,7 +1,11 @@
-import Tablet.ReplacementHaarSwap
-import Tablet.ReplacementEdgeWeight
-import Tablet.GibbsNormalizerBounds
-import Tablet.ProductBackgroundFacts
+module
+
+public import Tablet.ReplacementHaarSwap
+public import Tablet.ReplacementEdgeWeight
+public import Tablet.GibbsNormalizerBounds
+public import Tablet.ProductBackgroundFacts
+
+@[expose] public section
 -- [TABLET NODE: ReplacementJointBalance]
 theorem ReplacementJointBalance (d N : ℕ) (hN : 2 ≤ N) (l u β : ℝ)
     (q : BoundedBackground d l u) (hβ : 0 ≤ β)

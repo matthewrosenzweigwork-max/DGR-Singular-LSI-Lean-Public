@@ -1,4 +1,8 @@
-import Tablet.RieszKernel
+module
+
+public import Tablet.RieszKernel
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: RieszMellinLong]
 noncomputable def RieszMellinLong (d:ℕ) (s a δ ε:ℝ) (x:UnitAddTorus (Fin d)) : ℝ :=

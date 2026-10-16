@@ -1,5 +1,9 @@
-import Tablet.Preamble
-import Mathlib.Tactic.Linarith
+module
+
+public import Tablet.Preamble
+public import Mathlib.Tactic.Linarith
+
+@[expose] public section
 open scoped NNReal
 
 -- [TABLET NODE: SobolevExponent]

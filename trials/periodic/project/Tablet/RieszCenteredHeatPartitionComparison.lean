@@ -1,5 +1,9 @@
-import Tablet.HeatCenteredPartitionComparison
-import Tablet.RieszL1Foundation
+module
+
+public import Tablet.HeatCenteredPartitionComparison
+public import Tablet.RieszL1Foundation
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: RieszCenteredHeatPartitionComparison]
 theorem RieszCenteredHeatPartitionComparison (d N : ℕ) (hd : 2≤d)

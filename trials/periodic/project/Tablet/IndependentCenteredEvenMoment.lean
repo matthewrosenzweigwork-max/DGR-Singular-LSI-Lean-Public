@@ -1,6 +1,10 @@
-import Tablet.IndependentPairEvenMoment
-import Mathlib.Analysis.Convex.Integral
-import Mathlib.Analysis.Convex.Mul
+module
+
+public import Tablet.IndependentPairEvenMoment
+public import Mathlib.Analysis.Convex.Integral
+public import Mathlib.Analysis.Convex.Mul
+
+@[expose] public section
 universe u
 open MeasureTheory
 open scoped BigOperators

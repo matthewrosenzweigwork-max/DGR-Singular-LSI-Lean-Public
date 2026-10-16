@@ -1,5 +1,9 @@
-import Tablet.IndependentNonnegativeMomentBound
-import Tablet.IndependentCenteredEvenMoment
+module
+
+public import Tablet.IndependentNonnegativeMomentBound
+public import Tablet.IndependentCenteredEvenMoment
+
+@[expose] public section
 open MeasureTheory
 universe u
 -- [TABLET NODE: IndependentRosenthalEvenMoment]

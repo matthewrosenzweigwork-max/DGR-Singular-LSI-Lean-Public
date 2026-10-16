@@ -1,6 +1,10 @@
-import Tablet.BernoulliSplitJensen
-import Tablet.CanonicalKernelMaskBound
-import Mathlib.MeasureTheory.Constructions.Pi
+module
+
+public import Tablet.BernoulliSplitJensen
+public import Tablet.CanonicalKernelMaskBound
+public import Mathlib.MeasureTheory.Constructions.Pi
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: CanonicalConvexDecoupling]
 theorem CanonicalConvexDecoupling {Ω : Type*} [MeasurableSpace Ω]

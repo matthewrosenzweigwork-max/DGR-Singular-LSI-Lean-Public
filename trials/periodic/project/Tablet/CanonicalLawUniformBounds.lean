@@ -1,5 +1,9 @@
-import Tablet.RieszL1Foundation
-import Tablet.GibbsNormalizerBounds
+module
+
+public import Tablet.RieszL1Foundation
+public import Tablet.GibbsNormalizerBounds
+
+@[expose] public section
 open MeasureTheory Filter Set
 -- [TABLET NODE: CanonicalLawUniformBounds]
 theorem CanonicalLawUniformBounds (d N : ℕ) (hd : 2≤d) (hN : 2≤N)

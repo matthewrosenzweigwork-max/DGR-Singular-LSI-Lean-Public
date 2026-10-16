@@ -1,6 +1,10 @@
-import Tablet.DGRGaussianTruncationIdentification
-import Tablet.RieszMellinLongBound
-import Tablet.RieszMellinFourier
+module
+
+public import Tablet.DGRGaussianTruncationIdentification
+public import Tablet.RieszMellinLongBound
+public import Tablet.RieszMellinFourier
+
+@[expose] public section
 open MeasureTheory
 open scoped BigOperators
 -- [TABLET NODE: DGRGaussianDiagonalProfile]

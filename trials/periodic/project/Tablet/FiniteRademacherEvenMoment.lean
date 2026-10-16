@@ -1,8 +1,12 @@
-import Tablet.Preamble
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Series
-import Mathlib.Analysis.Complex.ExponentialBounds
-import Mathlib.Algebra.BigOperators.Ring.Finset
-import Mathlib.Tactic
+module
+
+public import Tablet.Preamble
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Series
+public import Mathlib.Analysis.Complex.ExponentialBounds
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Tactic
+
+@[expose] public section
 open scoped BigOperators
 -- [TABLET NODE: FiniteRademacherEvenMoment]
 theorem FiniteRademacherEvenMoment (N:ℕ)(a:Fin N→ℝ)(m:ℕ)(hm:1≤m) :

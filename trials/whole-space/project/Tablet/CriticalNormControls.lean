@@ -1,8 +1,12 @@
-import Tablet.SobolevExponent
-import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
-import Mathlib.MeasureTheory.Function.LpSeminorm.Indicator
-import Mathlib.MeasureTheory.Integral.MeanInequalities
-import Mathlib.Tactic
+module
+
+public import Tablet.SobolevExponent
+public import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Indicator
+public import Mathlib.MeasureTheory.Integral.MeanInequalities
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Set Filter
 open scoped ENNReal NNReal
 set_option maxHeartbeats 800000

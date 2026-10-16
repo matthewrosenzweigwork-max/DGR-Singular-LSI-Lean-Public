@@ -1,6 +1,10 @@
-import Tablet.HeatIncrementLaw
-import Tablet.HeatOperatorBounds
-import Mathlib.MeasureTheory.Group.Integral
+module
+
+public import Tablet.HeatIncrementLaw
+public import Tablet.HeatOperatorBounds
+public import Mathlib.MeasureTheory.Group.Integral
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: HeatIncrementAveraging]
 theorem HeatIncrementAveraging (d : ℕ) (t : ℝ) (ht : 0<t) :

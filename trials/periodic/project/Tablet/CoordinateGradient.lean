@@ -1,4 +1,8 @@
-import Tablet.ConfigurationLift
+module
+
+public import Tablet.ConfigurationLift
+
+@[expose] public section
 -- [TABLET NODE: CoordinateGradient]
 noncomputable def CoordinateGradient {d N : ℕ}
     (f : Configuration d N → ℝ) (X : Configuration d N) :

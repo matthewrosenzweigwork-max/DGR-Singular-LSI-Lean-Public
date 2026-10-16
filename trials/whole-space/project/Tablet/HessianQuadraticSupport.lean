@@ -1,13 +1,17 @@
-import Tablet.PotentialBounds
-import Mathlib.Analysis.Convex.Deriv
-import Mathlib.Analysis.Convex.Strong
-import Mathlib.Analysis.Calculus.Deriv.Mul
-import Mathlib.Analysis.Calculus.Deriv.Comp
-import Mathlib.Analysis.Calculus.Deriv.Pow
-import Mathlib.Analysis.Calculus.ContDiff.Comp
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.Ring
+module
+
+public import Tablet.PotentialBounds
+public import Mathlib.Analysis.Convex.Deriv
+public import Mathlib.Analysis.Convex.Strong
+public import Mathlib.Analysis.Calculus.Deriv.Mul
+public import Mathlib.Analysis.Calculus.Deriv.Comp
+public import Mathlib.Analysis.Calculus.Deriv.Pow
+public import Mathlib.Analysis.Calculus.ContDiff.Comp
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Ring
+
+@[expose] public section
 set_option maxHeartbeats 800000
 
 -- [TABLET NODE: HessianQuadraticSupport]

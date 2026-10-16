@@ -1,4 +1,8 @@
-import Tablet.CenteredDeletionPotential
+module
+
+public import Tablet.CenteredDeletionPotential
+
+@[expose] public section
 -- [TABLET NODE: CenteredDeletionEnergySum]
 theorem CenteredDeletionEnergySum {d N : ℕ}
     (g r : UnitAddTorus (Fin d) → ℝ) (hg : ∀z,g (-z)=g z)

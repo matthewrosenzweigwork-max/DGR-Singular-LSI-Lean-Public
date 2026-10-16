@@ -1,8 +1,12 @@
-import Tablet.OneParticle
-import Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral
-import Mathlib.MeasureTheory.Integral.Pi
-import Mathlib.Tactic.Ring
-import Mathlib.Tactic.NormNum
+module
+
+public import Tablet.OneParticle
+public import Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral
+public import Mathlib.MeasureTheory.Integral.Pi
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.NormNum
+
+@[expose] public section
 
 -- [TABLET NODE: GaussianConfinementIntegral]
 theorem GaussianConfinementIntegral {ι : Type*} [Fintype ι]

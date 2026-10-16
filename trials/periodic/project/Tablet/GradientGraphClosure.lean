@@ -1,5 +1,9 @@
-import Tablet.CoordinateGradient
-import Tablet.CollisionFreeCore
+module
+
+public import Tablet.CoordinateGradient
+public import Tablet.CollisionFreeCore
+
+@[expose] public section
 -- [TABLET NODE: GradientGraphClosure]
 noncomputable def GradientGraphClosure {d N : ℕ}
     (P : MeasureTheory.Measure (Configuration d N)) (collisionFree : Bool) :

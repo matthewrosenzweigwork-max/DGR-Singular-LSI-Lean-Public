@@ -1,11 +1,15 @@
-import Tablet.PairInteraction
-import Tablet.RelativePairCoordinates
-import Tablet.GradientNormIdentity
-import Tablet.ForceExponent
-import Mathlib.Analysis.MeanInequalities
-import Mathlib.Analysis.MeanInequalitiesPow
-import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
-import Mathlib.Tactic
+module
+
+public import Tablet.PairInteraction
+public import Tablet.RelativePairCoordinates
+public import Tablet.GradientNormIdentity
+public import Tablet.ForceExponent
+public import Mathlib.Analysis.MeanInequalities
+public import Mathlib.Analysis.MeanInequalitiesPow
+public import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 open MeasureTheory

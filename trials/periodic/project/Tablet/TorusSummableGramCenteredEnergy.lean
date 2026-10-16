@@ -1,6 +1,10 @@
-import Tablet.SummableGramCentering
-import Tablet.Preamble
-import Tablet.CenteredPairEnergy
+module
+
+public import Tablet.SummableGramCentering
+public import Tablet.Preamble
+public import Tablet.CenteredPairEnergy
+
+@[expose] public section
 open MeasureTheory
 open scoped ComplexConjugate
 -- [TABLET NODE: TorusSummableGramCenteredEnergy]

@@ -1,5 +1,9 @@
-import Tablet.TorusConvolutionAssociativity
-import Tablet.HeatKernelFacts
+module
+
+public import Tablet.TorusConvolutionAssociativity
+public import Tablet.HeatKernelFacts
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: HeatSemigroupComposition]
 theorem HeatSemigroupComposition (d : ℕ) (t u : ℝ) (ht : 0<t) (hu : 0<u)

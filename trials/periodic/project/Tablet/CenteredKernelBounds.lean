@@ -1,6 +1,10 @@
-import Tablet.CenteredKernel
-import Mathlib.MeasureTheory.Group.Integral
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import Tablet.CenteredKernel
+public import Mathlib.MeasureTheory.Group.Integral
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: CenteredKernelBounds]
 theorem CenteredKernelBounds (d : ℕ) (g r : UnitAddTorus (Fin d) → ℝ)

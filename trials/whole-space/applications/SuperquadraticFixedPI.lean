@@ -1,7 +1,11 @@
-import TranslatedAnisotropicPI
-import Collective140
-import Mathlib.Analysis.Calculus.FDeriv.Pow
-import Mathlib.Analysis.Calculus.FDeriv.Mul
+module
+
+public import TranslatedAnisotropicPI
+public import Collective140
+public import Mathlib.Analysis.Calculus.FDeriv.Pow
+public import Mathlib.Analysis.Calculus.FDeriv.Mul
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter

@@ -1,6 +1,10 @@
-import Tablet.UniformSmoothPoincare
-import Tablet.ClosedGradientEnergy
-import Mathlib.MeasureTheory.Function.L2Space
+module
+
+public import Tablet.UniformSmoothPoincare
+public import Tablet.ClosedGradientEnergy
+public import Mathlib.MeasureTheory.Function.L2Space
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory Set
 -- [TABLET NODE: UniformClosedGradientPoincare]
 theorem UniformClosedGradientPoincare (d : ℕ) (hd : 2 ≤ d)

@@ -1,4 +1,8 @@
-import Tablet.BoundedProbabilityDensityEntropy
+module
+
+public import Tablet.BoundedProbabilityDensityEntropy
+
+@[expose] public section
 open MeasureTheory InformationTheory
 
 -- [TABLET NODE: SquareDensityRelativeEntropy]

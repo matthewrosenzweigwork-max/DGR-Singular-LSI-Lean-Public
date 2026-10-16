@@ -1,10 +1,14 @@
-import Tablet.RieszThermalEulerLagrange
-import Tablet.ProbabilityConvolutionJensenInputs
-import Tablet.BoundedDensityConvolutionBound
-import Tablet.ThermalDensityBounds
-import Tablet.BoundedTiltBounds
-import Tablet.TiltNormalization
-import Tablet.BoundedBackground
+module
+
+public import Tablet.RieszThermalEulerLagrange
+public import Tablet.ProbabilityConvolutionJensenInputs
+public import Tablet.BoundedDensityConvolutionBound
+public import Tablet.ThermalDensityBounds
+public import Tablet.BoundedTiltBounds
+public import Tablet.TiltNormalization
+public import Tablet.BoundedBackground
+
+@[expose] public section
 open MeasureTheory UnitAddTorus
 open scoped Topology
 

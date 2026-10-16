@@ -1,4 +1,8 @@
-import Tablet.ConfigurationLift
+module
+
+public import Tablet.ConfigurationLift
+
+@[expose] public section
 open scoped ContDiff
 -- [TABLET NODE: SmoothCore]
 def SmoothCore (d N : ℕ) : Set (Configuration d N → ℝ) :=

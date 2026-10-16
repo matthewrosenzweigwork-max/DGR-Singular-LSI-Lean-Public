@@ -1,7 +1,11 @@
-import Tablet.UniformClosedGradientPoincare
-import Tablet.CanonicalGradientCoreEquality
-import Tablet.ExternalPotentialBackground
-import Tablet.ExternalPotentialLawRewrite
+module
+
+public import Tablet.UniformClosedGradientPoincare
+public import Tablet.CanonicalGradientCoreEquality
+public import Tablet.ExternalPotentialBackground
+public import Tablet.ExternalPotentialLawRewrite
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory Set
 -- [TABLET NODE: ExternalPotentialClosedGradientPoincare]
 theorem ExternalPotentialClosedGradientPoincare (d : ℕ) (hd : 2 ≤ d) (s a B L : ℝ)

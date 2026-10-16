@@ -1,10 +1,14 @@
-import Tablet.ParticleInsertion
-import Tablet.RieszKernelBounds
-import Tablet.SoftGibbsNormalization
-import Mathlib.MeasureTheory.Constructions.Pi
-import Mathlib.MeasureTheory.Measure.WithDensity
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.Tactic
+module
+
+public import Tablet.ParticleInsertion
+public import Tablet.RieszKernelBounds
+public import Tablet.SoftGibbsNormalization
+public import Mathlib.MeasureTheory.Constructions.Pi
+public import Mathlib.MeasureTheory.Measure.WithDensity
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped ENNReal BigOperators
 set_option autoImplicit false

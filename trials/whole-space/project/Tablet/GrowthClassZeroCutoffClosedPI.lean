@@ -1,16 +1,20 @@
-import Tablet.NativeAllNRegularizedPI
-import Tablet.GibbsSingularClosedTransfer
-import Tablet.GibbsClosedCoreEquality
-import Tablet.GibbsClosedConstants
-import Tablet.GibbsClosedGradientUnique
-import Tablet.GrowthClassNormalization
-import Tablet.ConfigurationLawTranslation
-import Tablet.ConfigurationClosedGradientTransport
-import Tablet.QuadraticGaussianClass
-import Tablet.QuadraticGaussianReference
-import Mathlib.Topology.Order.Compact
-import Mathlib.Topology.MetricSpace.ProperSpace
-import Mathlib.Tactic
+module
+
+public import Tablet.NativeAllNRegularizedPI
+public import Tablet.GibbsSingularClosedTransfer
+public import Tablet.GibbsClosedCoreEquality
+public import Tablet.GibbsClosedConstants
+public import Tablet.GibbsClosedGradientUnique
+public import Tablet.GrowthClassNormalization
+public import Tablet.ConfigurationLawTranslation
+public import Tablet.ConfigurationClosedGradientTransport
+public import Tablet.QuadraticGaussianClass
+public import Tablet.QuadraticGaussianReference
+public import Mathlib.Topology.Order.Compact
+public import Mathlib.Topology.MetricSpace.ProperSpace
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter

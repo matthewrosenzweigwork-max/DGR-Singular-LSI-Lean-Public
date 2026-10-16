@@ -1,17 +1,21 @@
-import Tablet.GroundStateClipping
-import Tablet.ClipCutoffApproximation
-import Tablet.TorusHaarPoincare
-import Tablet.VarianceVariational
-import Tablet.TiltNormalization
-import Tablet.TorusFourierLaplacian
-import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
-import Mathlib.Analysis.SpecialFunctions.ExpDeriv
-import Mathlib.Topology.Constructions
-import Mathlib.Topology.Algebra.Group.Quotient
-import Mathlib.Analysis.Calculus.ContDiff.WithLp
-import Mathlib.Analysis.Calculus.FDeriv.WithLp
-import Mathlib.MeasureTheory.Function.LocallyIntegrable
-import Mathlib.Tactic
+module
+
+public import Tablet.GroundStateClipping
+public import Tablet.ClipCutoffApproximation
+public import Tablet.TorusHaarPoincare
+public import Tablet.VarianceVariational
+public import Tablet.TiltNormalization
+public import Tablet.TorusFourierLaplacian
+public import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+public import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+public import Mathlib.Topology.Constructions
+public import Mathlib.Topology.Algebra.Group.Quotient
+public import Mathlib.Analysis.Calculus.ContDiff.WithLp
+public import Mathlib.Analysis.Calculus.FDeriv.WithLp
+public import Mathlib.MeasureTheory.Function.LocallyIntegrable
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory Set Function Filter
 open scoped ContDiff ENNReal NNReal
 -- [TABLET NODE: CompactWeightedPoincare]

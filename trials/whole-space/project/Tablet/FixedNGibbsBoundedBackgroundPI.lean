@@ -1,10 +1,14 @@
-import Tablet.FixedNGibbsAmplitudeClipping
-import Tablet.ConfigurationCoordinateTransport
-import Tablet.CutoffCubeApproximation
-import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
-import Mathlib.Probability.Moments.Variance
-import Mathlib.Tactic
-import Tablet.FiniteGibbsProductBoundedTilt
+module
+
+public import Tablet.FixedNGibbsAmplitudeClipping
+public import Tablet.ConfigurationCoordinateTransport
+public import Tablet.CutoffCubeApproximation
+public import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+public import Mathlib.Probability.Moments.Variance
+public import Mathlib.Tactic
+public import Tablet.FiniteGibbsProductBoundedTilt
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 6000000
 open MeasureTheory Filter Set Metric

@@ -1,8 +1,12 @@
-import Tablet.HeatKernelFacts
-import Tablet.HeatSourceDensity
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
-import Mathlib.MeasureTheory.Group.Integral
+module
+
+public import Tablet.HeatKernelFacts
+public import Tablet.HeatSourceDensity
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+public import Mathlib.MeasureTheory.Group.Integral
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: HeatSourceRegularity]
 theorem HeatSourceRegularity (d : ℕ) (ε : ℝ) (hε : 0 < ε)

@@ -1,11 +1,15 @@
-import Tablet.ConfigurationTranslationGeometry
-import Tablet.ReferenceTranslation
-import Tablet.ConvexReferenceNormalization
-import Tablet.GibbsLaw
-import Tablet.LawVariance
-import Tablet.PhysicalEnergy
-import Mathlib.MeasureTheory.Constructions.Pi
-import Mathlib.Dynamics.Ergodic.MeasurePreserving
+module
+
+public import Tablet.ConfigurationTranslationGeometry
+public import Tablet.ReferenceTranslation
+public import Tablet.ConvexReferenceNormalization
+public import Tablet.GibbsLaw
+public import Tablet.LawVariance
+public import Tablet.PhysicalEnergy
+public import Mathlib.MeasureTheory.Constructions.Pi
+public import Mathlib.Dynamics.Ergodic.MeasurePreserving
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter

@@ -1,5 +1,9 @@
-import Tablet.Replacement
-import Mathlib.MeasureTheory.Measure.Prod
+module
+
+public import Tablet.Replacement
+public import Mathlib.MeasureTheory.Measure.Prod
+
+@[expose] public section
 open MeasureTheory
 
 -- [TABLET NODE: ReplacementHaarInvariant]

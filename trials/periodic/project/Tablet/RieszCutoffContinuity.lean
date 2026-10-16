@@ -1,11 +1,15 @@
-import Tablet.RieszKernel
-import Tablet.RieszGaussianImageRemainder
-import Mathlib.Analysis.Normed.Ring.InfiniteSum
-import Mathlib.Topology.Algebra.InfiniteSum.NatInt
-import Mathlib.Analysis.Normed.Group.FunctionSeries
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
-import Mathlib.Analysis.Real.Pi.Bounds
+module
+
+public import Tablet.RieszKernel
+public import Tablet.RieszGaussianImageRemainder
+public import Mathlib.Analysis.Normed.Ring.InfiniteSum
+public import Mathlib.Topology.Algebra.InfiniteSum.NatInt
+public import Mathlib.Analysis.Normed.Group.FunctionSeries
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+public import Mathlib.Analysis.Real.Pi.Bounds
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped Topology
 -- [TABLET NODE: RieszCutoffContinuity]

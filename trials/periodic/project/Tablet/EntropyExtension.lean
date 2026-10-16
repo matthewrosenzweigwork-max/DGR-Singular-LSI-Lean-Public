@@ -1,5 +1,9 @@
-import Tablet.ExtendedEntropy
-import Tablet.EntropyVariational
+module
+
+public import Tablet.ExtendedEntropy
+public import Tablet.EntropyVariational
+
+@[expose] public section
 -- [TABLET NODE: EntropyExtension]
 theorem EntropyExtension {Ω : Type*} [MeasurableSpace Ω]
     (μ : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure μ]

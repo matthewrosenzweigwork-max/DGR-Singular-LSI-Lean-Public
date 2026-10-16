@@ -1,7 +1,11 @@
-import Tablet.CenteredDeletionPotentialControls
-import Tablet.CenteredDeletionEnergySum
-import Tablet.CenteredCanonicalLaw
-import Tablet.BoundedGibbsRelativeEntropy
+module
+
+public import Tablet.CenteredDeletionPotentialControls
+public import Tablet.CenteredDeletionEnergySum
+public import Tablet.CenteredCanonicalLaw
+public import Tablet.BoundedGibbsRelativeEntropy
+
+@[expose] public section
 open MeasureTheory InformationTheory
 
 -- [TABLET NODE: CenteredEnergyProbabilityControls]

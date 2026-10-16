@@ -1,5 +1,9 @@
-import Tablet.UniformLogSobolevFromPartitionBounds
-import Tablet.RieszCenteredPartitionUniform
+module
+
+public import Tablet.UniformLogSobolevFromPartitionBounds
+public import Tablet.RieszCenteredPartitionUniform
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: UniformRegularizedLogSobolev]
 theorem UniformRegularizedLogSobolev (d:ℕ)(hd:2≤d)(s a B l u:ℝ)

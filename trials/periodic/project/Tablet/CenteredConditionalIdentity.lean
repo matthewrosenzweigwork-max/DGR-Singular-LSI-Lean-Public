@@ -1,8 +1,12 @@
-import Tablet.CenteredKernel
-import Tablet.BoundedBackground
-import Tablet.NormalizedTilt
-import Tablet.ConditionalPotential
-import Tablet.Replacement
+module
+
+public import Tablet.CenteredKernel
+public import Tablet.BoundedBackground
+public import Tablet.NormalizedTilt
+public import Tablet.ConditionalPotential
+public import Tablet.Replacement
+
+@[expose] public section
 open MeasureTheory
 
 -- [TABLET NODE: CenteredConditionalIdentity]

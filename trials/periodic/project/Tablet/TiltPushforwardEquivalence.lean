@@ -1,5 +1,9 @@
-import Tablet.MeasurePreservingDensityTransport
-import Tablet.NormalizedTilt
+module
+
+public import Tablet.MeasurePreservingDensityTransport
+public import Tablet.NormalizedTilt
+
+@[expose] public section
 open MeasureTheory
 
 -- [TABLET NODE: TiltPushforwardEquivalence]

@@ -1,10 +1,14 @@
-import Tablet.EntropyFiniteCentering
-import Tablet.TorusDefectiveLogSobolev
-import Tablet.TorusHaarPoincare
-import Mathlib.Topology.Order.Compact
-import Mathlib.Topology.Constructions
-import Mathlib.Topology.Algebra.Group.Quotient
-import Mathlib.Analysis.Calculus.ContDiff.WithLp
+module
+
+public import Tablet.EntropyFiniteCentering
+public import Tablet.TorusDefectiveLogSobolev
+public import Tablet.TorusHaarPoincare
+public import Mathlib.Topology.Order.Compact
+public import Mathlib.Topology.Constructions
+public import Mathlib.Topology.Algebra.Group.Quotient
+public import Mathlib.Analysis.Calculus.ContDiff.WithLp
+
+@[expose] public section
 open MeasureTheory
 open scoped ContDiff
 -- [TABLET NODE: TorusHaarLogSobolev]

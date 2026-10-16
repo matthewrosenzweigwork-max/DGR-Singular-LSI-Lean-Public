@@ -1,4 +1,8 @@
-import Tablet.ReferenceLaw
+module
+
+public import Tablet.ReferenceLaw
+
+@[expose] public section
 
 -- [TABLET NODE: ReferenceLawProbability]
 theorem ReferenceLawProbability {d : ℕ} (V b : OneParticle d → ℝ)

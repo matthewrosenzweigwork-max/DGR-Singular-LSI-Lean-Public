@@ -1,7 +1,11 @@
-import Tablet.Preamble
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.Tactic
+module
+
+public import Tablet.Preamble
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.Tactic
+
+@[expose] public section
 -- [TABLET NODE: DGRPhysicalLogEnvelope]
 theorem DGRPhysicalLogEnvelope (p c N u : ℝ)
     (hp : 0<p) (hc : 0<c) (hN : 1≤N) (hu : 1≤u) :

@@ -1,7 +1,11 @@
-import Tablet.DGRGaussianLayerWitness
-import Tablet.DGRGaussianFixedM3Witness
-import Tablet.DGRGaussianMasterGrowth
-import Tablet.DGRPhysicalAdaptiveCutoff
+module
+
+public import Tablet.DGRGaussianLayerWitness
+public import Tablet.DGRGaussianFixedM3Witness
+public import Tablet.DGRGaussianMasterGrowth
+public import Tablet.DGRPhysicalAdaptiveCutoff
+
+@[expose] public section
 open MeasureTheory
 open scoped BigOperators
 -- [TABLET NODE: DGRGaussianMasterWitnessFamily]

@@ -1,10 +1,14 @@
-import Tablet.UniformClosedGradientPoincare
-import Tablet.UniformClosedGradientLogSobolev
-import Tablet.CanonicalGradientCoreEquality
-import Tablet.RieszModulatedBackground
-import Tablet.ModulatedPotentialLawRewrite
-import Tablet.BackgroundPotential
-import Tablet.BackgroundPairMean
+module
+
+public import Tablet.UniformClosedGradientPoincare
+public import Tablet.UniformClosedGradientLogSobolev
+public import Tablet.CanonicalGradientCoreEquality
+public import Tablet.RieszModulatedBackground
+public import Tablet.ModulatedPotentialLawRewrite
+public import Tablet.BackgroundPotential
+public import Tablet.BackgroundPairMean
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory Set
 -- [TABLET NODE: ModulatedClosedGradientLogSobolev]
 theorem ModulatedClosedGradientLogSobolev (d:ℕ)(hd:2≤d)(s a B l u:ℝ)

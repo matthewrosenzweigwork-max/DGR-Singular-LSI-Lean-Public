@@ -1,8 +1,12 @@
-import Tablet.SobolevExponent
-import Tablet.GradientNormIdentity
-import Mathlib.Analysis.FunctionalSpaces.SobolevInequality
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.NormNum
+module
+
+public import Tablet.SobolevExponent
+public import Tablet.GradientNormIdentity
+public import Mathlib.Analysis.FunctionalSpaces.SobolevInequality
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.NormNum
+
+@[expose] public section
 open scoped NNReal
 
 -- [TABLET NODE: EuclideanSobolev]

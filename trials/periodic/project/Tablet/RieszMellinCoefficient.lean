@@ -1,4 +1,8 @@
-import Tablet.RieszKernel
+module
+
+public import Tablet.RieszKernel
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: RieszMellinCoefficient]
 noncomputable def RieszMellinCoefficient (d:ℕ) (s a δ ε:ℝ) (k:Fin d→ℤ):ℝ:=

@@ -1,7 +1,11 @@
-import Collective140
-import Tablet.QuadraticGaussianClass
-import Tablet.GibbsLaw
-import Tablet.BoundedMultiplier
+module
+
+public import Collective140
+public import Tablet.QuadraticGaussianClass
+public import Tablet.GibbsLaw
+public import Tablet.BoundedMultiplier
+
+@[expose] public section
 
 set_option autoImplicit false
 set_option maxHeartbeats 1600000

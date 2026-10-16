@@ -1,5 +1,9 @@
-import Tablet.Preamble
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import Tablet.Preamble
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 open MeasureTheory MeasureTheory.Measure
 -- [TABLET NODE: BoundedJointDensityMarginal]
 theorem BoundedJointDensityMarginal {X Y : Type*} [MeasurableSpace X] [MeasurableSpace Y]

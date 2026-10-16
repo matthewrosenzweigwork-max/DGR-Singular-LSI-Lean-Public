@@ -1,6 +1,10 @@
-import Tablet.DGRGaussianCenteredTruncation
-import Tablet.CenteredProductMean
-import Tablet.Preamble
+module
+
+public import Tablet.DGRGaussianCenteredTruncation
+public import Tablet.CenteredProductMean
+public import Tablet.Preamble
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: DGRGaussianFiniteMasterCap]
 theorem DGRGaussianFiniteMasterCap (d : ℕ) (hd : 2≤d) (s a M t : ℝ)

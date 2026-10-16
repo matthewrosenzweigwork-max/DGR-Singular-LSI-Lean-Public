@@ -1,6 +1,10 @@
-import Tablet.Preamble
-import Mathlib.Analysis.SpecialFunctions.ExpDeriv
-import Mathlib.MeasureTheory.Integral.Bochner.Basic
+module
+
+public import Tablet.Preamble
+public import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+public import Mathlib.MeasureTheory.Integral.Bochner.Basic
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: ProbabilityExponentialInterpolation]
 theorem ProbabilityExponentialInterpolation {Ω : Type*} [MeasurableSpace Ω]

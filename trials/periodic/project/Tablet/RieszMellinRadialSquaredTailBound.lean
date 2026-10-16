@@ -1,6 +1,10 @@
-import Tablet.LatticeRadialTailBound
-import Tablet.RieszMellinCoefficientBounds
-import Mathlib.Tactic
+module
+
+public import Tablet.LatticeRadialTailBound
+public import Tablet.RieszMellinCoefficientBounds
+public import Mathlib.Tactic
+
+@[expose] public section
 open scoped BigOperators
 -- [TABLET NODE: RieszMellinRadialSquaredTailBound]
 theorem RieszMellinRadialSquaredTailBound (d:ℕ) (s a:ℝ) (hsd:s<(d:ℝ)/2) (ha:0<a) :

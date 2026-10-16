@@ -1,11 +1,15 @@
-import Tablet.TorusIntegrationByParts
-import Mathlib.Analysis.SpecialFunctions.Sqrt
-import Mathlib.Topology.Constructions
-import Mathlib.Topology.Algebra.Group.Quotient
-import Mathlib.Analysis.Calculus.ContDiff.WithLp
-import Mathlib.Analysis.Calculus.FDeriv.WithLp
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
-import Mathlib.Analysis.SpecificLimits.Basic
+module
+
+public import Tablet.TorusIntegrationByParts
+public import Mathlib.Analysis.SpecialFunctions.Sqrt
+public import Mathlib.Topology.Constructions
+public import Mathlib.Topology.Algebra.Group.Quotient
+public import Mathlib.Analysis.Calculus.ContDiff.WithLp
+public import Mathlib.Analysis.Calculus.FDeriv.WithLp
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+public import Mathlib.Analysis.SpecificLimits.Basic
+
+@[expose] public section
 open MeasureTheory
 open scoped ContDiff
 -- [TABLET NODE: CapacitaryPotentialCutoff]

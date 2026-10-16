@@ -1,5 +1,9 @@
-import Tablet.HeatDoubleIncrementAveraging
-import Tablet.HeatBoundedCenteredBackgroundIdentity
+module
+
+public import Tablet.HeatDoubleIncrementAveraging
+public import Tablet.HeatBoundedCenteredBackgroundIdentity
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: HeatCenteredKernelAveraging]
 theorem HeatCenteredKernelAveraging (d : ℕ) (t : ℝ) (ht : 0<t)

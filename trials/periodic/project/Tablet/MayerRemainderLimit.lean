@@ -1,7 +1,11 @@
-import Mathlib.Analysis.Calculus.Deriv.Slope
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
-import Tablet.MayerDefect
-import Tablet.HeatOperatorBounds
+module
+
+public import Mathlib.Analysis.Calculus.Deriv.Slope
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+public import Tablet.MayerDefect
+public import Tablet.HeatOperatorBounds
+
+@[expose] public section
 -- [TABLET NODE: MayerRemainderLimit]
 theorem MayerRemainderLimit (d : ℕ) (G : UnitAddTorus (Fin d) → ℝ)
     (hG : Measurable G) (hn : ∀ᵐ x ∂(MeasureTheory.volume : MeasureTheory.Measure (UnitAddTorus (Fin d))), 0 ≤ G x)

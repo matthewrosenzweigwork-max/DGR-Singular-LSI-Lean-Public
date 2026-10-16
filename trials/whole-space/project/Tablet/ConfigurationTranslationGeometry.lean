@@ -1,9 +1,13 @@
-import Tablet.ConfigurationTranslation
-import Tablet.InteractionWeight
-import Tablet.EuclideanGradient
-import Mathlib.Analysis.Calculus.FDeriv.Add
-import Mathlib.Analysis.Calculus.Gradient.Basic
-import Mathlib.Tactic.Abel
+module
+
+public import Tablet.ConfigurationTranslation
+public import Tablet.InteractionWeight
+public import Tablet.EuclideanGradient
+public import Mathlib.Analysis.Calculus.FDeriv.Add
+public import Mathlib.Analysis.Calculus.Gradient.Basic
+public import Mathlib.Tactic.Abel
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter

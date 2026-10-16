@@ -1,7 +1,11 @@
-import Applications.CutoffSingularPI
-import Tablet.GibbsClosedCoreEquality
-import Tablet.GibbsClosedConstants
-import Tablet.GibbsClosedGradientUnique
+module
+
+public import Applications.CutoffSingularPI
+public import Tablet.GibbsClosedCoreEquality
+public import Tablet.GibbsClosedConstants
+public import Tablet.GibbsClosedGradientUnique
+
+@[expose] public section
 open MeasureTheory
 open scoped ENNReal ContDiff
 set_option autoImplicit false

@@ -1,7 +1,11 @@
-import Tablet.CompactGradientCalculus
-import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
-import Mathlib.Analysis.SpecificLimits.Basic
-import Tablet.RelativePairCoordinates
+module
+
+public import Tablet.CompactGradientCalculus
+public import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
+public import Mathlib.Analysis.SpecificLimits.Basic
+public import Tablet.RelativePairCoordinates
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped Topology ContDiff
 

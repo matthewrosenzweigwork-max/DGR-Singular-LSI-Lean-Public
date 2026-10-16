@@ -1,11 +1,15 @@
-import Tablet.RieszWeakSource
-import Tablet.RieszLocalStructure
-import Tablet.HeatSourceDensity
-import Tablet.HeatFourierCoefficients
-import Tablet.TorusCharacterCalculus
-import Mathlib.MeasureTheory.Group.Integral
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+module
+
+public import Tablet.RieszWeakSource
+public import Tablet.RieszLocalStructure
+public import Tablet.HeatSourceDensity
+public import Tablet.HeatFourierCoefficients
+public import Tablet.TorusCharacterCalculus
+public import Mathlib.MeasureTheory.Group.Integral
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+
+@[expose] public section
 open MeasureTheory
 open scoped ComplexConjugate
 set_option maxHeartbeats 4000000

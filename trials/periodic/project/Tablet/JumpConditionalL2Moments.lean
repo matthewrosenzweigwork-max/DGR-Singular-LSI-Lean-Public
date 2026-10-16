@@ -1,13 +1,17 @@
-import Mathlib.MeasureTheory.Function.L2Space
-import Mathlib.MeasureTheory.Integral.Bochner.Basic
-import Mathlib.Tactic
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
-import Tablet.JumpOperator
-import Tablet.BoundedBackground
-import Tablet.TiltNormalization
-import Mathlib.MeasureTheory.Group.Integral
-import Tablet.ReplacementJointBalance
+module
+
+public import Mathlib.MeasureTheory.Function.L2Space
+public import Mathlib.MeasureTheory.Integral.Bochner.Basic
+public import Mathlib.Tactic
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+public import Tablet.JumpOperator
+public import Tablet.BoundedBackground
+public import Tablet.TiltNormalization
+public import Mathlib.MeasureTheory.Group.Integral
+public import Tablet.ReplacementJointBalance
+
+@[expose] public section
 
 open MeasureTheory ProbabilityTheory
 

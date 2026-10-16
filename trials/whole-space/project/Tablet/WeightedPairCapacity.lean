@@ -1,7 +1,11 @@
-import Tablet.RelativePairCoordinates
-import Tablet.EuclideanHardy
-import Mathlib.Analysis.Calculus.ContDiff.Comp
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+module
+
+public import Tablet.RelativePairCoordinates
+public import Tablet.EuclideanHardy
+public import Mathlib.Analysis.Calculus.ContDiff.Comp
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+
+@[expose] public section
 set_option maxHeartbeats 1600000
 open MeasureTheory Set
 

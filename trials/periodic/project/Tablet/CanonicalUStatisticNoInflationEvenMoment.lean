@@ -1,7 +1,11 @@
-import Tablet.CanonicalCrossNoInflationEvenMoment
-import Tablet.IndependentBernsteinMoments
-import Tablet.CanonicalConvexDecoupling
-import Mathlib.MeasureTheory.Constructions.Pi
+module
+
+public import Tablet.CanonicalCrossNoInflationEvenMoment
+public import Tablet.IndependentBernsteinMoments
+public import Tablet.CanonicalConvexDecoupling
+public import Mathlib.MeasureTheory.Constructions.Pi
+
+@[expose] public section
 open MeasureTheory
 universe u
 -- [TABLET NODE: CanonicalUStatisticNoInflationEvenMoment]

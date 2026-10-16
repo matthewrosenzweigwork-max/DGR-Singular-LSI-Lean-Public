@@ -1,4 +1,8 @@
-import Tablet.EuclideanGradient
+module
+
+public import Tablet.EuclideanGradient
+
+@[expose] public section
 
 -- [TABLET NODE: EuclideanHessian]
 noncomputable def EuclideanHessian {ι : Type*} [Fintype ι]

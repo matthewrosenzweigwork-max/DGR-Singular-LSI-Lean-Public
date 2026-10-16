@@ -1,15 +1,19 @@
-import Tablet.AtomicLocalRieszBounds
-import Tablet.AtomicInteractionSource
-import Mathlib.Analysis.Calculus.BumpFunction.InnerProduct
-import Mathlib.Analysis.Calculus.Deriv.Support
-import Mathlib.Analysis.Normed.Group.Bounded
-import Mathlib.Analysis.Calculus.Gradient.Basic
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
-import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
-import Mathlib.Analysis.Calculus.ContDiff.Comp
-import Mathlib.Analysis.SpecialFunctions.ExpDeriv
-import Mathlib.Analysis.InnerProductSpace.PiL2
-import Mathlib.Tactic
+module
+
+public import Tablet.AtomicLocalRieszBounds
+public import Tablet.AtomicInteractionSource
+public import Mathlib.Analysis.Calculus.BumpFunction.InnerProduct
+public import Mathlib.Analysis.Calculus.Deriv.Support
+public import Mathlib.Analysis.Normed.Group.Bounded
+public import Mathlib.Analysis.Calculus.Gradient.Basic
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+public import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
+public import Mathlib.Analysis.Calculus.ContDiff.Comp
+public import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+public import Mathlib.Analysis.InnerProductSpace.PiL2
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option maxHeartbeats 1600000
 open MeasureTheory Measure Set Metric Function
 open scoped ContDiff NNReal

@@ -1,8 +1,12 @@
-import Tablet.CanonicalL2SumConcentration
-import Tablet.CanonicalL2SumVariance
-import Tablet.MomentFromExponential
-import Mathlib.Analysis.Convex.Integral
-import Mathlib.Analysis.Convex.Mul
+module
+
+public import Tablet.CanonicalL2SumConcentration
+public import Tablet.CanonicalL2SumVariance
+public import Tablet.MomentFromExponential
+public import Mathlib.Analysis.Convex.Integral
+public import Mathlib.Analysis.Convex.Mul
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: CanonicalL2SumMoments]
 theorem CanonicalL2SumMoments {Ω : Type*} [MeasurableSpace Ω]

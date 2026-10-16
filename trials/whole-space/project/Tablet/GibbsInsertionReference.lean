@@ -1,8 +1,12 @@
-import Tablet.ReferenceOffsetDensity
-import Tablet.ParticlePosition
-import Mathlib.Analysis.Convex.Integral
-import Mathlib.Analysis.Convex.SpecificFunctions.Basic
-import Mathlib.Tactic
+module
+
+public import Tablet.ReferenceOffsetDensity
+public import Tablet.ParticlePosition
+public import Mathlib.Analysis.Convex.Integral
+public import Mathlib.Analysis.Convex.SpecificFunctions.Basic
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped ENNReal
 set_option maxHeartbeats 1500000

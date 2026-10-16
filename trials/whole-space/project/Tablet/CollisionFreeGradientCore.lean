@@ -1,5 +1,9 @@
-import Tablet.SmoothGradientCore
-import Tablet.CollisionSet
+module
+
+public import Tablet.SmoothGradientCore
+public import Tablet.CollisionSet
+
+@[expose] public section
 open scoped ContDiff
 
 -- [TABLET NODE: CollisionFreeGradientCore]

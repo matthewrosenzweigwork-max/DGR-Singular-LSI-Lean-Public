@@ -1,6 +1,10 @@
-import Mathlib.MeasureTheory.Function.L2Space
-import Mathlib.Tactic
-import Tablet.Preamble
+module
+
+public import Mathlib.MeasureTheory.Function.L2Space
+public import Mathlib.Tactic
+public import Tablet.Preamble
+
+@[expose] public section
 
 open MeasureTheory
 

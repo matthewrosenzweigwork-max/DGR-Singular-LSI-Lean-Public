@@ -1,11 +1,15 @@
-import Tablet.RieszMellinCoefficientBounds
-import Tablet.RieszMellinLong
-import Tablet.HeatKernelFacts
-import Mathlib.Analysis.Real.Pi.Bounds
-import Mathlib.Analysis.Normed.Ring.InfiniteSum
-import Mathlib.Topology.Algebra.InfiniteSum.NatInt
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+module
+
+public import Tablet.RieszMellinCoefficientBounds
+public import Tablet.RieszMellinLong
+public import Tablet.HeatKernelFacts
+public import Mathlib.Analysis.Real.Pi.Bounds
+public import Mathlib.Analysis.Normed.Ring.InfiniteSum
+public import Mathlib.Topology.Algebra.InfiniteSum.NatInt
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+
+@[expose] public section
 open MeasureTheory Set Filter UnitAddTorus
 open scoped Topology
 -- [TABLET NODE: RieszMellinFourier]

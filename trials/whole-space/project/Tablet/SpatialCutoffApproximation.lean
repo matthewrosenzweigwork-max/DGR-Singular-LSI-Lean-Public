@@ -1,7 +1,11 @@
-import Tablet.CompactGradientCalculus
-import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
-import Mathlib.Topology.Algebra.ConstMulAction
-import Mathlib.Analysis.SpecificLimits.Basic
+module
+
+public import Tablet.CompactGradientCalculus
+public import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
+public import Mathlib.Topology.Algebra.ConstMulAction
+public import Mathlib.Analysis.SpecificLimits.Basic
+
+@[expose] public section
 open Filter Set
 open scoped Topology ContDiff
 

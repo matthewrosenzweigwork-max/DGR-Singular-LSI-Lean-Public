@@ -1,7 +1,11 @@
-import Tablet.BoundedGibbsRelativeEntropy
-import Tablet.BoundedTiltBounds
-import Tablet.TiltNormalization
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import Tablet.BoundedGibbsRelativeEntropy
+public import Tablet.BoundedTiltBounds
+public import Tablet.TiltNormalization
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 open MeasureTheory InformationTheory
 
 -- [TABLET NODE: ConditionalGibbsRelativeEntropy]

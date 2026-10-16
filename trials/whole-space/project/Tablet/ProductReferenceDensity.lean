@@ -1,7 +1,11 @@
-import Tablet.ConfigurationReference
-import Tablet.ParticlePosition
-import Tablet.RowFlattenVolumePreserving
-import Mathlib.Data.ENNReal.BigOperators
+module
+
+public import Tablet.ConfigurationReference
+public import Tablet.ParticlePosition
+public import Tablet.RowFlattenVolumePreserving
+public import Mathlib.Data.ENNReal.BigOperators
+
+@[expose] public section
 open MeasureTheory Set Filter
 open scoped BigOperators
 

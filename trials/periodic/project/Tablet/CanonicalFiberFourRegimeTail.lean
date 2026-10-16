@@ -1,5 +1,9 @@
-import Tablet.CanonicalUStatisticNoInflationEvenMoment
-import Tablet.GLZEvenMomentToTail
+module
+
+public import Tablet.CanonicalUStatisticNoInflationEvenMoment
+public import Tablet.GLZEvenMomentToTail
+
+@[expose] public section
 open MeasureTheory
 universe u
 -- [TABLET NODE: CanonicalFiberFourRegimeTail]

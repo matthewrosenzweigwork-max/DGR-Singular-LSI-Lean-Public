@@ -1,8 +1,12 @@
-import Tablet.AtomicCompactCoercivity
-import Tablet.AtomicInteractionSource
-import Tablet.WeightedSpatialApproximation
-import Tablet.ConvexReferenceNormalization
-import Mathlib.Tactic
+module
+
+public import Tablet.AtomicCompactCoercivity
+public import Tablet.AtomicInteractionSource
+public import Tablet.WeightedSpatialApproximation
+public import Tablet.ConvexReferenceNormalization
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter
 open scoped ENNReal NNReal Topology

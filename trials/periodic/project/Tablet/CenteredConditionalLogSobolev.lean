@@ -1,6 +1,10 @@
-import Tablet.HolesLogSobolev
-import Tablet.ConditionalPotential
-import Mathlib.MeasureTheory.Group.Integral
+module
+
+public import Tablet.HolesLogSobolev
+public import Tablet.ConditionalPotential
+public import Mathlib.MeasureTheory.Group.Integral
+
+@[expose] public section
 open MeasureTheory
 open scoped ContDiff
 -- [TABLET NODE: CenteredConditionalLogSobolev]

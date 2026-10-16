@@ -1,6 +1,10 @@
-import Tablet.UniformRegularizedPoincare
-import Tablet.CanonicalCutoffConvergence
-import Mathlib.Probability.Moments.Variance
+module
+
+public import Tablet.UniformRegularizedPoincare
+public import Tablet.CanonicalCutoffConvergence
+public import Mathlib.Probability.Moments.Variance
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory Filter Set
 open scoped Topology
 -- [TABLET NODE: UniformSmoothPoincare]

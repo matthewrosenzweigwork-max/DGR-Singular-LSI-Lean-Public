@@ -1,5 +1,9 @@
-import Tablet.DGRGaussianCanonicalWitness
-import Tablet.DGRGaussianLayerM1M2
+module
+
+public import Tablet.DGRGaussianCanonicalWitness
+public import Tablet.DGRGaussianLayerM1M2
+
+@[expose] public section
 open MeasureTheory Filter
 open scoped BigOperators ComplexConjugate
 -- [TABLET NODE: DGRGaussianLayerWitness]

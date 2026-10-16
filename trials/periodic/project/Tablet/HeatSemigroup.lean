@@ -1,4 +1,8 @@
-import Tablet.HeatKernel
+module
+
+public import Tablet.HeatKernel
+
+@[expose] public section
 -- [TABLET NODE: HeatSemigroup]
 noncomputable def HeatSemigroup (d : ℕ) (t : ℝ)
     (f : UnitAddTorus (Fin d) → ℝ) (x : UnitAddTorus (Fin d)) : ℝ :=

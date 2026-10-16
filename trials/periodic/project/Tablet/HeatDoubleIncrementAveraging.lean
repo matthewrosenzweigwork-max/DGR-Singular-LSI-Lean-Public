@@ -1,6 +1,10 @@
-import Tablet.HeatIncrementAveraging
-import Tablet.HeatSemigroupComposition
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import Tablet.HeatIncrementAveraging
+public import Tablet.HeatSemigroupComposition
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: HeatDoubleIncrementAveraging]
 theorem HeatDoubleIncrementAveraging (d : ℕ) (t : ℝ) (ht : 0<t)

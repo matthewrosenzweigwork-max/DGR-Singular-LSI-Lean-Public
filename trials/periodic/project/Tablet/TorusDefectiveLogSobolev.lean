@@ -1,8 +1,12 @@
-import Tablet.EntropyLpBound
-import Tablet.TorusSobolev
-import Mathlib.Topology.Constructions
-import Mathlib.Topology.Algebra.Group.Quotient
-import Mathlib.Analysis.Calculus.ContDiff.WithLp
+module
+
+public import Tablet.EntropyLpBound
+public import Tablet.TorusSobolev
+public import Mathlib.Topology.Constructions
+public import Mathlib.Topology.Algebra.Group.Quotient
+public import Mathlib.Analysis.Calculus.ContDiff.WithLp
+
+@[expose] public section
 open MeasureTheory
 open scoped ContDiff
 

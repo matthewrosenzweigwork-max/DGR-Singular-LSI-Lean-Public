@@ -1,6 +1,10 @@
-import Tablet.UniformClosedGradientPoincare
-import Tablet.UniformClosedGradientLogSobolev
-import Tablet.CanonicalGradientCoreEquality
+module
+
+public import Tablet.UniformClosedGradientPoincare
+public import Tablet.UniformClosedGradientLogSobolev
+public import Tablet.CanonicalGradientCoreEquality
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory Set
 -- [TABLET NODE: UniformFullGradientInequalities]
 theorem UniformFullGradientInequalities (d:ℕ)(hd:2≤d)(s a B l u:ℝ)

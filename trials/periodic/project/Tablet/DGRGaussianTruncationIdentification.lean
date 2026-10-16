@@ -1,9 +1,13 @@
-import Tablet.GaussianPhysicalScaleIntegral
-import Tablet.DGRGaussianPhysicalNear
-import Tablet.DGRGaussianPhysicalLong
-import Tablet.RieszMellinNear
-import Tablet.RieszMellinLong
-import Mathlib.Tactic
+module
+
+public import Tablet.GaussianPhysicalScaleIntegral
+public import Tablet.DGRGaussianPhysicalNear
+public import Tablet.DGRGaussianPhysicalLong
+public import Tablet.RieszMellinNear
+public import Tablet.RieszMellinLong
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: DGRGaussianTruncationIdentification]
 theorem DGRGaussianTruncationIdentification (d : ℕ) (s a η : ℝ) (hη : 0 < η) :

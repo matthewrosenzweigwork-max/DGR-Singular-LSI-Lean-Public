@@ -1,5 +1,9 @@
-import Tablet.CenteredMaskConvexBound
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import Tablet.CenteredMaskConvexBound
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: CanonicalKernelMaskBound]
 theorem CanonicalKernelMaskBound {Ω : Type*} [MeasurableSpace Ω]

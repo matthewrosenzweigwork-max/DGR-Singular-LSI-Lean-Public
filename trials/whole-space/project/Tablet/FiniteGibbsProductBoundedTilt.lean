@@ -1,6 +1,10 @@
-import Tablet.GibbsRawDensity
-import Tablet.InteractionWeightBounds
-import Mathlib.Tactic
+module
+
+public import Tablet.GibbsRawDensity
+public import Tablet.InteractionWeightBounds
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1800000
 open MeasureTheory Filter Set

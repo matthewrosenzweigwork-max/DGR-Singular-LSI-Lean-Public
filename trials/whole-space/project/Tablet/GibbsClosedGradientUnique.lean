@@ -1,7 +1,11 @@
-import Tablet.WeightedGradientClosability
-import Tablet.GibbsLocalDensityBounds
-import Tablet.CollisionNull
-import Tablet.ClosedGradientGraph
+module
+
+public import Tablet.WeightedGradientClosability
+public import Tablet.GibbsLocalDensityBounds
+public import Tablet.CollisionNull
+public import Tablet.ClosedGradientGraph
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped Topology ContDiff
 

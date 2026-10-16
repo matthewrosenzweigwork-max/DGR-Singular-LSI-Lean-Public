@@ -1,8 +1,12 @@
-import Tablet.CenteredDeletionPotential
-import Tablet.CenteredKernelBounds
-import Tablet.TiltNormalization
-import Tablet.BoundedBackground
-import Mathlib.MeasureTheory.Constructions.Pi
+module
+
+public import Tablet.CenteredDeletionPotential
+public import Tablet.CenteredKernelBounds
+public import Tablet.TiltNormalization
+public import Tablet.BoundedBackground
+public import Mathlib.MeasureTheory.Constructions.Pi
+
+@[expose] public section
 open MeasureTheory
 
 -- [TABLET NODE: CenteredDeletionPotentialControls]

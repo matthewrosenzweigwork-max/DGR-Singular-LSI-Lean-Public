@@ -1,5 +1,9 @@
-import Tablet.Preamble
-import Mathlib.MeasureTheory.Function.LpOrder
+module
+
+public import Tablet.Preamble
+public import Mathlib.MeasureTheory.Function.LpOrder
+
+@[expose] public section
 
 open MeasureTheory
 open scoped Topology

@@ -1,8 +1,12 @@
-import Tablet.GenericSmoothCapacitaryCutoff
-import Tablet.CoulombOriginDivergence
-import Tablet.RieszHeatSource
-import Tablet.ConfigurationPairPotential
-import Tablet.CollisionFreeCore
+module
+
+public import Tablet.GenericSmoothCapacitaryCutoff
+public import Tablet.CoulombOriginDivergence
+public import Tablet.RieszHeatSource
+public import Tablet.ConfigurationPairPotential
+public import Tablet.CollisionFreeCore
+
+@[expose] public section
 open MeasureTheory Set Filter
 open scoped ContDiff Topology
 -- [TABLET NODE: CollisionFreeSmoothCutoff]

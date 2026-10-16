@@ -1,4 +1,8 @@
-import Tablet.PotentialBounds
+module
+
+public import Tablet.PotentialBounds
+
+@[expose] public section
 
 -- [TABLET NODE: TwoSidedPotential]
 structure TwoSidedPotential (d : ℕ) (κ K : ℝ)

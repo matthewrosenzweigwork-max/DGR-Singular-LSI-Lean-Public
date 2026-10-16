@@ -1,5 +1,9 @@
-import Tablet.CollisionSet
-import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
+module
+
+public import Tablet.CollisionSet
+public import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
+
+@[expose] public section
 
 -- [TABLET NODE: CollisionNull]
 theorem CollisionNull (d N : ℕ) (hd : 0 < d) :

@@ -1,15 +1,19 @@
-import Mathlib.MeasureTheory.Function.L2Space
-import Mathlib.MeasureTheory.Function.LpSpace.Complete
-import Mathlib.Tactic
-import Mathlib.MeasureTheory.Integral.Bochner.Basic
-import Mathlib.Analysis.InnerProductSpace.Adjoint
-import Tablet.ReplacementJointBalance
-import Mathlib.MeasureTheory.Measure.Prod
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
-import Mathlib.MeasureTheory.Function.AEEqOfIntegral
-import Tablet.JumpOperator
-import Tablet.ReplacementHaarInvariant
+module
+
+public import Mathlib.MeasureTheory.Function.L2Space
+public import Mathlib.MeasureTheory.Function.LpSpace.Complete
+public import Mathlib.Tactic
+public import Mathlib.MeasureTheory.Integral.Bochner.Basic
+public import Mathlib.Analysis.InnerProductSpace.Adjoint
+public import Tablet.ReplacementJointBalance
+public import Mathlib.MeasureTheory.Measure.Prod
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+public import Mathlib.MeasureTheory.Function.AEEqOfIntegral
+public import Tablet.JumpOperator
+public import Tablet.ReplacementHaarInvariant
+
+@[expose] public section
 
 open MeasureTheory
 open scoped InnerProduct

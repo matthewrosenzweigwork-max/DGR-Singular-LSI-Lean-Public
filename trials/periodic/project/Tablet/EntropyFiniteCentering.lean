@@ -1,6 +1,10 @@
-import Tablet.EntropyVariational
-import Mathlib.Topology.Order.Compact
-import Mathlib.Tactic
+module
+
+public import Tablet.EntropyVariational
+public import Mathlib.Topology.Order.Compact
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: EntropyFiniteCentering]
 theorem EntropyFiniteCentering {Ω : Type*} [MeasurableSpace Ω]

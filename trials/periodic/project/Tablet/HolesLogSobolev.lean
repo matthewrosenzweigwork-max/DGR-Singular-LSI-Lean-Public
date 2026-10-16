@@ -1,12 +1,16 @@
-import Tablet.RieszAtomicPotentialBounds
-import Tablet.GroundedDefectiveLogSobolev
-import Tablet.HolesPoincare
-import Tablet.EntropyDefectRemoval
-import Tablet.BoundedDensityComparison
-import Mathlib.Topology.Constructions
-import Mathlib.Topology.Algebra.Group.Quotient
-import Mathlib.Analysis.Calculus.ContDiff.WithLp
-import Mathlib.Analysis.Calculus.FDeriv.WithLp
+module
+
+public import Tablet.RieszAtomicPotentialBounds
+public import Tablet.GroundedDefectiveLogSobolev
+public import Tablet.HolesPoincare
+public import Tablet.EntropyDefectRemoval
+public import Tablet.BoundedDensityComparison
+public import Mathlib.Topology.Constructions
+public import Mathlib.Topology.Algebra.Group.Quotient
+public import Mathlib.Analysis.Calculus.ContDiff.WithLp
+public import Mathlib.Analysis.Calculus.FDeriv.WithLp
+
+@[expose] public section
 open MeasureTheory
 open scoped ContDiff
 -- [TABLET NODE: HolesLogSobolev]

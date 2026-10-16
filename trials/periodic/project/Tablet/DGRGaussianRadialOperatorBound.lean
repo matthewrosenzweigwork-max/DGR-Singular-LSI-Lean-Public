@@ -1,6 +1,10 @@
-import Tablet.DGRGaussianTruncationIdentification
-import Tablet.RieszCenteredFourierTailOperator
-import Tablet.RieszRadialMultiplierBound
+module
+
+public import Tablet.DGRGaussianTruncationIdentification
+public import Tablet.RieszCenteredFourierTailOperator
+public import Tablet.RieszRadialMultiplierBound
+
+@[expose] public section
 open MeasureTheory Filter
 open scoped BigOperators
 -- [TABLET NODE: DGRGaussianRadialOperatorBound]

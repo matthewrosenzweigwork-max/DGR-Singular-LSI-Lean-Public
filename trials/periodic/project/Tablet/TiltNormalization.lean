@@ -1,5 +1,9 @@
-import Tablet.NormalizedTilt
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+module
+
+public import Tablet.NormalizedTilt
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+
+@[expose] public section
 -- [TABLET NODE: TiltNormalization]
 theorem TiltNormalization {Ω : Type*} [MeasurableSpace Ω]
     (μ : MeasureTheory.Measure Ω) (w : Ω → ℝ)

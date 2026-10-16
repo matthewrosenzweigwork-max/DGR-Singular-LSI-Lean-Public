@@ -1,5 +1,9 @@
-import Tablet.DGRGaussianPowerMasterGrowth
-import Tablet.DGRGaussianLogMasterGrowth
+module
+
+public import Tablet.DGRGaussianPowerMasterGrowth
+public import Tablet.DGRGaussianLogMasterGrowth
+
+@[expose] public section
 open scoped BigOperators
 -- [TABLET NODE: DGRGaussianMasterGrowth]
 theorem DGRGaussianMasterGrowth (d : ℕ) (hd : 2≤d) (s a M t : ℝ)

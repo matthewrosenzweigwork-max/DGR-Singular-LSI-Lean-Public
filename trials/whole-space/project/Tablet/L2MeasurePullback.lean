@@ -1,6 +1,10 @@
-import Tablet.Preamble
-import Mathlib.MeasureTheory.Function.LpSpace.Basic
-import Mathlib.Dynamics.Ergodic.MeasurePreserving
+module
+
+public import Tablet.Preamble
+public import Mathlib.MeasureTheory.Function.LpSpace.Basic
+public import Mathlib.Dynamics.Ergodic.MeasurePreserving
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter

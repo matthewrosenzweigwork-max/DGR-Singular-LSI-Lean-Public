@@ -1,0 +1,2909 @@
+{
+  "schema": "palomar-migration-inputs/v1",
+  "baseline_commit": "933ab9a859aaa54a26246a4aeac1d92972c20c2d",
+  "baseline_manifest": "SOURCE_MANIFEST.json",
+  "target_lean": "leanprover/lean4:v4.35.0-rc2",
+  "target_mathlib": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+  "verification_status": "STATIC_ONLY_NOT_BUILT",
+  "module_transformation": "Insert module; make existing header imports public; insert @[expose] public section after the import header. No original declaration or proof text is removed or rewritten. Existing module files and lakefile.lean headers are unchanged.",
+  "changes": [
+    {
+      "path": "trials/periodic/applications/ActualFinalSpecializationBridge.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "038c70030de3ccf87c40acd915c853e5b922088da822b6a3e5e214ea090dee11",
+      "after_sha256": "4560bf39ce5a6df37647050c039bc6731c57404289f497525466b828cf0528f0"
+    },
+    {
+      "path": "trials/periodic/applications/SpecializationChecks.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2e18852070b53e38c0505bcc4289358da1f6442ed54e947a5c91250d036d2660",
+      "after_sha256": "5a1cbe4e68f7b6f0f1cbb8d3ba1091aa66688f4ded84728dcab5bdf985df214a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "d92ce0d7af474dbeeb9efe44a58c8de1d1817d8028ce9958298c73823595556c",
+      "after_sha256": "38de413d74c9251a7572140a4a56e0489db2eed36b82f3d8bdb424c9ecdd9f51"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/AtomicPotential.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "9740634027f20a559882da6cec57e2a628e4d70dff30648dda1d445018157b27",
+      "after_sha256": "14223e29813ac7c02cbc0bee6bd26a81b6275915175c664aa29ecc8c427037a0"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/AtomicPotentialFormBound.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "11d601e57cf36488a61d8d4857bb08f336d077aaffe4f3d0f4d5b7daad6c1c6d",
+      "after_sha256": "dd19938381c55405cb68fbff3c561d8593eb76ba08e91f4210276e5d665e2b15"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BackgroundPairMean.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "97216ff9f886662bcb2f3ace20c9fb48bf3da05897b8cb63c923c7243620755b",
+      "after_sha256": "34c26407b686d5b12a50320abb9442d929db7dfbbe0925a646761219b41e1e6b"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BackgroundPotential.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "9035af17863f6793b5784aad83cc5fa6ea94fa6a6c7e2276c045a18216003d11",
+      "after_sha256": "39afbffac837a2af3704f62e2db142e2bb45838bbf37c742f72613787bb2074e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BernoulliSplitJensen.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "1f64ec88f646ee92d0c7ac5bada888b1484d4d6ad0bec4c6c23fa4689337ec31",
+      "after_sha256": "52f02c6555eb9ad4b4dd8469c5ae8ff2e708cc972262851075ecae256523207d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedBackground.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "535d3e16b7c3959139cf5310393cb8cd5836b71d842c0092f377fdcc3ce52a0c",
+      "after_sha256": "db59faa4a5426b3872a29651bf43e3b93ff0317799ebfa14ded6cdf1196a3e00"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedCenteredCanonicalKernel.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "a4e58972f72669c866f2ac8c6832263eca9bac91232d4b77f3900268e50ea4a7",
+      "after_sha256": "35a93c589831be0327ac45e134331a2d77f001adb43030c452c0d3ea59cfe9a3"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedDensityComparison.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c9992fd3f3c21819067e1600c2ad675a408a877ac282d0e7cda8f457778b668b",
+      "after_sha256": "3b2f4a14c35a5e6d8cd685ba00f21517e530f904a34129f2efd214aa9824ab91"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedDensityConvolutionBound.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b2c887e901eb28017cede51aec704e04dbf2921bb561acbda1d0b0e7e9bbd427",
+      "after_sha256": "b26d04373231747e4c84d044041ab896908afadc2dadf8c6e1e4a3e0fbedbfaf"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedDensityEntropyMidpoint.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "7296e327d1008632267847d2d5aeb72cec7fabee557d7457b595d702649308d1",
+      "after_sha256": "0dd5b97f05afe0257e5356f17beb69edd5b54ace91b4eb192c47d03a39ed0fd4"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedEntropyQuadraticFixedPoint.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b5c424dea8b55d884b0e8d37484181898f963d1db9dcde7185dde789483ed22e",
+      "after_sha256": "fee7c7f3070955f79778b4d8a38db6d4fc25f584b6c6312b7f17c27d2191b439"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedEntropyStrongConvexity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "147fa74c803b4b091393896a927b3791c45d787d08fc58c15b047b25937c81a4",
+      "after_sha256": "8cac6d4facc7db8739f7afb7dd3ba9921cbf0f5ee4c7dc8fc6635dfe4a13f9d3"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedGibbsRelativeEntropy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "4816dad4c2831bd636cb770770a516719fbbf0cef0e601c57e0b7a61da2d7fbb",
+      "after_sha256": "31adc7b506c2be15ce320d1f7e06fc43128337a457945f9c93a07244ab6ba3bb"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedJointDensityMarginal.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "3b2241a66a00f4b47025484ceb326f45d5452d5663c9acda880411b4cf8f88f9",
+      "after_sha256": "9f7b7908a9b55ad161a4409a7fb063d4a2c8c969cec91f12657cd739d5068118"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedProbabilityDensityEntropy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2ca0f8fe7aacca4be551b4e1453b3ed5b7bd16c5fddd0df5e9f380f403cd490b",
+      "after_sha256": "c33a103fd8b5c834cb4c9c8258cd51483cfee1127c290d21c2d6691778fa0796"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedSquareEntropyProperties.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2e5a3d4b09e07339d619ac7d139af3a23bd21fa70beca8697e1d508bce62e0d9",
+      "after_sha256": "7ced82bb6c5859ce79ab832a647ad054b55c2158d67ee85683671851d873f09e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedTiltBounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e1be6306b7fe555b5d1ce945beaf55ab6f060455209d15338a0e05a74245a83d",
+      "after_sha256": "34b473db789500b0dd814b9020bb6542aa6896320e38c8628b860f162c6db885"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedTiltComposition.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "01fda455c76033af16bf16ab8d2e0e61cad827164ffffc7cf234cb878d978e64",
+      "after_sha256": "b481ff1c3a1610c9b05703c26165e926b47c048264b14c0919c5c2820ceb6122"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalCollisionFreeGraphApproximation.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "46d8fcb737061ead7d0e7fa9fb5972d69b038d721f512ecc20b2016286c94d77",
+      "after_sha256": "ca3f03e38d7c6bad56c5adb6cac7b0ce50d9b558babcfcf73c5901e8db0302bd"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalConvexDecoupling.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "7169ba25f02ff93a80504754e71fddd3237b6f93d364a9a220ea9ec2dcfd941a",
+      "after_sha256": "45798db9de4a159e4ff59fb1ef1edafb825eeb93bd1cd08df8244713a43cf9af"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalCrossNoInflationEvenMoment.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "76b81383efc77f2aae5d8aa6a094b79089160f6362e6c398448a3853d8dde580",
+      "after_sha256": "83fcfb019d6c34d7599a2599f1389dde1c765c923df86003c1c7cfd6aee6b4fc"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalCutoffConvergence.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "05b6587f07b592662076448cae5780cfc8a3ba6c113dfe2bb89989a88f56ea3a",
+      "after_sha256": "5cb2db9c7d7df4d377bb01cc72b4b39e4cca89afd33febeb87f352c7f5943d4f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalDensityLocalComparison.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e9635e36f2d4f6a2be90029c173de4fa466223f83f71f1086a4f044a6aee4939",
+      "after_sha256": "72db486d84e06e35d1c8a7480566e1828bd22f5b0f0b1709b00c4943f3016515"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalFiberFourRegimeTail.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "bcacfff27cbd51bc0c407bed9f942e081566a32385e7fa511be2982d2782c75d",
+      "after_sha256": "86a99bb9e8c85cb9485f21cd68bfbdffa582eb9a6c6e6b9a06b9aa27e4fcf97d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalGradientClosability.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "3e421535260e5efba7fcfe6d05e3bf0e4afec7af456b69bced47396f2b12393f",
+      "after_sha256": "19630297b04e0cba04ea9d0f9f2c2becf77eb43350154784d506dccfb69a6f86"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalGradientCoreEquality.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "6cd2fca258986828ab36f7b1247b5991ed686db47aaaab604a709f319de6ee93",
+      "after_sha256": "327fde0b666f43440dbbaf10fe405c11bb954aae86a96cc9145ddd889fc915cb"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalKernelMaskBound.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "4f0fdc52d08e1eed1498d0ace59fb8b020e7b62680a6fa0da21dee672fc55363",
+      "after_sha256": "66befea5721af70c2a7a69cacb81eb9e3669065fb5bf3d9723410b506c135609"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalL2SumConcentration.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "5b725fb4ce0f174aac181b6bbd721141d6035330ae411ec985e091c2ab2e3a17",
+      "after_sha256": "dd4ed664a9d98d02ec1dd03e321b4a47316b005cc3ad39e93b30ee444238c254"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalL2SumMoments.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "f2a5850226c06ab06ffa4b051f421dcb5402e1882dfd1120e45899a0335c1652",
+      "after_sha256": "acef9af6f97334ae3ebc7dedfc11eec3047fb42900796d0f9f900ba1a2b08709"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalL2SumVariance.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "4b208eb35ed2889b5dcfda9ce6acc051989e7751f8720fba3a2ad4d20fb3b2b6",
+      "after_sha256": "11760b2e25e195ef65fe6feb7c82def5c2a63b9fc6b9b4f42bea917b974ffefd"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalLaw.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b80275d61fbcf97fe1463416d947f518b7105d45322e5a9cbe7416008582ab1f",
+      "after_sha256": "81241bc78d2cfaba143473c1c9fb702c3b936440964beb25e6ef610372eb780e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalLawUniformBounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "8ec4df6f48e27b2f52cab73d7dc6266da92887ec0b0c5aac6c2cd5e77a71b0c8",
+      "after_sha256": "69373922e19a284faf82a6f3a4f1ad9bbb88b49f5804efb2c0dc4575352ab2bb"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalTiltRowIdentity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "248bd629bb889f7fd11803be01de2ee9a71d62ca054a96521ff62512c68e6e29",
+      "after_sha256": "f2fc594c578f2f072e17f7eec0462833ccb4139daf33c22edb4c2961a61cbe73"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalTiltRowStationarity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "458a56bf03454501fe38d0b459778aa1097a37a1a5a1c3de807a58f3ee443e8c",
+      "after_sha256": "d8c53da3206d79a1e936fefa88bbb8994b83b46c66a3094ebcf8678a6ab8d15c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalUStatisticNoInflationEvenMoment.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "a24d85829969ba2c7cd7029bc9fcc444492258d5a39ee27d41e6136ea854def8",
+      "after_sha256": "5f9a43a23dd005c9d2308a47817ca4c67b8fcd1467c9de9b11cf4d928c59361a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CapacitaryPotentialCutoff.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2a57defd030305432d4307e4e723c394d493d60d7b0bf7e896bf3ebecb2e8cae",
+      "after_sha256": "f6427926bd7b7765c9c47def0eeb3c48a9c8344d3423fcb72d9111aff109ca23"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredCanonicalEntropyLower.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "147203893986c4019e57a41103e082e104606b6a9dc6bda4be733721bb500a87",
+      "after_sha256": "a140ecd4cb54d422442840e088cf46a6c501717891b6e0582d0e1f6214bf9d64"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredCanonicalLaw.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b656f31904e01026f611dad0bc8f946a82266a59f149940973c178ff823afc55",
+      "after_sha256": "95c7396d7f24d55716ea0f5c37e7d6f77c744cedf90b45988a3ad292cc547850"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredCanonicalLogSobolevTransport.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "0f6a13f494c734528853511cbf151ef37bb0394b07d86741bbe607aca7833a62",
+      "after_sha256": "9d8d8a0d9725e198496922227bf74054588f1b3031cf75897f3e31b1ab63e36c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredCanonicalRecenter.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "14ce9adb5bac3f50e48b8377a915519a5221aad05bdca986e8b6de632568f1ea",
+      "after_sha256": "f89fed540d17ab749ed8f64dd898567c6b36b0df75d3ba4dfe47d25d2dc9423a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredConditionalIdentity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "44ca2aaa103067ace189b30fa77de62cf78fa2b67ae6880d50b9250a687af181",
+      "after_sha256": "49ebd89170b4889245f16ecf390609b4239c7e45d0015b8d5778d0244a8e4260"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredConditionalLogSobolev.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "4b757b98110becea27fd4abd1f7a8828d306ec23bcee3a1c3e1573cf3f79d422",
+      "after_sha256": "1598e76e3f73a49e80f46d2381047d755db3eff9e3e49c3271ee92b5b976bcaa"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredDeletionEnergySum.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "ea90754638758fb95907df3b87d73315b6673de60d967cf67b0cee68d3164ed9",
+      "after_sha256": "462ca265e628c8d4762882e74ea4b26a33ca2868ff2d6c6e3d3c37c96db75d9b"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredDeletionPotential.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "5b1ec40468fdbcafe753968cc4009402ae3fade7a00f445375aa247e84a62427",
+      "after_sha256": "7ae13e1f950bb5250a4711bfaa81c3e17996475a2f779a12e50ba39e941ed05b"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredDeletionPotentialControls.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b71bd710b8e9156ef476ab6f5723640acf7094429ec63df163b6feb948ca078f",
+      "after_sha256": "d5d9a1f0828cb570a4e222b88a7c7630df495a80735182397e4adfd66829b177"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredEnergyIdentity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "de9eb477ddbf51de9f7cb34d66da50bea51b0f31fa896a498aeb4f3f89f6ef06",
+      "after_sha256": "de6c6111869610c995956dc2982fc5adb8f4a612ac7d1c1525e0c6adf7e180e4"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredEnergyProbabilityControls.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "33844f39af5f00c8365abc2b63e6903ef5e20e5fe96eb4865c9d48a8dd384190",
+      "after_sha256": "0fdd40adbe2310447a700360a43a322c3167c8bf87743ccde7f5755ff58aeafd"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredGibbsKernelRowProjection.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "cb1d387ae3e2d7585fda01fb4429d3541a53f74f7e9249eaa72fefb97f28db1f",
+      "after_sha256": "36a2956256e5e87112f673fbe7eb1f8e2795f6b947af1e8f4b6580c7b23268be"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredInteractionEntropyLower.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "33c5dd465fecf8fcd3892ed09168dc8d9ce3bb4c2c5a8edd0f785852ce94d5c6",
+      "after_sha256": "28aae8add50c62f36c465725454fe1ecac6c78e294d0ab0572a1001ee63e0cdc"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredKernel.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "0dd99c12bc79ec849762ad6a81afe9b85e7909e1f87ab3cdda320ed2d04b65a2",
+      "after_sha256": "7b93d5c89946a49acd134f3b6004c8fd6928493e2c59c96805a71223eb14218c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredKernelBounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "15d871a8790bcf4e6430327d2798fe2d9b673e8c0e026026a1b1a187b0c1f826",
+      "after_sha256": "547da7d6e30079a9ba6eea04eaf65409f739ae37920e6ecbcf7fe60cbecc2d2c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredKernelSquareBounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "95b680d4e68400e2e1d1dd7ed4776aa4aa8fde4d41052cbbc20d34130c3fe48c",
+      "after_sha256": "a1ff7f7fedcd9ab78ceac01c80a3bb0a9097a03fd96199318aaa6aa221b5a0da"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredMaskConvexBound.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "92905cd68ef0d4f5d85a67727bae04abb4eddf5dc89b3a8f8acae3e6410c987a",
+      "after_sha256": "7570dacae7f1837e464c8b82680911d3495aab582c1255cedeba58e9e04c5862"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredPairEnergy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "0c1ee5d0c8996da17e28ab83b658d29713b0bbb43c08e008732b36d9df6095f5",
+      "after_sha256": "5e786884a766d1838b0dbad69451cb0d2edc778bd694ebc45f7acc7cbf9c6f5a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredPairEnergyAEDecomposition.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b197769cadd819cc4eff4cc4d3a585038ab86088f53da218dcd5d3e94641e03a",
+      "after_sha256": "3c6d283875f4c81079c0ad976d36f4ba0907365dc79a968c36177e45c5147d72"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredPartition.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "53beaec5bd5417a806516c6e918f89cac187ba2674cd4f9efc68a21250b5547f",
+      "after_sha256": "5e6f7d70856451177d1607400701c126a014f3c5064b8fce9823b5072ff09f0e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredPartitionFinite.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "548b6ba7d291d4a3c0ddde5152d03ab266e9de3d44fdd9af85bdad9d26a5c8eb",
+      "after_sha256": "7fb2276c78816d52bc8231413ef2d979b87a5a7b4753512668959ac4ba958a82"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredProductMean.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "4c398928af8e47fd9b06c77fad34ea5722b49d0c6e97d8e58acfef08218ef4dc",
+      "after_sha256": "56b763fc44d15356967725c266dc9c95a62019e150be4a1bcd56e8393f29d553"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredUniformPoincare.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "5de9967106762e7c1349ca8e07b3d3f0fd4cf39d490c7445769508ee49682979",
+      "after_sha256": "c61eb1407b1f0d3dbe63a362a7270622097c581b665ba297e637d06edb692f3f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ClipCutoffApproximation.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "754272dc126bb53a4970d61298a8ccbc68bc4a729978825eed5cd1e4c1a9c26b",
+      "after_sha256": "760db28539f2f4484f2a300c5f19f10a7130bfccfdc785e0e0b34cd15b8013d8"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ClosedGradientEnergy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "36f50adba522726775f1bd16f4cfcc7e103868f12878dd2b153c99c69810993e",
+      "after_sha256": "63ab730fd92b78406f81c29aed2e0545ac7026ba3bd226e8ba7a7c2174a0fa23"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CollisionFreeCore.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "4d7aed63889c54617bc7e1cf2ce212426a2d06f1d934632791344831753d1e49",
+      "after_sha256": "b47ffdbb207aabc11c90c14e1d0c03221bbb7772de72d3f69f7d0c917347b02c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CollisionFreeSmoothCutoff.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2cd76650c2475eab525b2e1cdf6adfb747e40e83d1639c818da6bccb06872a06",
+      "after_sha256": "deb3c4ef5a037a98cc98d1829c177a70bf2bd4d891a1639e71305aaad0375598"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CollisionSet.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e07dd035bfb079ab7ea4d4381fc58e2387d07bc8aad3dd7dafb423101f5aad41",
+      "after_sha256": "ce526441fe1468f1b958c862df9cc408fa7ac6726a07f23e0b75e07589d6b657"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CompactWeightedPoincare.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "7f670bea43d23d4f301d67f5181a65c64fd79bc9d813308844e09787521d2291",
+      "after_sha256": "a7387be244be7bc91498d601232daa420f030d38c1cbb06892838991ee888bf6"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConditionalEntropyAggregation.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "19de79dcc7e98d260bf1b40c09bb429f46ed76f0de4a7c60fefe7d7f77ee9969",
+      "after_sha256": "22c1e61bf43801b68d0e262dc6d0e1de3a2e28bb139a7bed20951ea5b451979a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConditionalEntropyUnderObservation.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "5fba6dc3f41b60294db9b5343cefe8c19010d9544a8ff39f0a8ca32ffc816d59",
+      "after_sha256": "b307152d96dbbac4f0cd955ad8ee678ca77c5c37fd1788b2819de9105c039bc6"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConditionalFisherAggregation.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "564b725cfcddf9d218efe92f009ce1966fc51dd26bccfcc8945144301257c2fd",
+      "after_sha256": "4c884d94bf505781c6fa42e36fdac3767c46be91c1315e722f51439c2a0a8500"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConditionalGibbsRelativeEntropy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "51a7d5ef2663aa310df06bf4cc2f3e08289ac8d3992a4f6d16735c003574ee7f",
+      "after_sha256": "e9f0ac0851450049c04afef9fdc11a2e3db6a82a682ea48def1794164c1848d3"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConditionalMeanL2Bound.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "9704fb3545e701ad07f4cd2213d6c2a3ba5b5b0ad3e5a182d4ececcad873f7b6",
+      "after_sha256": "5a7ee4196ce6dcc98ed294e1800759b8d6d8a09535c4df226bd26bcfe74486d8"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConditionalPotential.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "7e6bae60583bcf6f2014d557f11c4e532824b18e4737db5b0114027502486049",
+      "after_sha256": "cd1c470a5206c0fdc515d882b81edf57b35582e6cbdfa6c4d4ba8d713e9ed269"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConditionalSquareEntropyIdentity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "36fce20a92ef623deeb25a9d5ee226bb2e602d7f8b2e9dbd00bed79a65970cf5",
+      "after_sha256": "2c7cf6caa647f4d4e222b51751c9c949b6dda96e489d19bd7445d3c274c144bf"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConditionalSquareRelativeEntropy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "1460e3e689a96ec1ae7fa8ee26b15af776614f846d0ce5005ff2b029078712bd",
+      "after_sha256": "5dda700eee8c58c0695f7f6876a7ec95c09df3d1e63fb968fc6aa294473c562b"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/Configuration.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "a85badd27620e4406bca268d9039e224c3b7564a0439eb9872755d592efb25a2",
+      "after_sha256": "f93b5a37eec5161042cc403d77b825ead14680158c6b3e1d5299b31952bf267f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConfigurationCalculus.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "4e60ece06f6cca86c2a41532ea9503747920e0a410fab87052db89fc825be47e",
+      "after_sha256": "1a1a4fbe6a73cb297fa0e4208677a0dfa6c622fdd95ae9ad2d84877747279908"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConfigurationEntropyDefectRemoval.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "cb12635b53f1a8849ff6c0eb023d22192e46297e6dce0610b5b9ec45e1346892",
+      "after_sha256": "67a1dd194e773b369afcee2bab5fd3823831ec8c7a5c3610d11eb6db15b8678b"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConfigurationFlatten.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "ad2418a234a42292274d40e4299f6b0e280f7d15db76ff6eeab32584972c85fa",
+      "after_sha256": "6dad04246d962ee70bd9e1cff87a66ea7ccbeacb2c8ec5fef73606822bd01533"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConfigurationLift.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "ea8e3c52ad16c357fa00d2aa6c835b08635489676465e2b6c6b410ca157d7d6c",
+      "after_sha256": "276ea56025bb269c5d09d1681282fa6809cd3b331e4d1c2976f967469c8636bb"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConfigurationPairPotential.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e0963bcdd9b2a4832d69dffa2fd63eb2444bf9946ca84c19e59f5a971a20728d",
+      "after_sha256": "1f88eb390e7279b00562bf56fc55b7663a99423ffa135e33786bddffccd2dc28"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CoordinateGradient.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "cd633ba2c429d6613c9e9357be42a6161def24cde91e449eed902ca828cf1b33",
+      "after_sha256": "e7cb0c53dc4ef827ceccb2525b34029716f206c9eaf4313390b835ca64decfed"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CoulombOriginDivergence.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "cea4a1ffdb2d62424ececf4b8e3126c6b477405094f74438159ca6780e940b7c",
+      "after_sha256": "5bcf2ef5c230f7b8c419315d2a112405e45043f5ab7a9d70ba6384b24ea0de17"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRCanonicalFiberMaster.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "8f437b94f1029fc6a20cc3224ce1a25a96b35b15e72cd2db3c60c091f93fda70",
+      "after_sha256": "409e4c0d4783c4022602d717e409f136ca339bafc3739ffb718a35575982846f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRCappedLogGrowth.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "fbb79625324cbd697e36d0dba55bf7df0cd9cb0188afaa951b7f0d21149f3e41",
+      "after_sha256": "c8a23f0adb2bbb88935378f9d30f411f04461132c3dd8ab1993f76fefb0e588a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRCappedPowerGrowth.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "eb2688e27a06ea0a5411236890d29663b3023cc364cf006bc717a97fd75ea7cb",
+      "after_sha256": "5887f16d528d33eee4594a0d057c66ee677ca12c7e3169f516bfaf837c436182"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRConditionalMasterLayerCake.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2af5cf86a9ba80c5303dbf760bd1f02c6e7b82765d10928dfbcac8fd96ffb216",
+      "after_sha256": "7659f5443353df0a14787e179aed3c6282269d1e7c1ec581d861f924961be826"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianCanonicalWitness.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "09d2ab96b0cca9866852e2c2cf4abb44e50901e28818d274617acccd4256c582",
+      "after_sha256": "0a8adeb27234663881e61708b447598ff84a24cd22830da6e8bb83547309ce8c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianCenteredTruncation.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "5409d45eaeab9f0427d7cd36a123ce7f88512df09807461ac0f6d72171a88bb6",
+      "after_sha256": "79f5d79674cb86af4d4b03a877c7712b31e79ef4ed0b64cd6b9bcbdf39c1c867"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianCoarsenedEndpointPartition.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "a41654d7c7089007cc050ea62ded2f76cd9bac05bc7a8e5503eedd9fb0ff9fe9",
+      "after_sha256": "5f1fbfabeb46a77dda8eab50c21359c82b250e878b9e07cc796a89516b9e487d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianDiagonalProfile.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "acddeb4ae2f32c735e2459b1582ffbc85ffb71811e5152d4043fb5e9a9589cf5",
+      "after_sha256": "02a90b96d100f7d51472a60a982bc5037d6a9c4283b91467a0a428f0ef522c39"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianFiniteMasterCap.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "8bf1b79a642a0ab59996aff23f62c8bd905b95a258c44965473b3bdb8ae88fd7",
+      "after_sha256": "b86798c6d21d6ca9cb271613ec1d304f3b3dcb8090e887701eaad96cd9f20ba1"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianFixedM3Witness.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "99db436015d85f3d5592ebc181b49cb9317e36393ca35603323844a962deb094",
+      "after_sha256": "934ca580589955b9b3c1981eeab57268b1982a4551f2e390b79bef0b4e3ff4a7"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianHighSeries.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "adf9a84366ad2cabc126c45d0d423ad278f811e286979ae42e82c827c9eba77c",
+      "after_sha256": "daba2718c950776bd582476dc0e9d6e274cd236526b81e1564512b784839f313"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianLayerM1M2.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b4505baa5d275d3b0942db3ce3083df34f69134b3f09195f62f461dada657f13",
+      "after_sha256": "54437204aef913702aafc931d4d4a2336585625daf997d3ee80b521258dae7e7"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianLayerWitness.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "ae62057ca024289d6188448b8ecc38d8a470e156d6e93f293756a9507db9481a",
+      "after_sha256": "8698a5258901220c5c969cb5706204ff72d5544bdaeee9e1fb4df5fbcc127b7e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianLogMasterGrowth.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "0dcfb0483a94feab0224fe309974e999ecac39022336c6e564d21dff65ddf5cf",
+      "after_sha256": "ac42a865562fdc3b28920bb2dd51f217a2a68b4b4f53a81dee412738968a80a3"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianMasterGrowth.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "710585b099b438e054b0b1d47f684fa2ffd9204f902820edb81abae1849b60dd",
+      "after_sha256": "63d241197bda2df759a6fe4beeb6f2ca4db13edaddf930f61ca8ecb49327cc9e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianMasterWitnessFamily.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c4fdb5e3dce3eee4345cb532a75ad42662116d5510c7c740e08dfb30c7a7562d",
+      "after_sha256": "421acf77f253fd8ce5c63a6a979c9a588e6d915bda89e17c0faa8dfe7732e7a9"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianPhysicalLong.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "991509e853e56fdc309fd495fde621a3523a72377723167dd8b3d095baa302d8",
+      "after_sha256": "a3168c2358935b78e35849b896371b762fb99da6f00fe74e74f5bbecc22cb2a8"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianPhysicalNear.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b51107ea602da92ace1f7e22f69a7a2aa21ea2ffe85c8309d3d86c59abf35c8c",
+      "after_sha256": "4b3f45a441146b83bae7f7be6bc1b08d3f22f5f4c0c6d6f0cd8f9414e6b3b42a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianPowerMasterGrowth.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e8c1df4c56466417df16392181fc24d10e3cf38c6551eea8403ba14a3ee0c84e",
+      "after_sha256": "713187eaf197c39699af01874d1d36fb646acf631353b291a542e9caf0924c90"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianRadialFiberBounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "d118650d69e516129e64c1f7d85291aed8f42dff8a06101176e3ce8ea0a67b13",
+      "after_sha256": "89df62a971d2018a0c55faeff7c7501bdcf26ce1c9f308486fdfa90e0c014b94"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianRadialM3Bounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "42953f26d47b20c5ce780b937572fdc52e2ca830368da1fb7c86ea2cef41692d",
+      "after_sha256": "853efb92fb871e60a52b25b904868b81b80a78aaf50b5b1cccd2efefc81c67cf"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianRadialOperatorBound.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "d84acbade933205cab525970372b38528561f23b745f4fbee35d3077a6584c62",
+      "after_sha256": "dcf764645874dc6c7090d9a1389cb6cd561f6742ced4db89f8665e58f9df1eed"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianTruncationIdentification.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "d220ed75fcabfa37f8995a7eff904531a7110e1f8111e928a9cb77885515ffd2",
+      "after_sha256": "35a5964830b7de71e224168d1012d5e3978e5dc4bfb88fcd0624cdf0a6b666b7"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRLogGrowthEventually.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "549c94063033dff9a873e42a1713c41a9b41e6aa2cb567a5c5df878ba6d14c28",
+      "after_sha256": "dadd71b7157bdfa17693a9bec68b6d39cb07f0df8a68ce3e25d371477f39a112"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRMasterGrowthEventually.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "6ce30d56b09798313ff24c19799028f88603ee98a75bb26d010e1e800fdb450c",
+      "after_sha256": "11174b7114bde88c6077eff100fe7131522d8ca2dd9ae9eba663db3f447261ce"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRPhysicalAdaptiveCutoff.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "a4dd7f75d0728179136a30a87b9f8df5d5b544e68761949e8240951b2875ea42",
+      "after_sha256": "c5ad10390b06748ff68bdfda462596f0acd588ad4feba4f5a5f49d8272dc24f7"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRPhysicalLogEnvelope.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "bb28d948aa5dd6d5294be343edbb8149c67166dfb36cf236cb3cec8979d8520b",
+      "after_sha256": "98ea1837b1ecf9a94788d6381aae22df16b62a709c7f91ec4fcb0cf451d0bca3"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRPhysicalPowerEnvelope.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "da060dff727ca2b49398b2ae0033242b67f17863b5921df9f099532068c60ed4",
+      "after_sha256": "9df722f7ba6f39b41a3bc40b026af56736f0ec3bfb55c5862359381bd8c4f112"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRPowerGrowthEventually.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "f5ac033b14273402e0a463b54db2e78480df5de695a6371be329c613ad9848c1",
+      "after_sha256": "4e36ad77272900fc548dc1491c02ff84fd8f955fd778a66656c910a2e291360a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRRadialTailTolerance.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "ea2bf4ab75475b8b695e8a316fb1f492062eb33e2ce16fe0fa9ae3129684700d",
+      "after_sha256": "9db3d8d9cdd1dcf47e476ede6e4f030a8dd248de1129984c4c0bf5967afa463f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DisjointBlockMarginalEntropy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "a675c7645a4fba2dc83d386a0c5d564d2284c59192a32e72e0b49dafb1ea2914",
+      "after_sha256": "b5b60163bad0faf10fd743200a7c3b910f6c8cc74c03a220ec03c36c8e8f5255"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DominatedSmoothIntegral.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "25540eed93adcd52846684204d83e4d98dd4c838cf5d1490d3692212b0e68fc5",
+      "after_sha256": "9d01cbf778b971d2195d641b16a654dfd330bd9855acc7034024008de0dcac6e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/Entropy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "0ad3f1bb7afdc6e8e73115b52487477404bf6ef24195ea5d31316e30a51939e2",
+      "after_sha256": "48e4bb15d11a91da9cd710b741c2fec3141de300cbe4976d79882026f4c9cc49"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/EntropyDefectRemoval.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "addd6f87a8d4e7e47b585a99e0e0cdd611403c36e7aaf0f75118286463436b0f",
+      "after_sha256": "7185c13ecd898d0d1cff0dbc0306bfe0e17c2d10c766282048cc8742e631d36a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/EntropyExtension.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b3cd549992243012fe037d2fc2e519fe99556163b0427ea39d6f750f1d68172e",
+      "after_sha256": "94020b34ea83040835ed7796e203964ca80c84b529c3a6c47c09aa701d89e68f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/EntropyFiniteCentering.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b58c17efb624522de27f6dc6d56f8af69aac49b51648eaead70f53858ce35d06",
+      "after_sha256": "ee1b88f58dc2e8402219179759df295a1eaa9301a421fafd14e35b9490e20ce2"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/EntropyLpBound.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "af5a3bd2f7c90040ccdcc494d66c2c879f29a296eb8293e53008578eb90b0061",
+      "after_sha256": "1a679534d1fafe7438c3a6b6eddadff3475d7ffda72004e6f562141cc6be3489"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/EntropyObservationSupermodularity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "32e1df7aab00473aa0be4f75548c29d30a8b15050bee02062c4e17776a340038",
+      "after_sha256": "1ca51fb72caa50ffee24b9424baf7f0613b519972f9d029db262d32a87a3eaab"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/EntropyPushforwardEquivalence.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "47e12e9020d00c6b7952d72b641efd4bc376f9d86e83ea2bb797171b084fb260",
+      "after_sha256": "f8c1fb4fa392728de79871047f44a7f59892868f405edd524cd62ce7dc235e2c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/EntropyQuadraticMinimumConsistency.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "1401e341164c58dceed629c791ad40f633ada9e5613af0b47c02c12c6f11e70b",
+      "after_sha256": "1a57214fdc2ba4d86e8f84723422825efaa8eb82927502adf3de60e1e7d13ecd"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/EntropyVariational.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e2622231efdc391007230013b01ce9aaabcd808f8f8f4bc19dd41321e06f6fc8",
+      "after_sha256": "28bbd5ccd22553fe09a505db6a0fa84adbfd435c06dc700545339c27708f0953"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ExtendedEntropy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "6c4f8d1eb6a82931d51033e47c3444fc9ed8b254d6728a73f6feae93e9809b11",
+      "after_sha256": "772f46d4cb00a792c36e3c088920b843f310c15a0a5809d2d23a496a83d2046d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ExternalPotentialBackground.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e26fb5f7ce799b90c61c9a554cd92bb13524bf111a380d7074a41164ec468648",
+      "after_sha256": "4ea028a07b278532b100eee46817dd5ef0cb045729bc1f924642bb67e23e3c8a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ExternalPotentialClosedGradientLogSobolev.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "f5b8b5e191c68d238c33fe672955c24f681fbb35707effa2bf4b2a548cea28ab",
+      "after_sha256": "a5c85b82b456b4943b18269ca75e348e6f3c6e583f918d6b7dc5bb415bc880e4"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ExternalPotentialClosedGradientPoincare.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b106395e13423f5f6a64d5a305759822b4bb813db7d9114096e91f165cabfd08",
+      "after_sha256": "11c20e703ecc5eb77e5ba33a90b5e884581aa397f36a288c4cd7567b57f18097"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ExternalPotentialFullGradientInequalities.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "dcf131707c0aca348b9c45d88ad264f48ab2997c2b1f93e89a52828792d43fa3",
+      "after_sha256": "7642a9b64e0e88394a1fdd01022a80f03f57564fbdaeed40d3469789ecb4d6e9"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ExternalPotentialLawRewrite.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "5b481176b6212d74b2c5c14b8d2966f8a2d245bb3a3ff3cdb8af0c9b0a63a6aa",
+      "after_sha256": "e410060e8383bc5598d8f89b3bf8999d96680528bae09fa3f0d8fb8eaead364d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/FiniteParticlePoincare.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "6e7cc12e822dbcdbaeb1549aaa38ac63510444fa5a9a20eccf6be44848d077e3",
+      "after_sha256": "1db170c85bbf33dffd72087d30a648ded626a3f02a0a19ee52ee0ab411d01fb0"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/FiniteProductEntropyShearer.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "3b05e716f4260c7790df37c1ecdac4f9b58860bab67edb442e5e84ffdb89b48b",
+      "after_sha256": "ab1d7f9b927b868dbba1ad2d6e23beb2d883b9c0a3b7b5b4fb19a3d1c0e2fa53"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/FiniteRademacherEvenMoment.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "22d6fcea9dada5f32d9542a40843cfd731f07b5c6745df49e4e1b9cd4ff5d74b",
+      "after_sha256": "67aa7cd1e88dbd7e852617eb0eac868d7f9610e9e717cab72fd2f863b7bef76c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GLZBoundedMomentCorrection.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "9eb338d612de5d627e1c844d1becff2dcc1e8dfe92583d7c0155536065cf1627",
+      "after_sha256": "4341e555f4f91c6c378cf98b6709d39a2bbccaff40c7106e692fc091e4917675"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GLZEvenMomentToTail.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "8fa552c85213b6c6789f1b6c6325c54d43b79d70cd582c6d316046fe79e8ff05",
+      "after_sha256": "b0a7518a14f1d56c4b4e0a9c1da38f2ff08733694b97f2581c362065e3cbbd92"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GLZSecondConditionalRosenthal.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b96a67febfc719361150d73e9b66834af2298246eca3ba7cb38f8a51d7950906",
+      "after_sha256": "3f017bc3e4cf443d78412d4de8ec09c59e578194d875c82d1c62d88985a1af6a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GaussianMellinAsymptotic.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "4f4265a2af6d892b36ef1cfbb751a6b3c2b0ae016e18113d5637ddc8064486b9",
+      "after_sha256": "dac552d461e12777501684a72949e5cbd39ba3fd257c8b67d79f93cfeb8177f4"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GaussianPhysicalScaleIntegral.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "6cc731efc017933605a0b3717feeb0b755a1f856744108653afc731ed9bd4287",
+      "after_sha256": "4f7a745aa6efe5873a79476d525c562a8de518bde032b4c7760c089b60598424"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GenericSmoothCapacitaryCutoff.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "610176c5b580353abca6f707481cad85d7c3a80fa9195f9e7b08fc603878f65c",
+      "after_sha256": "b26797c0a7f9d6e47c176dc459f25bae29449a07e0e4bb8cc4d1580d7811fab2"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GibbsConditionalKernel.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "dc66661e8bd73ed1bccd83c8786243a51fc1b45aacc4f0685f96cbbafb479588",
+      "after_sha256": "412ec14ff5756880890b04b1497430a5577e5440a73da79dd06e03152ef64c14"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GibbsConditionalKernelCompProd.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c3be6c40ac3f236a110233220d9fed557e57d50ca39137d11a0d1de0c764065f",
+      "after_sha256": "aad8a92e632cc840e5ae3cdf9b14b00f936634eeb8102a8b3e5a01c927b8d61d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GibbsConditionalKernelProbability.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "29ce5bb31cf81724fb33242b7e493f1fa4c7e6796c04dc5313dad0a128aa845c",
+      "after_sha256": "05c6af044befaba572dad581a6d32269423dae71c6b2e0edcb4cde360a572c2c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GibbsEntropyVariational.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "3bfae0864c502dd05e4ee120684b49394edae7da588b8dfca8fe9806c8b5f47f",
+      "after_sha256": "aae2dcebd26e4fa67284fefe7ce310f19b269c283267665b2806b9eee1bf32a7"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GibbsLinearEntropyMinimum.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "017b6302d404209288e4e05284f6b777d0d291700b4f0da367850b99702c6cf5",
+      "after_sha256": "487c86db1a1be02041d32fd7aca6cf915df2ce36a804e9227cf01fb5f2ba7fb4"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GibbsNormalizerBounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "0727f600db68a734d8d4a51b376c6ce7407a7b29da5c79b8bf7dd789224c2a9b",
+      "after_sha256": "ad3a9195dccdc0696e0b9474b442b724237797b37c416b7c7621a064933ba326"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GibbsWeight.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "d33f45870fd13de171ce22b6653986c1890d7ac0b7e8d7f9232f28c7ec39d21e",
+      "after_sha256": "4713dbe871403aa6688d19208ccfa79e40c3f298a08d12eea4d9b303feea4c46"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GradientClosureInequalityExtension.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "46609ce831c9be59dbd8fcf5b56999c4c605aa119033620b6afc6a7cd9c9f771",
+      "after_sha256": "8039e0734f0bebe11f1064604479ab61f17f95e31a31ee2e5403aec94e338195"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GradientFormDomain.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c4029274b0e2bbf7c0ffb5e8e9c6ce902030b79ad9161606b8c6fd2194f4488a",
+      "after_sha256": "132066417ab2888d1fe855d055778a102600b0684ecd63346291c5a95a1a9fd5"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GradientGraphClosure.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "bea4eff3b79792a6c8f5a2d8d8d8b52975307369b5f1a1434c54735ea261f053",
+      "after_sha256": "a3b1051feb7c3df2e72baa4a43926a28369105d423c221d223e5ab478e513ecf"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GroundStateClipping.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "49f7cccb60c2e78f2bfcf895979f01c5ef8f888519c3d195d73cc913fae534a2",
+      "after_sha256": "bb14c8fe96f25ee5ac6fdf91b87a4edc301b22189dd0a6f5dbe44ff24e6bccf0"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GroundedDefectiveLogSobolev.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "cb0f47b2bbfcfa5efd2c8f49f1b7e8b1748710dda5c1f59127ff03be407d1f86",
+      "after_sha256": "bfeb0ac4f0724801ee19b5341e98bb8a50c86669dfba998f1f3c793f13357e36"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatBoundedCenteredBackgroundIdentity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "86b920ab943379e749c1766209c76c99faaecf0f79955040530edff238c9edb2",
+      "after_sha256": "0d35439bf78388aa47b8e77d030657faf95e387bc6da3374bcdf3b1863d4543f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatBoundedReferencePushforward.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "643c7eeade5148581a1f1b9677fb1bfb764371ef5a244286da604e3790ccb59e",
+      "after_sha256": "bf25b2066ba12b5a040d268c1b28badd9a308f3c131ebdc36ea059057603d1dc"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatCenteredEnergyAveraging.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "697c2ba7d14f08024400b6eca724ff648ebf87c01da3d7aad59ff98da8d346df",
+      "after_sha256": "b0daecd4f7409a62c4d3f9233473132bcb9d3e2fc00a9b8069c0efec5463ec96"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatCenteredKernelAveraging.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "70936240be890d4e8db9108578bfc681c7805124ad38ad5ab97e38f6028dcba2",
+      "after_sha256": "680b303b33e615945708a256a843ca1834c771ce30c5d789d2478841e901b1d7"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatCenteredPartitionComparison.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "8959db49181cccf9c7314ccdb91eaabdd01da8631fac934762ebf7df2a50589a",
+      "after_sha256": "517adb179d750483ea2ff22a3c50f718936a8955d0712f86f07e4b9135d80811"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatDoubleIncrementAveraging.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "cf89a0592718124b385bb3b6dcdb48d55a12efdb335f638be183a1537d5e2aee",
+      "after_sha256": "5c5415c8676963d3217ab0cd7c4f90e395bf1fa17a19372b7c62d1f5d7f94a3a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatFourierCoefficients.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "382f574a6ad55c0d8ea323729b2a45c389a2b87a2c969a74fdb40d8fea6a6b68",
+      "after_sha256": "d66204acf92e2da66199bef2e33eaf7be5ab2faab05d9ba08257b9f30fe2ea0c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatIncrementAveraging.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "672a773845b67410adced79705eae141a141e10aa165d0ff626f36e2b46ab0ac",
+      "after_sha256": "b643e8e6e4110d2715a198e510845d5461ae71cb45b039a3f07d58c36e9a898f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatIncrementLaw.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "5c12fb76fb71ec945cdff19af6499fbf29ffd8666b09eb6d05b0413c44f62c29",
+      "after_sha256": "902ee28e555ff965a829e8b8826086348b707e14cf5f1311042e6860c8b6537b"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatKernel.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e5c96bade5242469400ddec24c60800b2c605d106f77191b0aa634cb0f5a018c",
+      "after_sha256": "73e4b6f987d9af65f4b907a8134b33ed0fe294e50e69e4adc50db1197ba39806"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatKernelFacts.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "71cb43ac6241f60cbcd8d10dfa1570e7142bd2425d344b2ddb517ca40f48c1e4",
+      "after_sha256": "e70089755f9ef686068d9ec8cc9ff51c801b3deb21585eb8f2d2c6c7cf866ad0"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatOperatorBounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "06537c901d8f1d6aeb253991d21eada41b396236c271bc177c49aa7e61258653",
+      "after_sha256": "a78e4c04d54c8e62cbca74ef2b245ec9232e00c667988b5c2c614b010fa7c8e7"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatReplacementGap.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e9cb069f2558987a3757e612de2134fe3e84bfd8967532e568380c80bb727df0",
+      "after_sha256": "a7f3323cf9d0f4609eaae39dc25f0e5123cc83d507c1a02e2bea35f3fa4dbdad"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatSemigroup.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "da4c4a09231a6b017919877dfcd657b318cb99ab93ea28cda79b2fea50c9cc48",
+      "after_sha256": "e65481d396a97f643c38e955beb02c8b3a6bc0f937b6c399fd69a2ded9ca4ac7"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatSemigroupComposition.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "f1188ba92d2fb2f394cb14c9931e151198be2a7a3f637a7fa6bbca01526411d0",
+      "after_sha256": "e5a7892946cd65f624302de9e36c6b383ced3c4955fb436cdf767dffb27ec32b"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatSourceDensity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "86032bdb90b596bfa5c9bea4aa138c5e53ffa46d3b77523f252e0982f3aaa87f",
+      "after_sha256": "285a495685e90471cceb74f764afdba82f92e91c117904adf485cf6ca98e2ec9"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatSourceRegularity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "7e1de2da1f76ea8dcfd7e21c18d1a6d19f0efde693ed08266cf6e7adbe095634",
+      "after_sha256": "f11cc434e5e13d6da64c5b60ac781a0b0a733e94ab346a1bd7d01b09e1f4ea2f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HolesLogSobolev.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "ccc0955b6cb3ea06d737b4db56fe1731f021a35cbf28021b196399345743739c",
+      "after_sha256": "a8b8eb7f09663f8f2261661d5304feb1167a6260a9ca8ac5e5901331ab74f740"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HolesPoincare.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "ffd3bf637626a26638afb55b5a3bb47048eb40fab3e3f9177afab42b6f91b489",
+      "after_sha256": "2ff211826ac1cfd62ada431a64e94014adceba84485dc1b3b13cc0a97daa9d91"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/IndependentBernsteinMoments.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "4aecf3e0e6acd28b1a17c268ff1af0a210e594605b9363c959c172e65d72eb45",
+      "after_sha256": "5e4fd5871fc1c57e094d5bb54b8c77190d5ba7af670b9bd61f08e5b04e984333"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/IndependentCenteredEvenMoment.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "0430b3f40a37e50e254cdee6452066e53a24fd0451e6c8dd871ffe5049b9e2e4",
+      "after_sha256": "77dcb1baf6a5ced9977cb9eee95706422f0fb429ad0598532cffb1e22e65cb20"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/IndependentNonnegativeMomentBound.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "8f181a5b1715104e7ad3d1203e925c47a4d5e59d0fed9be1da35eb543123f33b",
+      "after_sha256": "8b04eaea61f21a429d8dbc1220cdaddb3f824a72ab65e56fb1c7c5c67f358438"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/IndependentPairEvenMoment.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "d3afbec7a4e1b310f195c0b2fd3cba6d1401d4fd6aa35c9120d588c2db6f5a7c",
+      "after_sha256": "1835a85be85fc9c4f924ab352c21dc4f03fc42428102f1b0dd2138d49f4ec9cb"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/IndependentRosenthalEvenMoment.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "6cffd83b9c9e76c176afd039e4ad4246121b877701f9839fb83dc2241a086545",
+      "after_sha256": "a3f1bff1f412dfdd4123ce09961dcd2e7021333ae33ae54a232fb5debb3fb4c2"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/IndependentShiftPushforward.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b55c5f2aa0040ede706783d6a6a26a593e185abe6f02a2d30b5058353185122e",
+      "after_sha256": "da1179cb88e3311ca504f71ccf9d9f924f0504101c4ca1acada0318b9bd5e38f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/IndependentVarianceMGF.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b588de4c14a89d82ffce6762d6723c9c9704fa739995a57f03e9b348c5506a7c",
+      "after_sha256": "97870d505926dc9b4e13fdc2de2d27495229d3139395903a69e70152aefbd162"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/InverseBoundedTiltLogSobolevTransport.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "33f0534aae91ed6f1879c818d7e7bb2481c47fe39e1645ef3165710a6462a7a9",
+      "after_sha256": "d681583a3ea5322b9222d2b2a92401b9d82459e7da804d4e41c6f36a57ffaf5f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/JumpConditionalBalance.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e6600b9fb959c1ff8aacee011ac5f61e581c1af7f115776ed4d11cabe43d5d39",
+      "after_sha256": "5790baf7f87af4f6b02f3d638fb17ba6846305d5409fc23e51e784a150652af0"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/JumpConditionalL2Moments.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "efe8954033192e1268e1a6a04fd7e382745587ac04b09927551b44ce4b52f791",
+      "after_sha256": "af8b4c64c67a1d64c844c0f4915afdb88cd11f488998693965afeff70d6d6891"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/JumpL2Construction.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "4216b6d26255688c832979f1bbd9be29a90b5f7faebec98c773cbaead49e3cc6",
+      "after_sha256": "ce2f892eb88abb90fee5de4b1eb5506ca3bfd5fd429f5b091e5a954aa3975359"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/JumpL2Extension.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e674d49f372d58087dc9d44e15754ef7f66a2490939accd2f99f499aae756fce",
+      "after_sha256": "4d3e1c4870651a3ca1a8743b689d688d708c0696251ba1ec3b66a5158cde93b8"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/JumpL2VarianceEnergy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "6d2943f46d9bf1361d0dafda382ccf9b003665074dc47a71e968d1c476ace4ef",
+      "after_sha256": "b0e334e9ffc8399fb297242be3b5800400bacbd6a4bfc2f0472ec2f7078d5336"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/JumpOperator.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "a965d5d3d55b3dc9efbf96e55b1b5c359d06c4e49b646dad3769f798e577c575",
+      "after_sha256": "0141b643d61ac042d52be3e0de117bedbae0845b6aeb1a7164f93e8c6de1a7b3"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/JumpPhysicalComparison.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "067aee43e513a1b22f60898b5bfa2fccf2bd16b39adee1d92a129e99885dc880",
+      "after_sha256": "d3a7901f81721ffc7c317543ab262ce52df53ed7af792a457252809bc88bbf42"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/KernelWeightedFirstMarginal.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "28ed87ee5ac094ad38118431cfe5806b8f5d999bef088511c4617afe2058bf8e",
+      "after_sha256": "65f1c2ef10267f8cd1073fd020b067495d0df9702934ee5f8a6d1e37405b72af"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/L2BoxContinuousIntegral.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "13442df056b6c4efcabfa02651e93e6e5cee62c5c8915e5c6b2c07c46fcfdf5a",
+      "after_sha256": "7eec87f13dee83648279b3315e003eeee7a067155428aaa5f3e17aebf2f65778"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/L2DensityBoxComplete.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c0660619fa8d4c5f516bb1d2dc525d7e7e6418679e58dc3dc0854f0323accc80",
+      "after_sha256": "1f30f3fc994b3c22d2656fb1d9acd922a9a9c2d38eae21ef0e8570b4deb00a7b"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/L2EntropyQuadraticMinimum.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "ff3c0edeba7887727b478190471322a1a39aabf4b17a94f053a2f47a8b36a8e9",
+      "after_sha256": "8d770ed61d6bbe4a2099a31e62f00b884909e072467f8b7e74cf3a36b6a19bbc"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/LatticeRadialTailBound.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "07936133eeadf008b5abd816b0c2607674906d393e39e425062ba509aecba7f7",
+      "after_sha256": "17c6aee276fe4c8d46a52469474c62eb6e70d1af5ee5b81f7d255e91390a24dc"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/MayerConvolutionBounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "54282b553adbde3d7f4538aa885d585751bd8ca325ff12bda6e4bd283bd4a55a",
+      "after_sha256": "da0ce58400bf29cce8e1efbddf3d67b83c68776ae672fca6a708c69ab65dabf9"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/MayerDefect.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "ba8e8aa1a114f1259deda83f9ea8d8fa12065e869cb3df9542c556c03d9100ed",
+      "after_sha256": "66613e038bf3e680504c85684ee8d1902c9ef5b1800c29f200dbe7c2525f4000"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/MayerRemainderLimit.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c065861d30b5f7445e6dc67d465994cb6db2fa27a107e08023868679f5eabdb5",
+      "after_sha256": "4c9c8e1a06b6f6c6cfa7ea2e480f5647abc89fdce85ed64387ba67c6f3fcec2a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/MeasurePreservingDensityTransport.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c1aedb055d43a952aa6228345e021e21c9ac32c7987250e3d6392b5864e97451",
+      "after_sha256": "ab37e49a4789ef5f013014739512c9713608dc8382a5612f28a7e35eb2c8cf57"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ModulatedClosedGradientLogSobolev.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "070d53a7202349e1fa89ee3d687d5ff2cb7bb901343c20be85a537e89fbed6f0",
+      "after_sha256": "5b686e4f27198fe90cafa09874cca4be7e85a9c6ec7b3de905f74f7cb9e09a72"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ModulatedClosedGradientPoincare.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "f8ca9a4b4c57abfbc3ffaed7005112df5b58cb8847f733373488f07a03c2318e",
+      "after_sha256": "f7ebbb22195e51a163a21329e85a63d0d131cef2426aff325e15c14d585baee9"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ModulatedFullGradientInequalities.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "5b6004a9944f13e2006b8d9eb1c0d2ce3da684bc8951b6f81f70572773a8d645",
+      "after_sha256": "aa6c45eaba55ef9578bd4231ce03af69f2845e22c874f2c62dcfeb1775bc5ddd"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ModulatedPotentialLawRewrite.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "9ab7f11d387115e7d6ca225607d0768882eabc8d0aea62b7e2aa0060dccaf5f7",
+      "after_sha256": "7bcddb52ab6a07d7af0e8abec7364e557e261c06bfb1fa37c28ca84c2f141098"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/MomentFromExponential.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "1601db5e3d4010a6b12b3d7c46c7cb49fd2238e38db199c8cc7cc0217b29705e",
+      "after_sha256": "7dc13c81a8235ad51c8dba1506460012d793158441214aac11fb43c6113fe3c6"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/NonnegativeOperatorGap.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e74c2f2592da5eaa46f7ea03dc4a46d5768173617495276562da9c389e75e845",
+      "after_sha256": "47ed91fd6a2895b0554b0f32a1b7482a3020544f88865811c15e66722cdc9e34"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/NormalizedTilt.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "302b13f5855b917a1c6a4e4fde70bb2f3c5dba4370d49f4f10764dd376c41c9f",
+      "after_sha256": "0827960eca0ab04c04b87970b4297a2d4b6b019790d9e24da105c5369e92b6db"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/NormalizedTiltInverse.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "df1fce3f8af02abdd6785b7af1186ebb7cc5c7e8920adf5368c29ca2890cc671",
+      "after_sha256": "1ea4b751b0bde02f258b00f8882843b1a3e67a9e6c03a40d61a9437ce4850eb3"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/PairAlgebra.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "a4b8959cfce45ec8b8e35868fd1fbbe52127aac997e841bd06457b7c393b5e0e",
+      "after_sha256": "4f8ccf6bae3ade5e242faf65c1fd618b80bbee2cf813391280b4eee961d0712a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/PairEnergy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b141aeb945a8c266c9136830c09e34a2c542af44b487d69c38037a4570144016",
+      "after_sha256": "14a0d1872eb6eee453079f2bb9904015f40d7b7767531dfbf6b5bf84a448812e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/PairMomentBounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "a8425861d073bd8a122a8f90d3f5df6a5a319297e65bd8b6792f42fad13c7a45",
+      "after_sha256": "d91184f17e2539b3a5b3316145002f3058b9fc718da215f31eea0c6d3c824e95"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/PhysicalEnergy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b3c8e4bc83bbb67a08223e06a6b5972d7b8bad216112da1f1311857222a6d2e2",
+      "after_sha256": "4ea1e1677ab71d087103408ad05314d0be82efcafd96265f65a0bd2644923a36"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/PositiveFourierConvolution.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2600467d91f0791dab52dd5746a3df34927968378772f38333f0354a19653359",
+      "after_sha256": "80a79795ee11f723951ace3e0a364d5aeb34958f03e8ce99d3dcfcf4fb89542c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/Preamble.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "0b72d51742086b1edf32352abe2492f6669fca54b2e712efb95cd0a14d1d1469",
+      "after_sha256": "5731c9c6a552f3ca97f6d1a2da79d6fd786968c05130119773de8e407beb9161"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProbabilityBoundedKernelSquare.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b619dfdda83e327f8010dc3ee4fb13596611f47a10e2e96f9694961a0c90eee1",
+      "after_sha256": "9a974ad55bb2b53fed1188519da98345fffd67a0c3a898900b81bd5e9bb62f8b"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProbabilityConvolutionJensenInputs.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "af47e02d5d5913f513f6556e3968d2c4207c207671af8714971ff91030149090",
+      "after_sha256": "20f63d909ecb6ff67db4a0726c254469ebd6dd11f8a0efd957f1aace07c0a54e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProbabilityExponentialInterpolation.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "af0835fac40af5bb1af1b5f71c7949f8fea0f76c8a3735de9595c9a85485d39e",
+      "after_sha256": "59866b4cccea4ff7f0fd440b380a35e693c43fc120228bda7f10b50fb0474fff"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProbabilityJensenTransport.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2c8d087cb4480dbd83d25d7869dcb5e4e832f37741476abb107723b4dffcb765",
+      "after_sha256": "ca2cafb24a7c60c28a6cb4a9bf88aa8e2c103311ac8fd9e5fbedc97cb055688c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductBackgroundFacts.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "0fbd61707e423af2f913f49aab1fec26e3228c12eac80d58d49d8f4ccbd713bc",
+      "after_sha256": "bc2d26c390901d365faac0251a3947f897e31c8dbab1dca4a0a028edce10a391"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductBackgroundMeasureIdentity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "693134d8ed024d8b9a0ab778e995ee241201af91b998d9cd8cba231baf0a6087",
+      "after_sha256": "d525bb06a5725bfc4060045da77d4b6c711dbadc9929009d7c324b21f63b8971"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductBoundedDifferences.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "bf712e56d1ec32351c253dc721cea8c40b9122471fa5ff95efa1674d7afb4dba",
+      "after_sha256": "954e3ea9d834b9e7d5bee5641a74db304c9a0268de0dc1ee970968d02529fbea"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductConditionalEntropyTensorization.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "bf240ada99782a554dc6cfc3eca20c6ba73d5b3ad9b973a73aaf9d58af448db8",
+      "after_sha256": "1114b669b6537cecd65e2ee260719fa54c4a829855500c9cb01703b4e90819db"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductDeletionConditionalEntropy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c406b76817f8965db170530c40cb2c73b0d1f24782099749adeb51f6c05aa074",
+      "after_sha256": "c33c0f8b7e55145b62e99dba6d0f84a734f7677dc620824bc99d94105e1864e6"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductDensity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "896cfb2a43cd9c07dd6cf01d478dc6acf249b2d09777aea39e34daac7c86bfd5",
+      "after_sha256": "2638059ec09491c1a46f5d6dfb965a65bb51dd18ecd9b6a566748da20842e9d8"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductDensityMeasureIdentity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2177a54e7ca136a1f8908539e9d7ff83d1664520289a58a355c6b189bf66fe3f",
+      "after_sha256": "a0446c2f886cbafaec6db715f9872c3ccb4a397ae4b20da68c21a38bacbc76c3"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductDisjointBlockLaw.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "9dc680b4b2c9bb41e67c69523a170e0429b929ab724c363213cf1fb3162156c0",
+      "after_sha256": "2888a2b6798bf535c1a35cbcb6a9578e141cbb79a1db74e2c0ff22708161a3b8"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductGibbsRowStationarity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "d25551f208dfd969325739d8c0c52191cf58a35379bebc6b8848baf6564d8952",
+      "after_sha256": "94494ce9dc9abce68265f14524fde082402857b04b49fbad5ef7b2187dd144f0"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductRestrictionLaw.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "7ebbc3144d3304ed6073e50dc519c107b4c6ca3a35326e25978a3422b2cd521c",
+      "after_sha256": "ae551a8fa9d9633f7d3e20fa77832bf8d7081c857cd23aa0a6911e4e77c3022b"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RadialFrequencyCutoff.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "9c9df97beb5bb896a2bb6eb47e518b61e0c5826e091be94c52a7aae8e2b99f21",
+      "after_sha256": "0d29d415873aff58f3673de0a5150029e6c53b74b5d8ac86b9765a8c4be49ff7"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RelativeEntropyUnderMeasurableEquivalence.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "726c3f252842d3e8508c045383b2434aeae0191724eaef6da57234f5199bc265",
+      "after_sha256": "ccb8722bb7d302ad4b1088a494b2370be562d4febb24ed4743af27f3f18400fa"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/Replacement.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "29bcb9bbce9331faa4e0215c86c36649f56fd5d81d00288d62a28949cbf76b0f",
+      "after_sha256": "607fc7d1d9ec8a6f91dfb03ecb4af9388f4af8addb86265d0ce6f9cdf188df10"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ReplacementCoercivity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "a868083944a12c428cbe4b4cf514947065f8a5243beb06edd9becc42779425fc",
+      "after_sha256": "6228dfcd7360a912fabb72e4b1304a019dc738c056f7fd4b8872433cfb0daa4d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ReplacementEdgeWeight.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b595033bed5f6b3ba92b157e8c2fb7e331e92774efcfea803069f6e6b6747281",
+      "after_sha256": "08c3992efffd7f0644123af5876a9bc8fbf1bb20fe20e4d4bc20db3ccc445f4d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ReplacementHaarInvariant.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "1be48ca5b98aa760317f9c669485049335d204f94891df8762895943ff6b08df",
+      "after_sha256": "3007b1f9cfbe112d4fcda04cd1bbead2946b0a799951984fdd25047fb83b94aa"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ReplacementHaarSwap.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "fb04977769bb70cfd53ae9fbae945386c2f6e778ce6e169c4da022fe45f159f1",
+      "after_sha256": "40e242875804567942eddf8df7818ba9391faa05fa53c4e65235e7ec37e17203"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ReplacementJointBalance.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "314f0a2ea717ea78cb2e49ac4dfdf5cfa6296174c63ec10a48de8e50925f0767",
+      "after_sha256": "34524af26e46754fad19253cdad0c1569097552479ec60df219ecc39d22ff8a3"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ReplacementRectangle.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "5f977ef9c974c1956ff1d2820b7ad034fc5c4ce7f7dc8dbdf51faca044b0f003",
+      "after_sha256": "184081d5171625462fa6fac2682128fab4d00aa73589d7ff61fff9408c310162"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ReplacementRectangleExchange.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "4ed42704f4635b5c8ad2417c3f672ff2b51b08f75a79c9ca17cda397601d4f24",
+      "after_sha256": "f76c547d264e85ef39c30b5af105c9739df3e3a26a0f6ecbe0ad8f68a50be0d5"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszAtomicPotentialBounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "1acfabe4c753d876be10f1deb611e1429a80775acddddb470862bfdc0b92f4a1",
+      "after_sha256": "bf95e69feb4090afcbdb765005189ec89e93f3a5e23c8318f1b3535222e5598a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszBackgroundConvolutionBounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "a43b6e6414330ac103433f763e554bba593ce35b0fd3c50e7f8ea742ea55c9f9",
+      "after_sha256": "a5566df19ba30c7c57bf9a98eb861a1e2eb2f4b5768f3572fb1fdf19732af4c2"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszCenteredDisintegration.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "816f0e6cbd302ef01bc09dbf384290ebe0f73d056ae47231d95fd6902977869d",
+      "after_sha256": "32d58c6ed0e3749085e0af1a71e987b2e3ea635af8e8213bc670e1af74bbe03f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszCenteredFourierTailOperator.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "ab635485b404e091fe088c9beeb88681ff3bc74d0217a1b2adcced5b552f6bb1",
+      "after_sha256": "76a38c3df2749e43cbf9fde13ac5702e8965c5ae4a7b00afc83c6d70d42a3093"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszCenteredHeatPartitionComparison.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "8080e3918cb2d169c71648289230bd36a568ac7a94bf195827cff836cac55fef",
+      "after_sha256": "1c1d7a98a06735700b815031db56bc6c393c460583de51077d10942eb195d68e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszCenteredPartitionUniform.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b5e255d8dd2cd61fc37549a0eac3270581a0b100d6f8deac76719ad3e323e42d",
+      "after_sha256": "0ce3f2686737472107e2bf29058096716942e46b8ff1def9d033802857669d3c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszCenteredRowStationarity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b8ae8b1abd2f4c90ae51c61997c502f45f84e9409aa280c9db723a5c737d1ef1",
+      "after_sha256": "9623d98470f5815c1bc2fcb44b52cadc0cc9692c5ce4beb632f02515a27557b9"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszCenteredSquareEntropyLower.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c62cf787e40919e17c8a2181cd9ce6b9ff349ba74b81e6523714e2a70d8e5058",
+      "after_sha256": "659f44c08f86d39e04e972fe6424b3e557a633e1fb3d4ba30d3d7720d8a39b78"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszCoulombTranslatedFormBound.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "05b94ead0d12f9a621f8240cb2e96eaa4b761aedcc1708851afe11120d6976c9",
+      "after_sha256": "077e4a800398799603fccf42356faf004b46f14d993af724145dab5c0445d5fa"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszCutoffContinuity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b3ca24698884d9b5090f0ffbb566f9ec50b33cac4bc56f28a2971948d9b8c370",
+      "after_sha256": "39f0e8bd3f71ab3952bddb9f81746b4e20e1bb53fac75b59eff322f9da92ded3"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszFourierCoefficients.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "cd3e96caf381a50aeed297a58a30cde0bf85e6a6f0c97059f3f51fbcbc5c9f09",
+      "after_sha256": "927a552d88eac049712cea372651dd06163890c37b3c4b2f754472cc39bba107"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszGaussianImageRemainder.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "7f3a7b0dbf11175cddbd1420ffa14b86dd153feb81830ee9f1bb25ea47539952",
+      "after_sha256": "d2083dd00e0a5708a238cef50170f942a11908a583faaaad726da0f1b8f7a836"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszHeatSource.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "1d69d81077872946fc112f2877ad9635baf882ee40fa83404eb2a4dc513c3da3",
+      "after_sha256": "2206a2fe8d4a345cd894cdfd9130dacc961b4ba0eaf57e26c23e277062f87915"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszHeatSourceTransfer.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "0a33f35fce3a1d0fd96084e4dc4d8af22c6965827f02c4d70520ba201fc972d6",
+      "after_sha256": "34e461c65825ef2190fcdcc1e4463450c12c361cba5880da73c8982d76ac950b"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszHeatTail.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "0e4503cfd7e55951fb45f2a205cb732ed027b61b0abf7bf3ccf0d262ad1ec1ad",
+      "after_sha256": "8b1edf25f8abbca9eca8f9224d058178893c69c71d04caa892ef63ad977bb8d4"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszKernel.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e01b99fe6cb4320279b9da1127426441c194f7294c95fd84731cc275113737e8",
+      "after_sha256": "c81bae6621b75cd12e3c6f44c2ded6599266df72218b21c7f89da8271047fcf5"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszL1Foundation.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c3035f0aa39cbf41a62bd7c7fedc96c00b2b5b52f696c9a058c9b6f8bed0105a",
+      "after_sha256": "3be030722fcd68f8a1b86f7a4925d576758e7427e9db2500cd1ef4841984ee37"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszL2Threshold.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "fcc671a46a2c9ee59088b0991f6b094cd2a25bff7d07ee6c982855d87d003dca",
+      "after_sha256": "6e0109c6af887e4520cdcbe1d814503822c3bb9c227bc5a9800776b4f8373b45"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszLocalStructure.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "a3e5780520b497e54de2d5465a8342e50011602d185e8bad0e909eeb2cdd06d5",
+      "after_sha256": "72ba2f1338294d05a23ae306c6256a70a4c3c576fcc61812324a3e87a0d4a53a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinCoefficient.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "66303f2b46c5e3f8cc200dfde53d81a191e2c956c4cfa09fbdd98e93c4928e41",
+      "after_sha256": "662eaa7b2b6d404b59c8ea57aa58ad1b13bd358f75653b8f6704ec4fa7b81f0e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinCoefficientBounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "ce414ad0c17a6c820ff60127086a3cdccaf7a0d8ea1c82aa44bbf5a30478d16d",
+      "after_sha256": "9a4691775d2c777672a5a4a2cb4519c2cc525ebf615cf43cff44bf4b7fb3c919"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinDecomposition.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "1f8eed0916b0e41e17c6674e4925a16e5b874fa3f5c611dce8706d95a6bf84fc",
+      "after_sha256": "37ea43024da6bb7a1c02e848f0ea7c01a1b8d43b00c7c9c473147980358428d4"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinFourier.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "7afd213032aec5ba89213a507bf58ae4b60de3c5503e2c74f6777135ee51e799",
+      "after_sha256": "88e18caeb76c4f8e5642751b3889ee69d5782938634860139d5deef84d74eeac"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinLong.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "0e5c157e5a3603dcd3e084e8aeb466fb3e54deb6de314b43797a824f1271fcae",
+      "after_sha256": "7ff53bb55961a9479b6a95d1fca6bcd3e4edf7f2166a537c44855aefca3ec217"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinLongBound.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e61b5e1e106785435788322f88a36b4952c74c2c52ffb1c35dd71bc373b975e9",
+      "after_sha256": "7cfbdf111afb8cde9d3fe468edcc9c31af30c863d388b3440d2910c9304d0e49"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinLongCenteredEnergyBound.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2427ebc236e5e3ee5c70283bdb032278b82778ac8c5e74685893da44a45cd66d",
+      "after_sha256": "125ac521bb41715fda41f81f2121e9a371bf629c61d36a8f5aebd3c8352d2755"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinLowCenteredEnergyBound.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2cf4eeaf7a59f6680315ff6009bea4d3f89a93e6cbbe9637eeda285c453139e2",
+      "after_sha256": "166d6009cb09b11888d5c7969df2a989738eeb0c6000574d949be990122688d1"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinNear.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "6cc5931d9008c77d944681fed99c623c1ca342f2f4c0e75d1ae41a4281a98aaf",
+      "after_sha256": "0d9391929d4c6a48bbe64cb850b41ae304606df1a7ea208ade9f5ac1c71b26ab"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinNearCap.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "96ecc8d45012ca88d6e6c3740036f2446f08703a5ed4a57ba0b911c8de0f8fae",
+      "after_sha256": "04095eb6d92cbdee1ee0618cca8b3a345d20144a6a74ed6b483904b7af922a47"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinRadialCenteredFiberBound.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "1510ff2a80ccb14b3acbc68c5b73aa81bcc186cbb680216a8f25ae89648c2b71",
+      "after_sha256": "f2ccd26c197da4166eba6cec34f34d8afd1a291f6fd37a44975ac44bd580127b"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinRadialSquaredTailBound.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "457214e21572ac07dcef64c6c5e054abb77a6054b811094d254cbda757c9f76e",
+      "after_sha256": "6dd0bd98fb39bfa388ea7a9656a620238e8d0fb49037e59ddb17dc86ec472513"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszModulatedBackground.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "238430880e503c574eeaa9070178ef1eb0b83d00ef688b05e6920d89436d21a0",
+      "after_sha256": "5d52fab56487c42f41d7d74d49ba8f4c2123ccb522946285734e10ba0b2e9cb8"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszPositiveConvolution.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "224adff7030dc1fbd133b8746f4567fd886db5cf0b1052f0976ad4ea4f08b184",
+      "after_sha256": "638fa27660ea513725cfdde71105625b44c7ba296ef13713594abf1f4d6c43c6"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszRadialMultiplierBound.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c50cab06c4581665de33a9ec89649cfedc7db20a51a7b64a8447230a89202e83",
+      "after_sha256": "9346f0484ec5b88dbabbf576244a57e613f092b4e210c77b9ecd943272b07162"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszSourceMeasure.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "10191bc24e0b7af75856416160a5459c17bf9f95620af1df8d7be8c7c58a24eb",
+      "after_sha256": "31b8183a72dd5c4f8255bbdf3eadd209cd62cfd74e939fc2a3baad601e46a798"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszStrictSourceDomination.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "112459fb4b7d7878c1194a26ccb2ac41251183e754239a3b481d94fd9dbf441d",
+      "after_sha256": "e353ab6897b885ac808dbbb20d234327715a4d636b0be4f605a7fce7ac7bf3c4"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszThermalConditionalEntropyBound.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "83073c8e0791402ca17e5247b5ff1e3978a4c9c133c321ddcaf6d1bda0a96657",
+      "after_sha256": "7e50cb1a86a46f6db56184d35c78bd98d44893533b8fd383db0ec9fa87aced91"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszThermalConditionalLogSobolev.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "7484927616240eebe208cb9779e37bbbd5f22f86b07c578e44163787a964648f",
+      "after_sha256": "0be2c38a69368752de775e6e18d0fe461aab944b0f1f6049cc602f6112a349da"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszThermalEulerLagrange.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e047a8779d5976ede22cf445058fc32b058b5afce2c1fe5894f49dc7eccb0ff8",
+      "after_sha256": "a26448cd5c8c01afd036aa88a24017135ea6220240cb756d1676e029c0c86ebd"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszThermalReferenceUniform.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "f71c973b7cd51d34f8697d7676561599e471d365a6aa74ee2c87faf73a758c79",
+      "after_sha256": "744eee152bdfd7e52541c5837f23562008443d1d37940850fd2b7c6ad7b450d0"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszWeakSource.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "030bb10cc690265b8a8a412b925d1aac0b988b98794583ff7340dc7d22cdfd83",
+      "after_sha256": "f8c8301e9a8aca237fe312af47aec4ac73fc4a4067545dd1c3354c9033f91ef2"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszZeroCutoffAsymptotic.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2acc07cbf9f03f694473e3d022dd16698842a727e0d55e52a25ef3791ec07cdb",
+      "after_sha256": "7158aa128f7723876395100afa23183a2f3bfe153aca9664090fac6413df3ca5"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszZeroCutoffSmooth.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "17ba8b4b3509fcc87d414b86f2882555f3649fe282b06a3ea6fb0cff9955c2ab",
+      "after_sha256": "11f785e5b0f9430210cb76c631b63032fb96836302723723dfed938d08f1a3af"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ScaledBoundedCenteredCanonicalKernel.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "ad3697c7440ee38b6b72a5ced2c7b688d80177d461dcb2aa597892fbefa905db",
+      "after_sha256": "f53f97f80d0703bcc2522820e319f25dca0e9070b201d61e3eec619537ea0fc5"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/SmoothCore.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "63a4b65e2381c4436ebb0af86a0c93f45dd32ed9dc05ded79d0df20deefb719d",
+      "after_sha256": "26fcf91bf39972932c01e2b8e1b106920cb44c99240b753f69ddc92985bd1a27"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/SplitConditionalSquareEntropyIdentity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2936c0e4293ca200306ae8f70197c6c194d96623f9c7c621d60493e63a362c37",
+      "after_sha256": "4999b26d1848d09fb4e57cde2ec410617d96e8d2b02c0002c4483da2d0041d9c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/SplitCoordinateEquivalence.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "f54bc410c15dc76350f9bee0abf38700209bde68193f5443ac1be771cf6dafb1",
+      "after_sha256": "661d141e0c4c3b7bbec60a416f4913a5bf21523d29f7829e499486049dc68782"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/SplitStationarityTransfer.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b94904b2e40cdca97576505a7531f28629667f0b7d4eef7033fc33a911aa5ec3",
+      "after_sha256": "d04e054269b4539d85e436c697bdabf7b8c20df150fc77a7bae6cae5dcc74589"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/SquareDensityRelativeEntropy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "de96b45a95e64a8b330076f014d5a401d4ff5bbcc0135c719602c4842e3ab08c",
+      "after_sha256": "3c6b7bc26fa502718c6a8760a34affd4cf0484c8d2a694edbd768cdff3f6c870"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/StationaryKernelDisintegration.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e3ee806e8ead8960508a96af5289fce9b0d8a80c93625b129f5798615b78c74e",
+      "after_sha256": "298132f2b236c7355b534935e3e14d04776b72396d6a57a6a483bfc84633ec78"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/StrongMidpointMinimum.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2327f8bfd1a9825ad0db0eacee37dbf61f38f4adf49b330fd53795dfb4b50c7c",
+      "after_sha256": "cd02feaab5562cbf70edb1e1d627bd069acd84e8a5424be881a54720d856e9df"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/SummableGramCentering.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "80a69ff7c65201188fd87be0e3cbddc2608bff799c41d037a8992c9413339fe6",
+      "after_sha256": "3283982f5f68e2e12a8bd519283c3ec8e573fe355799a4c0d466c32334948fde"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/SummableGramEnergyBound.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "0cb81b346c89309307cf00d32f9a794256b286e2642464b785316e192472113d",
+      "after_sha256": "7e046532db0373c862274c9d7a44a0dcbe36dfc1cc3548fa8392faa1f295b952"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ThermalDensityBounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "a243aff56436967e3152d0c8f0bfb45a5b314c22c287147adcd7cf9a306190e6",
+      "after_sha256": "7d3b3a8107a6e0c5b3055f8f73b75da554248d75c0bc6b86de426440c3a07982"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ThermalNormalizerJensen.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "21170dbae1a2d5eb68b708fc12de62df12149d5c94bc3d289ca1e2ceae87819b",
+      "after_sha256": "dbb2d08bce07ba55671f402dc7001814b5ab9dbbe169e41a4a6d7f9c028acd06"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TiltNormalization.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "24300865ba5e7488ede091535a4075eabdadbe85c9004ef488b484e98747a19d",
+      "after_sha256": "ebadc067fa7cc353d085d3cf0a4ae0704add42a569c0c5878a0f944bc4078f9e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TiltPushforwardEquivalence.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "7f9060d4c761615bb3eb8111f6b0d80b7a8e6eb68c57406a28e23437173863ab",
+      "after_sha256": "c822985c2550a4b7aff1fa9084a6dba0194dda31fef003ca86ef268df1b0dea7"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusCharacterCalculus.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c1f5241ef0fb825b01c94690aacae52b4703ea6c922bf7ccc6cc9fab72c042d6",
+      "after_sha256": "2c2f74dac88879caad5b9fa18702b09f1cfb7052bba919a4f181abe0a76cad8a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusConvolutionAssociativity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "f70a889a11fc87b73c8292774ba0a3dbe4d7077ac4d2a4ddd8613362cb1876d3",
+      "after_sha256": "b8a43cf7b14fb39bd01f6589a92907b52148d0f550b1eb4940d01dd18cac2ac8"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusCosineSeriesParseval.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2aaab2f7280e56a034d384893337055c9c16a4d961e55f3f2ca7f976170cfdc8",
+      "after_sha256": "ab3909351a67332b1a6a52ac1b4a56c81289ab5ae0520025785dbf245c5e4694"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusDefectiveLogSobolev.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "863bfa5b57031acc81e5973ee656a1bc175ca6ed933a6ceddf81f88f5255378f",
+      "after_sha256": "6df5387e820a1ab73950a2808a9c687bf44492ea2c1515aa3f40223d318a2e2c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusFourierLaplacian.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "afb36c86cbcbc49ebb4a92acbf2fcb33470698ca2fe93385fc97b81c56a9b07c",
+      "after_sha256": "36333dc731f1b7ede77132eb8b75defcaba7e101613ccfcd88e75335178ef505"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusGradient.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "9ef0fb26c2f1d86fbe2a9bd1fe6f58a272632500f4986456b647037cb03a1ae5",
+      "after_sha256": "d0b9a1e0a5e79785c44c54862568bee4ed9a5abc83216829d7e3054f3c57a774"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusGroundState.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "7e1d92f72d78aaa7f34612d554a0291701600defdfcdbfe300b65ceba1753b26",
+      "after_sha256": "a937e8e98631ac34e879f04a48ebe86adfa722185d7b226c54a53df34d2043e5"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusGroundStateTransform.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "4f94ea58e8c9013533ed3c5b087362fa1507ed19afa3d4c647f78ebaf5f3bc7b",
+      "after_sha256": "b55a3dca764e654ef5ead2f7844b6ffd70ac05717ce124db25162e2b237b794d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusHaarLogSobolev.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "3873a0064199117f76b007d64d5d8c51d5f9fa64e6cd599bb31f683474f66daf",
+      "after_sha256": "40984c330eec1eb066bac42a6d1285c9127e0971764cc4ad250adba7e03f40a3"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusHaarPoincare.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "5c8acebda284b8be5b2d5232b372bc0b1082aaf9e646d3349b9202427a72eaeb",
+      "after_sha256": "5e826ded5395bdc0f0d0a4c8bc87a15df62f4d41465da7aad1f48eb6ce01b392"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusIntegrationByParts.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "007bc403ee6e47f09099c06ecb8ceecc20005d2911fd9f721148c9e0cafcf7ef",
+      "after_sha256": "e002d2e335a6a2b5bd9efb9ca016fde464ba729e69c57638b1141faa869ad416"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusLaplacian.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "84caba837bc0bfbe415ad6828771fab9c9b1a680d55bf13ddac39d9b9db44da5",
+      "after_sha256": "e69a49caeda113105cb3a7b5bde4ed7bf488af311f113185d84be14b45e9cbe5"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusLift.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "50e818bbb481a596d3799da2aa26b80ad4fbae23996b394f7cca667f7c411d78",
+      "after_sha256": "f0807a32826b24c868e5a146f56b036292c48b4f12975324f8dbab0a1fec4d44"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusSmooth.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "959462c2a88e63f29a7131f7621a95500be47ec145e3f7180229077efd646c49",
+      "after_sha256": "fab6f911f9d9d3f9d249c06dc25cee59b9f608e43f1734d588099def2ffa3f5f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusSmoothFourierSummable.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "aeb66b727cbb9c430314707df18a7402d8a0d2d2e88f0378ee4c5e944a7a7665",
+      "after_sha256": "c0e59f5affb21f74afddc8640082eb20789fc4b00d8d48b01ae2624f1f3397a5"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusSobolev.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c8dccdceb89f888a75a02abf61e0668b87a9a61d8b9e4924ff690e0ba0924e67",
+      "after_sha256": "6ae4320fd0a8993d6b86f48d2e933b21d9d2573d4760686798f3fc82b7f7d426"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusSummableGramCenteredEnergy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2ae422c63b5e2b5b8f8d1f3fca856d26b67c40e5fb631b8b4a4b46c919fb838f",
+      "after_sha256": "874decfc8b34dca9516d55fcdef79f571e50bfafa620e0bf10bcf2312ec11c01"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/UniformClosedGradientLogSobolev.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "ebf393c7e0e8cd169c8c5131c2840283dbf691a1fe219643102285b35dc2430e",
+      "after_sha256": "e31721de59385865714371a4b151ec1d339ef36e21b0c047475dde52874fb722"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/UniformClosedGradientPoincare.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "ba8c6575dde2ba5a9d6e40a0dd56eb66122ee69be94fd3bc6ab4f8a4c8d3d72e",
+      "after_sha256": "443fc07084089c4840634ee9067518ec2bc9d626466e4e9786f8e9d5584f6cd0"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/UniformFullGradientInequalities.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "541dbd88866b9b4c4f31b17e760c99b82cc9c00aaa48d0cb963b2244cab0f73b",
+      "after_sha256": "131317a3dceb9e722e65c6054bb21c80b283ea0247dbbc2c3bf5c56d82be3cb5"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/UniformLogSobolevFromPartitionBounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "9bbb22fb2497795935996de238b2e3244b16589c7ab057559fa1924ca8a037e2",
+      "after_sha256": "79cd1c9dd6042e6024d8f9caaef311cf873b6c5f03d220f7d411351f4c0f2576"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/UniformRegularizedLogSobolev.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "5fb23fe28600968c66b1472fceef4ebb4093feea4a843f9d9c0730f33ec42ea7",
+      "after_sha256": "bbc8359a3d066da082cb99f7b09c27b1341c40f97a56e487feab5b731821b469"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/UniformRegularizedPoincare.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "16f306a8edb408ea87c5190d4742c42510d4fb7d8cacd14d87c8520b2b7900ec",
+      "after_sha256": "89053b480e693380c302ac13a70014a99b74a8e01ad34b47003c61ddd42fc216"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/UniformSmoothPoincare.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "53b22edc5424378c9e9641b293b87856be231371d17b928121fbc80c3ee71bc8",
+      "after_sha256": "162a3e965f62fbda15b079eb660cad90f024834b120cb6123eaac9861c59e1ba"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/VarianceVariational.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e238f24c2d0ba81cd66e8c7284b0002ccaca1c9e8935d9fef34645c0dec552ce",
+      "after_sha256": "e7761c15171ba28289441bc8c68e4f1980f6ad0471445e75e3998bc620b7e90f"
+    },
+    {
+      "path": "trials/whole-space/applications/Applications/CutoffSingularPI.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "a53ca345f227fc30e866649da82cd5295b010cf0d8fa83eabaeafb4f98fdf31a",
+      "after_sha256": "c6ead6b7435caf3b3a00d237f0b6650eb5d64f3f7eb6575f72da5a1861e243f2"
+    },
+    {
+      "path": "trials/whole-space/applications/Applications/SingularClosedDomain.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "0dda1b4a236832cadb0789d170c7b65db78d3b88d5b8ed3e205b95d80dcaecd5",
+      "after_sha256": "f6ebe3aa1ed6adb3539d65bbfde5b1a12689d7488488542c2cbd4c3dd2b03197"
+    },
+    {
+      "path": "trials/whole-space/applications/Collective140.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "30f1b94352a46341af85776252840635c75a8b8d6b9ee67de119a40322912daf",
+      "after_sha256": "3653162a74ea608c17f955a530e9c76fc308ce1eb9d9e016893a239afef988f1"
+    },
+    {
+      "path": "trials/whole-space/applications/EndpointScope.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "5bb2a67716087b77c81accd49bb2006c30a072aee42ad3a71eb84191cfe01108",
+      "after_sha256": "28f3554215b2c40c1d4de5c57d9625f53d76355e58ee6fa00e71dada0022869b"
+    },
+    {
+      "path": "trials/whole-space/applications/RoughMultiplierPI.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c6160a10aeed5b2a6dced527d893145a31900b3d49c8640eeaba81f6a6b78fd5",
+      "after_sha256": "c87d50edd9013ea5d4965cc18ccbf6b2cf2171cef59ac17005c5ec63aed1149b"
+    },
+    {
+      "path": "trials/whole-space/applications/SuperquadraticFixedPI.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "469edc561e0dceccc45db5fca1aef8163ecd1309330eddf230cbf149cfe6678b",
+      "after_sha256": "416f5cd3cc66088e5bdd06797853e960b510693013cd2db4db2795e1f38d5014"
+    },
+    {
+      "path": "trials/whole-space/applications/TranslatedAnisotropicPI.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "9b887836856b117ac7d87b9cf38e283b55522cb9dafbf0dce4439fa8f439916a",
+      "after_sha256": "02f49c7963f7cf44938f383f603ccbf6a4f2a9a5d36c0fe253ac0a4e810232b8"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "1b162b6bb5c8c13c375d1da990a166cd287ef2f9a36c18093c7d5e94820f7af5",
+      "after_sha256": "40753ef1e14f3535085a720e92c69126867911a1a29fac0f7442f4c890003390"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicCoercivityExtension.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "aba6de1d349fc1699db86134527cf91ab4f3c37c4ea94e54156f8bad67198dbd",
+      "after_sha256": "fdd216c126096267e6a197e2a90ace5a4fe3cf032e193bce92c139a11e2841db"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicCompactCoercivity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "eb7ff8672baa93057dcf3451ffddb8efd75b08344e7ae4a2ece09624aee27d41",
+      "after_sha256": "9cda0b66b90b145932faa223d99df90796bb3600bb8fcc52a16d5e73f8c99928"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicCoulombSourceMass.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "5e09bb2d2e38bbbc347e50e8ae633583c28648381a690c874f2aa496e7b2d06e",
+      "after_sha256": "aebcb83c5eb600f45866fa4eb45a21332b414238b34529f339a244e445a0a9ac"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicForceForm.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "66ad0b1cd04ff3e83e251b32ae7d78f80fd1d1813cdedfdf7b727426e9c7c004",
+      "after_sha256": "80a40bb3b0a480ba1e8e65200d480c7b59452b8edf5e291d24527c8b46a584de"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicForceWeak.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "bb043d9d6eeab4b0b606c9057249afa687b1f4904e56860f2e2c1cb4faa5da33",
+      "after_sha256": "6fca3cc6c93019474390c462831ec5aabd8d9251756e98d24b7eef25b2ee76fb"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicInteractionSource.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "03bce5471fedc50f676de04927282103d8fc6ea95790f85975d04ad10d3bc67f",
+      "after_sha256": "98b6f507949dfc4dc8398d0142383da00cd3a5a8766ce4c1b354a9b9726a55f4"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicLawTestControls.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "d9ae597aa48c717f64b34165a14a0141e3214e1ceca2bffeefcc50411a1b927a",
+      "after_sha256": "29dd163bbffd4c10290e52c1f7a1f1d391b5f3242bb5c90f9dd61be16ae89774"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicLocalCutoffEnergy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e04fa700b5a065c1e9ad167e35c1874f6c20025c11b6654090e06b6270c9382d",
+      "after_sha256": "9b625d39578bb50271154759ac4328e56c285a202f3403925a20984312d2c402"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicLocalRieszBounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "cbf1beb4f82d523219c95ee753984447e9b34687f8d31bd225bac14d943c21e4",
+      "after_sha256": "7108a0185c9f85f460d87b6d3688dd772c93bc27d5791796e9c5b73e4eaf71d6"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicNormalizedSobolev.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "27b929b99a42df223a069fed5ca7f8c5db0f3da9de58b2c567c4f220cbbf0222",
+      "after_sha256": "93c78a5f175670adcbdccba167d25cadd84af6d27f8f62758849ed63874f41a2"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicOneSitePI.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "50cd8cfa13e216bf17cb596a6a213bf4fde18e3e34663c3969a3e4a8821913b5",
+      "after_sha256": "7619c82bbeb56677878a308a47c58af2124136785c6c499704fc6569c503ccd9"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicReferenceDensity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "8ef0914d06a64fec6f9dd85af31fc87ede752d08f645c53e7cb9efe42dd86174",
+      "after_sha256": "e3ee314035c8e71adcdc8770295bdcb97ec8294544aecbfd68b3fed5b210dc5e"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicSquaredTestTail.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "de71275b1e6e8bf962996194af12f65d37489da210e0f5bf7b88f90597abf98e",
+      "after_sha256": "d5f37431c372fd9c5a634cc64dc9562e46b08f5bb7df935da6813777952c36d8"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicTestClipping.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "d7f8a81224c8f7b944100c44baf1e704cfc8bc8ad8a9df4e03ca7a6e367587ad",
+      "after_sha256": "149bb8017152bf6aa0a8e5c0a55e1277f74364dfc99ec1cfa33f0be622f341c5"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/BoundedHessianAllCutoffsClosedPI.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "810ae6298f92d930171a313c5ff6683d63a8825c52a67ab4edaff215d57cda0f",
+      "after_sha256": "9114663e380eb720289f50a0f8fdeb41546306998e06069475b8cd90ce2461bd"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/BoundedHessianGrowthData.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "3589fc3157565e1ca59c466bcc6d525467f4e57245b3bdaea80c966c064fc305",
+      "after_sha256": "324afde6596c46a4957d568195d8fc6082cf7642cda02c3f7b205636fa79da72"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/BoundedMultiplier.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "88e8be88b33cb440e74a81a472ad0a9b7a727afdcf536ab5f868bf9e7cbc0e28",
+      "after_sha256": "286cd71417b8ff28de45a3c9a94885e2a67917daaaeb3f342898ba5b8078287b"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/CenteredPotentialDerivatives.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "4521caec107081baabffc4b3c8a85d172c2f8154f33c9451e5d61acd9546347e",
+      "after_sha256": "579b9ce99848feacef746a1bfd0292db3f009e929f5723365eea6ae507b6a7d3"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ClosedGradientGraph.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "136e666d39ac71673c95085a9a6567d3e85e4fffcadb823261c6879e48495e91",
+      "after_sha256": "8413dbc2ed56b50f080f6ef421e33aa547b24983074ea2ac1748c19080b2b68d"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ClosedPhysicalEnergy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "7d38574db8a5f83f7e30a422f034d8c13f3f7c970649e41cd990b95cc56ce2da",
+      "after_sha256": "7016869042080cd43c79b181903765acc5a764663b94873c7774d7d6b2e3ae7f"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/CollisionFreeGradientCore.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2da569fb018c01c09468624947d2230d1d72da962699d6d5d1985d09de1ee942",
+      "after_sha256": "68a04c7701681b896be83515a2aed2ba44083c5464acd6fc8fd8fbff8eb9f0d2"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/CollisionNull.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "7a2b2beab371deb672165c09cc7a7cf4635806a0cbb0869601cf21ed57774cfe",
+      "after_sha256": "fc5a086c191eb69b689367aa4fed3041396cfd18de03ef1e7e0972707fc2907b"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/CollisionSet.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b8d553dfb92f37ae43cb92969a8ca7553fb2bf946397e4e2227bf4768f573357",
+      "after_sha256": "5d749eb51b427ce2ffdf4b75f9d6098869252afd9a6d1c976ea9b0deadd98a8d"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/CommonReferenceDensity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "fd999204f80d780d9a367af9d53d0cf1af534d4ca1737d69d29c561c3790a2db",
+      "after_sha256": "e33c80c3e9ed4ca94a5bd724a91663d38893ed1ff3ea42c78047b5e2ecbd67a2"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/CompactGradientCalculus.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c49c38f7f9719f28f00179edbd60018417162e3a17c43f44959a92f0f2be4641",
+      "after_sha256": "7158b8fc913b2be208aea9076b5cc3116b3b01e8835bd92805b86cdebccf5d7c"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationClosedGradientTransport.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "8387e40dc01fab7147e2b8970faa7335f42b13330f3980fd2fe1a3039c9ae652",
+      "after_sha256": "cf0ec379c7493160e18e2e6e3d1e0b3e68e4e6dd00b97bf870d20eca99d7efee"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationCollisionNull.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "792b78e213d98bb1e25c3f5b963d087124ca3bfbc2d576a15dd3b5685600f575",
+      "after_sha256": "f49ace8efe3d3b3911615a0b21f042b71903b51fa3e9e09b3974e9a5b14a0b7b"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationCoordinateTransport.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "231d6ecf8c21b566686813bffd1eb0acad78890565be82a2b0e29eda07a33b52",
+      "after_sha256": "2d64337d2410e8638e56dc5ae655b35d828431bf937bc9f9c2757f5f15b2586b"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationFlatten.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "af8c86bcdefc6f7b55564a02fefa33247c6f1a3b95978804175cb72d40d53bb9",
+      "after_sha256": "28247a3611981e98a4456e1c9650a115310d113ce0bb6fee2a5a5551befa6de1"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationGradientPullback.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "7f1621054ba1c87e1737869d95ec6de8677c64cb0d91546b9fa5f7b5b9d34683",
+      "after_sha256": "132b93681b3c93fc02c716960c92b8b5c199f0e2509958772d3a0b88fe8d3288"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationLawTranslation.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "111b502e7097a2e14001764b03793a6d7daa6b6a4e16ebf60e326fa84f5fa593",
+      "after_sha256": "7072224dbfbbc47dc57c7d6f0d9ebdaa136aa59ffa9cb2f315180a61f610b347"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationReference.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c95a1c1ede1e47bf4dec4407a6b056c2baa5efbc5c0f437c4569c977cd69d0df",
+      "after_sha256": "6e72727a41c9b834710b405ba821b6979ab53381b8acea1a8ddae2aca041aabf"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationReferenceProbability.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "1369fef774e02145caebb6557fb65a2819a06f613e37bfe88da600bebb04974b",
+      "after_sha256": "5c6e75b52a7c7442280af0a76b9d1fe8c31a7cd0eeb20652fbada03891716d07"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationTranslation.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "96bf9308ffdfc8bb263d487e7bcd3b6f2ad76611a79b0e00eede666d39d60da4",
+      "after_sha256": "17dbb3eca71f96e14ee1e463428f61bee2eb89b29baaf90da9c5ecb10eeaa1a3"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationTranslationGeometry.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "370272f4005547f8c89894695c88df39249c43f97cf2bfee5f62b824a78d7cef",
+      "after_sha256": "4f0a6cd0397cbffca6c474f4672243153b0f63e06560792d0c873bc31766adb8"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConvexReferenceNormalization.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "bceeeeaeb78ca79fed4a12a497a69493a5359015cba6bd65eeea89e4411a99e3",
+      "after_sha256": "1234877ea163bcc5dd02d553370f87f93fdd8384fc028c70122698e2af156c51"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/CriticalNormControls.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "25686855701bd3af7d8685ef47274b05c7998debaa6c001393dc526306a02d9c",
+      "after_sha256": "7935a2523817126360b000f65f13d631ff6faf08a0a619f6a8fa9a2bcf06dffb"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/CutoffCubeApproximation.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "18194f9dee6a67f329d5e68f1ff9bdfb0b6c4640a96360dfd7b5fc252658b693",
+      "after_sha256": "12d3ab0b9948c96ee310e49aa1fd35ecfd8b858b94e4f4d389ca710cc032cea5"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/EuclideanCubeNeumann.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "f8a94ef2f90887649ca728549e61060fde4b95a737ff4e4ff816b9e972eda173",
+      "after_sha256": "6ae3c1b83c87be1065ee07e8d3819ebf7060ed56ad190b1213bcc052d3d79f1f"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/EuclideanDerivativeCoordinates.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c8c5f1c71bec8d9a316a6c52443a4717fdbcce7abff24380710e9e06bb1621a4",
+      "after_sha256": "9958a668047f8c8defde803146e9e5e219c76522af0bcb43d1b1179c1406d1c3"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/EuclideanGradient.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "eb70eea5f3ebf9d9bbb21aa30bcd6b9df53905b989c829ce27c1a099f0179f5a",
+      "after_sha256": "c6e3ad263d4a97605fa853182e8e30aa1a89c6cc8d7a72293333a9942a6d159b"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/EuclideanGroundState.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "f0f4e25bae6a03b8d320ca493b639565d467a8d05a16cce769e1c21a25fe06a5",
+      "after_sha256": "ebe927af29a5fd507b722e16e0db82ce72fb5a0717d2ec4806e52a0c8f15c92d"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/EuclideanHardy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "8996026f51d034c3ddf18c8ccb87e5a4df4106b707681f4e2b146066d053196f",
+      "after_sha256": "34f5f7550ec83bd198f93a787ea0c51c12146105c65546c7fdd81ed351f77182"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/EuclideanHessian.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "0586c14c634fa359cb4107c391c53e96044dba19c084bb79f5d7c133e9f68ef3",
+      "after_sha256": "818b0b36368e9d27afb02ee9181f7e5860d806667fbd18e7151ed9b7f1e5cc59"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/EuclideanLaplacian.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "82d2f3216ea1a91b22e15ecbbde788eae2c26e0af9e037f9fc0a4affdb7d066d",
+      "after_sha256": "703a8aee2ce141ec1d30d70c127d7f021bb114dddf684e3d3daed728b70dd9fe"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/EuclideanSobolev.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2720a8d594a296b466959c264c65de4527888e3c4de185d086f84421f24cf27c",
+      "after_sha256": "061ea96bedf01f206e7b7fb4a36cad953cddb3dc611f13881bfa7d5fab25609b"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FiniteGibbsCommonDensity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "3d8a897a90c0fa9f035c948f2d8e2a3c9c7edd91feec261ee504c3a4d0283734",
+      "after_sha256": "8d1b01b07e9e6291f3ae70eaad4cdbe8cbf9806f60fb795043741e4575e40acd"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FiniteGibbsCompactNormalizedSobolev.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "339f433c34f5ada99eafdf8969c722b32258b2017478afe4ef706441d7da2853",
+      "after_sha256": "ab93dabff31ef3105871d22f43236604d8817b835b01be1f146237aa0449b3d2"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FiniteGibbsMeanPartition.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "feb04938f4cf40662b8655983e4c19da3cac8d8cce0845ffc1997ad6b6c9bb96",
+      "after_sha256": "bfd7d3779dc19c960163eaee18a5b28c613ac01168837df246871268d0c9bf77"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FiniteGibbsProductBoundedTilt.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "0210b548e632e271c0bb45055436db7080d6100c7b8f524f5e173878c062347c",
+      "after_sha256": "3d4fb0bd6f43d966cb10df030442323244f0dd1e2ce7316f26d33b7e3d8dbd83"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FiniteGibbsSquaredTestTail.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "a1f0e2dae698ff928fa9d3a59bc88ce71ac441d507cd8a52e832e4e2a952d36f",
+      "after_sha256": "8610432a626c10e462edfc37a2c9372131d350eef22bcba2367bd635269244d7"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FinitePairLocalCutoffEnergy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "05b44c5b74296f33888790c0b483a5889ddf77c34f44c3480c9ae0f6dda56d17",
+      "after_sha256": "3edf17db33350f5a118036dbbac324da74af145e40874e7f8939474315d30f09"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FinitePairLocalRieszControl.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "fb404b22f5e2cb35b6f8072aec7981d6268450c8b96608d8473cc0ed9e19f2f1",
+      "after_sha256": "4ed125874ea8cee267f301bc9f27c4c8ee5aec9063e79b4ed78520b77e3916ba"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FixedNGibbsAmplitudeClipping.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "183eedaa5be0934f7bdb0cffe5b47efed6cf0852cbe8c44a6f8a93bfea15c342",
+      "after_sha256": "377e9b7277b67fef8286eae66314a62a0f66b98b0beb1ad2c744e247f42a58b9"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FixedNGibbsBoundedBackgroundPI.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "861274fc0a647b07e5775dcbd7cd1d435b25752e0a76770df0d345a95eeb6711",
+      "after_sha256": "6728e072e379fbf9f520293fe16a38daebb4a3a6d3890941eb1a75c12fa56af4"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FixedNProductCoercivity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "3e2755ae2d38a04436c102bdefb86dc650ede6f72616501af5f69feec5d1840f",
+      "after_sha256": "1bf0f1dbb27fde815e9002dee0c2a1ae5a426d180fa2729b0b1da207f42b6eb3"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ForceExponent.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c1dae347df9dd6c9d0bab4bd3ddf398c2e6ceb7eab4c2cbce419cf23d9c9d63f",
+      "after_sha256": "36bcfaaa534f45af607b49bbbdfde36986edc3eeb088495fab0aad0f0a25fd9d"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ForceExponentRange.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b181e4a417a4f909453eeb385040dc3398c5bffe87caeaa66e99c8a057e10b1a",
+      "after_sha256": "41240d8fbc009d995d71e659e2e504d2ee8b137492cafd253e8301f139cd5584"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GaussianConfinementIntegral.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "248e023bf6308ee619e7de52cfeee372259b9cc5a188e7329a0194e73a68f00f",
+      "after_sha256": "542bac62f8256722be828c67ed37228cece67a407f495ff7beab54f3c050f410"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsClosedConstants.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e3ee3b9f35ac9e94515039ddd7e704843558ee86497827450d0743c503baa21a",
+      "after_sha256": "9459f34ade4458e735b45faec1812cf7a5fcbde1c9268117939d592508a9a047"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsClosedCoreEquality.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c4b463c2340965edd17472de6b899d4f55dc3b2404c5a29f1aac46455d5f531b",
+      "after_sha256": "55f1cdf8ddf138d064c691f7863a9a8457a4ac88bdb41e920d0a41a84908d9fe"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsClosedGradientUnique.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c04ddfd1a7bb9d159790878e7db083284817838f9f3bd3c6d56bd208c29d27af",
+      "after_sha256": "5c4d11d66415b33fdd2822a58d35a95f864d08adc741d3f45b6a32450d134524"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsCompactTestCutoffLimit.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2d16ebf7e179d7f7279b8bb79af394b5c27a5f7eff19ae515b29239bf9b78256",
+      "after_sha256": "ed89595b4cfc811f89422ea92f08c77095a5697eb0b34d928083abe9f6810c76"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsInsertionReference.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "3c23bff16f236e4ca4420e0156617177cdb3b3e0fa7b1018dbf443ed08dfad30",
+      "after_sha256": "3f8b07918eb16c123c923c0102ab6958a5084023c5da2fac69df7e1253cbef07"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsJumpPhysicalComparison.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "fdd5a509da1cdc400259565ca9a9a79ec4e9bb3eb8b5bee344fcd3f84a2fdb85",
+      "after_sha256": "3941d98b74a475147a5a3c5a9314dbd919f0ea61ad453ae32cff5c9cf4ff0cb1"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsLaw.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b7c6d13831e4fe1295161537c6b2ca381c5131d5fe8f616280d6e00da0a5205d",
+      "after_sha256": "96006ad17b739efd21ab715c9da071cb3d28b2b7a563f54f60b3b319dcc24d6b"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsLebesgueDensity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "f83c81dde7184e93c6de12b5f56e33eea4cb068876c4d131380bcc61c6c4c21b",
+      "after_sha256": "1c6abe06c2971da7f67550b49cd7cb60aea25d5cfe257f271805e3a8b9cf86b6"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsLocalDensityBounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "09776db4a0a755c1730bf9474677cdc4545d7f8dff2d878744304b13433e8635",
+      "after_sha256": "cbe07bd8d837b642caa2dd763e889dcac15effbebbca4a9659cacbab85dc42c8"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsObservableCutoffLimit.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "837aa6bd943b47db02e0cf827fc931c33b33cefd51c180526a6d2f25c4ebf498",
+      "after_sha256": "c902d41f88bc95ce432e2eaf42976d1a6145f7b0437b19303d6d0539a924ccd2"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsPartition.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "68fdd21ccacba0daca855ad180d13069bac53c2a5edf5fc75f2ed4de7644eab0",
+      "after_sha256": "419c4f8a1a4f60d0d9c2ab4aa691878219eedaf72f94842d5752d8432f4a08df"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsRawDensity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e52c4cfd0970f848aef27a19717e883d125a536580c978c2ab09026a825a1555",
+      "after_sha256": "393a0d3395119beabe4ace53264a32a284a59274b3dcca1e87865aea04cb2f84"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsSingularClosedTransfer.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "4d4ce3fb8b1fcf3a67bb8d43c2f8965b91d1b603a839dbeed28fc5b4d1555dde",
+      "after_sha256": "e51ecfa31163349f4abe14a1f93a16bc826f7a52209bdfd735115363580eda9b"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GradientNormIdentity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "4b658ec2c60e5ccef4fc1878ceb6ba0a86cd002ef12545461808189cc2ffb842",
+      "after_sha256": "d7042e1ee479f8b9622807961a23c416d7062b5238c66422cae77703e063f2de"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GrowthClassNormalization.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "3506206847d8706e39fa4323c6501424ed98905fa4d375ee56bd6a2809a58724",
+      "after_sha256": "2a602e2daad3201fd715ed2cc13477490cd0d663bbf5f91c8c0803a57b207a34"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GrowthClassPositiveCutoffClosedPI.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "d8fbb7bae82ab0986669dd09770c0a8ba8fb8ca7a75a94203e945bc5cec99de3",
+      "after_sha256": "b53c96a20562680507322a0d7e4721d70c652becc0584a32d8b6a470bd3e0fe0"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GrowthClassPotential.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "534c52cf35b18bbcb4981b4f58214f11fa6086bb397a205279078863210528f9",
+      "after_sha256": "775ea67616d5397b70e265b0331ff879798c045a161cc45af21cb6b813f80abd"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GrowthClassZeroCutoffClosedPI.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "c301101b4053cc9b0107b05227fd58bbc084f7a00d23c6f4278201d60161b281",
+      "after_sha256": "c84df687c2ea85500da91a08849466ed7cdd2ba5511174f2801a16e8f26c5172"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/HessianMinimizer.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "24061c94179d77e6f8ff38d858cf3f66e6a7c206bee01c9190af5bbff1b4063d",
+      "after_sha256": "570b85f50c4eef086cb5782d49bc7f1045f60a349ae350fb3d928d42bdf505e5"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/HessianQuadraticSupport.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "69f9975e5004c288b0ae8710aef5b6541ad2c8eeaafb1b238ae9467b6ae2d72e",
+      "after_sha256": "e443c707dc6321a27e3524ac5959da4eb8bb34ec176aafc22b6ab59b544c3402"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/InteractionWeight.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "d041b680d91cbc88d9f798473c000087700fabd06b34f320d127eea081edfa0c",
+      "after_sha256": "e6c61799467384bc30814521dce2632d446e724ed4a345de64696e7985a4ebcb"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/InteractionWeightBounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e6380d94eb77d1cce77c1dffdddbbc87e48fe05eb164429465b84717e072929d",
+      "after_sha256": "d707fb22765c2aa9eeae0b96e9bc4c6ecc732d754d1b616c6375ee132f37af0b"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/InteractionWeightCutoffLimit.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "7a13001f5ab50f66daceca0ec54327aa77b2557fe4bc3d43558d964e542f9665",
+      "after_sha256": "938856184a18521546636f7e4332427f9cef9bd2d78dbf23864ed7710cfbde79"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/InteractionWeightMeasurable.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "f723b416ace88837df45977b0fb0604b247b02894d743f4dc252d10fe707fe49",
+      "after_sha256": "2b86c630370a9c57a7050de0bb7a6c73ee9ae1af933ea5be6cb8de0fb349b48a"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/InteractionWeightOffCollision.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "6ad50d6413407149d857b4b2f4bd38d5a4a52eb985711840e15d7c17b9acbb45",
+      "after_sha256": "c1000db73408517d47aaf859a09e3ad5e490b430231e23ceae0f8a30cbd296bb"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/L2MeasurePullback.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "759a571797f34afd387176c0062dd180fec4160cbd456b534c2125a3f4818801",
+      "after_sha256": "8aa48516bb1a23681a6ab2fcf2112a19e1f79d7b0481060dfc15b7486c1d3fbc"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/LawVariance.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2778e850dcddc84c7cf842c72acb7fb3709fa4917dd9d7f7ccbb643d400943cc",
+      "after_sha256": "cdd230999c8a6c9223d6d5bbdc7dd2a6925b0d21b1e11ea6b29aa7f05b88169a"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/LpVarianceContinuity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "edb3bc9b4e2cc9d73b9161d78ca6a8ea9105f09d59aaebd519a559ccdbc595da",
+      "after_sha256": "415ad1ce97d6ee0c4160f48eabce9cab192ed5e89cbdd0a3aab0ce7c1b973e32"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/MayerUniformRemainder.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "62afaf6a718c188e83227f2fcc1285365cdb89b4d1c3482e1f448795bff1198a",
+      "after_sha256": "984e8c5a263b891afc4c8217e0840cb04c8a5d9b53293bcb092df19014bbb9e6"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeAllNRegularizedPI.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "0a440efd62d18451211593206d61d77aa5ede6f4bf7b703734e05c1f6c0b7f41",
+      "after_sha256": "77bd36fda9a13da17879cb506f4aaf5732a056f79aa166c14db41a5d13b22b79"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsBochner.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "3e9dec9fe053be8bbc944181be707aa5ba6f150c7f6dd9f3b3d89ad6c22eca57",
+      "after_sha256": "1ca63942eaaecdfe74a32d671118374f21fa56976eff0b88da69208f5e0981ad"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsFourCorner.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "f408e85ef6b6bc66d988490e57760ea932853da10ca970ed54ecd16a737a7dcf",
+      "after_sha256": "1bf16550324ed2c505c26f55907ac5fab94c9bd649d0a062e1bac92809b82a62"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsJumpKernel.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "bcd7d9dd69271119caaecb3fadbc22934baea8337343c55d91d27400358e673e",
+      "after_sha256": "d718d7ceccbd31e959abfffac69632d3f8c80d044aae47d34234307cac01a4c2"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsJumpOperator.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "3ac13682358080ed4fd7b5d34bbd476d92a34ec235205eeeecef39a1b60872d1",
+      "after_sha256": "59ad4818aaa00f36969d0cbef11ae902ccf86c67319b20a65cc01058d532b38c"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsJumpVariance.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "505ea2587a4fe6fea1e4c06aa6010db5d316a9ec6ba907f93e15516715e20082",
+      "after_sha256": "0a5ff3a0fedefdd774bb3a5a584bec4b0f62444aad978d5894169e61a5c6716a"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsLargeNJumpGap.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2be525b8d1a43094050d0393c17fa13931af969d8ced67bd8591feafb72c8e91",
+      "after_sha256": "2fa322bff4a7e191fcc95a4aac04660fb2bfa9299cc713b98f63a9016636d6df"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsMayerContribution.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "21f2af4cbfad8988ef82377ecb9eee0515b015705137f0443c4e2a6341316a68",
+      "after_sha256": "3e5183d96816a655fd6fa144cb820a0b63dfea2eca03fbaa344104f9a269c94f"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsReplacementBalance.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "1f7f9f93910372507dd3fdbcbeae659f8bde7cd9fea24b0c297d7daeab2633bf",
+      "after_sha256": "b9cb12acc821147da9ed6a454bedc7fd1752b871cf44c53bc1da5a5994b009b0"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsSameLabel.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "4ca3777d338e05d8e078820c8c3250f1ef3b272b281ed51dc194f98ab2103bdb",
+      "after_sha256": "fa50aca8a1e8b007ce8e354240eb8e01a0e7827115ba5eec2e7563a477f21d72"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsTransformedL2.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "8b5f917f923fee229c3cb5bc07da483a97cc895bb0d05024ef587ab385a423f8",
+      "after_sha256": "4ff2d7afb5b836b43168d82b8ad1ebf9732143898025d27710cd5669b5dd05cc"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeLargeNPhysicalPI.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "3a185ad7eb77abcac8ac7adae7a8dbfc8513f5b5b0b48eeedbda32c0423afa06",
+      "after_sha256": "a5acbe1c2dc43e523d5b52cf4126055a0f99edc8d5bf1378aab38227ae0c781e"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeReferenceMayerOperator.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "935dcf79aede4386ce04dd0546353f083e8b0727e5753179cf73bdb8cc4af985",
+      "after_sha256": "f8169b5282d5d0ca61a05b8728e3c2a42b8c7df490ad4672b86415e022f64884"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/OneParticle.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "3a48876b7fe7687a0e526cd352cc72d428fed2f21c28f19796cd72c3816aec0b",
+      "after_sha256": "b051ebcba705eae0f519cbff792304f973b78cfeaa911ca899705d126b78b3de"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/PairInteraction.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "6e6554f98fe3fe6cfadaabc7854e46ef1a1d32b3c0c6893c1308416a6d8fe965",
+      "after_sha256": "4746146292dbb189fd239eec543b85be9c49a0e80b4e315b10e45fef63865d79"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/PairInteractionCalculus.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b7c050e287d3f6f26a073009ac77583ef67b93514518aaba447812720f6b6a6f",
+      "after_sha256": "7e05d7422c353d07ea2d1767149e09e05c12917971636f97bc90aea34a536e96"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/PairInteractionForceForm.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e24e00e3ee7e45fc183de0d167782f3726597e7db4f1e6528fc373f562bdd0d7",
+      "after_sha256": "0b6790075c1d8c0406559f3e4a8538d016f9c6d4dcbb590632e840b9ec75836e"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/PairInteractionSource.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "22d19ce4c9cd534c981e0e74fa679acb0bbba09c4875ea7ce245af340f286223",
+      "after_sha256": "eef2adf9148916b594ca5891a09685834a80c2f276ee61ff1e2e499bd2ca2635"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/PairRelativeGradient.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "ea35b63f5fbae039bfe8e36a7219aed67746b00045c45052a6c34ef34ff7154e",
+      "after_sha256": "232d7768171f5171b9937a0116c6f1dd6f29c9627a9e1a3155be7acad90daa13"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/PairRelativeLaplacian.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "ed2928bc4a3428559841dd883a00114de1c01e8062d99de9554420c9717b6ca1",
+      "after_sha256": "db28fa40d940eaaed6a4e717ba7c28fd916fe42c3b6b3e4d94384a8a1c645e2b"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ParticleConfig.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "1ae338927bcbee309cf4fad5c88623b4e97171fdde2951b1147161094ea46689",
+      "after_sha256": "fc4b3781b58c37809f083b3738b82ac398584422c4f90b98af1603219a60fae3"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ParticleGradientEnergyIdentity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "6935ad1e37a8f39c9927e097d56c6612d1f423238c12b8a5fed5c2ec7c0c673d",
+      "after_sha256": "4582f90dec529b8d7c6c99bfbb11fa23097d1e1c8780f60d5ac9782b014a38a2"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ParticleInsertion.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "048501700181eb2f371d68309851ad7ea2ccb2d528f5feb9d8f2f555e3e3010b",
+      "after_sha256": "8a489be8d1430bfdde75ba4a21bd71289e7aeb439a0247cf7fa306e9fe77e26f"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ParticleInsertionCalculus.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "73b0bac4504ed335a6bfdc4719a1ab58ea638f2b5eb3bcf99cdfed1879b08020",
+      "after_sha256": "c852d9b0a75101470423d822812d8466dd0c4f6b4abd35b769267f62f4b942d0"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ParticlePosition.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "ea67711ce9b94b5670a11f110b169a471ab655193cded40ff686ab3634f4024d",
+      "after_sha256": "9293f5bbe78d04d5d2231b505a528da245a35226329ef071f0728110e3e64f5a"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/PhysicalEnergy.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e6b8afc73e127e2878780d33d166fe1e6f795e4a5df2f5c26ccc0ea844298d0e",
+      "after_sha256": "b2bea1ccb267ba08f1570dcc23c4501013a14541582bd778add4b7f0677c90b2"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/PotentialBounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b3f41d64600725c27d7bc83768379217a681fbb380355aa23b7f25b4524014dc",
+      "after_sha256": "26b252f86ecc1b4d7abf6b1e53b8a418a4388f67f30837918c61f5bc0420280a"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/Preamble.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "a7da240ef2909808f511cacfb471f46a55ff800e625c573adae16939c3f86de6",
+      "after_sha256": "42ec9d51c38ec321e66d2822e68e77fad6b07fd6c890e8498a09c02e630f1b16"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ProductConfinementCalculus.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "2cbbe283689d82db95d8dbe7ae779325614d24f16625b62bc0f3ed4e548f9d97",
+      "after_sha256": "bc6e921e1a9b311be3f33cc5400d7d6b4afb64d383b313cbb3c1150d486f7558"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ProductReferenceDensity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "a38e79bf509dc788acbe57cd56ce5826e3794c712ae02091d44c3ae28af40a93",
+      "after_sha256": "893b5268a65cfbfaa3e4ab1de2036d290f19691b1e007eeb9c1d278657323fbc"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/QuadraticGaussianClass.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "795d05dbfbe815d82a059e4b07aae3f8ce8911b139c3a627d9bace41d9854f26",
+      "after_sha256": "fd18ba55b4bdb5537b1632b07670fa2ae8771f99c58a71ba6e38d168e7f30719"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/QuadraticGaussianReference.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b4a7fe13357e7a887a59e89e56475b4f236d5cfe6123b78c03d97f2665277bd7",
+      "after_sha256": "7246be3297e698ed3c8ea890f4e292eabfb906378537c824f710e94527286b45"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/RawL2OperatorDescent.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "88f97b44c694a8f7cbf9f58e919eb3231cac2ff8100bff42c8a56dca6aa769ef",
+      "after_sha256": "11ea9382288798733bc1621c090aad6e1ae0d2d53166647d56f6f104d25b3e1c"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ReferenceKernelSchur.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "efe44e467458d022ac6e195f484629f60e02396f1d4c3edc8fca4d21af5f4893",
+      "after_sha256": "ba25d11deebca2dec9035b2ce0f6b365a9c9c71fe9beacecb09a430c2b74d4af"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ReferenceLaw.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "0f6f6a7a172222e898b11581b0ebd2025c446206747fe34b4ec11adc4b03adb9",
+      "after_sha256": "5b34e02948dd0ebc9196f10553865be97d1d670fa01bc2cf90c14606d55cfdd8"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ReferenceLawProbability.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "a2ab17e0f79844619c31c6a5bb7cd8b0e02bd6cf46ca0d6a1645a2e6271238e7",
+      "after_sha256": "e9eb418979838d65e684403e792d8824b063873b9519b72126f36f1ecad724fa"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ReferenceOffsetDensity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "6784cfcbc8408c9159ca2324f890d58fbbef23ba5b2ee177e81bf0f196e93eba",
+      "after_sha256": "4a3370779bd5234bb280a06d24c2d30953ba8daea5885d3ddbc27e570e515709"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ReferencePartition.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "8ec1a7bbfd4881b7539515c609d92227cd8823d517a7fbb3fba0688d9f25aaea",
+      "after_sha256": "b492091e39ff243f82499e176c5702967bc253536b76187ed00346e3325c89ef"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ReferenceQuadraticNormalization.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "3f1bb0f1e4a05b0d91e103f446d60bbbfc121137f3a2b543e4fbf92cceab9f66",
+      "after_sha256": "a14ed6cf58bd180af608107a2655248741c5a6f777d39f321ccf595a8439ea5a"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ReferenceTranslation.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b098f2c7c2b6911f337294077ee102010a2cea89268289999987b41613bab98e",
+      "after_sha256": "9248388631078422e124044996c198ed2134d4f1401bb3ab84b74176d9ebe544"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/RelativeCollisionCutoffs.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "34cbd59b36e67894264000353edf5df25ad9360b434b1344dc0481748627c2db",
+      "after_sha256": "deb23325a15ad55adea00c6e8945157911cc0db0fea3a582904584e6eff6de62"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/RelativePairCoordinates.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "ea4251761d68c39b18c6ce31ddb6341cbb56041e3fd29837e8ff24a91b430b67",
+      "after_sha256": "75d8a68959f2dc8aa4cd120765470e50f1249ecfb4667e18bf5e3f9497aa126d"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/RieszKernel.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "60fb2ebb98723ad82ce770ed3f146dd6a2930b172101648878669129ae07d7ca",
+      "after_sha256": "b0230e7e9314525b573fd0e6f5e9d22c092ece8dc406cffd42a2533488858ab2"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/RieszKernelBounds.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "55781adc9d9a2583581f78c0180f4b71a9b85c43724577edfe5df4180d95c455",
+      "after_sha256": "966eb78b63d56c7b09964d9f5fab1c987b4051800c6f5288ffab64d766606ff6"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/RieszProbabilityRows.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "4d5020571b8fb500f66758bbd8128399574a4889311fe596b94a3abec38a1d57",
+      "after_sha256": "99952c6aa5658c3bc3519ae4e1cf02285b10df7e996925849f530aa96b375da8"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/RowFlattenVolumePreserving.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "d1eb83e4787b680af2195227f780af8ed13e73b5ce494a07d351b065f5eb96ab",
+      "after_sha256": "cc5fb0cbd1d30f7c667c6e6192b9caa2775b6bde9ea3dde0ce74d4f6717816fc"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ShiftedReference.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "8ea00cd873c70eb1428335e8cf917c63cfd38f8c3d20c28994c7c276024ecbe7",
+      "after_sha256": "e91074a4ee19e5651df46caebab4cc93702aa416fbe9a1aec2f39b6e5636f011"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/SinglePairGraphApproximation.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "65cfdd686270b37ae68b012305296fb43da488be3bc4b2804a7785ba357effc8",
+      "after_sha256": "4583d62f7c63b865c5ef6b3dd250f66be3207118217c581a1d629a94db1bd434"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/SingularGibbsNormalization.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "fd8e6aecbe22688ddb650d73b48a2416cfd4c5305c0900df6102302ea5901bc6",
+      "after_sha256": "f3a22fe27b7f4ec8656b9b16697b2cea861053cf3b0fdb621a87ec07fdfe046b"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/SmoothCoreClosedPI.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "5a8f01254b4514213087a11eaec7f86ed94c415a52a52a91e3c847cb93e3fcc8",
+      "after_sha256": "6ac56693926e1341d5e3870c23e1eea184c50b09f404fd02c324fa79f355e874"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/SmoothGradientCore.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "9df9d02bdd432724cddc3cad114a3457080ab3f3f0326a5f228f78f256acac44",
+      "after_sha256": "05b2b1335b712584a36390c40403fe8ea1e5f582d8ddc43369b4112508ebd4c5"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/SobolevExponent.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "adbb20eea7c81768395feb61436429ab70d80ae851bf1a80244fc47c11868a51",
+      "after_sha256": "45dbbfc8d496e443888294ddeab6cd1a8134fed898c05be14821b595366345ab"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/SoftGibbsNormalization.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "1d1d60f13dfa4df8165e15948b561b5ed74fba211569435e2aae21dc65f99a52",
+      "after_sha256": "29e88a38e90eefc2afe1e7d4b1f327fb579825c0c4a778d3e12888e0214a643d"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/SoftInteractionRegularity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "e108629bb9d7eec6fb01b375133917d98b3f35f6ddbbf129c82caf25a86d5ec6",
+      "after_sha256": "15240902e7f61b0b41dffc11b9d82210804023c050278b9033b269e3634ecd5e"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/SoftRieszReferencePositive.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "71ed0c7ed536e7957802346893b217813d7732c31fca6c8bab64595faf4d4070",
+      "after_sha256": "37433227c8afaab47afedcdf17aa63e723336f2329eac6c09e5c2a6f2d298f0b"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/SpatialCutoffApproximation.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "bbc3f0748b6b4d959591e36df7adee9d4d6c142dd08d3bc67a5fc64ad2c11c78",
+      "after_sha256": "f33e3e8998c3666c01276f7f456c4eabde3156dfe75015e50652ea683e19e67e"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/TwoSidedPotential.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "3844fb97c522f434978fcd12d5bcbcf10e6884f517cb8785b0981184f4b42508",
+      "after_sha256": "c0f55104d3462149a8933bf99525bcb261f011160f83d75083774fb6dcbf77b4"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/UniformTraceAbsorption.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "d90f21433480840f4bb4b789fb2f909eda042480c93b937e56d4297c1332ee5c",
+      "after_sha256": "aac08b748e3e10827bc577b52eb173b10498cae74f6f801e43230aa67f1b9b4d"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/WeakPotentialForm.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "6a33dde04c967dd5e6f2fa3c7fea17b6a5a2d857a63f0f09927240bf02fae0c6",
+      "after_sha256": "447a1094ceeb6186cd87943b87df48f615cbf9239b8af1e85ddd2db50bd2e8e8"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/WeightedGradientClosability.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "0d4e1f2c5f3c004336a891746cfd0e6d982672b2ab4f8826e14451af2edfbb2b",
+      "after_sha256": "7fb038548c6f265f485702720c1764ab045c3ec0f156fcc5c5de2ca6f07f3c42"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/WeightedIntegralCauchySchwarz.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "606dbd1a42ae221a970c9d01b04863296377ed10ef4a3722cc56ac32d8b55a78",
+      "after_sha256": "9a51bff6f6a3f0a7ac961e0fc3299c5f57df1ead4378a1cf5c3e9277c10ceff4"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/WeightedJointRowL2.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "a03e4579a9dbd914c6aacc4374aa09ed64b7c4979aba9b00d21a1f9aab85fa1b",
+      "after_sha256": "1477b9b5b0bc933f0d656e10a66b7ae90fcd2d3c44496eefa4f2f67265beafaf"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/WeightedLocalRestriction.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "b2076693366aafd06353501d2712ea4aaa6c1a08b64e7ac86d676f31ccdb4f0f",
+      "after_sha256": "2c009bcfa2f3e8590045d147e28ea6c9ac12674323e8ac16f247ed0be7e5f6d8"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/WeightedMeanJointL2.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "9962d4f39f76e246a33ab57102ad676ee8fd0c24cbb6e349aee60becfe4cab64",
+      "after_sha256": "92a4f9a3e939576cd6faeaae29ef930acc77f83d9dd8c327394b55aa0503a80e"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/WeightedPairCapacity.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "f8d6c173a2c16efd7a076320bf7a48112b5c84ac859b4a86c0ce0b06192e719e",
+      "after_sha256": "beede9ccbde7677143de63edfe087e3cabdebe8456fb734c84c75c5fb49ffbca"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/WeightedSpatialApproximation.lean",
+      "kind": "module-interface-only",
+      "before_sha256": "713cd23328710948c74c71229049ecbbef2b72a1e4159115ac6abc485b7fe561",
+      "after_sha256": "1e6c3ab3ee85575fff02d75e13d30a015d33eca64eab1a404140d2eb2b9a394b"
+    },
+    {
+      "path": "trials/periodic/project/lean-toolchain",
+      "kind": "toolchain",
+      "before_sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+      "after_sha256": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a"
+    },
+    {
+      "path": "trials/periodic/project/lakefile.lean",
+      "kind": "lake-mathlib-pin",
+      "before_sha256": "bcd0b340535b7946ac4a8111b2ad9210137383d48ea0040127eedb0b7433817e",
+      "after_sha256": "8f6a4f0bf73102931e98fdb670b7e795d2a0b72ff6f00a4cd3da4cbbb7eeaf55"
+    },
+    {
+      "path": "trials/periodic/project/lake-manifest.json",
+      "kind": "dependency-lock",
+      "before_sha256": "4fdd7a6e1c7682fa953f455afd57a10bd36dc86744f743504f5d6add3370bee1",
+      "after_sha256": "539ef9cfeabd80f31eaeede8d5dc459612be6e290ececbf08d0c269f0aa8dfaf"
+    },
+    {
+      "path": "trials/whole-space/project/lean-toolchain",
+      "kind": "toolchain",
+      "before_sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+      "after_sha256": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a"
+    },
+    {
+      "path": "trials/whole-space/project/lakefile.lean",
+      "kind": "lake-mathlib-pin",
+      "before_sha256": "bcd0b340535b7946ac4a8111b2ad9210137383d48ea0040127eedb0b7433817e",
+      "after_sha256": "8f6a4f0bf73102931e98fdb670b7e795d2a0b72ff6f00a4cd3da4cbbb7eeaf55"
+    },
+    {
+      "path": "trials/whole-space/project/lake-manifest.json",
+      "kind": "dependency-lock",
+      "before_sha256": "4fdd7a6e1c7682fa953f455afd57a10bd36dc86744f743504f5d6add3370bee1",
+      "after_sha256": "539ef9cfeabd80f31eaeede8d5dc459612be6e290ececbf08d0c269f0aa8dfaf"
+    }
+  ]
+}

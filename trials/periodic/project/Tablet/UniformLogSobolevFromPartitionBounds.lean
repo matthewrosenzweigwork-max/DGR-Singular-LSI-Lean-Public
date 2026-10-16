@@ -1,9 +1,13 @@
-import Tablet.RieszThermalConditionalEntropyBound
-import Tablet.RieszCenteredSquareEntropyLower
-import Tablet.CenteredUniformPoincare
-import Tablet.CenteredCanonicalLogSobolevTransport
-import Tablet.ConfigurationEntropyDefectRemoval
-import Tablet.InverseBoundedTiltLogSobolevTransport
+module
+
+public import Tablet.RieszThermalConditionalEntropyBound
+public import Tablet.RieszCenteredSquareEntropyLower
+public import Tablet.CenteredUniformPoincare
+public import Tablet.CenteredCanonicalLogSobolevTransport
+public import Tablet.ConfigurationEntropyDefectRemoval
+public import Tablet.InverseBoundedTiltLogSobolevTransport
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: UniformLogSobolevFromPartitionBounds]
 theorem UniformLogSobolevFromPartitionBounds (d:ℕ) (hd:2≤d) (s a B l u:ℝ)

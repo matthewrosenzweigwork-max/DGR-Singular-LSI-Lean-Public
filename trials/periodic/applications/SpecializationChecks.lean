@@ -1,9 +1,13 @@
-import ActualFinalSpecializationBridge
-import Tablet.UniformClosedGradientPoincare
-import Tablet.UniformClosedGradientLogSobolev
-import Tablet.CanonicalGradientCoreEquality
-import Tablet.TorusCharacterCalculus
-import Mathlib.MeasureTheory.Measure.OpenPos
+module
+
+public import ActualFinalSpecializationBridge
+public import Tablet.UniformClosedGradientPoincare
+public import Tablet.UniformClosedGradientLogSobolev
+public import Tablet.CanonicalGradientCoreEquality
+public import Tablet.TorusCharacterCalculus
+public import Mathlib.MeasureTheory.Measure.OpenPos
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory Set Filter
 open scoped ContDiff
 noncomputable section

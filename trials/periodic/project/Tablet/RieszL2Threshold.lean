@@ -1,11 +1,15 @@
-import Tablet.RieszLocalStructure
-import Mathlib.Analysis.SpecialFunctions.Pow.Integral
-import Mathlib.MeasureTheory.Function.L2Space
-import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
-import Mathlib.Analysis.Normed.Group.Bounded
-import Mathlib.MeasureTheory.Function.LpSeminorm.Indicator
-import Mathlib.MeasureTheory.Function.LpSeminorm.SMul
-import Mathlib.Tactic
+module
+
+public import Tablet.RieszLocalStructure
+public import Mathlib.Analysis.SpecialFunctions.Pow.Integral
+public import Mathlib.MeasureTheory.Function.L2Space
+public import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
+public import Mathlib.Analysis.Normed.Group.Bounded
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Indicator
+public import Mathlib.MeasureTheory.Function.LpSeminorm.SMul
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Metric Set
 open scoped ENNReal NNReal
 -- [TABLET NODE: RieszL2Threshold]

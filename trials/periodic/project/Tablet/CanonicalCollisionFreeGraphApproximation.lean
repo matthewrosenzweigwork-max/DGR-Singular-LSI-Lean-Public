@@ -1,8 +1,12 @@
-import Tablet.CollisionFreeSmoothCutoff
-import Tablet.GradientGraphClosure
-import Tablet.CanonicalLawUniformBounds
-import Mathlib.MeasureTheory.Function.LpSpace.Indicator
-import Mathlib.MeasureTheory.Function.L2Space
+module
+
+public import Tablet.CollisionFreeSmoothCutoff
+public import Tablet.GradientGraphClosure
+public import Tablet.CanonicalLawUniformBounds
+public import Mathlib.MeasureTheory.Function.LpSpace.Indicator
+public import Mathlib.MeasureTheory.Function.L2Space
+
+@[expose] public section
 open MeasureTheory Set Filter
 open scoped ContDiff Topology
 -- [TABLET NODE: CanonicalCollisionFreeGraphApproximation]

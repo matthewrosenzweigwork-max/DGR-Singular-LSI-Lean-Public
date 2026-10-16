@@ -1,5 +1,9 @@
-import Tablet.ModulatedClosedGradientPoincare
-import Tablet.ModulatedClosedGradientLogSobolev
+module
+
+public import Tablet.ModulatedClosedGradientPoincare
+public import Tablet.ModulatedClosedGradientLogSobolev
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory Set
 -- [TABLET NODE: ModulatedFullGradientInequalities]
 theorem ModulatedFullGradientInequalities (d:ℕ)(hd:2≤d)(s a B l u:ℝ)

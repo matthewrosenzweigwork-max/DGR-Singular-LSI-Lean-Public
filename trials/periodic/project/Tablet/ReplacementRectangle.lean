@@ -1,7 +1,11 @@
-import Tablet.ReplacementJointBalance
-import Tablet.JumpConditionalBalance
-import Tablet.ReplacementRectangleExchange
-import Mathlib.MeasureTheory.Group.Integral
+module
+
+public import Tablet.ReplacementJointBalance
+public import Tablet.JumpConditionalBalance
+public import Tablet.ReplacementRectangleExchange
+public import Mathlib.MeasureTheory.Group.Integral
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 set_option maxHeartbeats 4000000
 -- [TABLET NODE: ReplacementRectangle]

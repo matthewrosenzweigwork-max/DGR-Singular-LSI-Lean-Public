@@ -1,7 +1,11 @@
-import Tablet.PairInteractionCalculus
-import Tablet.WeightedPairCapacity
-import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
-import Mathlib.Tactic
+module
+
+public import Tablet.PairInteractionCalculus
+public import Tablet.WeightedPairCapacity
+public import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 open MeasureTheory

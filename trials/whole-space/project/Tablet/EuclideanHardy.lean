@@ -1,16 +1,20 @@
-import Tablet.EuclideanGradient
-import Tablet.OneParticle
-import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
-import Mathlib.Analysis.InnerProductSpace.Calculus
-import Mathlib.Analysis.Calculus.Gradient.Basic
-import Mathlib.Analysis.InnerProductSpace.PiL2
-import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
-import Mathlib.Tactic
-import Mathlib.Analysis.SpecialFunctions.Pow.Integral
-import Mathlib.Analysis.SpecificLimits.Basic
-import Mathlib.Analysis.Normed.Group.Bounded
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
-import Mathlib.MeasureTheory.Integral.IntegrableOn
+module
+
+public import Tablet.EuclideanGradient
+public import Tablet.OneParticle
+public import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
+public import Mathlib.Analysis.InnerProductSpace.Calculus
+public import Mathlib.Analysis.Calculus.Gradient.Basic
+public import Mathlib.Analysis.InnerProductSpace.PiL2
+public import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
+public import Mathlib.Tactic
+public import Mathlib.Analysis.SpecialFunctions.Pow.Integral
+public import Mathlib.Analysis.SpecificLimits.Basic
+public import Mathlib.Analysis.Normed.Group.Bounded
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+public import Mathlib.MeasureTheory.Integral.IntegrableOn
+
+@[expose] public section
 set_option maxHeartbeats 1600000
 open MeasureTheory
 namespace EuclideanHardy

@@ -1,5 +1,9 @@
-import Tablet.Preamble
-import Mathlib.Analysis.Convex.Deriv
+module
+
+public import Tablet.Preamble
+public import Mathlib.Analysis.Convex.Deriv
+
+@[expose] public section
 
 -- [TABLET NODE: BoundedEntropyStrongConvexity]
 theorem BoundedEntropyStrongConvexity (M : ℝ) (hM : 0 < M)

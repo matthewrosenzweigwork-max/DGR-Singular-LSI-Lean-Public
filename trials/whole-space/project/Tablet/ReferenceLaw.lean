@@ -1,4 +1,8 @@
-import Tablet.ReferencePartition
+module
+
+public import Tablet.ReferencePartition
+
+@[expose] public section
 
 -- [TABLET NODE: ReferenceLaw]
 noncomputable def ReferenceLaw {d : ℕ} (V b : OneParticle d → ℝ) :

@@ -1,4 +1,8 @@
-import Tablet.EuclideanDerivativeCoordinates
+module
+
+public import Tablet.EuclideanDerivativeCoordinates
+
+@[expose] public section
 open scoped ContDiff
 
 -- [TABLET NODE: CompactGradientCalculus]

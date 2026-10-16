@@ -1,0 +1,67 @@
+name: Migration source build
+run-name: Migration source build at ${{ github.sha }}
+on:
+  push:
+    branches: [palomar-migration-2026-10-16]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: migration-${{ github.repository }}-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    env:
+      LEAN_NUM_THREADS: '2'
+    strategy:
+      fail-fast: false
+      matrix:
+        component: [periodic, whole-space]
+    defaults:
+      run:
+        shell: bash
+        working-directory: trials/${{ matrix.component }}/project
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Check migration and preserved proof text
+        working-directory: .
+        run: python3 scripts/check_migration.py
+      - name: Install official elan with pinned installer
+        run: |
+          curl --fail --silent --show-error --location https://raw.githubusercontent.com/leanprover/elan/9605b24b08cf68b78dce0014b6fa01be1f8e2cee/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Record runner capacity and exact Lean version
+        run: |
+          uname -a
+          free -h
+          df -h .
+          lean --version
+          lake --version
+      - name: Obtain the pinned dependency cache
+        run: |
+          set -o pipefail
+          lake exe cache get 2>&1 | tee "$RUNNER_TEMP/cache.log"
+      - name: Build migrated source from fresh project objects
+        run: |
+          set -o pipefail
+          lake --fail-fast build Tablet 2>&1 | tee "$RUNNER_TEMP/build.log"
+      - name: Check migrated source did not drift
+        if: always()
+        working-directory: .
+        run: python3 scripts/check_migration.py
+      - name: Preserve actual build logs
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: migration-${{ matrix.component }}-${{ github.sha }}
+          path: |
+            ${{ runner.temp }}/cache.log
+            ${{ runner.temp }}/build.log
+          if-no-files-found: warn
+          retention-days: 30

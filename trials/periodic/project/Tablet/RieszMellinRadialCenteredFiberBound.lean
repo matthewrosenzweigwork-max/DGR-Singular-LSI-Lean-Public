@@ -1,7 +1,11 @@
-import Tablet.RieszMellinRadialSquaredTailBound
-import Tablet.TorusCosineSeriesParseval
-import Tablet.BoundedCenteredCanonicalKernel
-import Mathlib.Tactic
+module
+
+public import Tablet.RieszMellinRadialSquaredTailBound
+public import Tablet.TorusCosineSeriesParseval
+public import Tablet.BoundedCenteredCanonicalKernel
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Set Filter UnitAddTorus
 open scoped Topology BigOperators ComplexConjugate
 -- [TABLET NODE: RieszMellinRadialCenteredFiberBound]

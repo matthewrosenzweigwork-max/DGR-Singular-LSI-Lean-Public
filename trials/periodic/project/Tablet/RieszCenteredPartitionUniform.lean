@@ -1,8 +1,12 @@
-import Tablet.DGRGaussianCoarsenedEndpointPartition
-import Tablet.ProbabilityExponentialInterpolation
-import Tablet.RieszCenteredHeatPartitionComparison
-import Tablet.ProductDensityMeasureIdentity
-import Tablet.CenteredPartitionFinite
+module
+
+public import Tablet.DGRGaussianCoarsenedEndpointPartition
+public import Tablet.ProbabilityExponentialInterpolation
+public import Tablet.RieszCenteredHeatPartitionComparison
+public import Tablet.ProductDensityMeasureIdentity
+public import Tablet.CenteredPartitionFinite
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: RieszCenteredPartitionUniform]
 theorem RieszCenteredPartitionUniform (d:ℕ)(hd:2≤d)(s a:ℝ)

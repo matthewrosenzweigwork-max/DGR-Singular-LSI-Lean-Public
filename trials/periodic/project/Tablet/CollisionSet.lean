@@ -1,4 +1,8 @@
-import Tablet.Configuration
+module
+
+public import Tablet.Configuration
+
+@[expose] public section
 -- [TABLET NODE: CollisionSet]
 def CollisionSet (d N : ℕ) : Set (Configuration d N) :=
 -- BODY

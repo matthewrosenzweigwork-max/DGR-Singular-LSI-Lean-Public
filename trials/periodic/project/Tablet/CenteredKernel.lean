@@ -1,4 +1,8 @@
-import Tablet.BackgroundPairMean
+module
+
+public import Tablet.BackgroundPairMean
+
+@[expose] public section
 -- [TABLET NODE: CenteredKernel]
 noncomputable def CenteredKernel {d : ℕ}
     (g r : UnitAddTorus (Fin d) → ℝ)

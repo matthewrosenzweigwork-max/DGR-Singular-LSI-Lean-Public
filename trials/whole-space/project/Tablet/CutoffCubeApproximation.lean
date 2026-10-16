@@ -1,5 +1,9 @@
-import Tablet.EuclideanCubeNeumann
-import Mathlib.MeasureTheory.Function.LpSpace.Basic
+module
+
+public import Tablet.EuclideanCubeNeumann
+public import Mathlib.MeasureTheory.Function.LpSpace.Basic
+
+@[expose] public section
 
 open MeasureTheory Set Function
 open scoped ContDiff NNReal

@@ -1,6 +1,10 @@
-import Tablet.CenteredPotentialDerivatives
-import Tablet.GrowthClassPotential
-import Tablet.HessianMinimizer
+module
+
+public import Tablet.CenteredPotentialDerivatives
+public import Tablet.GrowthClassPotential
+public import Tablet.HessianMinimizer
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter Metric

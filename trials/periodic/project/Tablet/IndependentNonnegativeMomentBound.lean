@@ -1,9 +1,13 @@
-import Tablet.Preamble
-import Mathlib.Analysis.Convex.Integral
-import Mathlib.Analysis.Convex.SpecificFunctions.Pow
-import Mathlib.Probability.Independence.Integration
-import Mathlib.MeasureTheory.Integral.Pi
-import Mathlib.Data.Nat.Choose.Sum
+module
+
+public import Tablet.Preamble
+public import Mathlib.Analysis.Convex.Integral
+public import Mathlib.Analysis.Convex.SpecificFunctions.Pow
+public import Mathlib.Probability.Independence.Integration
+public import Mathlib.MeasureTheory.Integral.Pi
+public import Mathlib.Data.Nat.Choose.Sum
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 universe u
 -- [TABLET NODE: IndependentNonnegativeMomentBound]

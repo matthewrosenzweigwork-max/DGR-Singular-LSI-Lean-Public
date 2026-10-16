@@ -1,5 +1,9 @@
-import Tablet.InteractionWeight
-import Tablet.RieszKernelBounds
+module
+
+public import Tablet.InteractionWeight
+public import Tablet.RieszKernelBounds
+
+@[expose] public section
 
 -- [TABLET NODE: InteractionWeightBounds]
 theorem InteractionWeightBounds {d N : ℕ} (s coupling ε : ℝ)

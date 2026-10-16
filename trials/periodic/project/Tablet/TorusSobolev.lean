@@ -1,15 +1,19 @@
-import Tablet.TorusGradient
-import Tablet.TorusSmooth
-import Tablet.TorusFourierLaplacian
-import Mathlib.Topology.Constructions
-import Mathlib.Topology.Algebra.Group.Quotient
-import Mathlib.Analysis.Calculus.ContDiff.WithLp
-import Mathlib.Analysis.Calculus.FDeriv.WithLp
-import Mathlib.MeasureTheory.Group.Integral
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.Analysis.FunctionalSpaces.SobolevInequality
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.DistLEIntegral
-import Mathlib.Tactic
+module
+
+public import Tablet.TorusGradient
+public import Tablet.TorusSmooth
+public import Tablet.TorusFourierLaplacian
+public import Mathlib.Topology.Constructions
+public import Mathlib.Topology.Algebra.Group.Quotient
+public import Mathlib.Analysis.Calculus.ContDiff.WithLp
+public import Mathlib.Analysis.Calculus.FDeriv.WithLp
+public import Mathlib.MeasureTheory.Group.Integral
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.Analysis.FunctionalSpaces.SobolevInequality
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.DistLEIntegral
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Set Function Finset
 open scoped ContDiff ENNReal NNReal
 -- [TABLET NODE: TorusSobolev]

@@ -1,7 +1,11 @@
-import Tablet.NonnegativeOperatorGap
-import Tablet.ReplacementCoercivity
-import Tablet.HeatOperatorBounds
-import Mathlib.MeasureTheory.Function.SimpleFuncDenseLp
+module
+
+public import Tablet.NonnegativeOperatorGap
+public import Tablet.ReplacementCoercivity
+public import Tablet.HeatOperatorBounds
+public import Mathlib.MeasureTheory.Function.SimpleFuncDenseLp
+
+@[expose] public section
 open MeasureTheory Filter Set UnitAddTorus
 open scoped ComplexConjugate
 set_option maxHeartbeats 1500000

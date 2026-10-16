@@ -1,4 +1,8 @@
-import Tablet.Preamble
+module
+
+public import Tablet.Preamble
+
+@[expose] public section
 -- [TABLET NODE: BoundedBackground]
 structure BoundedBackground (d : ℕ) (lower upper : ℝ) where
 -- BODY

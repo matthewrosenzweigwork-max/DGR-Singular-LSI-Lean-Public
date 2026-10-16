@@ -1,7 +1,11 @@
-import Tablet.HeatSemigroup
-import Mathlib.Analysis.Normed.Ring.InfiniteSum
-import Mathlib.Topology.Algebra.InfiniteSum.NatInt
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
+module
+
+public import Tablet.HeatSemigroup
+public import Mathlib.Analysis.Normed.Ring.InfiniteSum
+public import Mathlib.Topology.Algebra.InfiniteSum.NatInt
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+
+@[expose] public section
 open MeasureTheory Filter Set UnitAddTorus
 open scoped Topology ComplexConjugate
 set_option maxHeartbeats 1500000

@@ -1,7 +1,11 @@
-import Tablet.NativeGibbsReplacementBalance
-import Mathlib.MeasureTheory.Function.L2Space
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.Tactic
+module
+
+public import Tablet.NativeGibbsReplacementBalance
+public import Mathlib.MeasureTheory.Function.L2Space
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped ENNReal BigOperators
 set_option autoImplicit false

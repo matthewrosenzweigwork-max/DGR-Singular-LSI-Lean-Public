@@ -1,4 +1,8 @@
-import Tablet.NormalizedTilt
+module
+
+public import Tablet.NormalizedTilt
+
+@[expose] public section
 -- [TABLET NODE: BoundedTiltBounds]
 theorem BoundedTiltBounds {Ω : Type*} [MeasurableSpace Ω]
     (μ : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure μ]

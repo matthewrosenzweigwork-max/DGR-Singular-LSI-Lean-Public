@@ -1,4 +1,8 @@
-import Tablet.Preamble
+module
+
+public import Tablet.Preamble
+
+@[expose] public section
 -- [TABLET NODE: AtomicPotential]
 def AtomicPotential {d n : ℕ} (g : UnitAddTorus (Fin d) → ℝ)
     (w : Fin n → ℝ) (y : Fin n → UnitAddTorus (Fin d))

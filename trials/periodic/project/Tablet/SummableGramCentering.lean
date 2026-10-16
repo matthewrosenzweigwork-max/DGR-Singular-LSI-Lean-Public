@@ -1,6 +1,10 @@
-import Tablet.SummableGramEnergyBound
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+module
+
+public import Tablet.SummableGramEnergyBound
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+
+@[expose] public section
 open MeasureTheory
 open scoped ComplexConjugate
 -- [TABLET NODE: SummableGramCentering]

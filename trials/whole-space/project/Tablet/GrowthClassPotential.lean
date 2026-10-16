@@ -1,6 +1,10 @@
-import Tablet.PotentialBounds
-import Tablet.ForceExponent
-import Tablet.ShiftedReference
+module
+
+public import Tablet.PotentialBounds
+public import Tablet.ForceExponent
+public import Tablet.ShiftedReference
+
+@[expose] public section
 
 -- [TABLET NODE: GrowthClassPotential]
 structure GrowthClassPotential (d : ℕ) (s κ : ℝ) (M C : ℝ → ℝ)

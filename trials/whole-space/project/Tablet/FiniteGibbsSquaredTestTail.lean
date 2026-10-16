@@ -1,10 +1,14 @@
-import Tablet.WeightedSpatialApproximation
-import Tablet.ConvexReferenceNormalization
-import Tablet.SoftGibbsNormalization
-import Tablet.FixedNProductCoercivity
-import Tablet.HessianMinimizer
-import Tablet.GibbsRawDensity
-import Mathlib.Tactic
+module
+
+public import Tablet.WeightedSpatialApproximation
+public import Tablet.ConvexReferenceNormalization
+public import Tablet.SoftGibbsNormalization
+public import Tablet.FixedNProductCoercivity
+public import Tablet.HessianMinimizer
+public import Tablet.GibbsRawDensity
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 2800000
 open MeasureTheory Filter Set

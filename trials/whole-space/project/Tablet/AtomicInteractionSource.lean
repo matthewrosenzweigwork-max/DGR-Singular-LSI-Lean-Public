@@ -1,6 +1,10 @@
-import Tablet.RieszKernel
-import Tablet.EuclideanDerivativeCoordinates
-import Mathlib.Tactic
+module
+
+public import Tablet.RieszKernel
+public import Tablet.EuclideanDerivativeCoordinates
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter
 open scoped ENNReal NNReal Topology

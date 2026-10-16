@@ -1,6 +1,10 @@
-import Tablet.ProductDensity
-import Mathlib.Data.ENNReal.BigOperators
-import Mathlib.MeasureTheory.Integral.Pi
+module
+
+public import Tablet.ProductDensity
+public import Mathlib.Data.ENNReal.BigOperators
+public import Mathlib.MeasureTheory.Integral.Pi
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: ProductDensityMeasureIdentity]
 theorem ProductDensityMeasureIdentity (d N : ℕ) (r : UnitAddTorus (Fin d)→ℝ)

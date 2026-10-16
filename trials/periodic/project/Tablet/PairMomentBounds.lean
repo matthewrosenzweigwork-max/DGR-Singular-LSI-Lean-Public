@@ -1,7 +1,11 @@
-import Tablet.PairEnergy
-import Tablet.ProductBackgroundFacts
-import Mathlib.Probability.Independence.Integration
-import Mathlib.MeasureTheory.Group.Prod
+module
+
+public import Tablet.PairEnergy
+public import Tablet.ProductBackgroundFacts
+public import Mathlib.Probability.Independence.Integration
+public import Mathlib.MeasureTheory.Group.Prod
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 -- [TABLET NODE: PairMomentBounds]
 theorem PairMomentBounds (d N : ℕ) (hN : 1 ≤ N) (l u : ℝ)

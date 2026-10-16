@@ -1,8 +1,12 @@
-import Tablet.HeatIncrementLaw
-import Tablet.HeatKernelFacts
-import Tablet.MeasurePreservingDensityTransport
-import Tablet.BoundedJointDensityMarginal
-import Mathlib.MeasureTheory.Group.Prod
+module
+
+public import Tablet.HeatIncrementLaw
+public import Tablet.HeatKernelFacts
+public import Tablet.MeasurePreservingDensityTransport
+public import Tablet.BoundedJointDensityMarginal
+public import Mathlib.MeasureTheory.Group.Prod
+
+@[expose] public section
 open MeasureTheory
 open scoped ENNReal
 -- [TABLET NODE: HeatBoundedReferencePushforward]

@@ -1,6 +1,10 @@
-import Tablet.ProductBackgroundFacts
-import Tablet.TiltNormalization
-import Mathlib.Data.ENNReal.BigOperators
+module
+
+public import Tablet.ProductBackgroundFacts
+public import Tablet.TiltNormalization
+public import Mathlib.Data.ENNReal.BigOperators
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: ProductBackgroundMeasureIdentity]
 theorem ProductBackgroundMeasureIdentity (d N : ℕ) (l u : ℝ)

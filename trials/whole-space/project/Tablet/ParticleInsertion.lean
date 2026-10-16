@@ -1,4 +1,8 @@
-import Tablet.ParticlePosition
+module
+
+public import Tablet.ParticlePosition
+
+@[expose] public section
 
 -- [TABLET NODE: ParticleInsertion]
 noncomputable def ParticleInsertion {d N : ℕ} (X : ParticleConfig d N) (i : Fin N)

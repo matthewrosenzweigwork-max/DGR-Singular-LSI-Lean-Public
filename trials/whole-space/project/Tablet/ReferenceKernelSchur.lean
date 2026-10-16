@@ -1,12 +1,16 @@
-import Tablet.RawL2OperatorDescent
-import Tablet.WeightedIntegralCauchySchwarz
-import Tablet.Preamble
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.MeasureTheory.Function.L2Space
-import Mathlib.MeasureTheory.Function.LpSpace.Complete
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
-import Mathlib.Probability.Moments.Variance
-import Mathlib.Tactic
+module
+
+public import Tablet.RawL2OperatorDescent
+public import Tablet.WeightedIntegralCauchySchwarz
+public import Tablet.Preamble
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.MeasureTheory.Function.L2Space
+public import Mathlib.MeasureTheory.Function.LpSpace.Complete
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+public import Mathlib.Probability.Moments.Variance
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped InnerProduct
 set_option autoImplicit false

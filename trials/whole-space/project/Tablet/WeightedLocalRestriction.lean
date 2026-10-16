@@ -1,5 +1,9 @@
-import Tablet.Preamble
-import Mathlib.MeasureTheory.Function.L2Space
+module
+
+public import Tablet.Preamble
+public import Mathlib.MeasureTheory.Function.L2Space
+
+@[expose] public section
 open MeasureTheory Filter Set
 
 -- [TABLET NODE: WeightedLocalRestriction]

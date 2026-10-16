@@ -1,5 +1,9 @@
-import Tablet.Preamble
-import Mathlib.Analysis.Calculus.Gradient.Basic
+module
+
+public import Tablet.Preamble
+public import Mathlib.Analysis.Calculus.Gradient.Basic
+
+@[expose] public section
 
 -- [TABLET NODE: EuclideanGradient]
 noncomputable def EuclideanGradient {ι : Type*} [Fintype ι]

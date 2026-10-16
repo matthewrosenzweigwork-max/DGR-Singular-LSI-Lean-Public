@@ -1,23 +1,27 @@
-import Tablet.TorusLift
-import Mathlib.Analysis.Calculus.ContDiff.Bounds
-import Mathlib.Analysis.InnerProductSpace.Calculus
-import Mathlib.Analysis.Calculus.IteratedDeriv.Lemmas
-import Mathlib.Analysis.SpecialFunctions.ExpDeriv
-import Mathlib.Data.Nat.Choose.Sum
-import Mathlib.Analysis.Calculus.ContDiff.Comp
-import Tablet.Preamble
-import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
-import Mathlib.Topology.Separation.Basic
-import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
-import Mathlib.MeasureTheory.Constructions.BorelSpace.ContinuousLinearMap
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.MeasureTheory.Integral.Bochner.SumMeasure
-import Tablet.DominatedSmoothIntegral
-import Tablet.RieszKernel
-import Tablet.RieszHeatTail
-import Tablet.RieszGaussianImageRemainder
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
-import Mathlib.MeasureTheory.Integral.Bochner.Set
+module
+
+public import Tablet.TorusLift
+public import Mathlib.Analysis.Calculus.ContDiff.Bounds
+public import Mathlib.Analysis.InnerProductSpace.Calculus
+public import Mathlib.Analysis.Calculus.IteratedDeriv.Lemmas
+public import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+public import Mathlib.Data.Nat.Choose.Sum
+public import Mathlib.Analysis.Calculus.ContDiff.Comp
+public import Tablet.Preamble
+public import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+public import Mathlib.Topology.Separation.Basic
+public import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
+public import Mathlib.MeasureTheory.Constructions.BorelSpace.ContinuousLinearMap
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.MeasureTheory.Integral.Bochner.SumMeasure
+public import Tablet.DominatedSmoothIntegral
+public import Tablet.RieszKernel
+public import Tablet.RieszHeatTail
+public import Tablet.RieszGaussianImageRemainder
+public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+public import Mathlib.MeasureTheory.Integral.Bochner.Set
+
+@[expose] public section
 open MeasureTheory Set Function Filter
 open scoped ContDiff Topology
 -- [TABLET NODE: RieszZeroCutoffSmooth]

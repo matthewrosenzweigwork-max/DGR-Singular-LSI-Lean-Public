@@ -1,9 +1,13 @@
-import Tablet.JumpConditionalL2Moments
-import Tablet.ConditionalMeanL2Bound
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
-import Mathlib.MeasureTheory.Group.Integral
-import Mathlib.Probability.Moments.Variance
+module
+
+public import Tablet.JumpConditionalL2Moments
+public import Tablet.ConditionalMeanL2Bound
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+public import Mathlib.MeasureTheory.Group.Integral
+public import Mathlib.Probability.Moments.Variance
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 set_option maxHeartbeats 6000000 in
 -- [TABLET NODE: JumpL2VarianceEnergy]

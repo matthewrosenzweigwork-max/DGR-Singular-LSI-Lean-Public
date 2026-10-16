@@ -1,4 +1,8 @@
-import Tablet.OneParticle
+module
+
+public import Tablet.OneParticle
+
+@[expose] public section
 
 -- [TABLET NODE: ShiftedReference]
 def ShiftedReference {d : ℕ} (V b : OneParticle d → ℝ)

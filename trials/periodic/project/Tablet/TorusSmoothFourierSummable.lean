@@ -1,6 +1,10 @@
-import Tablet.TorusFourierLaplacian
-import Mathlib.Analysis.PSeries
-import Mathlib.Analysis.Real.Pi.Bounds
+module
+
+public import Tablet.TorusFourierLaplacian
+public import Mathlib.Analysis.PSeries
+public import Mathlib.Analysis.Real.Pi.Bounds
+
+@[expose] public section
 open MeasureTheory Filter Set UnitAddTorus
 set_option maxHeartbeats 1500000
 -- [TABLET NODE: TorusSmoothFourierSummable]

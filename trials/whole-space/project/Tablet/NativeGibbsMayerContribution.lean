@@ -1,9 +1,13 @@
-import Tablet.NativeGibbsTransformedL2
-import Tablet.NativeReferenceMayerOperator
-import Tablet.GibbsInsertionReference
-import Mathlib.Analysis.InnerProductSpace.Symmetric
-import Mathlib.Algebra.Order.Chebyshev
-import Mathlib.Tactic
+module
+
+public import Tablet.NativeGibbsTransformedL2
+public import Tablet.NativeReferenceMayerOperator
+public import Tablet.GibbsInsertionReference
+public import Mathlib.Analysis.InnerProductSpace.Symmetric
+public import Mathlib.Algebra.Order.Chebyshev
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped InnerProduct ENNReal BigOperators
 set_option autoImplicit false

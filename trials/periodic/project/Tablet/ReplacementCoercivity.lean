@@ -1,8 +1,12 @@
-import Tablet.ReplacementRectangle
-import Tablet.MayerConvolutionBounds
-import Tablet.JumpL2Extension
-import Mathlib.Algebra.Order.Chebyshev
-import Mathlib.MeasureTheory.Function.SimpleFuncDenseLp
+module
+
+public import Tablet.ReplacementRectangle
+public import Tablet.MayerConvolutionBounds
+public import Tablet.JumpL2Extension
+public import Mathlib.Algebra.Order.Chebyshev
+public import Mathlib.MeasureTheory.Function.SimpleFuncDenseLp
+
+@[expose] public section
 open MeasureTheory Filter Set
 set_option maxHeartbeats 1500000
 -- [TABLET NODE: ReplacementCoercivity]

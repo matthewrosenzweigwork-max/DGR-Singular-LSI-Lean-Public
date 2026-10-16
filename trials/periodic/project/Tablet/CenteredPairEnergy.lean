@@ -1,5 +1,9 @@
-import Tablet.CenteredKernel
-import Tablet.Configuration
+module
+
+public import Tablet.CenteredKernel
+public import Tablet.Configuration
+
+@[expose] public section
 -- [TABLET NODE: CenteredPairEnergy]
 noncomputable def CenteredPairEnergy {d N : ℕ}
     (g r : UnitAddTorus (Fin d) → ℝ) (X : Configuration d N) : ℝ :=

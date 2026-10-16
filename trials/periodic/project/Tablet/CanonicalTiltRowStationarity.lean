@@ -1,6 +1,10 @@
-import Tablet.CanonicalTiltRowIdentity
-import Tablet.ProductGibbsRowStationarity
-import Tablet.ProductBackgroundFacts
+module
+
+public import Tablet.CanonicalTiltRowIdentity
+public import Tablet.ProductGibbsRowStationarity
+public import Tablet.ProductBackgroundFacts
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: CanonicalTiltRowStationarity]
 theorem CanonicalTiltRowStationarity (d N : ℕ) (hN : 2 ≤ N) (l u β K H : ℝ)

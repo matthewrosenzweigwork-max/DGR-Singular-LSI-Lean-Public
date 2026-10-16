@@ -1,7 +1,11 @@
-import Tablet.AtomicForceForm
-import Tablet.EuclideanGroundState
-import Tablet.UniformTraceAbsorption
-import Mathlib.Tactic
+module
+
+public import Tablet.AtomicForceForm
+public import Tablet.EuclideanGroundState
+public import Tablet.UniformTraceAbsorption
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter
 open scoped ENNReal NNReal Topology

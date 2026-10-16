@@ -1,7 +1,11 @@
-import Tablet.HeatReplacementGap
-import Tablet.JumpPhysicalComparison
-import Tablet.FiniteParticlePoincare
-import Tablet.RieszFourierCoefficients
+module
+
+public import Tablet.HeatReplacementGap
+public import Tablet.JumpPhysicalComparison
+public import Tablet.FiniteParticlePoincare
+public import Tablet.RieszFourierCoefficients
+
+@[expose] public section
 open MeasureTheory Filter Set UnitAddTorus
 set_option maxHeartbeats 1500000
 -- [TABLET NODE: UniformRegularizedPoincare]

@@ -1,5 +1,9 @@
-import Tablet.CenteredKernelSquareBounds
-import Tablet.CenteredDeletionEnergySum
+module
+
+public import Tablet.CenteredKernelSquareBounds
+public import Tablet.CenteredDeletionEnergySum
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: BoundedCenteredCanonicalKernel]
 theorem BoundedCenteredCanonicalKernel (d : ℕ) (g r : UnitAddTorus (Fin d) → ℝ)

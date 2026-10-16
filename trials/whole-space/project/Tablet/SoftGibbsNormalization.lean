@@ -1,7 +1,11 @@
-import Tablet.GibbsLaw
-import Tablet.InteractionWeightBounds
-import Tablet.SoftInteractionRegularity
-import Tablet.ConfigurationReferenceProbability
+module
+
+public import Tablet.GibbsLaw
+public import Tablet.InteractionWeightBounds
+public import Tablet.SoftInteractionRegularity
+public import Tablet.ConfigurationReferenceProbability
+
+@[expose] public section
 
 -- [TABLET NODE: SoftGibbsNormalization]
 theorem SoftGibbsNormalization {d N : ℕ}

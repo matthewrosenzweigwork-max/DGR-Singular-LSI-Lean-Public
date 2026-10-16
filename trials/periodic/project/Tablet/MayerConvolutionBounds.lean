@@ -1,7 +1,11 @@
-import Tablet.MayerRemainderLimit
-import Mathlib.Analysis.Convolution
-import Mathlib.Analysis.Convex.Deriv
-import Mathlib.Analysis.Convex.SpecificFunctions.Basic
+module
+
+public import Tablet.MayerRemainderLimit
+public import Mathlib.Analysis.Convolution
+public import Mathlib.Analysis.Convex.Deriv
+public import Mathlib.Analysis.Convex.SpecificFunctions.Basic
+
+@[expose] public section
 open MeasureTheory Filter Set UnitAddTorus
 open scoped Topology ComplexConjugate
 set_option maxHeartbeats 1600000

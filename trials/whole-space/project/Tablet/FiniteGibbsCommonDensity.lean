@@ -1,7 +1,11 @@
-import Tablet.FiniteGibbsMeanPartition
-import Tablet.GibbsRawDensity
-import Tablet.GaussianConfinementIntegral
-import Mathlib.Tactic
+module
+
+public import Tablet.FiniteGibbsMeanPartition
+public import Tablet.GibbsRawDensity
+public import Tablet.GaussianConfinementIntegral
+public import Mathlib.Tactic
+
+@[expose] public section
 
 set_option autoImplicit false
 set_option maxHeartbeats 3000000

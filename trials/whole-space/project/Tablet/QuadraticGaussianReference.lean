@@ -1,11 +1,15 @@
-import Tablet.QuadraticGaussianClass
-import Tablet.ConvexReferenceNormalization
-import Tablet.GaussianConfinementIntegral
-import Mathlib.Probability.Distributions.Gaussian.Multivariate
-import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
-import Mathlib.MeasureTheory.Measure.WithDensity
-import Mathlib.MeasureTheory.Integral.Pi
-import Mathlib.Data.ENNReal.BigOperators
+module
+
+public import Tablet.QuadraticGaussianClass
+public import Tablet.ConvexReferenceNormalization
+public import Tablet.GaussianConfinementIntegral
+public import Mathlib.Probability.Distributions.Gaussian.Multivariate
+public import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
+public import Mathlib.MeasureTheory.Measure.WithDensity
+public import Mathlib.MeasureTheory.Integral.Pi
+public import Mathlib.Data.ENNReal.BigOperators
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter Metric

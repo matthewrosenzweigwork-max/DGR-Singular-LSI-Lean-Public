@@ -1,7 +1,11 @@
-import Tablet.CanonicalFiberFourRegimeTail
-import Tablet.DGRConditionalMasterLayerCake
-import Mathlib.MeasureTheory.Function.L2Space
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import Tablet.CanonicalFiberFourRegimeTail
+public import Tablet.DGRConditionalMasterLayerCake
+public import Mathlib.MeasureTheory.Function.L2Space
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 open MeasureTheory
 open scoped InnerProductSpace
 universe u

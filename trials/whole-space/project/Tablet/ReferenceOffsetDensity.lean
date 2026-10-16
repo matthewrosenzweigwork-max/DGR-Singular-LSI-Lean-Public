@@ -1,7 +1,11 @@
-import Tablet.CommonReferenceDensity
-import Tablet.ReferenceLawProbability
-import Tablet.RieszProbabilityRows
-import Mathlib.Tactic
+module
+
+public import Tablet.CommonReferenceDensity
+public import Tablet.ReferenceLawProbability
+public import Tablet.RieszProbabilityRows
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory
 open scoped ENNReal
 set_option maxHeartbeats 1000000

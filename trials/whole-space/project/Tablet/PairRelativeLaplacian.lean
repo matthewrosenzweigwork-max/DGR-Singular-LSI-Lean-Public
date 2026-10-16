@@ -1,9 +1,13 @@
-import Tablet.RelativePairCoordinates
-import Tablet.ParticlePosition
-import Tablet.EuclideanDerivativeCoordinates
-import Mathlib.Analysis.Calculus.FDeriv.Comp
-import Mathlib.Analysis.Calculus.FDeriv.Add
-import Mathlib.Tactic
+module
+
+public import Tablet.RelativePairCoordinates
+public import Tablet.ParticlePosition
+public import Tablet.EuclideanDerivativeCoordinates
+public import Mathlib.Analysis.Calculus.FDeriv.Comp
+public import Mathlib.Analysis.Calculus.FDeriv.Add
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 

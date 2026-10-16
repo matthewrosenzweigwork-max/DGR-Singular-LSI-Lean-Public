@@ -1,11 +1,15 @@
-import Tablet.GradientGraphClosure
-import Tablet.ClosedGradientEnergy
-import Tablet.ExtendedEntropy
-import Mathlib.MeasureTheory.Function.L2Space
-import Mathlib.Probability.Moments.Variance
-import Mathlib.Analysis.SpecialFunctions.Log.NegMulLog
-import Mathlib.MeasureTheory.Function.ConvergenceInMeasure
-import Mathlib.MeasureTheory.Integral.Lebesgue.Add
+module
+
+public import Tablet.GradientGraphClosure
+public import Tablet.ClosedGradientEnergy
+public import Tablet.ExtendedEntropy
+public import Mathlib.MeasureTheory.Function.L2Space
+public import Mathlib.Probability.Moments.Variance
+public import Mathlib.Analysis.SpecialFunctions.Log.NegMulLog
+public import Mathlib.MeasureTheory.Function.ConvergenceInMeasure
+public import Mathlib.MeasureTheory.Integral.Lebesgue.Add
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory Filter Set
 open scoped Topology
 -- [TABLET NODE: GradientClosureInequalityExtension]

@@ -1,5 +1,9 @@
-import Tablet.EuclideanHessian
-import Mathlib.Analysis.InnerProductSpace.Laplacian
+module
+
+public import Tablet.EuclideanHessian
+public import Mathlib.Analysis.InnerProductSpace.Laplacian
+
+@[expose] public section
 
 -- [TABLET NODE: EuclideanLaplacian]
 noncomputable def EuclideanLaplacian {ι : Type*} [Fintype ι]

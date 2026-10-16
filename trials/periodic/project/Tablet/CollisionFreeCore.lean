@@ -1,5 +1,9 @@
-import Tablet.SmoothCore
-import Tablet.CollisionSet
+module
+
+public import Tablet.SmoothCore
+public import Tablet.CollisionSet
+
+@[expose] public section
 -- [TABLET NODE: CollisionFreeCore]
 def CollisionFreeCore (d N : ℕ) : Set (Configuration d N → ℝ) :=
 -- BODY

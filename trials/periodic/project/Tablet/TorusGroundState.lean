@@ -1,10 +1,14 @@
-import Tablet.TorusIntegrationByParts
-import Tablet.TiltNormalization
-import Mathlib.Topology.Constructions
-import Mathlib.Topology.Algebra.Group.Quotient
-import Mathlib.Analysis.Calculus.ContDiff.WithLp
-import Mathlib.Analysis.Calculus.FDeriv.WithLp
-import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+module
+
+public import Tablet.TorusIntegrationByParts
+public import Tablet.TiltNormalization
+public import Mathlib.Topology.Constructions
+public import Mathlib.Topology.Algebra.Group.Quotient
+public import Mathlib.Analysis.Calculus.ContDiff.WithLp
+public import Mathlib.Analysis.Calculus.FDeriv.WithLp
+public import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+
+@[expose] public section
 open scoped ContDiff
 -- [TABLET NODE: TorusGroundState]
 theorem TorusGroundState (d : ℕ) (V f : UnitAddTorus (Fin d) → ℝ)

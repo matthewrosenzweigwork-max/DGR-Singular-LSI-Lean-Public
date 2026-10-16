@@ -1,9 +1,13 @@
-import Tablet.SplitStationarityTransfer
-import Tablet.CenteredGibbsKernelRowProjection
-import Tablet.CenteredEnergyProbabilityControls
-import Tablet.RieszCenteredRowStationarity
-import Tablet.CenteredConditionalIdentity
-import Tablet.RieszPositiveConvolution
+module
+
+public import Tablet.SplitStationarityTransfer
+public import Tablet.CenteredGibbsKernelRowProjection
+public import Tablet.CenteredEnergyProbabilityControls
+public import Tablet.RieszCenteredRowStationarity
+public import Tablet.CenteredConditionalIdentity
+public import Tablet.RieszPositiveConvolution
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 
 -- [TABLET NODE: RieszCenteredDisintegration]

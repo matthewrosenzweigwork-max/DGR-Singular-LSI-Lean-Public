@@ -1,14 +1,18 @@
-import Tablet.AtomicPotential
-import Tablet.CompactWeightedPoincare
-import Tablet.RieszHeatSource
-import Tablet.BoundedDensityComparison
-import Tablet.RieszL1Foundation
-import Tablet.RieszLocalStructure
-import Mathlib.Analysis.Calculus.ContDiff.WithLp
-import Mathlib.Analysis.Calculus.FDeriv.WithLp
-import Mathlib.Topology.Algebra.Group.Quotient
-import Mathlib.Topology.Constructions
-import Mathlib.MeasureTheory.Group.Integral
+module
+
+public import Tablet.AtomicPotential
+public import Tablet.CompactWeightedPoincare
+public import Tablet.RieszHeatSource
+public import Tablet.BoundedDensityComparison
+public import Tablet.RieszL1Foundation
+public import Tablet.RieszLocalStructure
+public import Mathlib.Analysis.Calculus.ContDiff.WithLp
+public import Mathlib.Analysis.Calculus.FDeriv.WithLp
+public import Mathlib.Topology.Algebra.Group.Quotient
+public import Mathlib.Topology.Constructions
+public import Mathlib.MeasureTheory.Group.Integral
+
+@[expose] public section
 open MeasureTheory
 open scoped ContDiff
 -- [TABLET NODE: HolesPoincare]

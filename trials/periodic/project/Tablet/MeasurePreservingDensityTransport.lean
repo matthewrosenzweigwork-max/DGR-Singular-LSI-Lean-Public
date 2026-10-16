@@ -1,6 +1,10 @@
-import Tablet.Preamble
-import Mathlib.MeasureTheory.Measure.WithDensity
-import Mathlib.MeasureTheory.Function.Jacobian
+module
+
+public import Tablet.Preamble
+public import Mathlib.MeasureTheory.Measure.WithDensity
+public import Mathlib.MeasureTheory.Function.Jacobian
+
+@[expose] public section
 open MeasureTheory
 open scoped ENNReal
 -- [TABLET NODE: MeasurePreservingDensityTransport]

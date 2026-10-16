@@ -1,6 +1,10 @@
-import Collective140
-import Tablet.QuadraticGaussianClass
-import Tablet.QuadraticGaussianReference
+module
+
+public import Collective140
+public import Tablet.QuadraticGaussianClass
+public import Tablet.QuadraticGaussianReference
+
+@[expose] public section
 open MeasureTheory
 open scoped ENNReal ContDiff
 set_option autoImplicit false

@@ -1,7 +1,11 @@
-import Tablet.CenteredCanonicalRecenter
-import Tablet.BoundedDensityComparison
-import Tablet.UniformRegularizedPoincare
-import Tablet.ConfigurationCalculus
+module
+
+public import Tablet.CenteredCanonicalRecenter
+public import Tablet.BoundedDensityComparison
+public import Tablet.UniformRegularizedPoincare
+public import Tablet.ConfigurationCalculus
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: CenteredUniformPoincare]
 theorem CenteredUniformPoincare (d : ℕ) (hd : 2 ≤ d)

@@ -1,13 +1,17 @@
-import Tablet.AtomicPotentialFormBound
-import Tablet.RieszStrictSourceDomination
-import Tablet.RieszCoulombTranslatedFormBound
-import Tablet.RieszHeatSourceTransfer
-import Tablet.HeatSourceRegularity
-import Tablet.RieszWeakSource
-import Tablet.RieszL1Foundation
-import Tablet.RieszLocalStructure
-import Mathlib.Topology.Algebra.Group.Quotient
-import Mathlib.Topology.Constructions
+module
+
+public import Tablet.AtomicPotentialFormBound
+public import Tablet.RieszStrictSourceDomination
+public import Tablet.RieszCoulombTranslatedFormBound
+public import Tablet.RieszHeatSourceTransfer
+public import Tablet.HeatSourceRegularity
+public import Tablet.RieszWeakSource
+public import Tablet.RieszL1Foundation
+public import Tablet.RieszLocalStructure
+public import Mathlib.Topology.Algebra.Group.Quotient
+public import Mathlib.Topology.Constructions
+
+@[expose] public section
 open MeasureTheory
 open scoped ContDiff
 -- [TABLET NODE: RieszAtomicPotentialBounds]

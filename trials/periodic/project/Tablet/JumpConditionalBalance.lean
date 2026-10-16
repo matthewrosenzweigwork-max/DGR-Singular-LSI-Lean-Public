@@ -1,12 +1,16 @@
-import Tablet.JumpOperator
-import Tablet.PairAlgebra
-import Tablet.GibbsNormalizerBounds
-import Tablet.CanonicalLaw
-import Tablet.VarianceVariational
-import Tablet.JumpL2Construction
-import Tablet.ReplacementJointBalance
-import Mathlib.MeasureTheory.Group.Integral
-import Mathlib.Probability.Moments.Variance
+module
+
+public import Tablet.JumpOperator
+public import Tablet.PairAlgebra
+public import Tablet.GibbsNormalizerBounds
+public import Tablet.CanonicalLaw
+public import Tablet.VarianceVariational
+public import Tablet.JumpL2Construction
+public import Tablet.ReplacementJointBalance
+public import Mathlib.MeasureTheory.Group.Integral
+public import Mathlib.Probability.Moments.Variance
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 set_option maxHeartbeats 6000000 in
 -- [TABLET NODE: JumpConditionalBalance]

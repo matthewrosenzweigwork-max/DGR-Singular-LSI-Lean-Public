@@ -1,4 +1,8 @@
-import Tablet.GibbsPartition
+module
+
+public import Tablet.GibbsPartition
+
+@[expose] public section
 
 -- [TABLET NODE: GibbsLaw]
 noncomputable def GibbsLaw {d N : ℕ}

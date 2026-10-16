@@ -1,11 +1,15 @@
-import Tablet.PositiveFourierConvolution
-import Mathlib.MeasureTheory.Function.L2Space
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
-import Tablet.Preamble
-import Mathlib.MeasureTheory.Integral.Prod
-import Tablet.CenteredKernel
-import Tablet.RieszMellinFourier
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
+module
+
+public import Tablet.PositiveFourierConvolution
+public import Mathlib.MeasureTheory.Function.L2Space
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+public import Tablet.Preamble
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Tablet.CenteredKernel
+public import Tablet.RieszMellinFourier
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+
+@[expose] public section
 open MeasureTheory Set Filter UnitAddTorus
 open scoped Topology ComplexConjugate
 set_option maxHeartbeats 4000000

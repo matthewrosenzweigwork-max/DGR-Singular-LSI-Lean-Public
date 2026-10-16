@@ -1,21 +1,25 @@
-import Tablet.CollisionSet
-import Tablet.CanonicalLaw
-import Mathlib.Probability.Independence.Basic
-import Mathlib.MeasureTheory.Group.Prod
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.Periodic
-import Tablet.ConfigurationLift
-import Tablet.TorusLift
-import Tablet.ConfigurationCalculus
-import Mathlib.MeasureTheory.Constructions.Pi
-import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
-import Mathlib.MeasureTheory.Function.LpSpace.Basic
-import Tablet.CanonicalDensityLocalComparison
-import Tablet.CoordinateGradient
-import Mathlib.Analysis.Calculus.FDeriv.Comp
-import Mathlib.MeasureTheory.Function.L2Space
-import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
-import Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
-import Tablet.GradientGraphClosure
+module
+
+public import Tablet.CollisionSet
+public import Tablet.CanonicalLaw
+public import Mathlib.Probability.Independence.Basic
+public import Mathlib.MeasureTheory.Group.Prod
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.Periodic
+public import Tablet.ConfigurationLift
+public import Tablet.TorusLift
+public import Tablet.ConfigurationCalculus
+public import Mathlib.MeasureTheory.Constructions.Pi
+public import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
+public import Mathlib.MeasureTheory.Function.LpSpace.Basic
+public import Tablet.CanonicalDensityLocalComparison
+public import Tablet.CoordinateGradient
+public import Mathlib.Analysis.Calculus.FDeriv.Comp
+public import Mathlib.MeasureTheory.Function.L2Space
+public import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
+public import Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
+public import Tablet.GradientGraphClosure
+
+@[expose] public section
 open MeasureTheory Set Filter
 open scoped Topology ContDiff
 attribute [local instance] Classical.propDecidable

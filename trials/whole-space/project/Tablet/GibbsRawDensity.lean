@@ -1,8 +1,12 @@
-import Tablet.GibbsLebesgueDensity
-import Tablet.ProductReferenceDensity
-import Tablet.ConvexReferenceNormalization
-import Tablet.SingularGibbsNormalization
-import Tablet.SoftGibbsNormalization
+module
+
+public import Tablet.GibbsLebesgueDensity
+public import Tablet.ProductReferenceDensity
+public import Tablet.ConvexReferenceNormalization
+public import Tablet.SingularGibbsNormalization
+public import Tablet.SoftGibbsNormalization
+
+@[expose] public section
 open MeasureTheory Filter
 open scoped BigOperators
 

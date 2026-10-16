@@ -1,5 +1,7 @@
 # Singular Riesz functional inequalities in Lean
 
+> Compatibility candidate: Lean/Mathlib pins and module interfaces differ from the frozen release. See [migration status](docs/palomar/MIGRATION_STATUS.md). Use `python3 scripts/check_migration.py` on this branch. The current candidate has not passed a project build or Palomar verification.
+
 Matias Delgadino, Rishabh Gvalani, and Matthew Rosenzweig.
 
 This repository contains the Lean proof sources for periodic logarithmic Sobolev and Poincaré inequalities and whole-space Riesz Poincaré inequalities. Precise assumptions and conclusions are given by the declarations linked below. The whole-space component does not claim a whole-space logarithmic Sobolev inequality.

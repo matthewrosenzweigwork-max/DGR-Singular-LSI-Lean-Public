@@ -1,6 +1,10 @@
-import Tablet.CanonicalCollisionFreeGraphApproximation
-import Tablet.CanonicalGradientClosability
-import Tablet.GradientFormDomain
+module
+
+public import Tablet.CanonicalCollisionFreeGraphApproximation
+public import Tablet.CanonicalGradientClosability
+public import Tablet.GradientFormDomain
+
+@[expose] public section
 open MeasureTheory Set
 -- [TABLET NODE: CanonicalGradientCoreEquality]
 theorem CanonicalGradientCoreEquality (d N:ℕ) (hd:2≤d) (hN:2≤N)

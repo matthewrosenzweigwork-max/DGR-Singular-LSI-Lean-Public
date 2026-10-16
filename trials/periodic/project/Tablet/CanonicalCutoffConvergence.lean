@@ -1,10 +1,14 @@
-import Tablet.CanonicalLawUniformBounds
-import Tablet.RieszCutoffContinuity
-import Tablet.CollisionSet
-import Mathlib.Probability.Independence.Basic
-import Mathlib.MeasureTheory.Group.Prod
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.Periodic
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
+module
+
+public import Tablet.CanonicalLawUniformBounds
+public import Tablet.RieszCutoffContinuity
+public import Tablet.CollisionSet
+public import Mathlib.Probability.Independence.Basic
+public import Mathlib.MeasureTheory.Group.Prod
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.Periodic
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped Topology
 -- [TABLET NODE: CanonicalCutoffConvergence]

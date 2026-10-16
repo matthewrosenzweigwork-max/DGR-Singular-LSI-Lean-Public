@@ -1,4 +1,8 @@
-import Tablet.RieszKernel
+module
+
+public import Tablet.RieszKernel
+
+@[expose] public section
 -- [TABLET NODE: RieszSourceMeasure]
 noncomputable def RieszSourceMeasure (d : ℕ) (s a a₂ M : ℝ) :
     MeasureTheory.Measure (UnitAddTorus (Fin d)) :=

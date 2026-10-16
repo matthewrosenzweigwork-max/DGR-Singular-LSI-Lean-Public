@@ -1,8 +1,12 @@
-import Tablet.GibbsObservableCutoffLimit
-import Tablet.ConvexReferenceNormalization
-import Tablet.CompactGradientCalculus
-import Tablet.LawVariance
-import Tablet.PhysicalEnergy
+module
+
+public import Tablet.GibbsObservableCutoffLimit
+public import Tablet.ConvexReferenceNormalization
+public import Tablet.CompactGradientCalculus
+public import Tablet.LawVariance
+public import Tablet.PhysicalEnergy
+
+@[expose] public section
 open MeasureTheory Filter
 open scoped Topology ContDiff
 

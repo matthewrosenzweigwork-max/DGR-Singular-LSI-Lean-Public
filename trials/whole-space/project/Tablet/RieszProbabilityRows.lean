@@ -1,7 +1,11 @@
-import Tablet.RieszKernelBounds
-import Mathlib.Analysis.SpecialFunctions.Pow.Integral
-import Mathlib.MeasureTheory.Group.Integral
-import Mathlib.Tactic
+module
+
+public import Tablet.RieszKernelBounds
+public import Mathlib.Analysis.SpecialFunctions.Pow.Integral
+public import Mathlib.MeasureTheory.Group.Integral
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Filter Set Metric
 open scoped ENNReal
 set_option maxHeartbeats 1000000

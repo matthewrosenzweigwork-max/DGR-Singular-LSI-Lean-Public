@@ -1,6 +1,10 @@
-import Tablet.Preamble
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.Tactic
+module
+
+public import Tablet.Preamble
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.Tactic
+
+@[expose] public section
 -- [TABLET NODE: DGRCappedPowerGrowth]
 theorem DGRCappedPowerGrowth (N θ C u m A : ℝ)
     (hN : 1≤N) (hθ : 0<θ) (hθ1 : θ<1) (hC : 1≤C) (hu : 1≤u)

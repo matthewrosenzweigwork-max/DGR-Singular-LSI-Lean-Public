@@ -1,5 +1,9 @@
-import Tablet.TorusFourierLaplacian
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
+module
+
+public import Tablet.TorusFourierLaplacian
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
+
+@[expose] public section
 open MeasureTheory
 open scoped ContDiff
 -- [TABLET NODE: TorusCharacterCalculus]

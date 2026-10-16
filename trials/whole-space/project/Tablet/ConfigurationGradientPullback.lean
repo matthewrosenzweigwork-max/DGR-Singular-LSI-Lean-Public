@@ -1,5 +1,9 @@
-import Tablet.ConfigurationTranslation
-import Tablet.L2MeasurePullback
+module
+
+public import Tablet.ConfigurationTranslation
+public import Tablet.L2MeasurePullback
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter

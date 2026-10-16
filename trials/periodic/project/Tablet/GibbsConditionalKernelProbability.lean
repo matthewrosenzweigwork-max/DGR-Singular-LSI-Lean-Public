@@ -1,6 +1,10 @@
-import Tablet.GibbsConditionalKernel
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.MeasureTheory.Measure.Tilted
+module
+
+public import Tablet.GibbsConditionalKernel
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.MeasureTheory.Measure.Tilted
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 
 -- [TABLET NODE: GibbsConditionalKernelProbability]

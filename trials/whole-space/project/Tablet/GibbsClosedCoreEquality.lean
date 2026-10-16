@@ -1,9 +1,13 @@
-import Tablet.SinglePairGraphApproximation
-import Tablet.WeightedPairCapacity
-import Tablet.GibbsLocalDensityBounds
-import Tablet.CollisionFreeGradientCore
-import Tablet.ClosedGradientGraph
-import Tablet.CollisionNull
+module
+
+public import Tablet.SinglePairGraphApproximation
+public import Tablet.WeightedPairCapacity
+public import Tablet.GibbsLocalDensityBounds
+public import Tablet.CollisionFreeGradientCore
+public import Tablet.ClosedGradientGraph
+public import Tablet.CollisionNull
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped BigOperators Topology ContDiff
 namespace GibbsClosedCoreEquality

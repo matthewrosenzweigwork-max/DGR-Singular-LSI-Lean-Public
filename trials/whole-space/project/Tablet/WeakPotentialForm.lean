@@ -1,8 +1,12 @@
-import Tablet.EuclideanSobolev
-import Mathlib.Analysis.SpecialFunctions.SmoothTransition
-import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
-import Mathlib.MeasureTheory.Integral.Layercake
-import Mathlib.Tactic
+module
+
+public import Tablet.EuclideanSobolev
+public import Mathlib.Analysis.SpecialFunctions.SmoothTransition
+public import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
+public import Mathlib.MeasureTheory.Integral.Layercake
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option maxHeartbeats 2400000
 open MeasureTheory Set Filter
 open scoped ENNReal NNReal

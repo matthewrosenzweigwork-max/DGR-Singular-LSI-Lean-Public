@@ -1,8 +1,12 @@
-import Tablet.RieszKernel
-import Tablet.EuclideanGradient
-import Mathlib.Analysis.SpecialFunctions.Pow.Integral
-import Mathlib.MeasureTheory.Integral.Lebesgue.Markov
-import Mathlib.Tactic
+module
+
+public import Tablet.RieszKernel
+public import Tablet.EuclideanGradient
+public import Mathlib.Analysis.SpecialFunctions.Pow.Integral
+public import Mathlib.MeasureTheory.Integral.Lebesgue.Markov
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Metric
 open scoped ENNReal NNReal

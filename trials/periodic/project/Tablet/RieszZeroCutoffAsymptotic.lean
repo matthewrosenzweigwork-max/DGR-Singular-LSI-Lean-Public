@@ -1,8 +1,12 @@
-import Tablet.RieszKernel
-import Tablet.GaussianMellinAsymptotic
-import Tablet.RieszGaussianImageRemainder
-import Tablet.RieszHeatTail
-import Mathlib.MeasureTheory.Integral.Bochner.Set
+module
+
+public import Tablet.RieszKernel
+public import Tablet.GaussianMellinAsymptotic
+public import Tablet.RieszGaussianImageRemainder
+public import Tablet.RieszHeatTail
+public import Mathlib.MeasureTheory.Integral.Bochner.Set
+
+@[expose] public section
 open MeasureTheory Set
 -- [TABLET NODE: RieszZeroCutoffAsymptotic]
 theorem RieszZeroCutoffAsymptotic (d : ℕ) (hd : 2 ≤ d) (s a : ℝ)

@@ -1,9 +1,13 @@
-import Tablet.HeatCenteredEnergyAveraging
-import Tablet.HeatBoundedReferencePushforward
-import Tablet.IndependentShiftPushforward
-import Tablet.ProbabilityJensenTransport
-import Tablet.ProductDensityMeasureIdentity
-import Tablet.CenteredPartition
+module
+
+public import Tablet.HeatCenteredEnergyAveraging
+public import Tablet.HeatBoundedReferencePushforward
+public import Tablet.IndependentShiftPushforward
+public import Tablet.ProbabilityJensenTransport
+public import Tablet.ProductDensityMeasureIdentity
+public import Tablet.CenteredPartition
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: HeatCenteredPartitionComparison]
 theorem HeatCenteredPartitionComparison (d N : ℕ) (t : ℝ) (ht : 0<t)

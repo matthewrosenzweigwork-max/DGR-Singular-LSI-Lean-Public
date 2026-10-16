@@ -1,4 +1,8 @@
-import Tablet.ReplacementJointBalance
+module
+
+public import Tablet.ReplacementJointBalance
+
+@[expose] public section
 -- [TABLET NODE: ReplacementRectangleExchange]
 theorem ReplacementRectangleExchange (d N : ℕ) (hN : 2 ≤ N) (l u β : ℝ)
     (q : BoundedBackground d l u) (hβ : 0 ≤ β)

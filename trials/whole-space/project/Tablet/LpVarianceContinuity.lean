@@ -1,5 +1,9 @@
-import Tablet.LawVariance
-import Mathlib.MeasureTheory.Function.L2Space
+module
+
+public import Tablet.LawVariance
+public import Mathlib.MeasureTheory.Function.L2Space
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped Topology
 

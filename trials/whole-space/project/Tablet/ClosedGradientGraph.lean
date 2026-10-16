@@ -1,4 +1,8 @@
-import Tablet.SmoothGradientCore
+module
+
+public import Tablet.SmoothGradientCore
+
+@[expose] public section
 
 -- [TABLET NODE: ClosedGradientGraph]
 def ClosedGradientGraph {d N : ℕ}

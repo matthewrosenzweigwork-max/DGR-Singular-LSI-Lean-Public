@@ -1,12 +1,16 @@
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
-import Mathlib.Tactic
-import Tablet.RieszWeakSource
-import Tablet.RieszLocalStructure
-import Tablet.HeatSourceDensity
-import Tablet.HeatOperatorBounds
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
-import Mathlib.MeasureTheory.Group.Integral
+module
+
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
+public import Mathlib.Tactic
+public import Tablet.RieszWeakSource
+public import Tablet.RieszLocalStructure
+public import Tablet.HeatSourceDensity
+public import Tablet.HeatOperatorBounds
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+public import Mathlib.MeasureTheory.Group.Integral
+
+@[expose] public section
 open MeasureTheory Set Metric
 open scoped ContDiff
 open MeasureTheory Set

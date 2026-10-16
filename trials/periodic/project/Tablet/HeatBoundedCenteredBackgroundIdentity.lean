@@ -1,6 +1,10 @@
-import Tablet.HeatOperatorBounds
-import Tablet.HeatSemigroupComposition
-import Tablet.CenteredKernelBounds
+module
+
+public import Tablet.HeatOperatorBounds
+public import Tablet.HeatSemigroupComposition
+public import Tablet.CenteredKernelBounds
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: HeatBoundedCenteredBackgroundIdentity]
 theorem HeatBoundedCenteredBackgroundIdentity (d : ℕ) (t : ℝ) (ht : 0<t)

@@ -1,4 +1,8 @@
-import Tablet.OneParticle
+module
+
+public import Tablet.OneParticle
+
+@[expose] public section
 
 -- [TABLET NODE: BoundedMultiplier]
 structure BoundedMultiplier (d : ℕ) (L : ℝ) (b : OneParticle d → ℝ) : Prop where

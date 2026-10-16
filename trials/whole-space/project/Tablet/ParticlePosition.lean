@@ -1,4 +1,8 @@
-import Tablet.ParticleConfig
+module
+
+public import Tablet.ParticleConfig
+
+@[expose] public section
 
 -- [TABLET NODE: ParticlePosition]
 noncomputable def ParticlePosition {d N : ℕ} (X : ParticleConfig d N)

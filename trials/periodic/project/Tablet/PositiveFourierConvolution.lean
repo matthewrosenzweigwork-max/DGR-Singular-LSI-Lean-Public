@@ -1,4 +1,8 @@
-import Tablet.MayerConvolutionBounds
+module
+
+public import Tablet.MayerConvolutionBounds
+
+@[expose] public section
 open MeasureTheory Filter Set UnitAddTorus
 open scoped Topology ComplexConjugate
 set_option maxHeartbeats 1600000

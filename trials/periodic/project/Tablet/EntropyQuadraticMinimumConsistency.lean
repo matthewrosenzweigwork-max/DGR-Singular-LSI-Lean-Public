@@ -1,5 +1,9 @@
-import Tablet.BoundedDensityEntropyMidpoint
-import Mathlib.Analysis.SpecialFunctions.Log.NegMulLog
+module
+
+public import Tablet.BoundedDensityEntropyMidpoint
+public import Mathlib.Analysis.SpecialFunctions.Log.NegMulLog
+
+@[expose] public section
 open MeasureTheory
 open scoped Topology
 

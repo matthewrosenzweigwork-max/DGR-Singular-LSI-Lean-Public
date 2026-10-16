@@ -1,7 +1,11 @@
-import Tablet.StrongMidpointMinimum
-import Tablet.BoundedDensityEntropyMidpoint
-import Tablet.L2BoxContinuousIntegral
-import Tablet.L2DensityBoxComplete
+module
+
+public import Tablet.StrongMidpointMinimum
+public import Tablet.BoundedDensityEntropyMidpoint
+public import Tablet.L2BoxContinuousIntegral
+public import Tablet.L2DensityBoxComplete
+
+@[expose] public section
 
 open MeasureTheory
 open scoped Topology

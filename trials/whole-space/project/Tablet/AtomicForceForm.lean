@@ -1,9 +1,13 @@
-import Tablet.AtomicForceWeak
-import Tablet.WeakPotentialForm
-import Tablet.ForceExponentRange
-import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
-import Mathlib.Analysis.InnerProductSpace.Calculus
-import Mathlib.Tactic
+module
+
+public import Tablet.AtomicForceWeak
+public import Tablet.WeakPotentialForm
+public import Tablet.ForceExponentRange
+public import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
+public import Mathlib.Analysis.InnerProductSpace.Calculus
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter
 open scoped ENNReal NNReal

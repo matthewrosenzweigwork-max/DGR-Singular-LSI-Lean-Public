@@ -1,4 +1,8 @@
-import Tablet.ConfigurationReference
+module
+
+public import Tablet.ConfigurationReference
+
+@[expose] public section
 
 -- [TABLET NODE: ConfigurationReferenceProbability]
 theorem ConfigurationReferenceProbability (d N : ℕ)

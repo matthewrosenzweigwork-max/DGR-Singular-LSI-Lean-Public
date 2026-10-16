@@ -1,4 +1,8 @@
-import Tablet.CenteredPairEnergy
+module
+
+public import Tablet.CenteredPairEnergy
+
+@[expose] public section
 -- [TABLET NODE: CenteredDeletionPotential]
 noncomputable def CenteredDeletionPotential {d N : ℕ} (g r : UnitAddTorus (Fin d) → ℝ)
     (β : ℝ) (i : Fin N)

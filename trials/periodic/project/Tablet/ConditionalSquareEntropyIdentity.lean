@@ -1,7 +1,11 @@
-import Tablet.Entropy
-import Mathlib.Probability.Kernel.Composition.IntegralCompProd
-import Mathlib.Probability.Kernel.MeasurableIntegral
-import Mathlib.Analysis.SpecialFunctions.Log.NegMulLog
+module
+
+public import Tablet.Entropy
+public import Mathlib.Probability.Kernel.Composition.IntegralCompProd
+public import Mathlib.Probability.Kernel.MeasurableIntegral
+public import Mathlib.Analysis.SpecialFunctions.Log.NegMulLog
+
+@[expose] public section
 universe u
 open MeasureTheory ProbabilityTheory
 -- [TABLET NODE: ConditionalSquareEntropyIdentity]

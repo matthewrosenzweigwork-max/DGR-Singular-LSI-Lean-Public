@@ -1,5 +1,9 @@
-import Tablet.CenteredPairEnergy
-import Tablet.ProductDensity
+module
+
+public import Tablet.CenteredPairEnergy
+public import Tablet.ProductDensity
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: CenteredPartition]
 noncomputable def CenteredPartition {d N : ℕ}

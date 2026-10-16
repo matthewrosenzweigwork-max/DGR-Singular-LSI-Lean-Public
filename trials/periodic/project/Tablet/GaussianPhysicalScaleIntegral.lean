@@ -1,8 +1,12 @@
-import Tablet.Preamble
-import Mathlib.MeasureTheory.Function.JacobianOneDim
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.Analysis.SpecialFunctions.Sqrt
-import Mathlib.Tactic
+module
+
+public import Tablet.Preamble
+public import Mathlib.MeasureTheory.Function.JacobianOneDim
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.Analysis.SpecialFunctions.Sqrt
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Set
 
 -- Exact physical-radius to heat-time substitution; no integrability oracle.

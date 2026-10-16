@@ -1,8 +1,12 @@
-import Tablet.CenteredCanonicalRecenter
-import Tablet.CanonicalTiltRowStationarity
-import Tablet.BoundedTiltComposition
-import Tablet.RieszLocalStructure
-import Mathlib.Topology.Algebra.Group.Quotient
+module
+
+public import Tablet.CenteredCanonicalRecenter
+public import Tablet.CanonicalTiltRowStationarity
+public import Tablet.BoundedTiltComposition
+public import Tablet.RieszLocalStructure
+public import Mathlib.Topology.Algebra.Group.Quotient
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: RieszCenteredRowStationarity]
 theorem RieszCenteredRowStationarity (d N : ℕ) (hd : 2 ≤ d) (hN : 2 ≤ N)

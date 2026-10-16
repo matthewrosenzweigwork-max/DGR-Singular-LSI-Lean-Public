@@ -1,7 +1,11 @@
-import Tablet.ReferencePartition
-import Tablet.BoundedMultiplier
-import Tablet.GaussianConfinementIntegral
-import Mathlib.Tactic.Linarith
+module
+
+public import Tablet.ReferencePartition
+public import Tablet.BoundedMultiplier
+public import Tablet.GaussianConfinementIntegral
+public import Mathlib.Tactic.Linarith
+
+@[expose] public section
 
 -- [TABLET NODE: ReferenceQuadraticNormalization]
 theorem ReferenceQuadraticNormalization {d : ℕ} (V b : OneParticle d → ℝ)

@@ -1,7 +1,11 @@
-import Tablet.Preamble
-import Mathlib.Analysis.InnerProductSpace.Symmetric
-import Mathlib.Analysis.InnerProductSpace.Projection.Submodule
-import Mathlib.Tactic
+module
+
+public import Tablet.Preamble
+public import Mathlib.Analysis.InnerProductSpace.Symmetric
+public import Mathlib.Analysis.InnerProductSpace.Projection.Submodule
+public import Mathlib.Tactic
+
+@[expose] public section
 open scoped InnerProductSpace
 -- [TABLET NODE: NonnegativeOperatorGap]
 theorem NonnegativeOperatorGap {H : Type*} [NormedAddCommGroup H]

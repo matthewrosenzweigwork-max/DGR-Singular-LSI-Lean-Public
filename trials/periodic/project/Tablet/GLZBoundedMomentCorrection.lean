@@ -1,4 +1,8 @@
-import Tablet.Preamble
+module
+
+public import Tablet.Preamble
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: GLZBoundedMomentCorrection]
 theorem GLZBoundedMomentCorrection {Ω Λ : Type*} [MeasurableSpace Ω] [Fintype Λ]

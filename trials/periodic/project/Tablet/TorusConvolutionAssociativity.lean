@@ -1,6 +1,10 @@
-import Tablet.HeatOperatorBounds
-import Mathlib.Analysis.Convolution
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import Tablet.HeatOperatorBounds
+public import Mathlib.Analysis.Convolution
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: TorusConvolutionAssociativity]
 theorem TorusConvolutionAssociativity (d : ℕ)

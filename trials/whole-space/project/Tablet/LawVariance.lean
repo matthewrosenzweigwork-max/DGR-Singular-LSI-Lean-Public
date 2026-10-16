@@ -1,5 +1,9 @@
-import Tablet.Preamble
-import Mathlib.Probability.Moments.Variance
+module
+
+public import Tablet.Preamble
+public import Mathlib.Probability.Moments.Variance
+
+@[expose] public section
 
 -- [TABLET NODE: LawVariance]
 noncomputable def LawVariance {α : Type*} [MeasurableSpace α]

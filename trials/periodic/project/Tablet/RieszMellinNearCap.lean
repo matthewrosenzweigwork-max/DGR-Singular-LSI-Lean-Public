@@ -1,10 +1,14 @@
-import Tablet.RieszKernel
-import Tablet.HeatKernelFacts
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
-import Tablet.CenteredKernelBounds
-import Tablet.CenteredPairEnergy
-import Tablet.RieszMellinNear
+module
+
+public import Tablet.RieszKernel
+public import Tablet.HeatKernelFacts
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+public import Tablet.CenteredKernelBounds
+public import Tablet.CenteredPairEnergy
+public import Tablet.RieszMellinNear
+
+@[expose] public section
 open MeasureTheory Set Filter
 open scoped Topology
 -- [TABLET NODE: RieszMellinNearCap]

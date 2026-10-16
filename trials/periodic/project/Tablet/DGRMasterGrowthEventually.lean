@@ -1,5 +1,9 @@
-import Tablet.DGRPowerGrowthEventually
-import Tablet.DGRLogGrowthEventually
+module
+
+public import Tablet.DGRPowerGrowthEventually
+public import Tablet.DGRLogGrowthEventually
+
+@[expose] public section
 -- [TABLET NODE: DGRMasterGrowthEventually]
 theorem DGRMasterGrowthEventually (d : ℕ) (hd : 2≤d) (s C : ℝ)
     (hs : 0≤s) (hL : s<(d:ℝ)/2) (hC : 0≤C) :

@@ -1,13 +1,17 @@
-import Tablet.ReferenceTranslation
-import Tablet.CommonReferenceDensity
-import Tablet.ReferenceLawProbability
-import Tablet.RieszProbabilityRows
-import Tablet.HessianQuadraticSupport
-import Tablet.SoftGibbsNormalization
-import Mathlib.Probability.Independence.Basic
-import Mathlib.Analysis.Convex.SpecificFunctions.Basic
-import Mathlib.Analysis.Calculus.LocalExtr.Basic
-import Mathlib.Tactic
+module
+
+public import Tablet.ReferenceTranslation
+public import Tablet.CommonReferenceDensity
+public import Tablet.ReferenceLawProbability
+public import Tablet.RieszProbabilityRows
+public import Tablet.HessianQuadraticSupport
+public import Tablet.SoftGibbsNormalization
+public import Mathlib.Probability.Independence.Basic
+public import Mathlib.Analysis.Convex.SpecificFunctions.Basic
+public import Mathlib.Analysis.Calculus.LocalExtr.Basic
+public import Mathlib.Tactic
+
+@[expose] public section
 
 set_option autoImplicit false
 set_option maxHeartbeats 2400000

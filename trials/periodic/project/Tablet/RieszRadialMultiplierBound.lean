@@ -1,7 +1,11 @@
-import Tablet.Preamble
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.Analysis.Real.Pi.Bounds
-import Mathlib.Tactic
+module
+
+public import Tablet.Preamble
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.Analysis.Real.Pi.Bounds
+public import Mathlib.Tactic
+
+@[expose] public section
 open scoped BigOperators
 -- [TABLET NODE: RieszRadialMultiplierBound]
 theorem RieszRadialMultiplierBound (d:ℕ) (s a:ℝ) (hsd:s<(d:ℝ)) (ha:0<a) :

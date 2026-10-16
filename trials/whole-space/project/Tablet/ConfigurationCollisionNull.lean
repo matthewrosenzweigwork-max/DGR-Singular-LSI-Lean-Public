@@ -1,6 +1,10 @@
-import Tablet.ConfigurationReference
-import Tablet.CollisionSet
-import Mathlib.Probability.Independence.Basic
+module
+
+public import Tablet.ConfigurationReference
+public import Tablet.CollisionSet
+public import Mathlib.Probability.Independence.Basic
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory Filter Set
 
 -- [TABLET NODE: ConfigurationCollisionNull]

@@ -1,5 +1,9 @@
-import Tablet.Configuration
-import Mathlib.Logic.Equiv.Fin.Basic
+module
+
+public import Tablet.Configuration
+public import Mathlib.Logic.Equiv.Fin.Basic
+
+@[expose] public section
 -- [TABLET NODE: ConfigurationFlatten]
 def ConfigurationFlatten (d N : ℕ) :
     Configuration d N ≃ UnitAddTorus (Fin (N * d)) :=

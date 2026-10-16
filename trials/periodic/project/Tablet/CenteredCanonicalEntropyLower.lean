@@ -1,7 +1,11 @@
-import Tablet.CenteredInteractionEntropyLower
-import Tablet.CenteredDeletionPotentialControls
-import Tablet.CenteredDeletionEnergySum
-import Tablet.CenteredCanonicalLaw
+module
+
+public import Tablet.CenteredInteractionEntropyLower
+public import Tablet.CenteredDeletionPotentialControls
+public import Tablet.CenteredDeletionEnergySum
+public import Tablet.CenteredCanonicalLaw
+
+@[expose] public section
 open MeasureTheory InformationTheory
 
 -- [TABLET NODE: CenteredCanonicalEntropyLower]

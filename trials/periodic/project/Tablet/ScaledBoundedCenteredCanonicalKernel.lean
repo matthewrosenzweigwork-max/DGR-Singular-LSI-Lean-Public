@@ -1,5 +1,9 @@
-import Tablet.BoundedCenteredCanonicalKernel
-import Tablet.CenteredDeletionEnergySum
+module
+
+public import Tablet.BoundedCenteredCanonicalKernel
+public import Tablet.CenteredDeletionEnergySum
+
+@[expose] public section
 open MeasureTheory
 open scoped BigOperators
 -- [TABLET NODE: ScaledBoundedCenteredCanonicalKernel]

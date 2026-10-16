@@ -1,7 +1,11 @@
-import Tablet.AtomicCoercivityExtension
-import Tablet.EuclideanSobolev
-import Mathlib.MeasureTheory.Function.LpSpace.Complete
-import Mathlib.Tactic
+module
+
+public import Tablet.AtomicCoercivityExtension
+public import Tablet.EuclideanSobolev
+public import Mathlib.MeasureTheory.Function.LpSpace.Complete
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter
 open scoped ENNReal NNReal Topology

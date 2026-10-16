@@ -1,5 +1,9 @@
-import Tablet.ConfigurationCalculus
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+module
+
+public import Tablet.ConfigurationCalculus
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+
+@[expose] public section
 open MeasureTheory
 open scoped ContDiff
 -- [TABLET NODE: ConditionalFisherAggregation]

@@ -1,6 +1,10 @@
-import Tablet.WeightedIntegralCauchySchwarz
-import Tablet.Preamble
-import Mathlib.Tactic
+module
+
+public import Tablet.WeightedIntegralCauchySchwarz
+public import Tablet.Preamble
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped ENNReal
 set_option autoImplicit false

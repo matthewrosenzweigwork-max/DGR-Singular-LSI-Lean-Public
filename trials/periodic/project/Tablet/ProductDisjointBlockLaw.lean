@@ -1,5 +1,9 @@
-import Tablet.ProductRestrictionLaw
-import Mathlib.Probability.Independence.Basic
+module
+
+public import Tablet.ProductRestrictionLaw
+public import Mathlib.Probability.Independence.Basic
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 
 -- [TABLET NODE: ProductDisjointBlockLaw]

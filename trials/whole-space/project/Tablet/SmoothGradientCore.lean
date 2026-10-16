@@ -1,4 +1,8 @@
-import Tablet.PhysicalEnergy
+module
+
+public import Tablet.PhysicalEnergy
+
+@[expose] public section
 open scoped ContDiff
 
 -- [TABLET NODE: SmoothGradientCore]

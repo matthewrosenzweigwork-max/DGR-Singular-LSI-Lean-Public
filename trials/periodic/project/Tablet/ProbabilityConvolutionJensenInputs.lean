@@ -1,6 +1,10 @@
-import Tablet.Preamble
-import Mathlib.MeasureTheory.Group.Integral
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import Tablet.Preamble
+public import Mathlib.MeasureTheory.Group.Integral
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 open MeasureTheory UnitAddTorus
 open scoped Topology
 

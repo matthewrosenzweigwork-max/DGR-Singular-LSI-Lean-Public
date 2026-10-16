@@ -1,7 +1,11 @@
-import Tablet.ReplacementHaarSwap
-import Tablet.BoundedTiltBounds
-import Tablet.TiltNormalization
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import Tablet.ReplacementHaarSwap
+public import Tablet.BoundedTiltBounds
+public import Tablet.TiltNormalization
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 open MeasureTheory MeasureTheory.Measure
 -- [TABLET NODE: ProductGibbsRowStationarity]
 theorem ProductGibbsRowStationarity (d N : ℕ) (W : Configuration d N → ℝ)

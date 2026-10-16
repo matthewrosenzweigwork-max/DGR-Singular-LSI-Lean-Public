@@ -1,7 +1,11 @@
-import Tablet.DGRGaussianCenteredTruncation
-import Tablet.DGRGaussianHighSeries
-import Tablet.RieszMellinLowCenteredEnergyBound
-import Tablet.CenteredDeletionEnergySum
+module
+
+public import Tablet.DGRGaussianCenteredTruncation
+public import Tablet.DGRGaussianHighSeries
+public import Tablet.RieszMellinLowCenteredEnergyBound
+public import Tablet.CenteredDeletionEnergySum
+
+@[expose] public section
 open MeasureTheory Filter
 open scoped BigOperators ComplexConjugate
 -- [TABLET NODE: DGRGaussianLayerM1M2]

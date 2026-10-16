@@ -1,7 +1,11 @@
-import Tablet.RieszL1Foundation
-import Tablet.CenteredCanonicalRecenter
-import Tablet.InverseBoundedTiltLogSobolevTransport
-import Tablet.ConfigurationCalculus
+module
+
+public import Tablet.RieszL1Foundation
+public import Tablet.CenteredCanonicalRecenter
+public import Tablet.InverseBoundedTiltLogSobolevTransport
+public import Tablet.ConfigurationCalculus
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: CenteredCanonicalLogSobolevTransport]
 theorem CenteredCanonicalLogSobolevTransport (d N:ℕ) (hd:2≤d) (hN:2≤N)

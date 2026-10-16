@@ -1,8 +1,12 @@
-import Tablet.AtomicTestClipping
-import Tablet.CutoffCubeApproximation
-import Tablet.LawVariance
-import Tablet.BoundedMultiplier
-import Mathlib.Probability.Moments.Variance
+module
+
+public import Tablet.AtomicTestClipping
+public import Tablet.CutoffCubeApproximation
+public import Tablet.LawVariance
+public import Tablet.BoundedMultiplier
+public import Mathlib.Probability.Moments.Variance
+
+@[expose] public section
 
 open MeasureTheory Set Filter
 open scoped ContDiff ENNReal NNReal Topology

@@ -1,5 +1,9 @@
-import Tablet.EuclideanDerivativeCoordinates
-import Mathlib.Analysis.InnerProductSpace.Dual
+module
+
+public import Tablet.EuclideanDerivativeCoordinates
+public import Mathlib.Analysis.InnerProductSpace.Dual
+
+@[expose] public section
 
 -- [TABLET NODE: GradientNormIdentity]
 theorem GradientNormIdentity {ι : Type*} [Fintype ι]

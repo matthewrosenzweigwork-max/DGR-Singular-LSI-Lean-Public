@@ -1,7 +1,11 @@
-import Tablet.ConditionalSquareRelativeEntropy
-import Tablet.EntropyPushforwardEquivalence
-import Tablet.MeasurePreservingDensityTransport
-import Tablet.SplitCoordinateEquivalence
+module
+
+public import Tablet.ConditionalSquareRelativeEntropy
+public import Tablet.EntropyPushforwardEquivalence
+public import Tablet.MeasurePreservingDensityTransport
+public import Tablet.SplitCoordinateEquivalence
+
+@[expose] public section
 universe u
 open MeasureTheory ProbabilityTheory InformationTheory
 -- [TABLET NODE: SplitConditionalSquareEntropyIdentity]

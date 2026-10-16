@@ -1,9 +1,13 @@
-import Tablet.EuclideanDerivativeCoordinates
-import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
-import Mathlib.Analysis.Calculus.ContDiff.Comp
-import Mathlib.Analysis.Calculus.FDeriv.CompCLM
-import Mathlib.Analysis.SpecialFunctions.ExpDeriv
-import Mathlib.Tactic
+module
+
+public import Tablet.EuclideanDerivativeCoordinates
+public import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
+public import Mathlib.Analysis.Calculus.ContDiff.Comp
+public import Mathlib.Analysis.Calculus.FDeriv.CompCLM
+public import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option maxHeartbeats 1600000
 open MeasureTheory Measure
 namespace EuclideanGroundState

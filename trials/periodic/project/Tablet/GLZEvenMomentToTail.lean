@@ -1,6 +1,10 @@
-import Tablet.Preamble
-import Mathlib.Algebra.Order.Floor.Ring
-import Mathlib.MeasureTheory.Integral.Bochner.Set
+module
+
+public import Tablet.Preamble
+public import Mathlib.Algebra.Order.Floor.Ring
+public import Mathlib.MeasureTheory.Integral.Bochner.Set
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: GLZEvenMomentToTail]
 /-- Four-regime Markov optimization; sharp moment hypothesis stays explicit. -/

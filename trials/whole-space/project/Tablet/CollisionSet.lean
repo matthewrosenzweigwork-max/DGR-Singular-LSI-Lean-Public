@@ -1,4 +1,8 @@
-import Tablet.ParticlePosition
+module
+
+public import Tablet.ParticlePosition
+
+@[expose] public section
 
 -- [TABLET NODE: CollisionSet]
 def CollisionSet (d N : ℕ) : Set (ParticleConfig d N) :=

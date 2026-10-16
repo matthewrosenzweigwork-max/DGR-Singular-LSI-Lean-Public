@@ -1,6 +1,10 @@
-import Tablet.AtomicInteractionSource
-import Mathlib.Analysis.SpecialFunctions.JapaneseBracket
-import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
+module
+
+public import Tablet.AtomicInteractionSource
+public import Mathlib.Analysis.SpecialFunctions.JapaneseBracket
+public import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
+
+@[expose] public section
 set_option maxHeartbeats 1600000
 open MeasureTheory Set
 

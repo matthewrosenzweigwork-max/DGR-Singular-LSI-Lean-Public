@@ -1,5 +1,9 @@
-import Tablet.SplitCoordinateEquivalence
-import Tablet.StationaryKernelDisintegration
+module
+
+public import Tablet.SplitCoordinateEquivalence
+public import Tablet.StationaryKernelDisintegration
+
+@[expose] public section
 universe u
 open MeasureTheory ProbabilityTheory
 

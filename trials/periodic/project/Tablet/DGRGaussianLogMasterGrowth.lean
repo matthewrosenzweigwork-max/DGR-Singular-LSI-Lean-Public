@@ -1,6 +1,10 @@
-import Tablet.DGRGaussianDiagonalProfile
-import Tablet.DGRPhysicalLogEnvelope
-import Tablet.DGRCappedLogGrowth
+module
+
+public import Tablet.DGRGaussianDiagonalProfile
+public import Tablet.DGRPhysicalLogEnvelope
+public import Tablet.DGRCappedLogGrowth
+
+@[expose] public section
 open scoped BigOperators
 -- [TABLET NODE: DGRGaussianLogMasterGrowth]
 theorem DGRGaussianLogMasterGrowth (d : ℕ) (hd : 2≤d) (a M t : ℝ)

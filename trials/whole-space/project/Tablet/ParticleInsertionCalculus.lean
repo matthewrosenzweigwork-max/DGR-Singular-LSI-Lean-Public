@@ -1,7 +1,11 @@
-import Tablet.ParticleInsertion
-import Tablet.EuclideanDerivativeCoordinates
-import Tablet.ParticleGradientEnergyIdentity
-import Mathlib.Analysis.Calculus.ContDiff.Operations
+module
+
+public import Tablet.ParticleInsertion
+public import Tablet.EuclideanDerivativeCoordinates
+public import Tablet.ParticleGradientEnergyIdentity
+public import Mathlib.Analysis.Calculus.ContDiff.Operations
+
+@[expose] public section
 open scoped ContDiff
 set_option maxHeartbeats 1500000
 

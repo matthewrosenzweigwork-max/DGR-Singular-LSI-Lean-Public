@@ -1,6 +1,10 @@
-import Tablet.GibbsWeight
-import Tablet.NormalizedTilt
-import Tablet.Configuration
+module
+
+public import Tablet.GibbsWeight
+public import Tablet.NormalizedTilt
+public import Tablet.Configuration
+
+@[expose] public section
 -- [TABLET NODE: CanonicalLaw]
 noncomputable def CanonicalLaw {d N : ℕ} (g q : UnitAddTorus (Fin d) → ℝ)
     (β : ℝ) : MeasureTheory.Measure (Configuration d N) :=

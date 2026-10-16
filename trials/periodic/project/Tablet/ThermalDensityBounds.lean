@@ -1,4 +1,8 @@
-import Tablet.ThermalNormalizerJensen
+module
+
+public import Tablet.ThermalNormalizerJensen
+
+@[expose] public section
 
 open MeasureTheory
 

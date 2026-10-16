@@ -1,11 +1,15 @@
-import Tablet.DGRGaussianTruncationIdentification
-import Tablet.RieszMellinNearCap
-import Tablet.RieszMellinDecomposition
-import Tablet.CenteredPairEnergyAEDecomposition
-import Tablet.RieszMellinLongCenteredEnergyBound
-import Tablet.RieszMellinFourier
-import Tablet.RieszMellinCoefficientBounds
-import Tablet.RieszL1Foundation
+module
+
+public import Tablet.DGRGaussianTruncationIdentification
+public import Tablet.RieszMellinNearCap
+public import Tablet.RieszMellinDecomposition
+public import Tablet.CenteredPairEnergyAEDecomposition
+public import Tablet.RieszMellinLongCenteredEnergyBound
+public import Tablet.RieszMellinFourier
+public import Tablet.RieszMellinCoefficientBounds
+public import Tablet.RieszL1Foundation
+
+@[expose] public section
 open MeasureTheory
 open scoped BigOperators
 -- [TABLET NODE: DGRGaussianCenteredTruncation]

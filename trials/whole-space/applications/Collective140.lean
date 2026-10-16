@@ -1,4 +1,8 @@
-import Tablet.BoundedHessianAllCutoffsClosedPI
+module
+
+public import Tablet.BoundedHessianAllCutoffsClosedPI
+
+@[expose] public section
 set_option autoImplicit false
 open MeasureTheory
 open scoped ContDiff

@@ -1,6 +1,10 @@
-import Tablet.ConditionalEntropyUnderObservation
-import Mathlib.InformationTheory.KullbackLeibler.ChainRule
-import Mathlib.Probability.Kernel.Disintegration.StandardBorel
+module
+
+public import Tablet.ConditionalEntropyUnderObservation
+public import Mathlib.InformationTheory.KullbackLeibler.ChainRule
+public import Mathlib.Probability.Kernel.Disintegration.StandardBorel
+
+@[expose] public section
 
 open MeasureTheory ProbabilityTheory InformationTheory
 open scoped ENNReal

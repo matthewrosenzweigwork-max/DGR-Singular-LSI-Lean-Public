@@ -1,4 +1,8 @@
-import Tablet.EntropyVariational
+module
+
+public import Tablet.EntropyVariational
+
+@[expose] public section
 open MeasureTheory
 
 -- [TABLET NODE: BoundedSquareEntropyProperties]

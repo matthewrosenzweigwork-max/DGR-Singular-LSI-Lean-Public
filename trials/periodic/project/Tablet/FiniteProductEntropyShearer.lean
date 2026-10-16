@@ -1,5 +1,9 @@
-import Tablet.DisjointBlockMarginalEntropy
-import Tablet.EntropyObservationSupermodularity
+module
+
+public import Tablet.DisjointBlockMarginalEntropy
+public import Tablet.EntropyObservationSupermodularity
+
+@[expose] public section
 open MeasureTheory InformationTheory
 
 -- [TABLET NODE: FiniteProductEntropyShearer]

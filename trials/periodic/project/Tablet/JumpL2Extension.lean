@@ -1,7 +1,11 @@
-import Tablet.JumpConditionalBalance
-import Tablet.JumpL2Construction
-import Tablet.JumpConditionalL2Moments
-import Tablet.JumpL2VarianceEnergy
+module
+
+public import Tablet.JumpConditionalBalance
+public import Tablet.JumpL2Construction
+public import Tablet.JumpConditionalL2Moments
+public import Tablet.JumpL2VarianceEnergy
+
+@[expose] public section
 -- [TABLET NODE: JumpL2Extension]
 theorem JumpL2Extension (d N : ℕ) (hN : 2 ≤ N) (l u β : ℝ)
     (q : BoundedBackground d l u) (hβ : 0 ≤ β)

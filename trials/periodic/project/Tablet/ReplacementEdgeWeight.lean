@@ -1,5 +1,9 @@
-import Tablet.PairAlgebra
-import Tablet.GibbsWeight
+module
+
+public import Tablet.PairAlgebra
+public import Tablet.GibbsWeight
+
+@[expose] public section
 -- [TABLET NODE: ReplacementEdgeWeight]
 theorem ReplacementEdgeWeight {d N : ℕ} (G q : UnitAddTorus (Fin d) → ℝ)
     (hGe : ∀ x, G (-x) = G x) (β : ℝ) (X : Configuration d N)

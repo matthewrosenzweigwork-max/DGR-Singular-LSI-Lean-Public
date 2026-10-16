@@ -1,5 +1,9 @@
-import Tablet.ParticleConfig
-import Tablet.ReferenceLaw
+module
+
+public import Tablet.ParticleConfig
+public import Tablet.ReferenceLaw
+
+@[expose] public section
 
 -- [TABLET NODE: ConfigurationReference]
 noncomputable def ConfigurationReference (d N : ℕ)

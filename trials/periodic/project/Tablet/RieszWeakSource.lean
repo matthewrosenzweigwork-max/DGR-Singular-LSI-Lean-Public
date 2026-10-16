@@ -1,11 +1,15 @@
-import Tablet.RieszSourceMeasure
-import Tablet.RieszFourierCoefficients
-import Tablet.TorusFourierLaplacian
-import Tablet.TorusSmoothFourierSummable
-import Mathlib.MeasureTheory.Measure.WithDensityFinite
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
-import Mathlib.MeasureTheory.Group.Integral
-import Mathlib.Topology.ContinuousMap.Compact
+module
+
+public import Tablet.RieszSourceMeasure
+public import Tablet.RieszFourierCoefficients
+public import Tablet.TorusFourierLaplacian
+public import Tablet.TorusSmoothFourierSummable
+public import Mathlib.MeasureTheory.Measure.WithDensityFinite
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+public import Mathlib.MeasureTheory.Group.Integral
+public import Mathlib.Topology.ContinuousMap.Compact
+
+@[expose] public section
 open MeasureTheory Filter UnitAddTorus
 open scoped ComplexConjugate
 -- [TABLET NODE: RieszWeakSource]

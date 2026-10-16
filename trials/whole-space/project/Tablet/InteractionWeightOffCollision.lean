@@ -1,5 +1,9 @@
-import Tablet.InteractionWeight
-import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
+module
+
+public import Tablet.InteractionWeight
+public import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
+
+@[expose] public section
 open Set Filter
 open scoped BigOperators
 

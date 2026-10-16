@@ -1,7 +1,11 @@
-import Tablet.Preamble
-import Mathlib.Probability.Kernel.Composition.IntegralCompProd
-import Mathlib.Probability.Kernel.MeasurableIntegral
-import Mathlib.MeasureTheory.Measure.WithDensity
+module
+
+public import Tablet.Preamble
+public import Mathlib.Probability.Kernel.Composition.IntegralCompProd
+public import Mathlib.Probability.Kernel.MeasurableIntegral
+public import Mathlib.MeasureTheory.Measure.WithDensity
+
+@[expose] public section
 universe u
 open MeasureTheory ProbabilityTheory
 -- [TABLET NODE: KernelWeightedFirstMarginal]

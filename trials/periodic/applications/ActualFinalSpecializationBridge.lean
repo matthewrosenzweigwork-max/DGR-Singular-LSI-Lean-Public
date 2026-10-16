@@ -1,6 +1,10 @@
-import Tablet.UniformFullGradientInequalities
-import Tablet.ModulatedFullGradientInequalities
-import Tablet.ExternalPotentialFullGradientInequalities
+module
+
+public import Tablet.UniformFullGradientInequalities
+public import Tablet.ModulatedFullGradientInequalities
+public import Tablet.ExternalPotentialFullGradientInequalities
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory Set
 
 -- These evidence-only adapters derive each concrete specialization from the actual final main.

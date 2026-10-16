@@ -1,5 +1,9 @@
-import Tablet.Preamble
-import Mathlib.Tactic
+module
+
+public import Tablet.Preamble
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option maxHeartbeats 1600000
 open MeasureTheory
 namespace UniformTraceAbsorption

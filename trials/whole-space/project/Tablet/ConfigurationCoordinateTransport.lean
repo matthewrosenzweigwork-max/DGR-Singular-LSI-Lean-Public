@@ -1,8 +1,12 @@
-import Tablet.ConfigurationFlatten
-import Tablet.EuclideanGradient
-import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
-import Mathlib.Analysis.Calculus.ContDiff.Comp
-import Mathlib.MeasureTheory.Integral.Bochner.Set
+module
+
+public import Tablet.ConfigurationFlatten
+public import Tablet.EuclideanGradient
+public import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
+public import Mathlib.Analysis.Calculus.ContDiff.Comp
+public import Mathlib.MeasureTheory.Integral.Bochner.Set
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter

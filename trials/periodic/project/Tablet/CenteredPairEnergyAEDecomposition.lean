@@ -1,9 +1,13 @@
-import Tablet.CenteredPairEnergy
-import Tablet.ProductDensityMeasureIdentity
-import Mathlib.Probability.Independence.Integration
-import Mathlib.MeasureTheory.Group.Prod
-import Mathlib.MeasureTheory.Group.Integral
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import Tablet.CenteredPairEnergy
+public import Tablet.ProductDensityMeasureIdentity
+public import Mathlib.Probability.Independence.Integration
+public import Mathlib.MeasureTheory.Group.Prod
+public import Mathlib.MeasureTheory.Group.Integral
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory Filter
 -- [TABLET NODE: CenteredPairEnergyAEDecomposition]
 theorem CenteredPairEnergyAEDecomposition (d N:ℕ)(g h k r:UnitAddTorus (Fin d)→ℝ)

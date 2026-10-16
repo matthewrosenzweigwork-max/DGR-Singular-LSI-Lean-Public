@@ -1,0 +1,26 @@
+# DRAFT: copy to .github/workflows only after the Challenge and metadata are complete.
+name: Palomar full mechanical preflight
+on:
+  workflow_dispatch:
+    inputs:
+      release_commit:
+        description: Exact 40-character source commit
+        required: true
+        type: string
+      options:
+        description: JSON with repository-relative comparator_config_path, optional project_path, and actual authorization_relationship
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  palomar:
+    uses: PalomarRegistry/PalomarSubmission/.github/workflows/submission.yml@d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44
+    with:
+      repository: ${{ github.repository }}
+      commit: ${{ inputs.release_commit }}
+      pipeline_commit: d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44
+      request_id: migrationfull
+      mode: full
+      execution_profile: palomar-standard-v1
+      options: ${{ inputs.options }}

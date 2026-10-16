@@ -1,6 +1,10 @@
-import Tablet.DisjointBlockMarginalEntropy
-import Mathlib.InformationTheory.KullbackLeibler.ChainRule
-import Mathlib.Probability.Kernel.Disintegration.StandardBorel
+module
+
+public import Tablet.DisjointBlockMarginalEntropy
+public import Mathlib.InformationTheory.KullbackLeibler.ChainRule
+public import Mathlib.Probability.Kernel.Disintegration.StandardBorel
+
+@[expose] public section
 open MeasureTheory InformationTheory ProbabilityTheory
 
 -- [TABLET NODE: ProductDeletionConditionalEntropy]

@@ -1,13 +1,17 @@
-import Tablet.UniformRegularizedLogSobolev
-import Tablet.CanonicalCutoffConvergence
-import Tablet.Entropy
-import Tablet.EntropyExtension
-import Tablet.SmoothCore
-import Mathlib.Topology.Order.Compact
-import Mathlib.Topology.Algebra.Group.Quotient
-import Mathlib.Analysis.Calculus.ContDiff.WithLp
-import Tablet.UniformSmoothPoincare
-import Tablet.GradientClosureInequalityExtension
+module
+
+public import Tablet.UniformRegularizedLogSobolev
+public import Tablet.CanonicalCutoffConvergence
+public import Tablet.Entropy
+public import Tablet.EntropyExtension
+public import Tablet.SmoothCore
+public import Mathlib.Topology.Order.Compact
+public import Mathlib.Topology.Algebra.Group.Quotient
+public import Mathlib.Analysis.Calculus.ContDiff.WithLp
+public import Tablet.UniformSmoothPoincare
+public import Tablet.GradientClosureInequalityExtension
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory Set Filter
 open scoped Topology ContDiff
 -- [TABLET NODE: UniformClosedGradientLogSobolev]

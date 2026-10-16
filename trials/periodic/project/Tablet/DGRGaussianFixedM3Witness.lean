@@ -1,6 +1,10 @@
-import Tablet.DGRGaussianRadialM3Bounds
-import Tablet.DGRRadialTailTolerance
-import Tablet.RadialFrequencyCutoff
+module
+
+public import Tablet.DGRGaussianRadialM3Bounds
+public import Tablet.DGRRadialTailTolerance
+public import Tablet.RadialFrequencyCutoff
+
+@[expose] public section
 open MeasureTheory
 open scoped BigOperators
 -- [TABLET NODE: DGRGaussianFixedM3Witness]

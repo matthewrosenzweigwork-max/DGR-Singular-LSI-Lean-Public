@@ -1,6 +1,10 @@
-import Tablet.Entropy
-import Mathlib.InformationTheory.KullbackLeibler.Basic
-import Mathlib.Analysis.SpecialFunctions.Log.NegMulLog
+module
+
+public import Tablet.Entropy
+public import Mathlib.InformationTheory.KullbackLeibler.Basic
+public import Mathlib.Analysis.SpecialFunctions.Log.NegMulLog
+
+@[expose] public section
 open MeasureTheory InformationTheory
 
 -- [TABLET NODE: BoundedProbabilityDensityEntropy]

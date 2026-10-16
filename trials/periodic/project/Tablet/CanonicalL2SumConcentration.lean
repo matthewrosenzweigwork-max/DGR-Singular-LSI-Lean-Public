@@ -1,6 +1,10 @@
-import Tablet.ProductBoundedDifferences
-import Mathlib.MeasureTheory.Function.L2Space
-import Mathlib.Probability.Independence.Integration
+module
+
+public import Tablet.ProductBoundedDifferences
+public import Mathlib.MeasureTheory.Function.L2Space
+public import Mathlib.Probability.Independence.Integration
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 open scoped InnerProductSpace
 -- [TABLET NODE: CanonicalL2SumConcentration]

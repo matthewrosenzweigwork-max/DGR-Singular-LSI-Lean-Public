@@ -1,8 +1,12 @@
-import Tablet.PairInteractionCalculus
-import Tablet.PairRelativeLaplacian
-import Tablet.AtomicInteractionSource
-import Mathlib.Analysis.InnerProductSpace.Laplacian
-import Mathlib.Tactic
+module
+
+public import Tablet.PairInteractionCalculus
+public import Tablet.PairRelativeLaplacian
+public import Tablet.AtomicInteractionSource
+public import Mathlib.Analysis.InnerProductSpace.Laplacian
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 open scoped ContDiff

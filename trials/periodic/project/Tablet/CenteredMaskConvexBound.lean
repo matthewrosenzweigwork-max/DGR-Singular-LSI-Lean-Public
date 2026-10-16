@@ -1,6 +1,10 @@
-import Tablet.Preamble
-import Mathlib.Analysis.Convex.Integral
-import Mathlib.MeasureTheory.Integral.Pi
+module
+
+public import Tablet.Preamble
+public import Mathlib.Analysis.Convex.Integral
+public import Mathlib.MeasureTheory.Integral.Pi
+
+@[expose] public section
 open MeasureTheory
 universe u
 -- [TABLET NODE: CenteredMaskConvexBound]

@@ -1,12 +1,16 @@
-import Tablet.ConfigurationCoordinateTransport
-import Tablet.FiniteGibbsCommonDensity
-import Tablet.FiniteGibbsSquaredTestTail
-import Tablet.FiniteGibbsCompactNormalizedSobolev
-import Tablet.FinitePairLocalCutoffEnergy
-import Tablet.AtomicTestClipping
-import Tablet.PairInteractionSource
-import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
-import Mathlib.Tactic
+module
+
+public import Tablet.ConfigurationCoordinateTransport
+public import Tablet.FiniteGibbsCommonDensity
+public import Tablet.FiniteGibbsSquaredTestTail
+public import Tablet.FiniteGibbsCompactNormalizedSobolev
+public import Tablet.FinitePairLocalCutoffEnergy
+public import Tablet.AtomicTestClipping
+public import Tablet.PairInteractionSource
+public import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter Metric

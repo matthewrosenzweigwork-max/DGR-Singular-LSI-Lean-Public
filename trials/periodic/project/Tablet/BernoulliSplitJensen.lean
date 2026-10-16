@@ -1,7 +1,11 @@
-import Tablet.Preamble
-import Mathlib.Analysis.Convex.Jensen
-import Mathlib.Analysis.Convex.SpecificFunctions.Basic
-import Mathlib.Logic.Equiv.Prod
+module
+
+public import Tablet.Preamble
+public import Mathlib.Analysis.Convex.Jensen
+public import Mathlib.Analysis.Convex.SpecificFunctions.Basic
+public import Mathlib.Logic.Equiv.Prod
+
+@[expose] public section
 -- [TABLET NODE: BernoulliSplitJensen]
 theorem BernoulliSplitJensen (N : ℕ) (a : Fin N → Fin N → ℝ)
     (hdiag : ∀ i, a i i = 0) (t : ℝ)

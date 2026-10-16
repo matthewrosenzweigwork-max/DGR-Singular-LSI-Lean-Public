@@ -1,6 +1,10 @@
-import Tablet.ConfigurationCalculus
-import Tablet.EntropyDefectRemoval
-import Mathlib.Probability.Moments.Variance
+module
+
+public import Tablet.ConfigurationCalculus
+public import Tablet.EntropyDefectRemoval
+public import Mathlib.Probability.Moments.Variance
+
+@[expose] public section
 open MeasureTheory
 open scoped ContDiff
 -- [TABLET NODE: ConfigurationEntropyDefectRemoval]

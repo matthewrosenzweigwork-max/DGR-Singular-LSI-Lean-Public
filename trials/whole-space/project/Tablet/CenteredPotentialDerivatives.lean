@@ -1,8 +1,12 @@
-import Tablet.ShiftedReference
-import Tablet.BoundedMultiplier
-import Tablet.EuclideanDerivativeCoordinates
-import Mathlib.Analysis.Calculus.FDeriv.Add
-import Mathlib.Analysis.Calculus.ContDiff.Operations
+module
+
+public import Tablet.ShiftedReference
+public import Tablet.BoundedMultiplier
+public import Tablet.EuclideanDerivativeCoordinates
+public import Mathlib.Analysis.Calculus.FDeriv.Add
+public import Mathlib.Analysis.Calculus.ContDiff.Operations
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter Metric

@@ -1,6 +1,10 @@
-import Tablet.Preamble
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.Tactic
+module
+
+public import Tablet.Preamble
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.Tactic
+
+@[expose] public section
 -- [TABLET NODE: DGRPhysicalPowerEnvelope]
 theorem DGRPhysicalPowerEnvelope (p s c N u : ℝ)
     (hp : 0<p) (hs : 0<s) (hc : 0<c) (hN : 1≤N) (hu : 1≤u) :

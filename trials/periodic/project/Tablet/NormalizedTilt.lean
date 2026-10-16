@@ -1,4 +1,8 @@
-import Tablet.Preamble
+module
+
+public import Tablet.Preamble
+
+@[expose] public section
 -- [TABLET NODE: NormalizedTilt]
 noncomputable def NormalizedTilt {Ω : Type*} [MeasurableSpace Ω]
     (μ : MeasureTheory.Measure Ω) (w : Ω → ℝ) : MeasureTheory.Measure Ω :=

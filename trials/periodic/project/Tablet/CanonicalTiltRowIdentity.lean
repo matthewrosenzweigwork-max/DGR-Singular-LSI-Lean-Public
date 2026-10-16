@@ -1,8 +1,12 @@
-import Tablet.PairAlgebra
-import Tablet.GibbsWeight
-import Tablet.BoundedBackground
-import Tablet.NormalizedTilt
-import Mathlib.MeasureTheory.Constructions.Pi
+module
+
+public import Tablet.PairAlgebra
+public import Tablet.GibbsWeight
+public import Tablet.BoundedBackground
+public import Tablet.NormalizedTilt
+public import Mathlib.MeasureTheory.Constructions.Pi
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: CanonicalTiltRowIdentity]
 theorem CanonicalTiltRowIdentity (d N : ℕ) (l u β : ℝ) (q : BoundedBackground d l u)

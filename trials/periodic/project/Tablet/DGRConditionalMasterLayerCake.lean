@@ -1,8 +1,12 @@
-import Tablet.Preamble
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.Algebra.Ring.GeomSum
-import Mathlib.Algebra.Order.Floor.Semiring
-import Mathlib.MeasureTheory.Integral.Bochner.Set
+module
+
+public import Tablet.Preamble
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.Algebra.Ring.GeomSum
+public import Mathlib.Algebra.Order.Floor.Semiring
+public import Mathlib.MeasureTheory.Integral.Bochner.Set
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: DGRConditionalMasterLayerCake]
 /-- Faithful conditional DGR master implication. Sharp GLZ is an explicit premise. -/

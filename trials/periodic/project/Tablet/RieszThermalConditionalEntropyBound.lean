@@ -1,6 +1,10 @@
-import Tablet.RieszThermalConditionalLogSobolev
-import Tablet.RieszCenteredRowStationarity
-import Tablet.ConditionalEntropyAggregation
+module
+
+public import Tablet.RieszThermalConditionalLogSobolev
+public import Tablet.RieszCenteredRowStationarity
+public import Tablet.ConditionalEntropyAggregation
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: RieszThermalConditionalEntropyBound]
 theorem RieszThermalConditionalEntropyBound (d:ℕ)(hd:2≤d)(s a B l u:ℝ)

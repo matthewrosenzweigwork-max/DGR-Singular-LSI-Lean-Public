@@ -1,7 +1,11 @@
-import Tablet.Preamble
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.MeasureTheory.Integral.Bochner.Basic
-import Mathlib.Tactic
+module
+
+public import Tablet.Preamble
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.MeasureTheory.Integral.Bochner.Basic
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Filter
 -- [TABLET NODE: ProbabilityBoundedKernelSquare]
 theorem ProbabilityBoundedKernelSquare {Ω : Type*} [MeasurableSpace Ω]

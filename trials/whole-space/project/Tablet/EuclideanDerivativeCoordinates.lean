@@ -1,4 +1,8 @@
-import Tablet.EuclideanLaplacian
+module
+
+public import Tablet.EuclideanLaplacian
+
+@[expose] public section
 
 -- [TABLET NODE: EuclideanDerivativeCoordinates]
 theorem EuclideanDerivativeCoordinates {ι : Type*} [Fintype ι]

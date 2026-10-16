@@ -1,4 +1,8 @@
-import Tablet.Replacement
+module
+
+public import Tablet.Replacement
+
+@[expose] public section
 -- [TABLET NODE: ReplacementHaarSwap]
 theorem ReplacementHaarSwap (d N : ℕ) (i : Fin N) :
     let mX : MeasureTheory.Measure (Configuration d N) := MeasureTheory.volume

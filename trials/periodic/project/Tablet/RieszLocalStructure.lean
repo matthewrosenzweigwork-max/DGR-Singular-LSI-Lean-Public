@@ -1,16 +1,20 @@
-import Tablet.RieszZeroCutoffSmooth
-import Tablet.RieszZeroCutoffAsymptotic
-import Tablet.RieszL1Foundation
-import Tablet.TorusSmooth
-import Mathlib.Analysis.Calculus.SmoothSeries
-import Mathlib.Analysis.Calculus.ContDiff.Bounds
-import Mathlib.Analysis.Calculus.IteratedDeriv.Defs
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
-import Mathlib.Analysis.Normed.Ring.InfiniteSum
-import Mathlib.Topology.Algebra.InfiniteSum.NatInt
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
-import Mathlib.MeasureTheory.Group.Integral
-import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+module
+
+public import Tablet.RieszZeroCutoffSmooth
+public import Tablet.RieszZeroCutoffAsymptotic
+public import Tablet.RieszL1Foundation
+public import Tablet.TorusSmooth
+public import Mathlib.Analysis.Calculus.SmoothSeries
+public import Mathlib.Analysis.Calculus.ContDiff.Bounds
+public import Mathlib.Analysis.Calculus.IteratedDeriv.Defs
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
+public import Mathlib.Analysis.Normed.Ring.InfiniteSum
+public import Mathlib.Topology.Algebra.InfiniteSum.NatInt
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+public import Mathlib.MeasureTheory.Group.Integral
+public import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+
+@[expose] public section
 open MeasureTheory UnitAddTorus
 open scoped ContDiff
 -- [TABLET NODE: RieszLocalStructure]

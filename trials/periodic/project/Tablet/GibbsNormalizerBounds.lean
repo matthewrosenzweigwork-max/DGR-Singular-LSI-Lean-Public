@@ -1,8 +1,12 @@
-import Tablet.CanonicalLaw
-import Tablet.PairMomentBounds
-import Tablet.TiltNormalization
-import Mathlib.Probability.Independence.Basic
-import Mathlib.MeasureTheory.Group.Prod
+module
+
+public import Tablet.CanonicalLaw
+public import Tablet.PairMomentBounds
+public import Tablet.TiltNormalization
+public import Mathlib.Probability.Independence.Basic
+public import Mathlib.MeasureTheory.Group.Prod
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 -- [TABLET NODE: GibbsNormalizerBounds]
 theorem GibbsNormalizerBounds (d N : ℕ) (hN : 2 ≤ N) (l u : ℝ)

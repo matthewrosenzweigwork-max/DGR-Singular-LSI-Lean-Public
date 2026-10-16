@@ -1,5 +1,9 @@
-import Tablet.Preamble
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import Tablet.Preamble
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: ProbabilityJensenTransport]
 theorem ProbabilityJensenTransport {X Y Z : Type*} [MeasurableSpace X] [MeasurableSpace Y] [MeasurableSpace Z]

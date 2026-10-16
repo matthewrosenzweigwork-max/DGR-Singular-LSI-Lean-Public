@@ -1,6 +1,10 @@
-import Tablet.CenteredPairEnergy
-import Tablet.NormalizedTilt
-import Tablet.ProductDensity
+module
+
+public import Tablet.CenteredPairEnergy
+public import Tablet.NormalizedTilt
+public import Tablet.ProductDensity
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: CenteredCanonicalLaw]
 noncomputable def CenteredCanonicalLaw {d N : ℕ}

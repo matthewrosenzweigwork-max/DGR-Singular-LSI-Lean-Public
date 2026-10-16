@@ -1,6 +1,10 @@
-import Tablet.Preamble
-import Mathlib.MeasureTheory.Integral.Bochner.Basic
-import Mathlib.Tactic
+module
+
+public import Tablet.Preamble
+public import Mathlib.MeasureTheory.Integral.Bochner.Basic
+public import Mathlib.Tactic
+
+@[expose] public section
 
 open MeasureTheory Filter
 set_option autoImplicit false

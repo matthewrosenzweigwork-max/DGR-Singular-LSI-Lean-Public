@@ -1,5 +1,9 @@
-import Tablet.Preamble
-import Mathlib.Analysis.Convolution
+module
+
+public import Tablet.Preamble
+public import Mathlib.Analysis.Convolution
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: BackgroundPotential]
 noncomputable def BackgroundPotential {d : ℕ}

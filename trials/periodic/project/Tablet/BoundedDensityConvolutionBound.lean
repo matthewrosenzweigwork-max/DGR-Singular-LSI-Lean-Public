@@ -1,5 +1,9 @@
-import Tablet.Preamble
-import Mathlib.MeasureTheory.Group.Integral
+module
+
+public import Tablet.Preamble
+public import Mathlib.MeasureTheory.Group.Integral
+
+@[expose] public section
 open MeasureTheory UnitAddTorus
 
 -- [TABLET NODE: BoundedDensityConvolutionBound]

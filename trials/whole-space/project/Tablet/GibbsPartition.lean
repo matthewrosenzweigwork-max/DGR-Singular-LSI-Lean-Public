@@ -1,5 +1,9 @@
-import Tablet.ConfigurationReference
-import Tablet.InteractionWeight
+module
+
+public import Tablet.ConfigurationReference
+public import Tablet.InteractionWeight
+
+@[expose] public section
 
 -- [TABLET NODE: GibbsPartition]
 noncomputable def GibbsPartition {d N : ℕ}

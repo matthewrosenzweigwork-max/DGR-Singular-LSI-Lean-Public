@@ -1,4 +1,8 @@
-import Tablet.BackgroundPotential
+module
+
+public import Tablet.BackgroundPotential
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: BackgroundPairMean]
 noncomputable def BackgroundPairMean {d : ℕ}

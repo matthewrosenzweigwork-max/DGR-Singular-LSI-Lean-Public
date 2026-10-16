@@ -1,8 +1,12 @@
-import Tablet.AtomicReferenceDensity
-import Tablet.AtomicNormalizedSobolev
-import Tablet.AtomicSquaredTestTail
-import Tablet.HessianMinimizer
-import Mathlib.Tactic
+module
+
+public import Tablet.AtomicReferenceDensity
+public import Tablet.AtomicNormalizedSobolev
+public import Tablet.AtomicSquaredTestTail
+public import Tablet.HessianMinimizer
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Set Filter
 open scoped ENNReal NNReal Topology
 set_option maxHeartbeats 1600000

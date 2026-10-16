@@ -1,4 +1,8 @@
-import Tablet.TorusLift
+module
+
+public import Tablet.TorusLift
+
+@[expose] public section
 -- [TABLET NODE: TorusLaplacian]
 noncomputable def TorusLaplacian {d : ℕ} (f : UnitAddTorus (Fin d) → ℝ)
     (x : UnitAddTorus (Fin d)) : ℝ :=

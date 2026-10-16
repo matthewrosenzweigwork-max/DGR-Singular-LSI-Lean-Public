@@ -1,5 +1,9 @@
-import Tablet.BoundedBackground
-import Tablet.ProductDensity
+module
+
+public import Tablet.BoundedBackground
+public import Tablet.ProductDensity
+
+@[expose] public section
 -- [TABLET NODE: ProductBackgroundFacts]
 theorem ProductBackgroundFacts (d N : ℕ) (l u : ℝ)
     (q : BoundedBackground d l u) :

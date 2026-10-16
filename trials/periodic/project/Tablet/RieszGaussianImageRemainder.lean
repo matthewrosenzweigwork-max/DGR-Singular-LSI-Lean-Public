@@ -1,8 +1,12 @@
-import Tablet.HeatKernelFacts
-import Tablet.TorusLift
-import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
-import Mathlib.Topology.Separation.Basic
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+module
+
+public import Tablet.HeatKernelFacts
+public import Tablet.TorusLift
+public import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+public import Mathlib.Topology.Separation.Basic
+public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+
+@[expose] public section
 open MeasureTheory Set Filter
 open scoped Topology
 -- [TABLET NODE: RieszGaussianImageRemainder]

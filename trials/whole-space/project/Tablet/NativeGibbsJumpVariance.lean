@@ -1,10 +1,14 @@
-import Tablet.WeightedMeanJointL2
-import Tablet.WeightedJointRowL2
-import Tablet.NativeGibbsReplacementBalance
-import Tablet.GibbsInsertionReference
-import Mathlib.MeasureTheory.Function.L2Space
-import Mathlib.Probability.Moments.Variance
-import Mathlib.Tactic
+module
+
+public import Tablet.WeightedMeanJointL2
+public import Tablet.WeightedJointRowL2
+public import Tablet.NativeGibbsReplacementBalance
+public import Tablet.GibbsInsertionReference
+public import Mathlib.MeasureTheory.Function.L2Space
+public import Mathlib.Probability.Moments.Variance
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped ENNReal BigOperators
 set_option autoImplicit false

@@ -1,4 +1,8 @@
-import Tablet.HeatKernel
+module
+
+public import Tablet.HeatKernel
+
+@[expose] public section
 -- [TABLET NODE: HeatSourceDensity]
 noncomputable def HeatSourceDensity (d : ℕ) (ε : ℝ)
     (μ : MeasureTheory.Measure (UnitAddTorus (Fin d)))

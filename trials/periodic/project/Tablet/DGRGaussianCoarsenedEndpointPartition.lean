@@ -1,9 +1,13 @@
-import Tablet.DGRGaussianMasterWitnessFamily
-import Tablet.DGRMasterGrowthEventually
-import Tablet.DGRGaussianFiniteMasterCap
-import Tablet.DGRCanonicalFiberMaster
-import Tablet.CenteredProductMean
-import Tablet.Preamble
+module
+
+public import Tablet.DGRGaussianMasterWitnessFamily
+public import Tablet.DGRMasterGrowthEventually
+public import Tablet.DGRGaussianFiniteMasterCap
+public import Tablet.DGRCanonicalFiberMaster
+public import Tablet.CenteredProductMean
+public import Tablet.Preamble
+
+@[expose] public section
 open MeasureTheory
 open scoped BigOperators
 -- [TABLET NODE: DGRGaussianCoarsenedEndpointPartition]

@@ -1,12 +1,16 @@
-import Tablet.ConfigurationPairPotential
-import Tablet.CompactWeightedPoincare
-import Tablet.RieszHeatSource
-import Tablet.BoundedDensityComparison
-import Tablet.GibbsNormalizerBounds
-import Tablet.RieszLocalStructure
-import Tablet.RieszL1Foundation
-import Tablet.ProductBackgroundFacts
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import Tablet.ConfigurationPairPotential
+public import Tablet.CompactWeightedPoincare
+public import Tablet.RieszHeatSource
+public import Tablet.BoundedDensityComparison
+public import Tablet.GibbsNormalizerBounds
+public import Tablet.RieszLocalStructure
+public import Tablet.RieszL1Foundation
+public import Tablet.ProductBackgroundFacts
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 open scoped ContDiff
 -- [TABLET NODE: FiniteParticlePoincare]

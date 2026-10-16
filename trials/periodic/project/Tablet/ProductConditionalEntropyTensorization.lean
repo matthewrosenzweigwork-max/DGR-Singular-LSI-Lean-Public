@@ -1,5 +1,9 @@
-import Tablet.ProductDeletionConditionalEntropy
-import Tablet.FiniteProductEntropyShearer
+module
+
+public import Tablet.ProductDeletionConditionalEntropy
+public import Tablet.FiniteProductEntropyShearer
+
+@[expose] public section
 open MeasureTheory InformationTheory
 
 -- [TABLET NODE: ProductConditionalEntropyTensorization]

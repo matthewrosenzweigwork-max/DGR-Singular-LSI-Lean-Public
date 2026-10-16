@@ -1,5 +1,9 @@
-import Tablet.DGRGaussianRadialFiberBounds
-import Tablet.DGRGaussianRadialOperatorBound
+module
+
+public import Tablet.DGRGaussianRadialFiberBounds
+public import Tablet.DGRGaussianRadialOperatorBound
+
+@[expose] public section
 open MeasureTheory Filter
 open scoped BigOperators
 -- [TABLET NODE: DGRGaussianRadialM3Bounds]

@@ -1,4 +1,8 @@
-import Tablet.Entropy
+module
+
+public import Tablet.Entropy
+
+@[expose] public section
 open MeasureTheory
 universe u v
 -- [TABLET NODE: EntropyPushforwardEquivalence]

@@ -1,4 +1,8 @@
-import Tablet.Configuration
+module
+
+public import Tablet.Configuration
+
+@[expose] public section
 -- [TABLET NODE: PairEnergy]
 noncomputable def PairEnergy {d N : ℕ} (g : UnitAddTorus (Fin d) → ℝ)
     (X : Configuration d N) : ℝ :=

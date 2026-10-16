@@ -1,4 +1,8 @@
-import Tablet.HeatKernel
+module
+
+public import Tablet.HeatKernel
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: DGRGaussianPhysicalNear]
 noncomputable def DGRGaussianPhysicalNear (d : ℕ) (s a η : ℝ)

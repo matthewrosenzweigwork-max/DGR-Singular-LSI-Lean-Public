@@ -1,8 +1,12 @@
-import Tablet.CenteredKernelBounds
-import Tablet.CenteredPairEnergy
-import Tablet.ProductDensity
-import Mathlib.Probability.Independence.Integration
-import Mathlib.MeasureTheory.Group.Prod
+module
+
+public import Tablet.CenteredKernelBounds
+public import Tablet.CenteredPairEnergy
+public import Tablet.ProductDensity
+public import Mathlib.Probability.Independence.Integration
+public import Mathlib.MeasureTheory.Group.Prod
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 -- [TABLET NODE: CenteredProductMean]
 theorem CenteredProductMean (d N : ℕ) (g r : UnitAddTorus (Fin d) → ℝ)

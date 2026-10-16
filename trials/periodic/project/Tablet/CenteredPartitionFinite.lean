@@ -1,5 +1,9 @@
-import Tablet.CenteredProductMean
-import Tablet.CenteredPartition
+module
+
+public import Tablet.CenteredProductMean
+public import Tablet.CenteredPartition
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: CenteredPartitionFinite]
 theorem CenteredPartitionFinite (d N : ℕ) (hN : 2 ≤ N)

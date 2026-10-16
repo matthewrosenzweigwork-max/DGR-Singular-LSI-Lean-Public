@@ -1,9 +1,13 @@
-import Tablet.ReferenceQuadraticNormalization
-import Tablet.ReferenceLaw
-import Mathlib.MeasureTheory.Integral.Bochner.Set
-import Mathlib.MeasureTheory.Measure.Lebesgue.VolumeOfBalls
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.Ring
+module
+
+public import Tablet.ReferenceQuadraticNormalization
+public import Tablet.ReferenceLaw
+public import Mathlib.MeasureTheory.Integral.Bochner.Set
+public import Mathlib.MeasureTheory.Measure.Lebesgue.VolumeOfBalls
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Ring
+
+@[expose] public section
 open MeasureTheory Filter
 open scoped ENNReal
 set_option maxHeartbeats 800000

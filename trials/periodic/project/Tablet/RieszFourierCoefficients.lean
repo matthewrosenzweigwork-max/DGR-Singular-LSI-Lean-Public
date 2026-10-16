@@ -1,12 +1,16 @@
-import Tablet.RieszL1Foundation
-import Tablet.HeatFourierCoefficients
-import Tablet.HeatOperatorBounds
-import Mathlib.Analysis.Normed.Ring.InfiniteSum
-import Mathlib.Topology.Algebra.InfiniteSum.NatInt
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.Analysis.Real.Pi.Bounds
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
-import Mathlib.MeasureTheory.Function.LocallyIntegrable
+module
+
+public import Tablet.RieszL1Foundation
+public import Tablet.HeatFourierCoefficients
+public import Tablet.HeatOperatorBounds
+public import Mathlib.Analysis.Normed.Ring.InfiniteSum
+public import Mathlib.Topology.Algebra.InfiniteSum.NatInt
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.Analysis.Real.Pi.Bounds
+public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+public import Mathlib.MeasureTheory.Function.LocallyIntegrable
+
+@[expose] public section
 open MeasureTheory Filter Set UnitAddTorus
 open scoped Topology ComplexConjugate
 set_option maxHeartbeats 1500000

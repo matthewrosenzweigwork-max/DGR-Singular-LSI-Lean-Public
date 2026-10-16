@@ -1,4 +1,8 @@
-import Tablet.CenteredKernelBounds
+module
+
+public import Tablet.CenteredKernelBounds
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: CenteredKernelSquareBounds]
 theorem CenteredKernelSquareBounds (d : ℕ) (g r : UnitAddTorus (Fin d) → ℝ)

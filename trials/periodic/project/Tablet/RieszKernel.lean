@@ -1,4 +1,8 @@
-import Tablet.HeatKernel
+module
+
+public import Tablet.HeatKernel
+
+@[expose] public section
 -- [TABLET NODE: RieszKernel]
 noncomputable def RieszKernel (d : ℕ) (s a ε : ℝ) (x : UnitAddTorus (Fin d)) : ℝ :=
 -- BODY

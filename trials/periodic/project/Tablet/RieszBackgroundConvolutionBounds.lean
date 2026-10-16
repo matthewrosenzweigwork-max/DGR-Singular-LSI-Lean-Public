@@ -1,6 +1,10 @@
-import Tablet.RieszL1Foundation
-import Tablet.BoundedDensityConvolutionBound
-import Tablet.BoundedBackground
+module
+
+public import Tablet.RieszL1Foundation
+public import Tablet.BoundedDensityConvolutionBound
+public import Tablet.BoundedBackground
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: RieszBackgroundConvolutionBounds]
 theorem RieszBackgroundConvolutionBounds (d : ℕ) (hd : 2 ≤ d)

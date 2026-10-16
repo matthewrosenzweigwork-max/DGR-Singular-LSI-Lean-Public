@@ -1,6 +1,10 @@
-import Tablet.RelativePairCoordinates
-import Tablet.AtomicLocalRieszBounds
-import Mathlib.MeasureTheory.Measure.Lebesgue.Integral
+module
+
+public import Tablet.RelativePairCoordinates
+public import Tablet.AtomicLocalRieszBounds
+public import Mathlib.MeasureTheory.Measure.Lebesgue.Integral
+
+@[expose] public section
 
 set_option autoImplicit false
 set_option maxHeartbeats 1600000

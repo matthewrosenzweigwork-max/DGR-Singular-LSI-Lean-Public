@@ -1,10 +1,14 @@
-import Tablet.RieszCenteredDisintegration
-import Tablet.CenteredCanonicalEntropyLower
-import Tablet.BoundedGibbsRelativeEntropy
-import Tablet.SquareDensityRelativeEntropy
-import Tablet.GibbsConditionalKernelCompProd
-import Tablet.SplitConditionalSquareEntropyIdentity
-import Tablet.BoundedSquareEntropyProperties
+module
+
+public import Tablet.RieszCenteredDisintegration
+public import Tablet.CenteredCanonicalEntropyLower
+public import Tablet.BoundedGibbsRelativeEntropy
+public import Tablet.SquareDensityRelativeEntropy
+public import Tablet.GibbsConditionalKernelCompProd
+public import Tablet.SplitConditionalSquareEntropyIdentity
+public import Tablet.BoundedSquareEntropyProperties
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory InformationTheory
 
 -- [TABLET NODE: RieszCenteredSquareEntropyLower]

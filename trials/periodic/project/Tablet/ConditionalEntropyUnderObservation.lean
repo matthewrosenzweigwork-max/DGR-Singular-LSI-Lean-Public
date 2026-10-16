@@ -1,5 +1,9 @@
-import Tablet.Preamble
-import Mathlib.InformationTheory.KullbackLeibler.DataProcessing
+module
+
+public import Tablet.Preamble
+public import Mathlib.InformationTheory.KullbackLeibler.DataProcessing
+
+@[expose] public section
 
 open MeasureTheory ProbabilityTheory InformationTheory
 open scoped ENNReal

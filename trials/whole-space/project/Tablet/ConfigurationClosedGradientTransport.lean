@@ -1,11 +1,15 @@
-import Tablet.ConfigurationGradientPullback
-import Tablet.ConfigurationTranslationGeometry
-import Tablet.ClosedPhysicalEnergy
-import Tablet.CollisionFreeGradientCore
-import Tablet.LawVariance
-import Mathlib.Topology.Algebra.Support
-import Mathlib.Analysis.Calculus.ContDiff.Operations
-import Mathlib.Topology.Constructions.SumProd
+module
+
+public import Tablet.ConfigurationGradientPullback
+public import Tablet.ConfigurationTranslationGeometry
+public import Tablet.ClosedPhysicalEnergy
+public import Tablet.CollisionFreeGradientCore
+public import Tablet.LawVariance
+public import Mathlib.Topology.Algebra.Support
+public import Mathlib.Analysis.Calculus.ContDiff.Operations
+public import Mathlib.Topology.Constructions.SumProd
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter

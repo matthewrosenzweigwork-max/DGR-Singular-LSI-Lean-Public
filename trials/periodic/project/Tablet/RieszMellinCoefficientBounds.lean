@@ -1,8 +1,12 @@
-import Tablet.RieszMellinCoefficient
-import Mathlib.Analysis.Real.Pi.Bounds
-import Mathlib.Analysis.Normed.Ring.InfiniteSum
-import Mathlib.Topology.Algebra.InfiniteSum.NatInt
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+module
+
+public import Tablet.RieszMellinCoefficient
+public import Mathlib.Analysis.Real.Pi.Bounds
+public import Mathlib.Analysis.Normed.Ring.InfiniteSum
+public import Mathlib.Topology.Algebra.InfiniteSum.NatInt
+public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+
+@[expose] public section
 open MeasureTheory Set Filter
 open scoped Topology
 -- [TABLET NODE: RieszMellinCoefficientBounds]

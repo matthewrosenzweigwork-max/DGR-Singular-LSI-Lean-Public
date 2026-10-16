@@ -1,6 +1,10 @@
-import Tablet.DGRGaussianTruncationIdentification
-import Tablet.RieszMellinFourier
-import Tablet.TorusSummableGramCenteredEnergy
+module
+
+public import Tablet.DGRGaussianTruncationIdentification
+public import Tablet.RieszMellinFourier
+public import Tablet.TorusSummableGramCenteredEnergy
+
+@[expose] public section
 open MeasureTheory
 open scoped BigOperators
 -- [TABLET NODE: DGRGaussianHighSeries]

@@ -1,8 +1,12 @@
-import Tablet.AtomicCoulombSourceMass
-import Tablet.RieszKernelBounds
-import Tablet.EuclideanGradient
-import Mathlib.Analysis.SpecialFunctions.Pow.Integral
-import Mathlib.Tactic
+module
+
+public import Tablet.AtomicCoulombSourceMass
+public import Tablet.RieszKernelBounds
+public import Tablet.EuclideanGradient
+public import Mathlib.Analysis.SpecialFunctions.Pow.Integral
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Metric Filter
 open scoped ENNReal NNReal

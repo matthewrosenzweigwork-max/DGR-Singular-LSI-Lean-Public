@@ -1,9 +1,13 @@
-import Tablet.RieszL1Foundation
-import Tablet.RieszL2Threshold
-import Tablet.TorusSobolev
-import Mathlib.MeasureTheory.Function.LpSeminorm.LpNorm
-import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
-import Mathlib.MeasureTheory.Function.L2Space
+module
+
+public import Tablet.RieszL1Foundation
+public import Tablet.RieszL2Threshold
+public import Tablet.TorusSobolev
+public import Mathlib.MeasureTheory.Function.LpSeminorm.LpNorm
+public import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
+public import Mathlib.MeasureTheory.Function.L2Space
+
+@[expose] public section
 open MeasureTheory Set Function
 open scoped ENNReal ContDiff
 

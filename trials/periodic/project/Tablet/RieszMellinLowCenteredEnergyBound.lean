@@ -1,5 +1,9 @@
-import Tablet.TorusSummableGramCenteredEnergy
-import Tablet.RieszMellinCoefficientBounds
+module
+
+public import Tablet.TorusSummableGramCenteredEnergy
+public import Tablet.RieszMellinCoefficientBounds
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: RieszMellinLowCenteredEnergyBound]
 theorem RieszMellinLowCenteredEnergyBound (d : ℕ) (s a : ℝ)

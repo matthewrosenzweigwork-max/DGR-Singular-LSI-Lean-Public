@@ -1,8 +1,12 @@
-import Tablet.Preamble
-import Mathlib.Algebra.Module.ZLattice.Summable
-import Mathlib.Analysis.SpecificLimits.Normed
-import Mathlib.Data.Int.Interval
-import Mathlib.Tactic
+module
+
+public import Tablet.Preamble
+public import Mathlib.Algebra.Module.ZLattice.Summable
+public import Mathlib.Analysis.SpecificLimits.Normed
+public import Mathlib.Data.Int.Interval
+public import Mathlib.Tactic
+
+@[expose] public section
 open scoped BigOperators
 open Finset
 -- [TABLET NODE: LatticeRadialTailBound]

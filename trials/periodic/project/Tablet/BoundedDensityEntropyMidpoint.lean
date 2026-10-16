@@ -1,4 +1,8 @@
-import Tablet.BoundedEntropyStrongConvexity
+module
+
+public import Tablet.BoundedEntropyStrongConvexity
+
+@[expose] public section
 
 open MeasureTheory
 

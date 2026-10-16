@@ -1,5 +1,9 @@
-import Tablet.WeightedJointRowL2
-import Tablet.WeightedIntegralCauchySchwarz
+module
+
+public import Tablet.WeightedJointRowL2
+public import Tablet.WeightedIntegralCauchySchwarz
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped ENNReal
 set_option autoImplicit false

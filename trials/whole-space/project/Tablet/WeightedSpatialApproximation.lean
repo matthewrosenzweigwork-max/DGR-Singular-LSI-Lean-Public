@@ -1,8 +1,12 @@
-import Tablet.SpatialCutoffApproximation
-import Tablet.OneParticle
-import Tablet.GradientNormIdentity
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
-import Mathlib.Tactic
+module
+
+public import Tablet.SpatialCutoffApproximation
+public import Tablet.OneParticle
+public import Tablet.GradientNormIdentity
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter
 open scoped ENNReal NNReal Topology ContDiff

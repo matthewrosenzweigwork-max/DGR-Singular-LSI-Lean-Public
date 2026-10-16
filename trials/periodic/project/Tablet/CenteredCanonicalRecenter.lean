@@ -1,8 +1,12 @@
-import Tablet.CenteredCanonicalLaw
-import Tablet.CenteredEnergyIdentity
-import Tablet.ProductBackgroundMeasureIdentity
-import Tablet.GibbsNormalizerBounds
-import Tablet.BoundedDensityComparison
+module
+
+public import Tablet.CenteredCanonicalLaw
+public import Tablet.CenteredEnergyIdentity
+public import Tablet.ProductBackgroundMeasureIdentity
+public import Tablet.GibbsNormalizerBounds
+public import Tablet.BoundedDensityComparison
+
+@[expose] public section
 open MeasureTheory
 
 -- [TABLET NODE: CenteredCanonicalRecenter]

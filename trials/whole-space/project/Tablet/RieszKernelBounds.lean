@@ -1,6 +1,10 @@
-import Tablet.RieszKernel
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.Linarith
+module
+
+public import Tablet.RieszKernel
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Linarith
+
+@[expose] public section
 
 -- [TABLET NODE: RieszKernelBounds]
 theorem RieszKernelBounds {d : ℕ} (s ε : ℝ) (hs : 0 < s) (_hε : 0 ≤ ε) :

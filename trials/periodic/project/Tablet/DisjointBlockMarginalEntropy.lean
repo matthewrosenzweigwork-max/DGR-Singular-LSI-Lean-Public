@@ -1,5 +1,9 @@
-import Tablet.ProductDisjointBlockLaw
-import Tablet.RelativeEntropyUnderMeasurableEquivalence
+module
+
+public import Tablet.ProductDisjointBlockLaw
+public import Tablet.RelativeEntropyUnderMeasurableEquivalence
+
+@[expose] public section
 open MeasureTheory InformationTheory
 
 -- [TABLET NODE: DisjointBlockMarginalEntropy]

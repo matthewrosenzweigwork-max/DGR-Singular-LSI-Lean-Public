@@ -1,5 +1,9 @@
-import Tablet.IndependentRosenthalEvenMoment
-import Tablet.GLZBoundedMomentCorrection
+module
+
+public import Tablet.IndependentRosenthalEvenMoment
+public import Tablet.GLZBoundedMomentCorrection
+
+@[expose] public section
 open MeasureTheory
 universe u
 -- [TABLET NODE: GLZSecondConditionalRosenthal]

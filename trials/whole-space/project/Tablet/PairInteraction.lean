@@ -1,5 +1,9 @@
-import Tablet.RieszKernel
-import Tablet.ParticlePosition
+module
+
+public import Tablet.RieszKernel
+public import Tablet.ParticlePosition
+
+@[expose] public section
 
 -- [TABLET NODE: PairInteraction]
 noncomputable def PairInteraction {d N : ℕ} (s coupling ε : ℝ)

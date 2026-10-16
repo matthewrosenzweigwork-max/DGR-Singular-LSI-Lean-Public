@@ -1,6 +1,10 @@
-import Tablet.GrowthClassPositiveCutoffClosedPI
-import Tablet.GrowthClassZeroCutoffClosedPI
-import Tablet.BoundedHessianGrowthData
+module
+
+public import Tablet.GrowthClassPositiveCutoffClosedPI
+public import Tablet.GrowthClassZeroCutoffClosedPI
+public import Tablet.BoundedHessianGrowthData
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 open MeasureTheory

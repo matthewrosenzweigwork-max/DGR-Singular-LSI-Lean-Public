@@ -1,4 +1,8 @@
-import Tablet.OneParticle
+module
+
+public import Tablet.OneParticle
+
+@[expose] public section
 
 -- [TABLET NODE: RieszKernel]
 noncomputable def RieszKernel {d : ℕ} (s ε : ℝ) (x : OneParticle d) : ℝ :=

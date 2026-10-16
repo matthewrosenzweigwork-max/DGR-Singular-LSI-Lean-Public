@@ -1,7 +1,11 @@
-import Tablet.RieszThermalReferenceUniform
-import Tablet.CenteredConditionalIdentity
-import Tablet.CenteredConditionalLogSobolev
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import Tablet.RieszThermalReferenceUniform
+public import Tablet.CenteredConditionalIdentity
+public import Tablet.CenteredConditionalLogSobolev
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 open MeasureTheory
 open scoped ContDiff
 -- [TABLET NODE: RieszThermalConditionalLogSobolev]

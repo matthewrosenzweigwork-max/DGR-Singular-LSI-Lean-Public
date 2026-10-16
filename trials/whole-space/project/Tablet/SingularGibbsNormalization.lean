@@ -1,8 +1,12 @@
-import Tablet.GibbsLaw
-import Tablet.InteractionWeightBounds
-import Tablet.InteractionWeightMeasurable
-import Tablet.ConfigurationReferenceProbability
-import Tablet.ConfigurationCollisionNull
+module
+
+public import Tablet.GibbsLaw
+public import Tablet.InteractionWeightBounds
+public import Tablet.InteractionWeightMeasurable
+public import Tablet.ConfigurationReferenceProbability
+public import Tablet.ConfigurationCollisionNull
+
+@[expose] public section
 open MeasureTheory Filter
 
 -- [TABLET NODE: SingularGibbsNormalization]

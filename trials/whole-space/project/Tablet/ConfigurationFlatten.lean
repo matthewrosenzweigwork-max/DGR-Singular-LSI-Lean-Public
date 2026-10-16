@@ -1,5 +1,9 @@
-import Tablet.ParticleConfig
-import Mathlib.Analysis.InnerProductSpace.PiL2
+module
+
+public import Tablet.ParticleConfig
+public import Mathlib.Analysis.InnerProductSpace.PiL2
+
+@[expose] public section
 set_option autoImplicit false
 noncomputable section
 -- [TABLET NODE: ConfigurationFlatten]

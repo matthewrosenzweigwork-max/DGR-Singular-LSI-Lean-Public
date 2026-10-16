@@ -1,5 +1,9 @@
-import Tablet.ParticleConfig
-import Mathlib.MeasureTheory.Constructions.BorelSpace.Basic
+module
+
+public import Tablet.ParticleConfig
+public import Mathlib.MeasureTheory.Constructions.BorelSpace.Basic
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 open MeasureTheory Set Filter

@@ -1,6 +1,10 @@
-import Tablet.PairEnergy
-import Tablet.Replacement
-import Tablet.ConditionalPotential
+module
+
+public import Tablet.PairEnergy
+public import Tablet.Replacement
+public import Tablet.ConditionalPotential
+
+@[expose] public section
 -- [TABLET NODE: PairAlgebra]
 theorem PairAlgebra {d N : ℕ} (g : UnitAddTorus (Fin d) → ℝ)
     (hg : ∀ x, g (-x) = g x) (β : ℝ) (X : Configuration d N) :

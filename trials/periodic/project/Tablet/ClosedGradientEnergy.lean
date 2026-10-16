@@ -1,4 +1,8 @@
-import Tablet.GradientGraphClosure
+module
+
+public import Tablet.GradientGraphClosure
+
+@[expose] public section
 -- [TABLET NODE: ClosedGradientEnergy]
 noncomputable def ClosedGradientEnergy {d N : ℕ}
     {P : MeasureTheory.Measure (Configuration d N)}

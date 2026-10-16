@@ -1,4 +1,8 @@
-import Collective140
+module
+
+public import Collective140
+
+@[expose] public section
 set_option autoImplicit false
 open MeasureTheory
 

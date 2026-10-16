@@ -1,4 +1,8 @@
-import Tablet.GibbsLaw
+module
+
+public import Tablet.GibbsLaw
+
+@[expose] public section
 open scoped BigOperators
 
 -- [TABLET NODE: GibbsLebesgueDensity]

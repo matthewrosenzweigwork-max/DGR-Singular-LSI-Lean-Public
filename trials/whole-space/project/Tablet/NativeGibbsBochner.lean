@@ -1,8 +1,12 @@
-import Tablet.WeightedJointRowL2
-import Tablet.NativeGibbsMayerContribution
-import Tablet.NativeGibbsSameLabel
-import Tablet.NativeGibbsFourCorner
-import Mathlib.Tactic
+module
+
+public import Tablet.WeightedJointRowL2
+public import Tablet.NativeGibbsMayerContribution
+public import Tablet.NativeGibbsSameLabel
+public import Tablet.NativeGibbsFourCorner
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped ENNReal BigOperators
 set_option autoImplicit false

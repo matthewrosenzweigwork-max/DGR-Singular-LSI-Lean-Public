@@ -1,8 +1,12 @@
-import Tablet.ParticlePosition
-import Tablet.GradientNormIdentity
-import Mathlib.Analysis.Calculus.FDeriv.Comp
-import Mathlib.Analysis.Calculus.FDeriv.Add
-import Mathlib.Tactic
+module
+
+public import Tablet.ParticlePosition
+public import Tablet.GradientNormIdentity
+public import Mathlib.Analysis.Calculus.FDeriv.Comp
+public import Mathlib.Analysis.Calculus.FDeriv.Add
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 

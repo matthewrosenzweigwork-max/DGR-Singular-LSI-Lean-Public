@@ -1,4 +1,8 @@
-import Tablet.Entropy
+module
+
+public import Tablet.Entropy
+
+@[expose] public section
 -- [TABLET NODE: ExtendedEntropy]
 noncomputable def ExtendedEntropy {Ω : Type*} [MeasurableSpace Ω]
     (μ : MeasureTheory.Measure Ω) (u : Ω → ℝ) : ENNReal :=

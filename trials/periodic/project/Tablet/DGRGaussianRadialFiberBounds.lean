@@ -1,6 +1,10 @@
-import Tablet.DGRGaussianCanonicalWitness
-import Tablet.RieszMellinRadialCenteredFiberBound
-import Tablet.ProbabilityBoundedKernelSquare
+module
+
+public import Tablet.DGRGaussianCanonicalWitness
+public import Tablet.RieszMellinRadialCenteredFiberBound
+public import Tablet.ProbabilityBoundedKernelSquare
+
+@[expose] public section
 open MeasureTheory Filter
 open scoped BigOperators
 -- [TABLET NODE: DGRGaussianRadialFiberBounds]

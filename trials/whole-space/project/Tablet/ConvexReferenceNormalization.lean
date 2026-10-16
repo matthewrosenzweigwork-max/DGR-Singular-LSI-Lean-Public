@@ -1,6 +1,10 @@
-import Tablet.HessianMinimizer
-import Tablet.ReferenceQuadraticNormalization
-import Tablet.ReferenceLawProbability
+module
+
+public import Tablet.HessianMinimizer
+public import Tablet.ReferenceQuadraticNormalization
+public import Tablet.ReferenceLawProbability
+
+@[expose] public section
 
 -- [TABLET NODE: ConvexReferenceNormalization]
 theorem ConvexReferenceNormalization {d : ℕ} (V b : OneParticle d → ℝ)

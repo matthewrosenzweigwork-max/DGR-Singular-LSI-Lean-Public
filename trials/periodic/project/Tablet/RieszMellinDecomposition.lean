@@ -1,11 +1,15 @@
-import Tablet.RieszMellinNearCap
-import Tablet.RieszMellinLongBound
-import Tablet.RieszL1Foundation
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
-import Mathlib.Analysis.Real.Pi.Bounds
-import Mathlib.Analysis.Normed.Ring.InfiniteSum
-import Mathlib.Topology.Algebra.InfiniteSum.NatInt
+module
+
+public import Tablet.RieszMellinNearCap
+public import Tablet.RieszMellinLongBound
+public import Tablet.RieszL1Foundation
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+public import Mathlib.Analysis.Real.Pi.Bounds
+public import Mathlib.Analysis.Normed.Ring.InfiniteSum
+public import Mathlib.Topology.Algebra.InfiniteSum.NatInt
+
+@[expose] public section
 open MeasureTheory Set Filter
 open scoped Topology
 -- [TABLET NODE: RieszMellinDecomposition]

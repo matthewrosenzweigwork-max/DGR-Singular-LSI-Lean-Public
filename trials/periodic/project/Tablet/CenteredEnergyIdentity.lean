@@ -1,5 +1,9 @@
-import Tablet.CenteredPairEnergy
-import Tablet.PairEnergy
+module
+
+public import Tablet.CenteredPairEnergy
+public import Tablet.PairEnergy
+
+@[expose] public section
 -- [TABLET NODE: CenteredEnergyIdentity]
 theorem CenteredEnergyIdentity {d N : ℕ} (hN : 1 ≤ N)
     (g r : UnitAddTorus (Fin d) → ℝ) (X : Configuration d N) :

@@ -1,6 +1,10 @@
-import Tablet.Preamble
-import Mathlib.MeasureTheory.Function.L2Space
-import Mathlib.MeasureTheory.Function.LpSpace.Complete
+module
+
+public import Tablet.Preamble
+public import Mathlib.MeasureTheory.Function.L2Space
+public import Mathlib.MeasureTheory.Function.LpSpace.Complete
+
+@[expose] public section
 open MeasureTheory Filter
 set_option autoImplicit false
 

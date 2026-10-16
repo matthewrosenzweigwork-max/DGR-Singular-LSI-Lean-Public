@@ -1,8 +1,12 @@
-import Tablet.HessianQuadraticSupport
-import Mathlib.Analysis.Normed.Group.Bounded
-import Mathlib.Topology.Order.Compact
-import Mathlib.Analysis.Normed.Module.FiniteDimension
-import Mathlib.Analysis.Calculus.LocalExtr.Basic
+module
+
+public import Tablet.HessianQuadraticSupport
+public import Mathlib.Analysis.Normed.Group.Bounded
+public import Mathlib.Topology.Order.Compact
+public import Mathlib.Analysis.Normed.Module.FiniteDimension
+public import Mathlib.Analysis.Calculus.LocalExtr.Basic
+
+@[expose] public section
 
 -- [TABLET NODE: HessianMinimizer]
 theorem HessianMinimizer {d : ℕ} (V : OneParticle d → ℝ)

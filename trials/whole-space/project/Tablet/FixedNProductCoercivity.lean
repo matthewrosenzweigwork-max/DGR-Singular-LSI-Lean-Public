@@ -1,11 +1,15 @@
-import Tablet.ProductConfinementCalculus
-import Tablet.PairInteractionForceForm
-import Tablet.PairInteractionSource
-import Tablet.EuclideanGroundState
-import Tablet.UniformTraceAbsorption
-import Tablet.ForceExponentRange
-import Mathlib.Analysis.MeanInequalities
-import Mathlib.Tactic
+module
+
+public import Tablet.ProductConfinementCalculus
+public import Tablet.PairInteractionForceForm
+public import Tablet.PairInteractionSource
+public import Tablet.EuclideanGroundState
+public import Tablet.UniformTraceAbsorption
+public import Tablet.ForceExponentRange
+public import Mathlib.Analysis.MeanInequalities
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 1600000
 open MeasureTheory Filter

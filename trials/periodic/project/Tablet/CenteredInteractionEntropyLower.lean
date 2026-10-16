@@ -1,6 +1,10 @@
-import Tablet.ProductConditionalEntropyTensorization
-import Tablet.ConditionalGibbsRelativeEntropy
-import Tablet.ThermalNormalizerJensen
+module
+
+public import Tablet.ProductConditionalEntropyTensorization
+public import Tablet.ConditionalGibbsRelativeEntropy
+public import Tablet.ThermalNormalizerJensen
+
+@[expose] public section
 open MeasureTheory InformationTheory
 
 -- [TABLET NODE: CenteredInteractionEntropyLower]

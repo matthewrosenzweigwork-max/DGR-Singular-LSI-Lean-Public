@@ -1,5 +1,9 @@
-import Tablet.InteractionWeight
-import Mathlib.MeasureTheory.Function.SpecialFunctions.Basic
+module
+
+public import Tablet.InteractionWeight
+public import Mathlib.MeasureTheory.Function.SpecialFunctions.Basic
+
+@[expose] public section
 open MeasureTheory
 
 -- [TABLET NODE: InteractionWeightMeasurable]

@@ -1,6 +1,10 @@
-import Tablet.TorusGroundStateTransform
-import Tablet.TorusHaarLogSobolev
-import Mathlib.Analysis.SpecialFunctions.Log.NegMulLog
+module
+
+public import Tablet.TorusGroundStateTransform
+public import Tablet.TorusHaarLogSobolev
+public import Mathlib.Analysis.SpecialFunctions.Log.NegMulLog
+
+@[expose] public section
 open MeasureTheory
 open scoped ContDiff
 -- [TABLET NODE: GroundedDefectiveLogSobolev]

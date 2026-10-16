@@ -1,8 +1,12 @@
-import Tablet.IndependentRosenthalEvenMoment
-import Tablet.GLZSecondConditionalRosenthal
-import Tablet.CanonicalL2SumMoments
-import Mathlib.Analysis.Complex.ExponentialBounds
-import Mathlib.Data.Nat.Factorial.Basic
+module
+
+public import Tablet.IndependentRosenthalEvenMoment
+public import Tablet.GLZSecondConditionalRosenthal
+public import Tablet.CanonicalL2SumMoments
+public import Mathlib.Analysis.Complex.ExponentialBounds
+public import Mathlib.Data.Nat.Factorial.Basic
+
+@[expose] public section
 open MeasureTheory
 universe u
 -- [TABLET NODE: CanonicalCrossNoInflationEvenMoment]

@@ -1,5 +1,9 @@
-import Tablet.NormalizedTilt
-import Mathlib.Probability.Kernel.WithDensity
+module
+
+public import Tablet.NormalizedTilt
+public import Mathlib.Probability.Kernel.WithDensity
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 
 -- [TABLET NODE: GibbsConditionalKernel]

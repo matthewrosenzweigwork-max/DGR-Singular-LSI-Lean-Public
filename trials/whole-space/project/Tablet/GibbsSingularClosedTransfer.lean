@@ -1,5 +1,9 @@
-import Tablet.GibbsCompactTestCutoffLimit
-import Tablet.SmoothCoreClosedPI
+module
+
+public import Tablet.GibbsCompactTestCutoffLimit
+public import Tablet.SmoothCoreClosedPI
+
+@[expose] public section
 open MeasureTheory Filter
 open scoped Topology ContDiff
 

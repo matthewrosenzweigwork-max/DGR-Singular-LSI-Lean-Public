@@ -1,6 +1,10 @@
-import Tablet.PositiveFourierConvolution
-import Tablet.RieszLocalStructure
-import Tablet.RieszFourierCoefficients
+module
+
+public import Tablet.PositiveFourierConvolution
+public import Tablet.RieszLocalStructure
+public import Tablet.RieszFourierCoefficients
+
+@[expose] public section
 open MeasureTheory UnitAddTorus
 open scoped Topology
 

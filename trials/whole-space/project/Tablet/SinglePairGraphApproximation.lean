@@ -1,4 +1,8 @@
-import Tablet.RelativeCollisionCutoffs
+module
+
+public import Tablet.RelativeCollisionCutoffs
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped Topology ContDiff
 namespace SinglePairGraphApproximation

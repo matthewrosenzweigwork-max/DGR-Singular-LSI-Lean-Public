@@ -1,5 +1,9 @@
-import Tablet.ConditionalPotential
-import Tablet.Replacement
+module
+
+public import Tablet.ConditionalPotential
+public import Tablet.Replacement
+
+@[expose] public section
 -- [TABLET NODE: JumpOperator]
 noncomputable def JumpOperator {d N : ℕ} (G q : UnitAddTorus (Fin d) → ℝ)
     (β : ℝ) (f : Configuration d N → ℝ) (X : Configuration d N) : ℝ :=

@@ -1,5 +1,9 @@
-import Tablet.RieszMellinFourier
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+module
+
+public import Tablet.RieszMellinFourier
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+
+@[expose] public section
 open MeasureTheory Set Filter UnitAddTorus
 open scoped Topology ComplexConjugate
 -- [TABLET NODE: TorusCosineSeriesParseval]

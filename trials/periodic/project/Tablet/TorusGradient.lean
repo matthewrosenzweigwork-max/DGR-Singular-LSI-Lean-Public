@@ -1,5 +1,9 @@
-import Tablet.TorusLift
-import Tablet.TorusLaplacian
+module
+
+public import Tablet.TorusLift
+public import Tablet.TorusLaplacian
+
+@[expose] public section
 -- [TABLET NODE: TorusGradient]
 noncomputable def TorusGradient {d : ℕ} (f : UnitAddTorus (Fin d) → ℝ)
     (x : UnitAddTorus (Fin d)) : EuclideanSpace ℝ (Fin d) :=

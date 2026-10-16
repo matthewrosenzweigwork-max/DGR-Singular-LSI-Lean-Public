@@ -1,4 +1,8 @@
-import Tablet.GibbsEntropyVariational
+module
+
+public import Tablet.GibbsEntropyVariational
+
+@[expose] public section
 
 open MeasureTheory
 

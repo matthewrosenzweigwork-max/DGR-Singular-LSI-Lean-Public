@@ -1,5 +1,9 @@
-import Tablet.OneParticle
-import Tablet.EuclideanLaplacian
+module
+
+public import Tablet.OneParticle
+public import Tablet.EuclideanLaplacian
+
+@[expose] public section
 
 -- [TABLET NODE: PotentialBounds]
 structure PotentialBounds (d : ℕ) (κ : ℝ) (V : OneParticle d → ℝ) : Prop where

@@ -1,15 +1,19 @@
-import Tablet.ConfigurationCalculus
-import Tablet.PairEnergy
-import Mathlib.Analysis.Normed.Module.FiniteDimension
-import Mathlib.MeasureTheory.Constructions.Pi
-import Mathlib.Analysis.InnerProductSpace.PiL2
-import Mathlib.Topology.Constructions
-import Mathlib.Topology.Algebra.Group.Quotient
-import Mathlib.Topology.Order.Compact
-import Mathlib.Analysis.Calculus.ContDiff.WithLp
-import Mathlib.Analysis.Calculus.FDeriv.WithLp
-import Mathlib.Probability.Independence.Integration
-import Mathlib.MeasureTheory.Group.Prod
+module
+
+public import Tablet.ConfigurationCalculus
+public import Tablet.PairEnergy
+public import Mathlib.Analysis.Normed.Module.FiniteDimension
+public import Mathlib.MeasureTheory.Constructions.Pi
+public import Mathlib.Analysis.InnerProductSpace.PiL2
+public import Mathlib.Topology.Constructions
+public import Mathlib.Topology.Algebra.Group.Quotient
+public import Mathlib.Topology.Order.Compact
+public import Mathlib.Analysis.Calculus.ContDiff.WithLp
+public import Mathlib.Analysis.Calculus.FDeriv.WithLp
+public import Mathlib.Probability.Independence.Integration
+public import Mathlib.MeasureTheory.Group.Prod
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 open scoped ContDiff
 -- [TABLET NODE: ConfigurationPairPotential]

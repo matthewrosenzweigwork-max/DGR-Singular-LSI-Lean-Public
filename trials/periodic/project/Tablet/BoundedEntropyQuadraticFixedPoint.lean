@@ -1,6 +1,10 @@
-import Tablet.L2EntropyQuadraticMinimum
-import Tablet.EntropyQuadraticMinimumConsistency
-import Tablet.GibbsLinearEntropyMinimum
+module
+
+public import Tablet.L2EntropyQuadraticMinimum
+public import Tablet.EntropyQuadraticMinimumConsistency
+public import Tablet.GibbsLinearEntropyMinimum
+
+@[expose] public section
 open MeasureTheory
 open scoped Topology
 

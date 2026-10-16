@@ -1,6 +1,10 @@
-import Tablet.Preamble
-import Mathlib.Analysis.Complex.Exponential
-import Mathlib.MeasureTheory.Integral.Bochner.Basic
+module
+
+public import Tablet.Preamble
+public import Mathlib.Analysis.Complex.Exponential
+public import Mathlib.MeasureTheory.Integral.Bochner.Basic
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: MomentFromExponential]
 theorem MomentFromExponential {Ω : Type*} [MeasurableSpace Ω]

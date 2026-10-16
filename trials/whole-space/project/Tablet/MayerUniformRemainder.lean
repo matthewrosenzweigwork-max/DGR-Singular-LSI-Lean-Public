@@ -1,9 +1,13 @@
-import Tablet.RieszProbabilityRows
-import Mathlib.Analysis.SpecialFunctions.ExpDeriv
-import Mathlib.Analysis.Calculus.Deriv.MeanValue
-import Mathlib.Analysis.Calculus.Deriv.Pow
-import Mathlib.MeasureTheory.Measure.Haar.NormedSpace
-import Mathlib.Tactic
+module
+
+public import Tablet.RieszProbabilityRows
+public import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+public import Mathlib.Analysis.Calculus.Deriv.MeanValue
+public import Mathlib.Analysis.Calculus.Deriv.Pow
+public import Mathlib.MeasureTheory.Measure.Haar.NormedSpace
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Filter Set Metric
 open scoped ENNReal
 set_option maxHeartbeats 1500000

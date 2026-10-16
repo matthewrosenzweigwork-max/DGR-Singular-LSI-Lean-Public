@@ -1,5 +1,9 @@
-import Tablet.Preamble
-import Mathlib.MeasureTheory.Constructions.Pi
+module
+
+public import Tablet.Preamble
+public import Mathlib.MeasureTheory.Constructions.Pi
+
+@[expose] public section
 open MeasureTheory
 
 -- [TABLET NODE: SplitCoordinateEquivalence]

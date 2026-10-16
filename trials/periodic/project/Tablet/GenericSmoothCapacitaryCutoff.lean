@@ -1,7 +1,11 @@
-import Tablet.CapacitaryPotentialCutoff
-import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
-import Mathlib.Analysis.Calculus.Deriv.Support
-import Mathlib.Analysis.Calculus.LocalExtr.Basic
+module
+
+public import Tablet.CapacitaryPotentialCutoff
+public import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
+public import Mathlib.Analysis.Calculus.Deriv.Support
+public import Mathlib.Analysis.Calculus.LocalExtr.Basic
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped ContDiff Topology
 -- [TABLET NODE: GenericSmoothCapacitaryCutoff]

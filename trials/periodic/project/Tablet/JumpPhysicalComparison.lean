@@ -1,15 +1,19 @@
-import Tablet.HolesPoincare
-import Tablet.JumpL2Extension
-import Tablet.ConfigurationCalculus
-import Tablet.ReplacementJointBalance
-import Tablet.RieszL1Foundation
-import Mathlib.Topology.Constructions
-import Mathlib.Topology.Algebra.Group.Quotient
-import Mathlib.Topology.Order.Compact
-import Mathlib.Analysis.Calculus.ContDiff.WithLp
-import Mathlib.Analysis.Calculus.FDeriv.WithLp
-import Mathlib.MeasureTheory.Group.Integral
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import Tablet.HolesPoincare
+public import Tablet.JumpL2Extension
+public import Tablet.ConfigurationCalculus
+public import Tablet.ReplacementJointBalance
+public import Tablet.RieszL1Foundation
+public import Mathlib.Topology.Constructions
+public import Mathlib.Topology.Algebra.Group.Quotient
+public import Mathlib.Topology.Order.Compact
+public import Mathlib.Analysis.Calculus.ContDiff.WithLp
+public import Mathlib.Analysis.Calculus.FDeriv.WithLp
+public import Mathlib.MeasureTheory.Group.Integral
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 open scoped ContDiff
 -- [TABLET NODE: JumpPhysicalComparison]

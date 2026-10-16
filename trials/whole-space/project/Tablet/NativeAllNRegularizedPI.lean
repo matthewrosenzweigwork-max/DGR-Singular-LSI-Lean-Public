@@ -1,8 +1,12 @@
-import Tablet.FixedNGibbsBoundedBackgroundPI
-import Tablet.NativeLargeNPhysicalPI
-import Tablet.PhysicalEnergy
-import Tablet.LawVariance
-import Mathlib.Tactic
+module
+
+public import Tablet.FixedNGibbsBoundedBackgroundPI
+public import Tablet.NativeLargeNPhysicalPI
+public import Tablet.PhysicalEnergy
+public import Tablet.LawVariance
+public import Mathlib.Tactic
+
+@[expose] public section
 set_option autoImplicit false
 set_option maxHeartbeats 2000000
 open MeasureTheory Set Filter

@@ -1,8 +1,12 @@
-import Tablet.ConditionalSquareEntropyIdentity
-import Tablet.KernelWeightedFirstMarginal
-import Tablet.SquareDensityRelativeEntropy
-import Mathlib.InformationTheory.KullbackLeibler.ChainRule
-import Mathlib.Probability.Kernel.Disintegration.StandardBorel
+module
+
+public import Tablet.ConditionalSquareEntropyIdentity
+public import Tablet.KernelWeightedFirstMarginal
+public import Tablet.SquareDensityRelativeEntropy
+public import Mathlib.InformationTheory.KullbackLeibler.ChainRule
+public import Mathlib.Probability.Kernel.Disintegration.StandardBorel
+
+@[expose] public section
 universe u
 open MeasureTheory InformationTheory ProbabilityTheory
 -- [TABLET NODE: ConditionalSquareRelativeEntropy]

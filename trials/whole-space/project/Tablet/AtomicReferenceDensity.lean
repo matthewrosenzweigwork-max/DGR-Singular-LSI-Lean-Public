@@ -1,9 +1,13 @@
-import Tablet.RieszProbabilityRows
-import Tablet.CommonReferenceDensity
-import Tablet.ReferenceLawProbability
-import Mathlib.Analysis.Convex.Integral
-import Mathlib.Analysis.Convex.SpecificFunctions.Basic
-import Mathlib.Tactic
+module
+
+public import Tablet.RieszProbabilityRows
+public import Tablet.CommonReferenceDensity
+public import Tablet.ReferenceLawProbability
+public import Mathlib.Analysis.Convex.Integral
+public import Mathlib.Analysis.Convex.SpecificFunctions.Basic
+public import Mathlib.Tactic
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped ENNReal
 set_option maxHeartbeats 1600000

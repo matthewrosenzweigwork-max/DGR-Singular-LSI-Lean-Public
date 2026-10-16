@@ -1,14 +1,18 @@
-import Tablet.TorusSmooth
-import Tablet.TorusLaplacian
-import Tablet.Preamble
-import Tablet.TorusGradient
-import Mathlib.Topology.Constructions
-import Mathlib.Topology.Algebra.Group.Quotient
-import Mathlib.Analysis.Calculus.ContDiff.WithLp
-import Mathlib.Analysis.Calculus.FDeriv.WithLp
-import Mathlib.MeasureTheory.Group.Integral
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+module
+
+public import Tablet.TorusSmooth
+public import Tablet.TorusLaplacian
+public import Tablet.Preamble
+public import Tablet.TorusGradient
+public import Mathlib.Topology.Constructions
+public import Mathlib.Topology.Algebra.Group.Quotient
+public import Mathlib.Analysis.Calculus.ContDiff.WithLp
+public import Mathlib.Analysis.Calculus.FDeriv.WithLp
+public import Mathlib.MeasureTheory.Group.Integral
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+
+@[expose] public section
 open scoped ContDiff
 -- [TABLET NODE: TorusFourierLaplacian]
 theorem TorusFourierLaplacian (d : ℕ) (f : UnitAddTorus (Fin d) → ℝ)

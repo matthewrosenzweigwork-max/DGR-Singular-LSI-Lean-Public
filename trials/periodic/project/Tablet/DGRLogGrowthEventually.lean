@@ -1,5 +1,9 @@
-import Tablet.DGRPowerGrowthEventually
-import Mathlib.Analysis.SpecialFunctions.Log.NegMulLog
+module
+
+public import Tablet.DGRPowerGrowthEventually
+public import Mathlib.Analysis.SpecialFunctions.Log.NegMulLog
+
+@[expose] public section
 open scoped Topology
 -- [TABLET NODE: DGRLogGrowthEventually]
 theorem DGRLogGrowthEventually (C : ℝ) (hC : 0≤C) :

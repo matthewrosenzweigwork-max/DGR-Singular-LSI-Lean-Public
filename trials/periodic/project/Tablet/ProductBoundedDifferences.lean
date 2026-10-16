@@ -1,7 +1,11 @@
-import Tablet.Preamble
-import Mathlib.Probability.Moments.SubGaussian
-import Mathlib.MeasureTheory.Constructions.Pi
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import Tablet.Preamble
+public import Mathlib.Probability.Moments.SubGaussian
+public import Mathlib.MeasureTheory.Constructions.Pi
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 open MeasureTheory ProbabilityTheory
 -- [TABLET NODE: ProductBoundedDifferences]
 theorem ProductBoundedDifferences {Ω : Type*} [MeasurableSpace Ω]

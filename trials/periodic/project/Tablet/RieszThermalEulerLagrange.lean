@@ -1,6 +1,10 @@
-import Tablet.RieszPositiveConvolution
-import Tablet.ProbabilityConvolutionJensenInputs
-import Tablet.BoundedEntropyQuadraticFixedPoint
+module
+
+public import Tablet.RieszPositiveConvolution
+public import Tablet.ProbabilityConvolutionJensenInputs
+public import Tablet.BoundedEntropyQuadraticFixedPoint
+
+@[expose] public section
 open MeasureTheory UnitAddTorus
 open scoped Topology
 

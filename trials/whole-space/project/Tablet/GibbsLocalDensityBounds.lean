@@ -1,6 +1,10 @@
-import Tablet.GibbsRawDensity
-import Tablet.InteractionWeightOffCollision
-import Mathlib.Topology.Order.Compact
+module
+
+public import Tablet.GibbsRawDensity
+public import Tablet.InteractionWeightOffCollision
+public import Mathlib.Topology.Order.Compact
+
+@[expose] public section
 open MeasureTheory Set
 open scoped BigOperators
 

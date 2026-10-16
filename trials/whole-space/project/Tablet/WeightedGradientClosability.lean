@@ -1,9 +1,13 @@
-import Tablet.WeightedLocalRestriction
-import Tablet.EuclideanDerivativeCoordinates
-import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
-import Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
-import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
-import Mathlib.Analysis.Calculus.ContDiff.Operations
+module
+
+public import Tablet.WeightedLocalRestriction
+public import Tablet.EuclideanDerivativeCoordinates
+public import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
+public import Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
+public import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
+public import Mathlib.Analysis.Calculus.ContDiff.Operations
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped Topology ContDiff
 

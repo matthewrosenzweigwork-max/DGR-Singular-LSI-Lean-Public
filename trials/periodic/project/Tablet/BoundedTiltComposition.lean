@@ -1,4 +1,8 @@
-import Tablet.BoundedDensityComparison
+module
+
+public import Tablet.BoundedDensityComparison
+
+@[expose] public section
 open MeasureTheory
 -- [TABLET NODE: BoundedTiltComposition]
 theorem BoundedTiltComposition {Ω : Type*} [MeasurableSpace Ω] (μ : Measure Ω)

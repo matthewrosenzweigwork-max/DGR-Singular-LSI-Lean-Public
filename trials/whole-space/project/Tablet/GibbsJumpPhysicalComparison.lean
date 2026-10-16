@@ -1,8 +1,12 @@
-import Tablet.NativeGibbsJumpVariance
-import Tablet.AtomicOneSitePI
-import Tablet.ParticleInsertionCalculus
-import Tablet.CompactGradientCalculus
-import Tablet.PhysicalEnergy
+module
+
+public import Tablet.NativeGibbsJumpVariance
+public import Tablet.AtomicOneSitePI
+public import Tablet.ParticleInsertionCalculus
+public import Tablet.CompactGradientCalculus
+public import Tablet.PhysicalEnergy
+
+@[expose] public section
 open MeasureTheory Filter Set
 open scoped ENNReal BigOperators ContDiff
 set_option autoImplicit false

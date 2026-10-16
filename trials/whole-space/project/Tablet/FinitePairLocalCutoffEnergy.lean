@@ -1,10 +1,14 @@
-import Tablet.FinitePairLocalRieszControl
-import Tablet.PairRelativeGradient
-import Tablet.PairInteractionSource
-import Tablet.AtomicLocalCutoffEnergy
-import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
-import Mathlib.Analysis.InnerProductSpace.Laplacian
+module
+
+public import Tablet.FinitePairLocalRieszControl
+public import Tablet.PairRelativeGradient
+public import Tablet.PairInteractionSource
+public import Tablet.AtomicLocalCutoffEnergy
+public import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+public import Mathlib.Analysis.InnerProductSpace.Laplacian
+
+@[expose] public section
 
 set_option autoImplicit false
 set_option maxHeartbeats 1600000

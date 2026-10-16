@@ -1,4 +1,8 @@
-import Tablet.TorusLift
+module
+
+public import Tablet.TorusLift
+
+@[expose] public section
 open scoped ContDiff
 -- [TABLET NODE: TorusSmooth]
 def TorusSmooth {d : ℕ} (f : UnitAddTorus (Fin d) → ℝ) : Prop :=
