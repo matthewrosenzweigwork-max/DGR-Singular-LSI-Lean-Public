@@ -19,8 +19,13 @@ private theorem euclidean_sobolev (d : ℕ) (hd : 3 ≤ d) :
   obtain ⟨C, hC⟩ := EuclideanSobolev (ι := Fin d) (by simpa using hd)
   refine ⟨C, ?_⟩
   intro f hf hc
+  have hgrad : Continuous (EuclideanGradient f) :=
+    (InnerProductSpace.toDual ℝ (EuclideanSpace ℝ (Fin d))).symm.continuous.comp
+      (hf.continuous_fderiv (by norm_num))
   have hn : eLpNorm (EuclideanGradient f) 2 volume = eLpNorm (fderiv ℝ f) 2 volume :=
-    eLpNorm_congr_norm_ae (Filter.Eventually.of_forall (fun x => (GradientNormIdentity f x).2))
+    eLpNorm_congr_norm_ae hgrad.aestronglyMeasurable
+      (hf.continuous_fderiv (by norm_num)).aestronglyMeasurable
+      (Filter.Eventually.of_forall (fun x => (GradientNormIdentity f x).2))
   simpa only [Fintype.card_fin, criticalExponent, hn] using hC f hf hc
 
 private theorem transition_deriv_zero_left {x : ℝ} (hx : x ≤ 0) :

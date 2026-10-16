@@ -42,8 +42,8 @@ theorem CenteredCanonicalEntropyLower (d N : ℕ) (l u C β : ℝ)
   let F := fun (i : Fin N) (X : Configuration d N) =>
     ((fun j : (Finset.univ : Finset (Fin N)).erase i => X j), (fun j : ({i} : Finset (Fin N)) => X j))
   have hmF (i : Fin N) : Measurable (F i) :=
-    (measurable_pi_lambda _ fun j => measurable_pi_apply j.val).prodMk
-      (measurable_pi_lambda _ fun j => measurable_pi_apply j.val)
+    (Measurable.of_eval fun j => measurable_pi_apply j.val).prodMk
+      (Measurable.of_eval fun j => measurable_pi_apply j.val)
   have hmV : Measurable (fun X : Configuration d N => β*CenteredPairEnergy g r.density X) := by
     have hh := (Finset.measurable_fun_sum Finset.univ fun i _ => (hmU i).comp (hmF i)).div_const 2
     convert hh using 1

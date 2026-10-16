@@ -32,8 +32,8 @@ theorem ProductDeletionConditionalEntropy {I Ω : Type*}
         invFun := fun x i => x ⟨i, Finset.mem_univ i⟩
         left_inv := fun x => by funext i; rfl
         right_inv := fun x => by funext i; rfl }
-      measurable_toFun := measurable_pi_lambda _ fun i => measurable_pi_apply i.val
-      measurable_invFun := measurable_pi_lambda _ fun i => measurable_pi_apply (⟨i, Finset.mem_univ i⟩ : ↥(Finset.univ : Finset I)) }
+      measurable_toFun := Measurable.of_eval fun i => measurable_pi_apply i.val
+      measurable_invFun := Measurable.of_eval fun i => measurable_pi_apply (⟨i, Finset.mem_univ i⟩ : ↥(Finset.univ : Finset I)) }
     have hh := RelativeEntropyUnderMeasurableEquivalence S (Measure.pi μ) e
     change klDiv (S.map (fun x : I → Ω => fun i : (Finset.univ : Finset I) => x i))
       ((Measure.pi μ).map (fun x : I → Ω => fun i : (Finset.univ : Finset I) => x i)) = _ at hh
@@ -45,8 +45,8 @@ theorem ProductDeletionConditionalEntropy {I Ω : Type*}
   let t := ({i} : Finset I)
   let F : (I → Ω) → (s → Ω) × (t → Ω) := fun x => ((fun j => x j), (fun j => x j))
   have hm : Measurable F :=
-    (measurable_pi_lambda _ fun j => measurable_pi_apply j.val).prodMk
-      (measurable_pi_lambda _ fun j => measurable_pi_apply j.val)
+    (Measurable.of_eval fun j => measurable_pi_apply j.val).prodMk
+      (Measurable.of_eval fun j => measurable_pi_apply j.val)
   let T := S.map F
   haveI : IsProbabilityMeasure T := Measure.isProbabilityMeasure_map hm.aemeasurable
   have ht : T.fst = S.map (fun x : I → Ω => fun j : s => x j) := by

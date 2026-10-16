@@ -18,7 +18,7 @@ theorem ProductDisjointBlockLaw {I Ω : Type*} [Fintype I] [MeasurableSpace Ω]
     iIndepFun_pi (X := fun _ => id) (fun _ => aemeasurable_id)
   have h := iIndepFun.indepFun_finset s t hst hi (fun i => measurable_pi_apply i)
   have hs : Measurable (fun x : I → Ω => fun i : s => x i) :=
-    measurable_pi_lambda _ fun i => measurable_pi_apply i.val
+    Measurable.of_eval fun i => measurable_pi_apply i.val
   have ht : Measurable (fun x : I → Ω => fun i : t => x i) :=
-    measurable_pi_lambda _ fun i => measurable_pi_apply i.val
+    Measurable.of_eval fun i => measurable_pi_apply i.val
   simpa only [ProductRestrictionLaw] using h.map_prod_eq_prod_map_map hs.aemeasurable ht.aemeasurable

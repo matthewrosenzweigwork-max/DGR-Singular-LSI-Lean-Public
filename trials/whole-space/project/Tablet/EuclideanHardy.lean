@@ -308,8 +308,6 @@ private theorem euclidean_hardy_compact {d : ℕ} (hd : 3 ≤ d)
         simpa using (tendsto_const_nhds (x:=‖x‖^2)).add (hεlim.pow 2)
       have hh := (tendsto_const_nhds (x:=(ψ x)^2)).div ht hn
       convert hh using 1
-      funext n
-      simp only [Pi.div_apply]
   have hbound (n : ℕ) := euclidean_hardy_regularized hd (hε n) ψ hψ hcψ
   exact le_of_tendsto (tendsto_const_nhds.mul hlim) (Filter.Eventually.of_forall hbound)
 

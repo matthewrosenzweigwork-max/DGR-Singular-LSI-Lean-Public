@@ -28,7 +28,7 @@ theorem WeightedMeanJointL2 {α β : Type} [MeasurableSpace α] [MeasurableSpace
   have hw := WeightedJointRowL2 P μ r hrm hr ψ hψ
   have hDi : Integrable D P := hw.2.1.integral_prod_left
   have hZm : AEStronglyMeasurable Z P := hrm.aestronglyMeasurable.integral_prod_right'
-  have hTm : AEStronglyMeasurable T P := hw.2.2.1.1
+  have hTm : AEStronglyMeasurable T P := hw.2.2.1.aestronglyMeasurable
   have hmm : AEStronglyMeasurable m P := hTm.div₀ hZm
   have hri (x : α) : Integrable (fun y => r (x,y)) μ :=
     (integrable_const (1:ℝ)).mono' (hrm.comp (measurable_const.prodMk measurable_id)).aestronglyMeasurable

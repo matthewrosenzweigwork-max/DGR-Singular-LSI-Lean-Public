@@ -62,7 +62,7 @@ theorem SplitStationarityTransfer {I Ω : Type u} [Fintype I] [DecidableEq I]
         funext z
         rw [(replacement_eval_local x i z).1]
       rw [heq]
-      exact hmF.comp (measurable_const.prodMk (measurable_pi_lambda _ (fun _ => measurable_id)))
+      exact hmF.comp (measurable_const.prodMk (Measurable.of_eval (fun _ => measurable_id)))
     rw [integral_map a.measurable.aemeasurable hm.aestronglyMeasurable]
     apply integral_congr_ae
     filter_upwards [] with y

@@ -64,7 +64,7 @@ theorem ConfigurationLawTranslation {d N : ℕ} (V b : OneParticle d → ℝ)
       (ConfigurationReference d N μ).map ((ConfigurationTranslation a).toMeasurableEquiv) =
         ConfigurationReference d N (μ.map (oneShift a)) := by
     letI : IsProbabilityMeasure (μ.map (oneShift a)) :=
-      Measure.isProbabilityMeasure_map (oneShift a).measurable.aemeasurable
+      inferInstance
     unfold ConfigurationReference
     rw [← Measure.pi_map_pi (fun _ : Fin N => (oneShift a).measurable.aemeasurable)]
     have hF : Measurable (fun Y : Fin N → OneParticle d =>

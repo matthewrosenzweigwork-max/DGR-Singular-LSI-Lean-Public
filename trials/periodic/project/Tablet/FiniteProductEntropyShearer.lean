@@ -31,8 +31,8 @@ theorem FiniteProductEntropyShearer {I Ω : Type*}
     let F : (I → Ω) → (s → Ω) × (t → Ω) := fun x => ((fun i => x i), (fun i => x i))
     let R : (I → Ω) → (↥(s ∪ t) → Ω) := fun x i => x i
     have hm : Measurable F :=
-      (measurable_pi_lambda _ fun i => measurable_pi_apply i.val).prodMk
-        (measurable_pi_lambda _ fun i => measurable_pi_apply i.val)
+      (Measurable.of_eval fun i => measurable_pi_apply i.val).prodMk
+        (Measurable.of_eval fun i => measurable_pi_apply i.val)
     have he : e ∘ F = R := by
       funext x i
       change Equiv.piFinsetUnion (fun _ : I => Ω) hst (F x) i = x i
@@ -73,8 +73,8 @@ theorem FiniteProductEntropyShearer {I Ω : Type*}
     let E := MeasurableEquiv.prodCongr e.symm (MeasurableEquiv.refl (u → Ω))
     let F : (I → Ω) → (↥(s ∪ t) → Ω) × (u → Ω) := fun x => ((fun i => x i), (fun i => x i))
     have hm : Measurable F :=
-      (measurable_pi_lambda _ fun i => measurable_pi_apply i.val).prodMk
-        (measurable_pi_lambda _ fun i => measurable_pi_apply i.val)
+      (Measurable.of_eval fun i => measurable_pi_apply i.val).prodMk
+        (Measurable.of_eval fun i => measurable_pi_apply i.val)
     have hp := union_law_local μ s t hst
     have he : E ∘ F = fun x : I → Ω => (((fun i : s => x i), (fun i : t => x i)), (fun i : u => x i)) := by
       funext x
@@ -104,9 +104,9 @@ theorem FiniteProductEntropyShearer {I Ω : Type*}
     let F : (I → Ω) → ((s → Ω) × (t → Ω)) × (u → Ω) :=
       fun x => (((fun i => x i), (fun i => x i)), (fun i => x i))
     have hm : Measurable F :=
-      ((measurable_pi_lambda _ fun i => measurable_pi_apply i.val).prodMk
-        (measurable_pi_lambda _ fun i => measurable_pi_apply i.val)).prodMk
-        (measurable_pi_lambda _ fun i => measurable_pi_apply i.val)
+      ((Measurable.of_eval fun i => measurable_pi_apply i.val).prodMk
+        (Measurable.of_eval fun i => measurable_pi_apply i.val)).prodMk
+        (Measurable.of_eval fun i => measurable_pi_apply i.val)
     let T := S.map F
     haveI : IsProbabilityMeasure T := Measure.isProbabilityMeasure_map hm.aemeasurable
     have hh := three_observation_local s t u T (Measure.pi (fun i : s => μ i))
@@ -119,8 +119,8 @@ theorem FiniteProductEntropyShearer {I Ω : Type*}
       rfl
     have hsf : T.fst.fst = S.map (fun x : I → Ω => fun i : s => x i) := by
       rw [hfst, Measure.fst, Measure.map_map measurable_fst
-        ((measurable_pi_lambda _ fun i => measurable_pi_apply i.val).prodMk
-          (measurable_pi_lambda _ fun i => measurable_pi_apply i.val))]
+        ((Measurable.of_eval fun i => measurable_pi_apply i.val).prodMk
+          (Measurable.of_eval fun i => measurable_pi_apply i.val))]
       rfl
     have hsu : Disjoint s u := (Finset.disjoint_union_left.mp hstu).1
     rw [hsf, hfst, hxz, DisjointBlockMarginalEntropy μ S s t hst,
@@ -136,7 +136,7 @@ theorem FiniteProductEntropyShearer {I Ω : Type*}
   let H := fun v : Finset I => (E v).toReal
   have hfin (v : Finset I) : E v ≠ ⊤ := by
     have hm : Measurable (fun x : I → Ω => fun j : v => x j) :=
-      measurable_pi_lambda _ fun j => measurable_pi_apply j.val
+      Measurable.of_eval fun j => measurable_pi_apply j.val
     have hh := klDiv_map_le S (Measure.pi μ) hm
     rw [ProductRestrictionLaw μ v] at hh
     exact ne_top_of_le_ne_top hS hh

@@ -47,7 +47,7 @@ theorem RieszCoulombTranslatedFormBound (d : ℕ) (hd : 2 ≤ d) (s a : ℝ)
       rw [AddCircle.volume_eq_smul_haarAddCircle]; simp; infer_instance
     haveI : IsProbabilityMeasure (volume : Measure (UnitAddTorus (Fin d))) := inferInstance
     have hm := eLpNorm_le_eLpNorm_of_exponent_le (μ := volume)
-      (by norm_num : (4 : ℝ≥0∞) ≤ 6) hf.aestronglyMeasurable
+      (by norm_num : (4 : ℝ≥0∞) ≤ 6)
     have h := ENNReal.toReal_mono (continuous_memLp f hf 6).eLpNorm_ne_top hm
     rw [toReal_eLpNorm hf.aestronglyMeasurable, toReal_eLpNorm hf.aestronglyMeasurable,
       lpNorm_eq_integral_norm_rpow_toReal (by norm_num : (4 : ℝ≥0∞) ≠ 0) (by norm_num),

@@ -38,8 +38,8 @@ theorem HeatCenteredEnergyAveraging (d N : ℕ) (t : ℝ) (ht : 0<t)
         (Measure.pi fun _:Fin N=>ν)
         ((Measure.pi fun _:s=>ν).prod (Measure.pi fun _:q=>ν)) := by
       refine ⟨?_,ProductDisjointBlockLaw (fun _:Fin N=>ν) s q hd⟩
-      exact (measurable_pi_lambda _ fun k=>measurable_pi_apply k.val).prodMk
-        (measurable_pi_lambda _ fun k=>measurable_pi_apply k.val)
+      exact (Measurable.of_eval fun k=>measurable_pi_apply k.val).prodMk
+        (Measurable.of_eval fun k=>measurable_pi_apply k.val)
     have hleft := measurePreserving_eval (fun _:s=>ν) is
     have hright := measurePreserving_eval (fun _:q=>ν) jq
     have hp : MeasurePreserving (fun Y : Configuration d N=>(Y i,Y j))

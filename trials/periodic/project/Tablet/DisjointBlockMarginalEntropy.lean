@@ -22,8 +22,8 @@ theorem DisjointBlockMarginalEntropy {I Ω : Type*} [Fintype I] [DecidableEq I] 
   let e : ((s → Ω) × (t → Ω)) ≃ᵐ (↥(s ∪ t) → Ω) :=
     MeasurableEquiv.piFinsetUnion (π := fun _ : I => Ω) hst
   have hm : Measurable F :=
-    (measurable_pi_lambda _ fun i => measurable_pi_apply i.val).prodMk
-      (measurable_pi_lambda _ fun i => measurable_pi_apply i.val)
+    (Measurable.of_eval fun i => measurable_pi_apply i.val).prodMk
+      (Measurable.of_eval fun i => measurable_pi_apply i.val)
   have he : e ∘ F = R := by
     funext x i
     change Equiv.piFinsetUnion (fun _ : I => Ω) hst (F x) i = x i

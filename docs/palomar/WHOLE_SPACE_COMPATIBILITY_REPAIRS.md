@@ -143,3 +143,77 @@ objects/structures. After removing only those comments, the 26 definition
 texts and three complete theorem statements still match their source copies.
 Its final size is 291 physical lines / 16,135 UTF-8 bytes. No local compilation,
 commit, push, ledger or configuration change was performed.
+
+## Full-preflight Solution-build repairs, run 38929137152
+
+The full workflow at source `7c214cc` stopped in Solution compilation. The
+saved report `migration-reference-evidence/whole-report-7c214cc.json` records
+six failed targets in `diagnostics[0].explanation`; its build-log tail is
+truncated to 20 KiB. All six have targeted repairs, with one additional use
+of exactly the same norm-congruence API repaired in `WeakPotentialForm`.
+These repairs are not a successful-build receipt; Linux CI must rerun.
+
+### Norm congruence requires measurability
+
+The pinned
+[LpSeminorm/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/MeasureTheory/Function/LpSeminorm/Basic.lean)
+requires measurability of both functions before the norm equality argument
+to `eLpNorm_congr_norm_ae`. In `EuclideanSobolev.lean`, the old call only
+supplied the pointwise norm identity. It now also supplies the continuous
+Fréchet derivative's measurability and the gradient's measurability.
+The gradient continuity proof composes `hf.continuous_fderiv` with the
+continuous inverse of the Riesz dual isometry, exactly as already used by
+other project lemmas. `WeakPotentialForm.lean` has the same call in the
+reverse direction; it receives the same two arguments in that order.
+No additional assumption was added: both facts follow from the existing C¹
+hypothesis. The norm equality and Sobolev constants are unchanged.
+
+### Probability of image measures
+
+At the pinned version,
+[Typeclasses/Probability.lean](https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/MeasureTheory/Measure/Typeclasses/Probability.lean)
+provides an instance for the image of a probability measure and retains
+`Measure.isProbabilityMeasure_map_iff` for measurable maps.
+
+In `ConfigurationReferenceProbability.lean`, removed the call to the
+nonexistent `Measure.isProbabilityMeasure_map`. The existing proof of
+continuity/measurability of row flattening is preserved, and the final step is:
+
+```lean
+exact (MeasureTheory.Measure.isProbabilityMeasure_map_iff
+  hflat.measurable.aemeasurable).mpr inferInstance
+```
+
+In `ConfigurationLawTranslation.lean`, replaced
+`Measure.isProbabilityMeasure_map (oneShift a).measurable.aemeasurable`
+by `inferInstance` for the already specified translated probability measure.
+The translation map and its measurability arguments in the subsequent
+product/map identities remain unchanged.
+
+### Other reported compatibility failures
+
+- `WeightedMeanJointL2.lean`: replaced `hw.2.2.1.1` by
+  `hw.2.2.1.aestronglyMeasurable`. The outer conjunction still supplies
+  the same MemLp fact, whose old first projection no longer exists.
+- `SoftRieszReferencePositive.lean`: removed the unused invalid opening
+  `open scoped InnerProduct`. No inner-product notation uses that scope.
+- `EuclideanHardy.lean`: removed `funext n` and
+  `simp only [Pi.div_apply]` after `convert hh using 1`; CI reports that
+  the preceding conversion now closes the goal, making both tactics dead.
+
+### Static validation and hashes
+
+All theorem headers, including private supporting lemmas, were compared
+against HEAD and are unchanged in these seven files. Top-level definition
+and abbreviation declarations are unchanged. No axiom or hole was introduced.
+No local Lean build, commit, push, ledger or configuration edit was performed.
+
+| File | Before this repair | After this repair |
+|---|---|---|
+| `EuclideanHardy.lean` | `34f5f7550ec83bd198f93a787ea0c51c12146105c65546c7fdd81ed351f77182` | `a8c486c670da7f6a78bab2e317e5744c0a167b4f6f21405d7a13efbff526c661` |
+| `WeightedMeanJointL2.lean` | `92a4f9a3e939576cd6faeaae29ef930acc77f83d9dd8c327394b55aa0503a80e` | `356fde83c912da3582f9b87ca94ad8eccef26ef733e39ac1b4dfbc25f7e2c9f2` |
+| `SoftRieszReferencePositive.lean` | `37433227c8afaab47afedcdf17aa63e723336f2329eac6c09e5c2a6f2d298f0b` | `1eb428038515caf0c0a96e1502218d5b7df2b563c9867a2d095f9e30341d5742` |
+| `ConfigurationReferenceProbability.lean` | `5c6e75b52a7c7442280af0a76b9d1fe8c31a7cd0eeb20652fbada03891716d07` | `810f7c5f999e756fa7287ba53205a05eaf801a89d8f8eb5b6761513d17195e4d` |
+| `EuclideanSobolev.lean` | `061ea96bedf01f206e7b7fb4a36cad953cddb3dc611f13881bfa7d5fab25609b` | `07c48a58440465f86428cd283e474804c51380fb8be20ee12b7fc06c9f4f56d7` |
+| `ConfigurationLawTranslation.lean` | `7072224dbfbbc47dc57c7d6f0d9ebdaa136aa59ffa9cb2f315180a61f610b347` | `74d2bd53f34077957628ffcf7f9b55ef0c8fe44699b0d691e29fcb5d19961270` |
+| `WeakPotentialForm.lean` | `447a1094ceeb6186cd87943b87df48f615cbf9239b8af1e85ddd2db50bd2e8e8` | `16cb0239f75c211ac7a58c9ccffab2dfe37f5408933a915b2205dbf14324ed25` |

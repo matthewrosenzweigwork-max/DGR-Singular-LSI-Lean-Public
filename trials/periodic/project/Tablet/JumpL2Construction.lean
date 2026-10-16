@@ -192,12 +192,12 @@ theorem JumpL2Construction (d N : ℕ) (hN : 2 ≤ N) (l u β : ℝ)
         (∀ v, L v = 0 ↔ ∀ i, D i v = 0) ∧
         (∀ v w, inner ℝ v (L w) = (-1 / 2 : ℝ) * ∑ i, inner ℝ (D i v) (D i w)) := by
     classical
-    let L : H →L[ℝ] H := (-1 / 2 : ℝ) • ∑ i, (D i)†.comp (D i)
+    let L : H →L[ℝ] H := (-1 / 2 : ℝ) • ∑ i, (ContinuousLinearMap.adjoint (D i)).comp (D i)
     have hnorm : ‖L‖ ≤ 2 * Fintype.card ι := by
       calc
-        ‖L‖ = (1 / 2 : ℝ) * ‖∑ i, (D i)†.comp (D i)‖ := by
+        ‖L‖ = (1 / 2 : ℝ) * ‖∑ i, (ContinuousLinearMap.adjoint (D i)).comp (D i)‖ := by
           simp [L, norm_smul]
-        _ ≤ (1 / 2 : ℝ) * ∑ i, ‖(D i)†.comp (D i)‖ := by
+        _ ≤ (1 / 2 : ℝ) * ∑ i, ‖(ContinuousLinearMap.adjoint (D i)).comp (D i)‖ := by
           gcongr
           exact norm_sum_le _ _
         _ = (1 / 2 : ℝ) * ∑ i, ‖D i‖ ^ 2 := by

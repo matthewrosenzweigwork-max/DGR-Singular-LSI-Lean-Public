@@ -49,10 +49,12 @@ the periodic Tablet sources.
 
 ## Remove unused inner-product scope
 
-`JumpL2Construction` used `open scoped InnerProduct`, which is no longer a valid
-scope. Every inner product in the module is already written explicitly as
-`inner ℝ ...`; there is no angle-bracket notation. The unused scope command was
-removed. Existing valid `InnerProductSpace` scopes in other modules were retained.
+`JumpL2Construction` writes all inner products explicitly as `inner ℝ ...`.
+The `open scoped InnerProduct` command was removed, and its three adjoint dagger
+uses were replaced by explicit `ContinuousLinearMap.adjoint` applications. The
+[pinned adjoint source](https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Analysis/InnerProductSpace/Adjoint.lean#L104)
+defines the dagger as exactly that function, so the operators are unchanged.
+Existing `InnerProductSpace` scopes in other modules were retained.
 
 ## Scan for old `MemLp` pair constructors/projections
 
@@ -65,3 +67,46 @@ particular, `hLpε.1` and `hLpε.2` in `RieszCoulombTranslatedFormBound` project
 genuine conjunction of `MemLp` with an integral estimate and must be retained.
 No speculative MemLp edits were made. CI remains responsible for detecting
 uses hidden behind inferred local types and subsequent elaboration errors.
+
+## Coordinate-map measurability after the Pi API change
+
+The pinned [MeasurableSpace constructions](https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/MeasureTheory/MeasurableSpace/Constructions.lean#L533)
+provide `Measurable.of_eval` with a single family of coordinate-measurability
+proofs. The deprecated `measurable_pi_lambda` alias has the same signature; its
+old additional explicit function argument is no longer accepted.
+
+All 31 old explicit-function applications in the periodic Tablet tree were
+changed from `measurable_pi_lambda _ ...` to `Measurable.of_eval ...`, preserving
+the supplied coordinate proofs. Modules: `SplitCoordinateEquivalence` (2),
+`CenteredEnergyProbabilityControls` (2), `ProductDeletionConditionalEntropy` (4),
+`CenteredInteractionEntropyLower` (2), `ProductConditionalEntropyTensorization`
+(2), `FiniteProductEntropyShearer` (10), `CenteredCanonicalEntropyLower` (2),
+`SplitStationarityTransfer` (1), `ProductDisjointBlockLaw` (2),
+`DisjointBlockMarginalEntropy` (2), and `HeatCenteredEnergyAveraging` (2).
+(The total is 31 applications.) The equivalence's forward/inverse functions and
+all other defined objects are unchanged; only their measurability certificates
+use the supported invocation. Existing `apply measurable_pi_lambda` uses already
+have the correct arity and were retained.
+
+## Norm comparison measurability and exponent API
+
+The pinned [LpSeminorm basic lemmas](https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/MeasureTheory/Function/LpSeminorm/Basic.lean#L408)
+require explicit measurability certificates for both functions in
+`eLpNorm_congr_norm_ae`. `MayerConvolutionBounds` and its counterpart
+`PositiveFourierConvolution` now provide the existing Lp measurability proofs
+before the unchanged pointwise real/complex norm equality. They also provide
+explicit existing measurability to `eLpNorm_one_eq_lintegral_enorm` and
+`eLpNorm_le_of_ae_bound`, the latter obtained from the already-established
+convolution MemLp fact.
+
+The pinned [exponent comparison](https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/MeasureTheory/Function/LpSeminorm/CompareExp.lean#L106)
+now covers nonmeasurable functions through the totalized norm and accepts only
+the exponent inequality. Its obsolete extra measurability argument was removed
+in those two modules and in `RieszCoulombTranslatedFormBound`. No assumption is
+removed from a theorem statement: each is an invocation of the new library
+lemma, in a proof whose functions already have the required measurability.
+
+These edits address diagnostics from full preflight commit
+`7c214cc881fd32d92f56750dda8251946f6734b1`. Its bounded log omitted the locations
+and goals for the `RieszZeroCutoffSmooth` failures. No speculative edits to that
+module were made. Full source-build diagnostics and subsequent CI are required.

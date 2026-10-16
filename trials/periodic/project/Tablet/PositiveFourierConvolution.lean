@@ -37,9 +37,9 @@ theorem PositiveFourierConvolution (d : ℕ) (K : UnitAddTorus (Fin d) → ℝ)
     letI : IsProbabilityMeasure (volume : Measure UnitAddCircle) :=
       ⟨by rw [AddCircle.volume_eq_smul_haarAddCircle]; simp⟩
     rw [integral_norm_eq_lintegral_enorm (Lp.aestronglyMeasurable f),
-      ← eLpNorm_one_eq_lintegral_enorm, Lp.norm_def]
+      ← eLpNorm_one_eq_lintegral_enorm (Lp.aestronglyMeasurable f), Lp.norm_def]
     exact ENNReal.toReal_mono (Lp.eLpNorm_ne_top f)
-      (eLpNorm_le_eLpNorm_of_exponent_le (by norm_num) (Lp.aestronglyMeasurable f))
+      (eLpNorm_le_eLpNorm_of_exponent_le (by norm_num))
 
   have conv_point_integrable {d : ℕ} {E : Type} [NormedAddCommGroup E] [NormedSpace ℝ E] [CompleteSpace E] (K : UnitAddTorus (Fin d) → ℝ) (hKm : Measurable K)
       (hK : ∀ᵐ x ∂(volume : Measure (UnitAddTorus (Fin d))), ‖K x‖ ≤ 1)
@@ -77,6 +77,7 @@ theorem PositiveFourierConvolution (d : ℕ) (K : UnitAddTorus (Fin d) → ℝ)
       ⟨by rw [AddCircle.volume_eq_smul_haarAddCircle]; simp⟩
     rw [Lp.norm_toLp]
     apply (ENNReal.toReal_mono (by simp) (eLpNorm_le_of_ae_bound
+      (conv_memLp K hKm hK f (Lp.memLp f)).aestronglyMeasurable
       (Eventually.of_forall fun x => (conv_bound K hKm hK f ((Lp.memLp f).integrable (by norm_num)) x).trans
         (integral_norm_le f)))).trans
     simp
@@ -353,7 +354,7 @@ theorem PositiveFourierConvolution (d : ℕ) (K : UnitAddTorus (Fin d) → ℝ)
       ‖complexify f‖ = ‖f‖ := by
     rw [Lp.norm_def, Lp.norm_def]
     congr 1
-    apply eLpNorm_congr_norm_ae
+    apply eLpNorm_congr_norm_ae (Lp.aestronglyMeasurable _) (Lp.aestronglyMeasurable _)
     exact (complexify_ae f).mono fun x hx => by rw [hx, Complex.norm_real]
 
   have conv_ofReal {d : ℕ} (K : UnitAddTorus (Fin d) → ℝ) (hKm : Measurable K)

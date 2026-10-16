@@ -10,11 +10,11 @@ theorem ConfigurationReferenceProbability (d N : ℕ)
     MeasureTheory.IsProbabilityMeasure (ConfigurationReference d N μ) := by
 -- BODY
   unfold ConfigurationReference
-  apply MeasureTheory.Measure.isProbabilityMeasure_map
   have hflat : Continuous (fun Y : Fin N → OneParticle d =>
       WithLp.toLp 2 (fun ik : Fin N × Fin d => Y ik.1 ik.2)) := by
     apply (PiLp.continuous_toLp 2 (fun _ : Fin N × Fin d => ℝ)).comp
     apply continuous_pi
     intro ik
     exact (PiLp.continuous_apply 2 (fun _ : Fin d => ℝ) ik.2).comp (continuous_apply ik.1)
-  exact hflat.measurable.aemeasurable
+  exact (MeasureTheory.Measure.isProbabilityMeasure_map_iff
+    hflat.measurable.aemeasurable).mpr inferInstance

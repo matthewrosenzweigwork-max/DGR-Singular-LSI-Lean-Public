@@ -32,8 +32,8 @@ noncomputable def SplitCoordinateEquivalence {I Ω : Type*} [Fintype I] [Decidab
           have hj : j.val = i := Finset.mem_singleton.mp j.property
           simp only [dif_pos hj]
           exact congrArg p.2 (Subtype.ext hj.symm) }
-    measurable_toFun := (measurable_pi_lambda _ fun j => measurable_pi_apply j.val).prodMk
-      (measurable_pi_lambda _ fun j => measurable_pi_apply j.val)
+    measurable_toFun := (Measurable.of_eval fun j => measurable_pi_apply j.val).prodMk
+      (Measurable.of_eval fun j => measurable_pi_apply j.val)
     measurable_invFun := by
       apply measurable_pi_lambda
       intro k

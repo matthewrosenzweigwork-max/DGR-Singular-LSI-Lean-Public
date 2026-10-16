@@ -20,9 +20,13 @@ theorem EuclideanSobolev {ι : Type*} [Fintype ι] (hn : 3 ≤ Fintype.card ι) 
   refine ⟨MeasureTheory.eLpNormLESNormFDerivOfEqInnerConst
     (MeasureTheory.volume : MeasureTheory.Measure E) 2, ?_⟩
   intro f hf hs
+  have hgrad : Continuous (EuclideanGradient f) :=
+    (InnerProductSpace.toDual ℝ E).symm.continuous.comp (hf.continuous_fderiv (by norm_num))
   have hnorm : MeasureTheory.eLpNorm (fderiv ℝ f) 2 MeasureTheory.volume =
       MeasureTheory.eLpNorm (EuclideanGradient f) 2 MeasureTheory.volume :=
     MeasureTheory.eLpNorm_congr_norm_ae
+      (hf.continuous_fderiv (by norm_num)).aestronglyMeasurable
+      hgrad.aestronglyMeasurable
       (Filter.Eventually.of_forall (fun x => (GradientNormIdentity f x).2.symm))
   rw [← hnorm]
   apply MeasureTheory.eLpNorm_le_eLpNorm_fderiv_of_eq_inner
