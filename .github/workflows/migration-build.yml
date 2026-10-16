@@ -53,7 +53,16 @@ jobs:
       - name: Build migrated source from fresh project objects
         run: |
           set -o pipefail
-          lake build Tablet Challenge Solution 2>&1 | tee "$RUNNER_TEMP/build.log"
+          if ${{ contains(github.event.head_commit.message, '[const-inspect]') }}; then
+            lake build Challenge Solution 2>&1 | tee "$RUNNER_TEMP/build.log"
+          else
+            lake build Tablet Challenge Solution 2>&1 | tee "$RUNNER_TEMP/build.log"
+          fi
+      - name: Inspect strict constant correspondence
+        if: ${{ contains(github.event.head_commit.message, '[const-inspect]') }}
+        run: |
+          set -o pipefail
+          lake env lean --run ../../../scripts/compare_whole_space_constants.lean 2>&1 | tee "$RUNNER_TEMP/constants.jsonl"
       - name: Check migrated source did not drift
         if: always()
         working-directory: .
@@ -66,5 +75,6 @@ jobs:
           path: |
             ${{ runner.temp }}/cache.log
             ${{ runner.temp }}/build.log
+            ${{ runner.temp }}/constants.jsonl
           if-no-files-found: warn
           retention-days: 30
