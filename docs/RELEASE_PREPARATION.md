@@ -1,6 +1,8 @@
 # Public release preparation
 
-Status: documentation preparation only, 16 October 2026. The local release-preparation branch adds the owner-approved Apache-2.0 license. No registry submission, dependency upgrade, proof edit, or new project Lean build was performed.
+Status on 16 October 2026: this `release-preparation-2026-10-16` branch contains documentation, metadata, licensing, and byte-integrity automation. Its accepted source inputs and toolchain pins are unchanged. The owner-approved Apache-2.0 license is present; existing third-party notices are retained.
+
+The [hosted frozen-source integrity check](https://github.com/matthewrosenzweigwork-max/DGR-Singular-LSI-Lean-Public/actions/runs/38929862538) passed for all 485 manifest inputs. The inventory and staged plan below describe this frozen branch. Compatibility migration, complete statement metadata, and fresh verification are tracked separately on [`palomar-migration-2026-10-16`](https://github.com/matthewrosenzweigwork-max/DGR-Singular-LSI-Lean-Public/tree/palomar-migration-2026-10-16). Neither branch changes public `main`, and no Palomar intake or registration has been performed.
 
 ## Snapshot and build
 
