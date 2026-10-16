@@ -1,5 +1,7 @@
 # Singular Riesz functional inequalities in Lean
 
+[![Palomar full preflight](https://github.com/matthewrosenzweigwork-max/DGR-Singular-LSI-Lean-Public/actions/workflows/palomar-full.yml/badge.svg?branch=palomar-migration-2026-10-16)](https://github.com/matthewrosenzweigwork-max/DGR-Singular-LSI-Lean-Public/actions/workflows/palomar-full.yml?query=branch%3Apalomar-migration-2026-10-16)
+
 Matias Delgadino, Rishabh Gvalani, and Matthew Rosenzweig.
 
 This repository formalizes periodic logarithmic Sobolev and Poincaré inequalities and whole-space Riesz Poincaré inequalities. The whole-space component makes no logarithmic Sobolev claim. Precise hypotheses and conclusions are given by the linked declarations.

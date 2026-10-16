@@ -49,23 +49,23 @@ theorem RieszCoulombTranslatedFormBound (d : ℕ) (hd : 2 ≤ d) (s a : ℝ)
     have hm := eLpNorm_le_eLpNorm_of_exponent_le (f := f) (μ := volume)
       (by norm_num : (4 : ℝ≥0∞) ≤ 6)
     have h := ENNReal.toReal_mono (continuous_memLp f hf 6).eLpNorm_ne_top hm
-    rw [toReal_eLpNorm hf.aestronglyMeasurable, toReal_eLpNorm hf.aestronglyMeasurable,
-      lpNorm_eq_integral_norm_rpow_toReal (by norm_num : (4 : ℝ≥0∞) ≠ 0) (by norm_num),
-      lpNorm_eq_integral_norm_rpow_toReal (by norm_num : (6 : ℝ≥0∞) ≠ 0) (by norm_num)] at h
-    · simp only [ENNReal.toReal_ofNat, Real.norm_eq_abs] at h
-      have hh := pow_le_pow_left₀ (Real.rpow_nonneg (integral_nonneg fun x =>
-        Real.rpow_nonneg (abs_nonneg _) _) _) h 2
-      have h4 : ((∫ x, |f x| ^ (4 : ℝ)) ^ (4 : ℝ)⁻¹)^2 =
-          (∫ x, |f x| ^ (4 : ℝ)) ^ (1 / 2 : ℝ) := by
-        rw [← Real.rpow_two, ← Real.rpow_mul (integral_nonneg fun x =>
-          Real.rpow_nonneg (abs_nonneg _) _)]; norm_num
-      have h6 : ((∫ x, |f x| ^ (6 : ℝ)) ^ (6 : ℝ)⁻¹)^2 =
-          (∫ x, |f x| ^ (6 : ℝ)) ^ (1 / 3 : ℝ) := by
-        rw [← Real.rpow_two, ← Real.rpow_mul (integral_nonneg fun x =>
-          Real.rpow_nonneg (abs_nonneg _) _)]; norm_num
-      rwa [h4, h6] at hh
-    · exact hf.aestronglyMeasurable
-    · exact hf.aestronglyMeasurable
+    rw [toReal_eLpNorm (f := f) (p := 4), toReal_eLpNorm (f := f) (p := 6),
+      lpNorm_eq_integral_norm_rpow_toReal (f := f) (μ := volume)
+        (by norm_num : (4 : ℝ≥0∞) ≠ 0) (by norm_num) hf.aestronglyMeasurable,
+      lpNorm_eq_integral_norm_rpow_toReal (f := f) (μ := volume)
+        (by norm_num : (6 : ℝ≥0∞) ≠ 0) (by norm_num) hf.aestronglyMeasurable] at h
+    simp only [ENNReal.toReal_ofNat, Real.norm_eq_abs] at h
+    have hh := pow_le_pow_left₀ (Real.rpow_nonneg (integral_nonneg fun x =>
+      Real.rpow_nonneg (abs_nonneg _) _) _) h 2
+    have h4 : ((∫ x, |f x| ^ (4 : ℝ)) ^ (4 : ℝ)⁻¹)^2 =
+        (∫ x, |f x| ^ (4 : ℝ)) ^ (1 / 2 : ℝ) := by
+      rw [← Real.rpow_two, ← Real.rpow_mul (integral_nonneg fun x =>
+        Real.rpow_nonneg (abs_nonneg _) _)]; norm_num
+    have h6 : ((∫ x, |f x| ^ (6 : ℝ)) ^ (6 : ℝ)⁻¹)^2 =
+        (∫ x, |f x| ^ (6 : ℝ)) ^ (1 / 3 : ℝ) := by
+      rw [← Real.rpow_two, ← Real.rpow_mul (integral_nonneg fun x =>
+        Real.rpow_nonneg (abs_nonneg _) _)]; norm_num
+    rwa [h4, h6] at hh
   
   have weighted_fourth {d : ℕ} {g f : UnitAddTorus (Fin d) → ℝ}
       (hg : MemLp g 2 volume) (hf : Continuous f) :

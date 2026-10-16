@@ -171,3 +171,30 @@ function/domain and volume `MeasureSpace` metavariables without changing the
 inequality, theorem statement, assumptions, or mathematical argument. The pinned
 lemma signature is the `CompareExp.lean` source linked above. No local build was
 performed.
+
+## Complete norm-API audit of `fourth_le_sixth`
+
+Periodic source-build commit prefix `edd2345`, job `117100375965`, exposed the
+remaining old invocation of `toReal_eLpNorm` in this helper. The complete norm
+sequence was checked against the exact pinned sources, rather than repairing
+only the first rejected application:
+
+- `eLpNorm_le_eLpNorm_of_exponent_le` takes the exponent inequality, with the
+  function and measure now supplied by name.
+- `MemLp.eLpNorm_ne_top` takes the already-constructed `continuous_memLp` proof;
+  its use in the real-value monotonicity step is unchanged.
+- [toReal_eLpNorm](https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/MeasureTheory/Function/LpSeminorm/LpNorm.lean#L29)
+  is an equality with only implicit parameters. Its two rewrites now supply
+  `(f := f)` and exponents `4` and `6` by name, without a measurability argument.
+- [lpNorm_eq_integral_norm_rpow_toReal](https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/MeasureTheory/Function/LpSeminorm/LpNorm.lean#L43)
+  takes the nonzero exponent proof, finite exponent proof, and measurability
+  proof. Both rewrites now supply all three explicitly, obtaining measurability
+  directly from the existing continuity hypothesis `hf`.
+
+Explicit measurability arguments eliminate the former two generated
+measurability goals, so their trailing positional bullets were removed and the
+main proof was dedented. The original nonnegative-power comparison and both
+real-power identities remain unchanged. The helper's statement, function,
+measure, inequality, and evidence all retain their original mathematical
+meaning. No additional hypothesis or proof hole is introduced. Static diff
+checks were performed; compilation remains a hosted-CI obligation.
