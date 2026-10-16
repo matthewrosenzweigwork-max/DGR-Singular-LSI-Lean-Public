@@ -13,3 +13,4 @@ abstract: >-
   Lean proof sources for periodic logarithmic Sobolev and Poincaré
   inequalities and whole-space Riesz Poincaré inequalities.
   The whole-space component does not claim a logarithmic Sobolev inequality.
+license: Apache-2.0

@@ -47,6 +47,6 @@ The frozen public source baseline is commit `933ab9a859aaa54a26246a4aeac1d92972c
 python3 scripts/check-source-integrity.py
 ```
 
-No root license file is present and no new license is assigned by this publication. Third-party dependencies retain their respective licenses. A repository license decision is still needed before a Palomar submission.
+The original repository code is licensed under [Apache-2.0](LICENSE). Existing third-party source notices and dependency licenses remain in force; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 See the [release inventory and staged submission plan](docs/RELEASE_PREPARATION.md). The metadata draft there is incomplete and is not a submission. Current registry compatibility requires a separate migration of Lean, Mathlib, and module interfaces; the frozen snapshot and its historical verification evidence remain identified independently.
