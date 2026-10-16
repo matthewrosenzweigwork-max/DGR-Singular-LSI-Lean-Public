@@ -1,0 +1,2439 @@
+{
+  "source_commit": "664d3fdb102267d3e7440fd4889dc2fe1a354855",
+  "files": [
+    {
+      "path": "trials/periodic/project/Tablet.lean",
+      "sha256": "d92ce0d7af474dbeeb9efe44a58c8de1d1817d8028ce9958298c73823595556c",
+      "source_git_blob": "5d88c18224e4173c8088a1951029b9c99cc71b16"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedBackground.lean",
+      "sha256": "535d3e16b7c3959139cf5310393cb8cd5836b71d842c0092f377fdcc3ce52a0c",
+      "source_git_blob": "be442f794da4ffd11f0b39b0450ddd76a544579b"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BackgroundPotential.lean",
+      "sha256": "9035af17863f6793b5784aad83cc5fa6ea94fa6a6c7e2276c045a18216003d11",
+      "source_git_blob": "0a55b1ff7dc97e6f02f2026c340c1998586e9107"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedDensityConvolutionBound.lean",
+      "sha256": "b2c887e901eb28017cede51aec704e04dbf2921bb561acbda1d0b0e7e9bbd427",
+      "source_git_blob": "c4552809e40cc37d26c06155726a3bf915b7d064"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedEntropyStrongConvexity.lean",
+      "sha256": "147fa74c803b4b091393896a927b3791c45d787d08fc58c15b047b25937c81a4",
+      "source_git_blob": "dbe4ba49991583549b35b62f10f3dce45362c2ca"
+    },
+    {
+      "path": "trials/periodic/project/APPROVED_AXIOMS.json",
+      "sha256": "89ed8929c27388e82bdcac42326611463102aaa9c9846cae1a0536db42198feb",
+      "source_git_blob": "26e749a1b5a8a1ed38a00d0e98b197542b5adc39"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedEntropyQuadraticFixedPoint.lean",
+      "sha256": "b5c424dea8b55d884b0e8d37484181898f963d1db9dcde7185dde789483ed22e",
+      "source_git_blob": "160b149f78f12e9e059d4b46c490d714dbc8eb25"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedDensityComparison.lean",
+      "sha256": "c9992fd3f3c21819067e1600c2ad675a408a877ac282d0e7cda8f457778b668b",
+      "source_git_blob": "63ac4c41fd3b05b85db2e3aec165a190175267f4"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/AtomicPotential.lean",
+      "sha256": "9740634027f20a559882da6cec57e2a628e4d70dff30648dda1d445018157b27",
+      "source_git_blob": "bf40cb5993bc96e62c1b1cdc71fea497fee01b49"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/AtomicPotentialFormBound.lean",
+      "sha256": "11d601e57cf36488a61d8d4857bb08f336d077aaffe4f3d0f4d5b7daad6c1c6d",
+      "source_git_blob": "365aa0de5a7c7c8b2ae63d8b40ed05de310d7ecb"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedJointDensityMarginal.lean",
+      "sha256": "3b2241a66a00f4b47025484ceb326f45d5452d5663c9acda880411b4cf8f88f9",
+      "source_git_blob": "e88ff51ae05f7fe90473b9152f5051da8c99160a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedDensityEntropyMidpoint.lean",
+      "sha256": "7296e327d1008632267847d2d5aeb72cec7fabee557d7457b595d702649308d1",
+      "source_git_blob": "62ad850161f8fba9eb3b627419d9930e08b312fe"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedGibbsRelativeEntropy.lean",
+      "sha256": "4816dad4c2831bd636cb770770a516719fbbf0cef0e601c57e0b7a61da2d7fbb",
+      "source_git_blob": "2eb0fa8be8ce6591ff439b6f6dd2fd31992c16e9"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedCenteredCanonicalKernel.lean",
+      "sha256": "a4e58972f72669c866f2ac8c6832263eca9bac91232d4b77f3900268e50ea4a7",
+      "source_git_blob": "5f68eabac31ba795fd04705027888a193a7debec"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BernoulliSplitJensen.lean",
+      "sha256": "1f64ec88f646ee92d0c7ac5bada888b1484d4d6ad0bec4c6c23fa4689337ec31",
+      "source_git_blob": "b79669bf30ca5a7afccd4595dd6a052e56db560c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BackgroundPairMean.lean",
+      "sha256": "97216ff9f886662bcb2f3ace20c9fb48bf3da05897b8cb63c923c7243620755b",
+      "source_git_blob": "597779c1ea3014ebd9123be73d3fd02c75ccc842"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalCutoffConvergence.lean",
+      "sha256": "05b6587f07b592662076448cae5780cfc8a3ba6c113dfe2bb89989a88f56ea3a",
+      "source_git_blob": "ffd615315c9cbc41b7c5b15ccd81291d4f16bbc5"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedSquareEntropyProperties.lean",
+      "sha256": "2e5a3d4b09e07339d619ac7d139af3a23bd21fa70beca8697e1d508bce62e0d9",
+      "source_git_blob": "044c5023427aa0ac3c4d9cc65654fab394b20ca9"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedTiltBounds.lean",
+      "sha256": "e1be6306b7fe555b5d1ce945beaf55ab6f060455209d15338a0e05a74245a83d",
+      "source_git_blob": "da40d751a0b597f9c603e17a18a846595ca02306"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedTiltComposition.lean",
+      "sha256": "01fda455c76033af16bf16ab8d2e0e61cad827164ffffc7cf234cb878d978e64",
+      "source_git_blob": "56e81f704a2d06eeea1c8f53caa9a7c512cf7d9d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalL2SumVariance.lean",
+      "sha256": "4b208eb35ed2889b5dcfda9ce6acc051989e7751f8720fba3a2ad4d20fb3b2b6",
+      "source_git_blob": "08807933529b51a17f98183a0bf50dd8310c6ec8"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalFiberFourRegimeTail.lean",
+      "sha256": "bcacfff27cbd51bc0c407bed9f942e081566a32385e7fa511be2982d2782c75d",
+      "source_git_blob": "36f820a89fab1c5ed9c14ee0bb84af66014f9cee"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalDensityLocalComparison.lean",
+      "sha256": "e9635e36f2d4f6a2be90029c173de4fa466223f83f71f1086a4f044a6aee4939",
+      "source_git_blob": "cfcbeef4eee8344ef030ff22b3cefd95b6cb8d8d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalKernelMaskBound.lean",
+      "sha256": "4f0fdc52d08e1eed1498d0ace59fb8b020e7b62680a6fa0da21dee672fc55363",
+      "source_git_blob": "d1b6910e665b910c4d6f154306125f6835b13b3a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalL2SumMoments.lean",
+      "sha256": "f2a5850226c06ab06ffa4b051f421dcb5402e1882dfd1120e45899a0335c1652",
+      "source_git_blob": "3bf68196b47b6856ca7920f3335082f1dc395525"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalGradientClosability.lean",
+      "sha256": "3e421535260e5efba7fcfe6d05e3bf0e4afec7af456b69bced47396f2b12393f",
+      "source_git_blob": "882eb689c943e9dbe4d967a6180a014936417ccd"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalL2SumConcentration.lean",
+      "sha256": "5b725fb4ce0f174aac181b6bbd721141d6035330ae411ec985e091c2ab2e3a17",
+      "source_git_blob": "04d3277dea54f5b3103bc7fea1f97cdd78a6ad00"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalConvexDecoupling.lean",
+      "sha256": "7169ba25f02ff93a80504754e71fddd3237b6f93d364a9a220ea9ec2dcfd941a",
+      "source_git_blob": "4aa8b0d493b5833cc4bd7c4b7a1912980e3f8760"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalCollisionFreeGraphApproximation.lean",
+      "sha256": "46d8fcb737061ead7d0e7fa9fb5972d69b038d721f512ecc20b2016286c94d77",
+      "source_git_blob": "df182cfbd8f4ad2cb5500a7d4f0834339580e9d7"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/BoundedProbabilityDensityEntropy.lean",
+      "sha256": "2ca0f8fe7aacca4be551b4e1453b3ed5b7bd16c5fddd0df5e9f380f403cd490b",
+      "source_git_blob": "39c96fa48df677eec6c48eb995667bd8348fa1fa"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalGradientCoreEquality.lean",
+      "sha256": "6cd2fca258986828ab36f7b1247b5991ed686db47aaaab604a709f319de6ee93",
+      "source_git_blob": "f7809a37c3754da7dd0470339c8e3dfd80c5fa34"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalCrossNoInflationEvenMoment.lean",
+      "sha256": "76b81383efc77f2aae5d8aa6a094b79089160f6362e6c398448a3853d8dde580",
+      "source_git_blob": "16e10a8c3d1d7b7505008f740e4737f91d9b4477"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalTiltRowStationarity.lean",
+      "sha256": "458a56bf03454501fe38d0b459778aa1097a37a1a5a1c3de807a58f3ee443e8c",
+      "source_git_blob": "03f2c34734d7443cf87b7329d6190170705ada78"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalLaw.lean",
+      "sha256": "b80275d61fbcf97fe1463416d947f518b7105d45322e5a9cbe7416008582ab1f",
+      "source_git_blob": "3c09c3c7064ecceaa49b3e309ce9be1c57a61354"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredCanonicalEntropyLower.lean",
+      "sha256": "147203893986c4019e57a41103e082e104606b6a9dc6bda4be733721bb500a87",
+      "source_git_blob": "3d3c857601860d94ef1803327a95a3033132aa5d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalLawUniformBounds.lean",
+      "sha256": "8ec4df6f48e27b2f52cab73d7dc6266da92887ec0b0c5aac6c2cd5e77a71b0c8",
+      "source_git_blob": "6d87382d334aff8d0d2bdc6ebe2ed4a2136ef01a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredCanonicalRecenter.lean",
+      "sha256": "14ce9adb5bac3f50e48b8377a915519a5221aad05bdca986e8b6de632568f1ea",
+      "source_git_blob": "3e4523d8e4e29c6662bd4051f1c828f05a4f1a09"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredConditionalLogSobolev.lean",
+      "sha256": "4b757b98110becea27fd4abd1f7a8828d306ec23bcee3a1c3e1573cf3f79d422",
+      "source_git_blob": "8d50d35df0371fde3f5dc19847b68ad61fe13dbf"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CapacitaryPotentialCutoff.lean",
+      "sha256": "2a57defd030305432d4307e4e723c394d493d60d7b0bf7e896bf3ebecb2e8cae",
+      "source_git_blob": "b048037da1b6fc68dabb68b545e03c80c188090c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredEnergyIdentity.lean",
+      "sha256": "de9eb477ddbf51de9f7cb34d66da50bea51b0f31fa896a498aeb4f3f89f6ef06",
+      "source_git_blob": "7b5ac753dd12bb3002a38c8bf642b0729e6d238a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredDeletionEnergySum.lean",
+      "sha256": "ea90754638758fb95907df3b87d73315b6673de60d967cf67b0cee68d3164ed9",
+      "source_git_blob": "c9cf3c657376b19cddb29e85895f73d4cff5d802"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalTiltRowIdentity.lean",
+      "sha256": "248bd629bb889f7fd11803be01de2ee9a71d62ca054a96521ff62512c68e6e29",
+      "source_git_blob": "f1a13ac1af3d7159c2216d446d6105c82912148a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CanonicalUStatisticNoInflationEvenMoment.lean",
+      "sha256": "a24d85829969ba2c7cd7029bc9fcc444492258d5a39ee27d41e6136ea854def8",
+      "source_git_blob": "01813578f48ef0715b12a5818367e94791a43421"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredDeletionPotential.lean",
+      "sha256": "5b1ec40468fdbcafe753968cc4009402ae3fade7a00f445375aa247e84a62427",
+      "source_git_blob": "35556f213532d25bfcadd7ce67552cac41a53960"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredDeletionPotentialControls.lean",
+      "sha256": "b71bd710b8e9156ef476ab6f5723640acf7094429ec63df163b6feb948ca078f",
+      "source_git_blob": "b6e9d7e3b47f1aeaaba360e66235a3ce5130fd48"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredCanonicalLogSobolevTransport.lean",
+      "sha256": "0f6a13f494c734528853511cbf151ef37bb0394b07d86741bbe607aca7833a62",
+      "source_git_blob": "9efdd6eb551eb4763da8d4d733664aa0b2ed76cc"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredConditionalIdentity.lean",
+      "sha256": "44ca2aaa103067ace189b30fa77de62cf78fa2b67ae6880d50b9250a687af181",
+      "source_git_blob": "fce630ca435dec9520d3f7593f2c9464352d7535"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredCanonicalLaw.lean",
+      "sha256": "b656f31904e01026f611dad0bc8f946a82266a59f149940973c178ff823afc55",
+      "source_git_blob": "289735f845ac53596a523f5197d3207a33f715db"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredUniformPoincare.lean",
+      "sha256": "5de9967106762e7c1349ca8e07b3d3f0fd4cf39d490c7445769508ee49682979",
+      "source_git_blob": "9c97e86b29672f0f855e591ffa2161121e9eafa9"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredKernelBounds.lean",
+      "sha256": "15d871a8790bcf4e6430327d2798fe2d9b673e8c0e026026a1b1a187b0c1f826",
+      "source_git_blob": "cdb41d0f610e0d4006a50f1463c89e22ec72a731"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredGibbsKernelRowProjection.lean",
+      "sha256": "cb1d387ae3e2d7585fda01fb4429d3541a53f74f7e9249eaa72fefb97f28db1f",
+      "source_git_blob": "0b0553377fd400e84d9e04c0b9d4666599348d04"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredProductMean.lean",
+      "sha256": "4c398928af8e47fd9b06c77fad34ea5722b49d0c6e97d8e58acfef08218ef4dc",
+      "source_git_blob": "ebe606df8ee3d37204956b92a997eb69e74010e3"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredPartition.lean",
+      "sha256": "53beaec5bd5417a806516c6e918f89cac187ba2674cd4f9efc68a21250b5547f",
+      "source_git_blob": "da3aa76202999599f7384062d1b48233737e21ed"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ClipCutoffApproximation.lean",
+      "sha256": "754272dc126bb53a4970d61298a8ccbc68bc4a729978825eed5cd1e4c1a9c26b",
+      "source_git_blob": "5775503aedae944b486babd1ca255d2c61530e58"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredEnergyProbabilityControls.lean",
+      "sha256": "33844f39af5f00c8365abc2b63e6903ef5e20e5fe96eb4865c9d48a8dd384190",
+      "source_git_blob": "301fbb39bc65b73439d10ffdc5c7c5884a1ef489"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CollisionFreeCore.lean",
+      "sha256": "4d7aed63889c54617bc7e1cf2ce212426a2d06f1d934632791344831753d1e49",
+      "source_git_blob": "60b674c7a3d9810a3ae3b809e2922cfce7d34efa"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredKernelSquareBounds.lean",
+      "sha256": "95b680d4e68400e2e1d1dd7ed4776aa4aa8fde4d41052cbbc20d34130c3fe48c",
+      "source_git_blob": "64888b6b4cca2016d84e2f7107bc84272ec1245a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredMaskConvexBound.lean",
+      "sha256": "92905cd68ef0d4f5d85a67727bae04abb4eddf5dc89b3a8f8acae3e6410c987a",
+      "source_git_blob": "411bb7f3a6ce7d7adf8dbb9e07390fa1681fb450"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredPairEnergyAEDecomposition.lean",
+      "sha256": "b197769cadd819cc4eff4cc4d3a585038ab86088f53da218dcd5d3e94641e03a",
+      "source_git_blob": "97efcde5eb207ece5c353425a91d92d66833df1d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredPairEnergy.lean",
+      "sha256": "0c1ee5d0c8996da17e28ab83b658d29713b0bbb43c08e008732b36d9df6095f5",
+      "source_git_blob": "6c3538f815c7c377b5dfd260a45c74fc7b4d02bd"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredPartitionFinite.lean",
+      "sha256": "548b6ba7d291d4a3c0ddde5152d03ab266e9de3d44fdd9af85bdad9d26a5c8eb",
+      "source_git_blob": "b3ec6543439e2d90e2c623fa6fe06a9c1204a22c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredInteractionEntropyLower.lean",
+      "sha256": "33c5dd465fecf8fcd3892ed09168dc8d9ce3bb4c2c5a8edd0f785852ce94d5c6",
+      "source_git_blob": "898f902e864a99a158ccd270b8eedf77bc7060a3"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ClosedGradientEnergy.lean",
+      "sha256": "36f50adba522726775f1bd16f4cfcc7e103868f12878dd2b153c99c69810993e",
+      "source_git_blob": "3ad50012f19439290fdb33ac9426e1800e2befcb"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CenteredKernel.lean",
+      "sha256": "0dd99c12bc79ec849762ad6a81afe9b85e7909e1f87ab3cdda320ed2d04b65a2",
+      "source_git_blob": "57396b7c5429fc69735f8ecdce83d0b7975ef036"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CollisionFreeSmoothCutoff.lean",
+      "sha256": "2cd76650c2475eab525b2e1cdf6adfb747e40e83d1639c818da6bccb06872a06",
+      "source_git_blob": "9511f9e3b04db3ab99aa43cefa5ffff8f26eef03"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConditionalSquareEntropyIdentity.lean",
+      "sha256": "36fce20a92ef623deeb25a9d5ee226bb2e602d7f8b2e9dbd00bed79a65970cf5",
+      "source_git_blob": "6d63a44f6a4229649116fdd8eb77b07f1c66b26d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConfigurationLift.lean",
+      "sha256": "ea8e3c52ad16c357fa00d2aa6c835b08635489676465e2b6c6b410ca157d7d6c",
+      "source_git_blob": "4e7aa45e8cfd33e0fd0cf57ce0b7091940cf142e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CollisionSet.lean",
+      "sha256": "e07dd035bfb079ab7ea4d4381fc58e2387d07bc8aad3dd7dafb423101f5aad41",
+      "source_git_blob": "3ec8c0cddba8c713b0f1dfa3d7ddc8f354cc3543"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConditionalEntropyUnderObservation.lean",
+      "sha256": "5fba6dc3f41b60294db9b5343cefe8c19010d9544a8ff39f0a8ca32ffc816d59",
+      "source_git_blob": "6ae1cf2b26336cf44a73d93dfa7d61a4f50be57d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConditionalPotential.lean",
+      "sha256": "7e6bae60583bcf6f2014d557f11c4e532824b18e4737db5b0114027502486049",
+      "source_git_blob": "eb3780d36a27a7272e1237be8eadcbae6f0a1697"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConfigurationEntropyDefectRemoval.lean",
+      "sha256": "cb12635b53f1a8849ff6c0eb023d22192e46297e6dce0610b5b9ec45e1346892",
+      "source_git_blob": "aba28a9eca634c87015b117403084c6dd63badf2"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/Configuration.lean",
+      "sha256": "a85badd27620e4406bca268d9039e224c3b7564a0439eb9872755d592efb25a2",
+      "source_git_blob": "b55e880092d3d20aad8b1b73acac3fd5a60e7823"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConfigurationCalculus.lean",
+      "sha256": "4e60ece06f6cca86c2a41532ea9503747920e0a410fab87052db89fc825be47e",
+      "source_git_blob": "376fc541df18cb4c61e695ab894e5bca46cada1e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConditionalEntropyAggregation.lean",
+      "sha256": "19de79dcc7e98d260bf1b40c09bb429f46ed76f0de4a7c60fefe7d7f77ee9969",
+      "source_git_blob": "e7b967b84d6490500d2d26b27408224672f74410"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConditionalFisherAggregation.lean",
+      "sha256": "564b725cfcddf9d218efe92f009ce1966fc51dd26bccfcc8945144301257c2fd",
+      "source_git_blob": "f719ae4e79bd16550e24f461e14224a49dc681a7"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConditionalSquareRelativeEntropy.lean",
+      "sha256": "1460e3e689a96ec1ae7fa8ee26b15af776614f846d0ce5005ff2b029078712bd",
+      "source_git_blob": "b4fc1316a4076595b81b1a9fc83a4d44ab700c41"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CompactWeightedPoincare.lean",
+      "sha256": "7f670bea43d23d4f301d67f5181a65c64fd79bc9d813308844e09787521d2291",
+      "source_git_blob": "e0e5bda4f189a4e192d140d7320281f07f3b5c43"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConditionalGibbsRelativeEntropy.lean",
+      "sha256": "51a7d5ef2663aa310df06bf4cc2f3e08289ac8d3992a4f6d16735c003574ee7f",
+      "source_git_blob": "8441deb1aa822a44bc97524ed2f0f03b5c34a662"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConditionalMeanL2Bound.lean",
+      "sha256": "9704fb3545e701ad07f4cd2213d6c2a3ba5b5b0ad3e5a182d4ececcad873f7b6",
+      "source_git_blob": "140489b8524983a96cfd88611a27ade623fd2b3d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConfigurationFlatten.lean",
+      "sha256": "ad2418a234a42292274d40e4299f6b0e280f7d15db76ff6eeab32584972c85fa",
+      "source_git_blob": "ae0a77f36283d2d046eaf037cea5ad1d90d0aec6"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CoordinateGradient.lean",
+      "sha256": "cd633ba2c429d6613c9e9357be42a6161def24cde91e449eed902ca828cf1b33",
+      "source_git_blob": "ef38775daab5714bfe52441717ce62897783fa83"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRCappedPowerGrowth.lean",
+      "sha256": "eb2688e27a06ea0a5411236890d29663b3023cc364cf006bc717a97fd75ea7cb",
+      "source_git_blob": "57fa5772fd99c0cd4823c88acc23faa3a8d66501"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRCanonicalFiberMaster.lean",
+      "sha256": "8f437b94f1029fc6a20cc3224ce1a25a96b35b15e72cd2db3c60c091f93fda70",
+      "source_git_blob": "f286bc6b2b3e05a4edcf925a084b764db05f5492"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianFixedM3Witness.lean",
+      "sha256": "99db436015d85f3d5592ebc181b49cb9317e36393ca35603323844a962deb094",
+      "source_git_blob": "c335a6ea93c322b0ca13353acd17d26cf3a2e1f4"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRCappedLogGrowth.lean",
+      "sha256": "fbb79625324cbd697e36d0dba55bf7df0cd9cb0188afaa951b7f0d21149f3e41",
+      "source_git_blob": "ef9a622dd5f9a340178d0cf87d3742f13a9773b6"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianHighSeries.lean",
+      "sha256": "adf9a84366ad2cabc126c45d0d423ad278f811e286979ae42e82c827c9eba77c",
+      "source_git_blob": "59a653750d763208ca51469881f18ad69afbf544"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianCoarsenedEndpointPartition.lean",
+      "sha256": "a41654d7c7089007cc050ea62ded2f76cd9bac05bc7a8e5503eedd9fb0ff9fe9",
+      "source_git_blob": "35c9deea8a79bc9afbfd9882661fc5aa6e5256f5"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianLayerM1M2.lean",
+      "sha256": "b4505baa5d275d3b0942db3ce3083df34f69134b3f09195f62f461dada657f13",
+      "source_git_blob": "1842ea522ce1773653eb8b717cda97e8c107d207"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/CoulombOriginDivergence.lean",
+      "sha256": "cea4a1ffdb2d62424ececf4b8e3126c6b477405094f74438159ca6780e940b7c",
+      "source_git_blob": "c192968f3de3a72012d883fe25d0434c2d098c61"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianDiagonalProfile.lean",
+      "sha256": "acddeb4ae2f32c735e2459b1582ffbc85ffb71811e5152d4043fb5e9a9589cf5",
+      "source_git_blob": "a744e68fb697ec783644e422bc12d6932233bff7"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianCenteredTruncation.lean",
+      "sha256": "5409d45eaeab9f0427d7cd36a123ce7f88512df09807461ac0f6d72171a88bb6",
+      "source_git_blob": "d70b919467700b14be8a25813743a3fee256b04d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianLayerWitness.lean",
+      "sha256": "ae62057ca024289d6188448b8ecc38d8a470e156d6e93f293756a9507db9481a",
+      "source_git_blob": "3d2ac47b2ad179d83eeb782dff4b53fa4ce3baff"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianFiniteMasterCap.lean",
+      "sha256": "8bf1b79a642a0ab59996aff23f62c8bd905b95a258c44965473b3bdb8ae88fd7",
+      "source_git_blob": "5fa186fba5db75ce57e7b28e68f569f7619ff1cc"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianCanonicalWitness.lean",
+      "sha256": "09d2ab96b0cca9866852e2c2cf4abb44e50901e28818d274617acccd4256c582",
+      "source_git_blob": "0404fc94848ebcf6b8210fde6ce7e227149c553a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRConditionalMasterLayerCake.lean",
+      "sha256": "2af5cf86a9ba80c5303dbf760bd1f02c6e7b82765d10928dfbcac8fd96ffb216",
+      "source_git_blob": "ed852adadee4450baf621550f1def32bb93efe4e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ConfigurationPairPotential.lean",
+      "sha256": "e0963bcdd9b2a4832d69dffa2fd63eb2444bf9946ca84c19e59f5a971a20728d",
+      "source_git_blob": "32de6c80222c0a18473e0cd96d744640f720f8e6"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRPhysicalLogEnvelope.lean",
+      "sha256": "bb28d948aa5dd6d5294be343edbb8149c67166dfb36cf236cb3cec8979d8520b",
+      "source_git_blob": "2239fe586f693a0b6b3a5d27a57957eba9f4f98f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianRadialOperatorBound.lean",
+      "sha256": "d84acbade933205cab525970372b38528561f23b745f4fbee35d3077a6584c62",
+      "source_git_blob": "be1601a1bd820320bba6025a83c9dc3cae1c9a04"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianMasterGrowth.lean",
+      "sha256": "710585b099b438e054b0b1d47f684fa2ffd9204f902820edb81abae1849b60dd",
+      "source_git_blob": "4c9c54fb1886809ac61bd1762221eb8d0f9f1447"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRPhysicalPowerEnvelope.lean",
+      "sha256": "da060dff727ca2b49398b2ae0033242b67f17863b5921df9f099532068c60ed4",
+      "source_git_blob": "0e58f873b010d46ae01f8f2e586f78f559010f4d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRMasterGrowthEventually.lean",
+      "sha256": "6ce30d56b09798313ff24c19799028f88603ee98a75bb26d010e1e800fdb450c",
+      "source_git_blob": "634b34dd6b378986ad6760339b7c25379a683292"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianLogMasterGrowth.lean",
+      "sha256": "0dcfb0483a94feab0224fe309974e999ecac39022336c6e564d21dff65ddf5cf",
+      "source_git_blob": "5602a6976c6e0e19441de72a25a3c22210a71400"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianPhysicalLong.lean",
+      "sha256": "991509e853e56fdc309fd495fde621a3523a72377723167dd8b3d095baa302d8",
+      "source_git_blob": "d60a94755e5d3bed28246ede8c244035b11a97d7"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianPhysicalNear.lean",
+      "sha256": "b51107ea602da92ace1f7e22f69a7a2aa21ea2ffe85c8309d3d86c59abf35c8c",
+      "source_git_blob": "33f31ae7b9916d444b5c846fc6bd6285ec83f208"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianPowerMasterGrowth.lean",
+      "sha256": "e8c1df4c56466417df16392181fc24d10e3cf38c6551eea8403ba14a3ee0c84e",
+      "source_git_blob": "348047a5603c0d6ffac19309ddc960744247ef4d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianTruncationIdentification.lean",
+      "sha256": "d220ed75fcabfa37f8995a7eff904531a7110e1f8111e928a9cb77885515ffd2",
+      "source_git_blob": "85df52a1d98fb40c28b71cbee365396b5167e765"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRPowerGrowthEventually.lean",
+      "sha256": "f5ac033b14273402e0a463b54db2e78480df5de695a6371be329c613ad9848c1",
+      "source_git_blob": "a83a5037cfd9bc5fa528266b7710d6c19d3c66a6"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianRadialFiberBounds.lean",
+      "sha256": "d118650d69e516129e64c1f7d85291aed8f42dff8a06101176e3ce8ea0a67b13",
+      "source_git_blob": "9c40a2ffa09e56ce5fb67e46488e2a94f90ea690"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRPhysicalAdaptiveCutoff.lean",
+      "sha256": "a4dd7f75d0728179136a30a87b9f8df5d5b544e68761949e8240951b2875ea42",
+      "source_git_blob": "c01bde4305e9f367f225f405dd618a81a136890d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianRadialM3Bounds.lean",
+      "sha256": "42953f26d47b20c5ce780b937572fdc52e2ca830368da1fb7c86ea2cef41692d",
+      "source_git_blob": "085c31cd7326fb73bf2f7b85c5ae1a26e3083fe5"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRGaussianMasterWitnessFamily.lean",
+      "sha256": "c4fdb5e3dce3eee4345cb532a75ad42662116d5510c7c740e08dfb30c7a7562d",
+      "source_git_blob": "feb8283528ddefecb1488aa1bce0466d7c209368"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRLogGrowthEventually.lean",
+      "sha256": "549c94063033dff9a873e42a1713c41a9b41e6aa2cb567a5c5df878ba6d14c28",
+      "source_git_blob": "ce61a08ccf305ac1da42f96e8527d9dd244fff73"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ExtendedEntropy.lean",
+      "sha256": "6c4f8d1eb6a82931d51033e47c3444fc9ed8b254d6728a73f6feae93e9809b11",
+      "source_git_blob": "4e702064ec7c066443d432322873dacd4728b04e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DisjointBlockMarginalEntropy.lean",
+      "sha256": "a675c7645a4fba2dc83d386a0c5d564d2284c59192a32e72e0b49dafb1ea2914",
+      "source_git_blob": "637d3abb1897f1af78047be951b026808905319c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/EntropyObservationSupermodularity.lean",
+      "sha256": "32e1df7aab00473aa0be4f75548c29d30a8b15050bee02062c4e17776a340038",
+      "source_git_blob": "553b3b19ad93916123d5d9ee027c71ed0bc10119"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ExternalPotentialClosedGradientLogSobolev.lean",
+      "sha256": "f5b8b5e191c68d238c33fe672955c24f681fbb35707effa2bf4b2a548cea28ab",
+      "source_git_blob": "a90e2b9691a14251d70a6d0399737f474f1eee80"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ExternalPotentialClosedGradientPoincare.lean",
+      "sha256": "b106395e13423f5f6a64d5a305759822b4bb813db7d9114096e91f165cabfd08",
+      "source_git_blob": "e68f37792c93773b5bd9e71b681521fb5971ce6b"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/EntropyDefectRemoval.lean",
+      "sha256": "addd6f87a8d4e7e47b585a99e0e0cdd611403c36e7aaf0f75118286463436b0f",
+      "source_git_blob": "2ffb77f154a65fe865eb2dc209eab1b4d8c5cf63"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/EntropyQuadraticMinimumConsistency.lean",
+      "sha256": "1401e341164c58dceed629c791ad40f633ada9e5613af0b47c02c12c6f11e70b",
+      "source_git_blob": "012b0ded82c2f7fe984074d1b2bd6b081df3fdbd"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DGRRadialTailTolerance.lean",
+      "sha256": "ea2bf4ab75475b8b695e8a316fb1f492062eb33e2ce16fe0fa9ae3129684700d",
+      "source_git_blob": "d2875b54de8b46fd5b0f9e6b659528ab988a276c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/EntropyLpBound.lean",
+      "sha256": "af5a3bd2f7c90040ccdcc494d66c2c879f29a296eb8293e53008578eb90b0061",
+      "source_git_blob": "ce9c903127a3973c390bac36803e5d19a4a93cbd"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/EntropyFiniteCentering.lean",
+      "sha256": "b58c17efb624522de27f6dc6d56f8af69aac49b51648eaead70f53858ce35d06",
+      "source_git_blob": "66fb18c1e2e63d1cfe0d023cfcc705ba43e8b4c2"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ExternalPotentialBackground.lean",
+      "sha256": "e26fb5f7ce799b90c61c9a554cd92bb13524bf111a380d7074a41164ec468648",
+      "source_git_blob": "9ee6d87b780fe05dafe5abf89c4003873c03b115"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/EntropyVariational.lean",
+      "sha256": "e2622231efdc391007230013b01ce9aaabcd808f8f8f4bc19dd41321e06f6fc8",
+      "source_git_blob": "c73a76a371744ccd112c7b602135f9d86a90d039"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/EntropyPushforwardEquivalence.lean",
+      "sha256": "47e12e9020d00c6b7952d72b641efd4bc376f9d86e83ea2bb797171b084fb260",
+      "source_git_blob": "ba2e13775a5124b856b0f3cf4e8e1759fcbf409c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/EntropyExtension.lean",
+      "sha256": "b3cd549992243012fe037d2fc2e519fe99556163b0427ea39d6f750f1d68172e",
+      "source_git_blob": "c5cd1ecc926cffe93435fd9a9cfdd7cd8722f8c8"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/Entropy.lean",
+      "sha256": "0ad3f1bb7afdc6e8e73115b52487477404bf6ef24195ea5d31316e30a51939e2",
+      "source_git_blob": "d69bf7883d08ede41111fe450a9ee994b3e24fcd"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/DominatedSmoothIntegral.lean",
+      "sha256": "25540eed93adcd52846684204d83e4d98dd4c838cf5d1490d3692212b0e68fc5",
+      "source_git_blob": "07c6bd1077c1a32d6104080b940354d91a1313b6"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GibbsEntropyVariational.lean",
+      "sha256": "3bfae0864c502dd05e4ee120684b49394edae7da588b8dfca8fe9806c8b5f47f",
+      "source_git_blob": "4a480e60f9cfb0ef66017e1cdfc9ebe1a7079115"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GLZBoundedMomentCorrection.lean",
+      "sha256": "9eb338d612de5d627e1c844d1becff2dcc1e8dfe92583d7c0155536065cf1627",
+      "source_git_blob": "b2514b0b93d286baf0a6a4527c887e503f2c2238"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ExternalPotentialFullGradientInequalities.lean",
+      "sha256": "dcf131707c0aca348b9c45d88ad264f48ab2997c2b1f93e89a52828792d43fa3",
+      "source_git_blob": "b8cd27178a05a316f3c6e5aaa759b0af484cdab7"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GaussianMellinAsymptotic.lean",
+      "sha256": "4f4265a2af6d892b36ef1cfbb751a6b3c2b0ae016e18113d5637ddc8064486b9",
+      "source_git_blob": "cc87ef1970c67d2c94d70a231dcf9089c4703604"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GibbsConditionalKernelProbability.lean",
+      "sha256": "29ce5bb31cf81724fb33242b7e493f1fa4c7e6796c04dc5313dad0a128aa845c",
+      "source_git_blob": "487f07c010c3274580abed082541d3feec17b2a2"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GibbsConditionalKernel.lean",
+      "sha256": "dc66661e8bd73ed1bccd83c8786243a51fc1b45aacc4f0685f96cbbafb479588",
+      "source_git_blob": "a8905fa384e66130c5526af0f9509520d30ada5e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GibbsConditionalKernelCompProd.lean",
+      "sha256": "c3be6c40ac3f236a110233220d9fed557e57d50ca39137d11a0d1de0c764065f",
+      "source_git_blob": "e19427f73cc0c7fbac10c254107ef8b297523cd2"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GibbsLinearEntropyMinimum.lean",
+      "sha256": "017b6302d404209288e4e05284f6b777d0d291700b4f0da367850b99702c6cf5",
+      "source_git_blob": "ace15e95b928263f4870733da9ba027916bf98e4"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GenericSmoothCapacitaryCutoff.lean",
+      "sha256": "610176c5b580353abca6f707481cad85d7c3a80fa9195f9e7b08fc603878f65c",
+      "source_git_blob": "7c30ea8f6917e3f6638fc547b51d194f9bfa382a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/FiniteParticlePoincare.lean",
+      "sha256": "6e7cc12e822dbcdbaeb1549aaa38ac63510444fa5a9a20eccf6be44848d077e3",
+      "source_git_blob": "add5ff97eb904b5ebfc69f15c540d05c7e8a61f9"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/FiniteRademacherEvenMoment.lean",
+      "sha256": "22d6fcea9dada5f32d9542a40843cfd731f07b5c6745df49e4e1b9cd4ff5d74b",
+      "source_git_blob": "e60f0bcbe6ced7a812c1cf3df087d1e94757e09d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ExternalPotentialLawRewrite.lean",
+      "sha256": "5b481176b6212d74b2c5c14b8d2966f8a2d245bb3a3ff3cdb8af0c9b0a63a6aa",
+      "source_git_blob": "61fd608b47bd3d3ee14163742e14bfca0732d9df"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/FiniteProductEntropyShearer.lean",
+      "sha256": "3b05e716f4260c7790df37c1ecdac4f9b58860bab67edb442e5e84ffdb89b48b",
+      "source_git_blob": "68269aba90ff458e655c78c93bfe37b103aa7361"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GLZEvenMomentToTail.lean",
+      "sha256": "8fa552c85213b6c6789f1b6c6325c54d43b79d70cd582c6d316046fe79e8ff05",
+      "source_git_blob": "332283832b46d7dbd7561683920aaa1b994efc9d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GLZSecondConditionalRosenthal.lean",
+      "sha256": "b96a67febfc719361150d73e9b66834af2298246eca3ba7cb38f8a51d7950906",
+      "source_git_blob": "89bab2331ceeb2b5426c32301de2c26c4fac5c3d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GaussianPhysicalScaleIntegral.lean",
+      "sha256": "6cc731efc017933605a0b3717feeb0b755a1f856744108653afc731ed9bd4287",
+      "source_git_blob": "26d4bcfcace2ee6e581f606efc6b9cdd09006c0d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatIncrementAveraging.lean",
+      "sha256": "672a773845b67410adced79705eae141a141e10aa165d0ff626f36e2b46ab0ac",
+      "source_git_blob": "786fac48fa9679b851fbd826d3afaa252b858a3c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatDoubleIncrementAveraging.lean",
+      "sha256": "cf89a0592718124b385bb3b6dcdb48d55a12efdb335f638be183a1537d5e2aee",
+      "source_git_blob": "bed279789454a54ae3a537d96dfbf72a8a7cea4f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GradientFormDomain.lean",
+      "sha256": "c4029274b0e2bbf7c0ffb5e8e9c6ce902030b79ad9161606b8c6fd2194f4488a",
+      "source_git_blob": "48b427ccd664933480babc801e2f5078c09b2fa7"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatIncrementLaw.lean",
+      "sha256": "5c12fb76fb71ec945cdff19af6499fbf29ffd8666b09eb6d05b0413c44f62c29",
+      "source_git_blob": "554ade8781336bfb4fa0fe0e1cede97c97522eab"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GradientClosureInequalityExtension.lean",
+      "sha256": "46609ce831c9be59dbd8fcf5b56999c4c605aa119033620b6afc6a7cd9c9f771",
+      "source_git_blob": "ebeb62c07e1450a241daafb9a634e5fa99b0f8ae"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GibbsWeight.lean",
+      "sha256": "d33f45870fd13de171ce22b6653986c1890d7ac0b7e8d7f9232f28c7ec39d21e",
+      "source_git_blob": "c384fda25570cd6f0ac9f103ddba1a1d20164206"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatCenteredPartitionComparison.lean",
+      "sha256": "8959db49181cccf9c7314ccdb91eaabdd01da8631fac934762ebf7df2a50589a",
+      "source_git_blob": "6d9e53ca84003bd8736fb443f435ba3905314b73"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatCenteredEnergyAveraging.lean",
+      "sha256": "697c2ba7d14f08024400b6eca724ff648ebf87c01da3d7aad59ff98da8d346df",
+      "source_git_blob": "ad6707f0e3a3797946aef19bcf06430404eb3e98"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GroundStateClipping.lean",
+      "sha256": "49f7cccb60c2e78f2bfcf895979f01c5ef8f888519c3d195d73cc913fae534a2",
+      "source_git_blob": "5fc405a5427dbb92a662410648d0e21e51b84911"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GradientGraphClosure.lean",
+      "sha256": "bea4eff3b79792a6c8f5a2d8d8d8b52975307369b5f1a1434c54735ea261f053",
+      "source_git_blob": "cb41b60b13d1357afd64759a14819f971377a5d6"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatFourierCoefficients.lean",
+      "sha256": "382f574a6ad55c0d8ea323729b2a45c389a2b87a2c969a74fdb40d8fea6a6b68",
+      "source_git_blob": "751c7946428a7c2f5af58b5b18126721e118db5e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GibbsNormalizerBounds.lean",
+      "sha256": "0727f600db68a734d8d4a51b376c6ce7407a7b29da5c79b8bf7dd789224c2a9b",
+      "source_git_blob": "d5a5fb8d6db7b3e4280e020a8a367727e8744098"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatCenteredKernelAveraging.lean",
+      "sha256": "70936240be890d4e8db9108578bfc681c7805124ad38ad5ab97e38f6028dcba2",
+      "source_git_blob": "7af3e77d63cb7185a1f77631a588b1d66dc0e28e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatBoundedReferencePushforward.lean",
+      "sha256": "643c7eeade5148581a1f1b9677fb1bfb764371ef5a244286da604e3790ccb59e",
+      "source_git_blob": "9c44725eeed8e81188a149d9712134f022b0d1f4"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/GroundedDefectiveLogSobolev.lean",
+      "sha256": "cb0f47b2bbfcfa5efd2c8f49f1b7e8b1748710dda5c1f59127ff03be407d1f86",
+      "source_git_blob": "06f408bb131c4a3213fa8321a85e2a125896d0d6"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatBoundedCenteredBackgroundIdentity.lean",
+      "sha256": "86b920ab943379e749c1766209c76c99faaecf0f79955040530edff238c9edb2",
+      "source_git_blob": "a5f2a3c99d19b0b6b5779d2133a636721d5c058a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/IndependentCenteredEvenMoment.lean",
+      "sha256": "0430b3f40a37e50e254cdee6452066e53a24fd0451e6c8dd871ffe5049b9e2e4",
+      "source_git_blob": "ee5ef265b5aeda76bd614217616735725d8b6f55"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatSemigroup.lean",
+      "sha256": "da4c4a09231a6b017919877dfcd657b318cb99ab93ea28cda79b2fea50c9cc48",
+      "source_git_blob": "5f82d1b7ecd1daa3fb5b0880f014b46606b4726b"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatKernelFacts.lean",
+      "sha256": "71cb43ac6241f60cbcd8d10dfa1570e7142bd2425d344b2ddb517ca40f48c1e4",
+      "source_git_blob": "0c3c6d24c129c729e01a0879d6c8dfe1f86beef9"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/IndependentNonnegativeMomentBound.lean",
+      "sha256": "8f181a5b1715104e7ad3d1203e925c47a4d5e59d0fed9be1da35eb543123f33b",
+      "source_git_blob": "988f2292a972da4459d583f5cca6b418305be72e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatReplacementGap.lean",
+      "sha256": "e9cb069f2558987a3757e612de2134fe3e84bfd8967532e568380c80bb727df0",
+      "source_git_blob": "32cada0569ccb46d8a2cafdc64bfd7a895f75c2d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatSourceDensity.lean",
+      "sha256": "86032bdb90b596bfa5c9bea4aa138c5e53ffa46d3b77523f252e0982f3aaa87f",
+      "source_git_blob": "570264217548e0867955626b73f1064f1f94e2fa"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/IndependentShiftPushforward.lean",
+      "sha256": "b55c5f2aa0040ede706783d6a6a26a593e185abe6f02a2d30b5058353185122e",
+      "source_git_blob": "5d9b9e76b41ec3c338c591aeb6df67be96e8e145"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/IndependentPairEvenMoment.lean",
+      "sha256": "d3afbec7a4e1b310f195c0b2fd3cba6d1401d4fd6aa35c9120d588c2db6f5a7c",
+      "source_git_blob": "9a566288e704365262aaab80936ee697dc0b2263"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HolesLogSobolev.lean",
+      "sha256": "ccc0955b6cb3ea06d737b4db56fe1731f021a35cbf28021b196399345743739c",
+      "source_git_blob": "835118e8750a3491b86dd1c0b6bebb1837fbb8b4"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatSourceRegularity.lean",
+      "sha256": "7e1de2da1f76ea8dcfd7e21c18d1a6d19f0efde693ed08266cf6e7adbe095634",
+      "source_git_blob": "b325720a73b0f844535389da327552717bf4f0d8"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatKernel.lean",
+      "sha256": "e5c96bade5242469400ddec24c60800b2c605d106f77191b0aa634cb0f5a018c",
+      "source_git_blob": "c14c62640ba41ea22c6fbfd624df038d6292c8f4"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HolesPoincare.lean",
+      "sha256": "ffd3bf637626a26638afb55b5a3bb47048eb40fab3e3f9177afab42b6f91b489",
+      "source_git_blob": "9f08e68efc42f2c1caf3dd20e924657735d5044c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/IndependentBernsteinMoments.lean",
+      "sha256": "4aecf3e0e6acd28b1a17c268ff1af0a210e594605b9363c959c172e65d72eb45",
+      "source_git_blob": "42d957f019cca2a8063e48a838731848ac860864"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatSemigroupComposition.lean",
+      "sha256": "f1188ba92d2fb2f394cb14c9931e151198be2a7a3f637a7fa6bbca01526411d0",
+      "source_git_blob": "60824bcf4b8afdc6cd5a94e606e145e7abc76a20"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/HeatOperatorBounds.lean",
+      "sha256": "06537c901d8f1d6aeb253991d21eada41b396236c271bc177c49aa7e61258653",
+      "source_git_blob": "4db149367df6c05392cf4c3e7e93f28367f32230"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/IndependentRosenthalEvenMoment.lean",
+      "sha256": "6cffd83b9c9e76c176afd039e4ad4246121b877701f9839fb83dc2241a086545",
+      "source_git_blob": "168987b02d6f727d9731d64f5fc56a3f7fb9b82b"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/JumpConditionalL2Moments.lean",
+      "sha256": "efe8954033192e1268e1a6a04fd7e382745587ac04b09927551b44ce4b52f791",
+      "source_git_blob": "d63dec28ca8ed9d1794bcc916c7c851144018d1b"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/IndependentVarianceMGF.lean",
+      "sha256": "b588de4c14a89d82ffce6762d6723c9c9704fa739995a57f03e9b348c5506a7c",
+      "source_git_blob": "a1923e1e1b91a28f72dd9eb21ebe1ed7057f4c10"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/InverseBoundedTiltLogSobolevTransport.lean",
+      "sha256": "33f0534aae91ed6f1879c818d7e7bb2481c47fe39e1645ef3165710a6462a7a9",
+      "source_git_blob": "8196533f0a92104468aeb06f4363243d6042baa7"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/L2EntropyQuadraticMinimum.lean",
+      "sha256": "ff3c0edeba7887727b478190471322a1a39aabf4b17a94f053a2f47a8b36a8e9",
+      "source_git_blob": "07c30cead16a6415db36ef36e9a4a1f04d6ab98b"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/KernelWeightedFirstMarginal.lean",
+      "sha256": "28ed87ee5ac094ad38118431cfe5806b8f5d999bef088511c4617afe2058bf8e",
+      "source_git_blob": "0ba76f007fb92861a8dce16603ccfc9b6c568133"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/JumpL2Extension.lean",
+      "sha256": "e674d49f372d58087dc9d44e15754ef7f66a2490939accd2f99f499aae756fce",
+      "source_git_blob": "ca4c608411d443068682672992a1b80951b32674"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/JumpPhysicalComparison.lean",
+      "sha256": "067aee43e513a1b22f60898b5bfa2fccf2bd16b39adee1d92a129e99885dc880",
+      "source_git_blob": "81ece570af4be2fb120832682d39b313a4e1bf30"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/LatticeRadialTailBound.lean",
+      "sha256": "07936133eeadf008b5abd816b0c2607674906d393e39e425062ba509aecba7f7",
+      "source_git_blob": "cde53e69f028434c7307217031ae6232dad66351"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/JumpL2VarianceEnergy.lean",
+      "sha256": "6d2943f46d9bf1361d0dafda382ccf9b003665074dc47a71e968d1c476ace4ef",
+      "source_git_blob": "5bc31e62947c8aafb85dc3656b4e8cc6d64a39ce"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/JumpConditionalBalance.lean",
+      "sha256": "e6600b9fb959c1ff8aacee011ac5f61e581c1af7f115776ed4d11cabe43d5d39",
+      "source_git_blob": "b5ee56f80f3a1d99b47a4a8a12311e425aa96964"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/L2BoxContinuousIntegral.lean",
+      "sha256": "13442df056b6c4efcabfa02651e93e6e5cee62c5c8915e5c6b2c07c46fcfdf5a",
+      "source_git_blob": "21a217700abfd221ffe6923e26e0c2a0fad4ac93"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/MayerDefect.lean",
+      "sha256": "ba8e8aa1a114f1259deda83f9ea8d8fa12065e869cb3df9542c556c03d9100ed",
+      "source_git_blob": "00aef512b45352ed1c1965a1d56afb5c5ab6affc"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/JumpL2Construction.lean",
+      "sha256": "4216b6d26255688c832979f1bbd9be29a90b5f7faebec98c773cbaead49e3cc6",
+      "source_git_blob": "5e53c585f5b3b18252d89a61715133d663c73589"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/MayerConvolutionBounds.lean",
+      "sha256": "54282b553adbde3d7f4538aa885d585751bd8ca325ff12bda6e4bd283bd4a55a",
+      "source_git_blob": "43ee203787135a1e30c2d7f9ea262614dbdf35cb"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/L2DensityBoxComplete.lean",
+      "sha256": "c0660619fa8d4c5f516bb1d2dc525d7e7e6418679e58dc3dc0854f0323accc80",
+      "source_git_blob": "cc604f4a577fed2df16986cba229890b06ea9bcc"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/JumpOperator.lean",
+      "sha256": "a965d5d3d55b3dc9efbf96e55b1b5c359d06c4e49b646dad3769f798e577c575",
+      "source_git_blob": "64e6d31454b8c55216c4d747aa74b664689afbef"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/MomentFromExponential.lean",
+      "sha256": "1601db5e3d4010a6b12b3d7c46c7cb49fd2238e38db199c8cc7cc0217b29705e",
+      "source_git_blob": "7dc9dcf20aa3cfe488d83c41fc9a3b0c14a619cf"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/NormalizedTiltInverse.lean",
+      "sha256": "df1fce3f8af02abdd6785b7af1186ebb7cc5c7e8920adf5368c29ca2890cc671",
+      "source_git_blob": "ada74ff948760d58e1b02b7f5411164a427325ac"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/Preamble.lean",
+      "sha256": "0b72d51742086b1edf32352abe2492f6669fca54b2e712efb95cd0a14d1d1469",
+      "source_git_blob": "7ca07f07ab5dcaed850d43ffcd7b060c78c76dec"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/MayerRemainderLimit.lean",
+      "sha256": "c065861d30b5f7445e6dc67d465994cb6db2fa27a107e08023868679f5eabdb5",
+      "source_git_blob": "106c3beb9caab6a35d21abc38c308e1036e69743"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ModulatedPotentialLawRewrite.lean",
+      "sha256": "9ab7f11d387115e7d6ca225607d0768882eabc8d0aea62b7e2aa0060dccaf5f7",
+      "source_git_blob": "98b18473f53c14ee428886354419087982aaaa24"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/PairEnergy.lean",
+      "sha256": "b141aeb945a8c266c9136830c09e34a2c542af44b487d69c38037a4570144016",
+      "source_git_blob": "7d9f79348bdc60afeaa4c7b844ee9c23475ccdfe"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/PositiveFourierConvolution.lean",
+      "sha256": "2600467d91f0791dab52dd5746a3df34927968378772f38333f0354a19653359",
+      "source_git_blob": "61556b81f59b485a4530cc5afb82b961bc514eee"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/NormalizedTilt.lean",
+      "sha256": "302b13f5855b917a1c6a4e4fde70bb2f3c5dba4370d49f4f10764dd376c41c9f",
+      "source_git_blob": "90f6f13d6adc74ac213059dab6506abd31617935"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ModulatedFullGradientInequalities.lean",
+      "sha256": "5b6004a9944f13e2006b8d9eb1c0d2ce3da684bc8951b6f81f70572773a8d645",
+      "source_git_blob": "b4700a00260b9e34e7b4e23ea3a67722ad6589ff"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/PairAlgebra.lean",
+      "sha256": "a4b8959cfce45ec8b8e35868fd1fbbe52127aac997e841bd06457b7c393b5e0e",
+      "source_git_blob": "497b7e07f51e7cdb5dd845f9c02ed59d32e59b8f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/PairMomentBounds.lean",
+      "sha256": "a8425861d073bd8a122a8f90d3f5df6a5a319297e65bd8b6792f42fad13c7a45",
+      "source_git_blob": "eecca57b9457b67d7363033169031e819984fb43"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ModulatedClosedGradientPoincare.lean",
+      "sha256": "f8ca9a4b4c57abfbc3ffaed7005112df5b58cb8847f733373488f07a03c2318e",
+      "source_git_blob": "f21925f41914fd31fa40ee1e360da3d9a684710b"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/MeasurePreservingDensityTransport.lean",
+      "sha256": "c1aedb055d43a952aa6228345e021e21c9ac32c7987250e3d6392b5864e97451",
+      "source_git_blob": "7d9dcbf1cda2816807a85f6a71f81f6d47461cd3"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/NonnegativeOperatorGap.lean",
+      "sha256": "e74c2f2592da5eaa46f7ea03dc4a46d5768173617495276562da9c389e75e845",
+      "source_git_blob": "7b3824d0c1a3af88469552f49a7700a182b29a55"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ModulatedClosedGradientLogSobolev.lean",
+      "sha256": "070d53a7202349e1fa89ee3d687d5ff2cb7bb901343c20be85a537e89fbed6f0",
+      "source_git_blob": "d42c6a099f610dffce8a4d097ca728fd78c8a19f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/PhysicalEnergy.lean",
+      "sha256": "b3c8e4bc83bbb67a08223e06a6b5972d7b8bad216112da1f1311857222a6d2e2",
+      "source_git_blob": "8c3b3dfa90feac0f35cbaa62c5e5ffb2b4b934cd"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductDeletionConditionalEntropy.lean",
+      "sha256": "c406b76817f8965db170530c40cb2c73b0d1f24782099749adeb51f6c05aa074",
+      "source_git_blob": "5d4dc8662c155c898a4205f18950c21b0bf9f029"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductDensityMeasureIdentity.lean",
+      "sha256": "2177a54e7ca136a1f8908539e9d7ff83d1664520289a58a355c6b189bf66fe3f",
+      "source_git_blob": "7c6c22afef7499dadb5d77c43e151791785392f0"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductDensity.lean",
+      "sha256": "896cfb2a43cd9c07dd6cf01d478dc6acf249b2d09777aea39e34daac7c86bfd5",
+      "source_git_blob": "8c7b8f6bbb7412bcbfe77b49975de6fc57b4001d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RelativeEntropyUnderMeasurableEquivalence.lean",
+      "sha256": "726c3f252842d3e8508c045383b2434aeae0191724eaef6da57234f5199bc265",
+      "source_git_blob": "d888fabe71d771fe64758215360ba4fa2533f969"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProbabilityExponentialInterpolation.lean",
+      "sha256": "af0835fac40af5bb1af1b5f71c7949f8fea0f76c8a3735de9595c9a85485d39e",
+      "source_git_blob": "e40ddb446e2638da9ca25c56d2110364b5ab4077"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductBackgroundMeasureIdentity.lean",
+      "sha256": "693134d8ed024d8b9a0ab778e995ee241201af91b998d9cd8cba231baf0a6087",
+      "source_git_blob": "9b2b2fa5df69c466e001bb6d49fb807bfcce79d3"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProbabilityJensenTransport.lean",
+      "sha256": "2c8d087cb4480dbd83d25d7869dcb5e4e832f37741476abb107723b4dffcb765",
+      "source_git_blob": "213d13b689fb7ff4c4898ba4e8d2ee228f581f45"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductBoundedDifferences.lean",
+      "sha256": "bf712e56d1ec32351c253dc721cea8c40b9122471fa5ff95efa1674d7afb4dba",
+      "source_git_blob": "1c89aefe1261e8329983e7f6fd99313327e18e8f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductConditionalEntropyTensorization.lean",
+      "sha256": "bf240ada99782a554dc6cfc3eca20c6ba73d5b3ad9b973a73aaf9d58af448db8",
+      "source_git_blob": "2992f583bbe1cf32c7afb72ad18e9a11ce6165ba"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductRestrictionLaw.lean",
+      "sha256": "7ebbc3144d3304ed6073e50dc519c107b4c6ca3a35326e25978a3422b2cd521c",
+      "source_git_blob": "c4a0c34867dccc44fe4fc4fe17c30aad13bdd222"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProbabilityBoundedKernelSquare.lean",
+      "sha256": "b619dfdda83e327f8010dc3ee4fb13596611f47a10e2e96f9694961a0c90eee1",
+      "source_git_blob": "5291c0fe788c7745bf8ead91a8b22b02b4cff24f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductGibbsRowStationarity.lean",
+      "sha256": "d25551f208dfd969325739d8c0c52191cf58a35379bebc6b8848baf6564d8952",
+      "source_git_blob": "9f6c9bbd7a042ed15dcbbe326e4da4460c15948e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductBackgroundFacts.lean",
+      "sha256": "0fbd61707e423af2f913f49aab1fec26e3228c12eac80d58d49d8f4ccbd713bc",
+      "source_git_blob": "0b076ea5ed221e5b8799607a42459c2e281f8b49"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RadialFrequencyCutoff.lean",
+      "sha256": "9c9df97beb5bb896a2bb6eb47e518b61e0c5826e091be94c52a7aae8e2b99f21",
+      "source_git_blob": "13cd09963f16faeaa88224cbd0094d14f169ef11"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProductDisjointBlockLaw.lean",
+      "sha256": "9dc680b4b2c9bb41e67c69523a170e0429b929ab724c363213cf1fb3162156c0",
+      "source_git_blob": "adcf887e9cdd9be43151587eabe3a81d3756eba2"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ProbabilityConvolutionJensenInputs.lean",
+      "sha256": "af47e02d5d5913f513f6556e3968d2c4207c207671af8714971ff91030149090",
+      "source_git_blob": "f5576138006960f2bd67b33dff45454743f68209"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszCenteredRowStationarity.lean",
+      "sha256": "b8ae8b1abd2f4c90ae51c61997c502f45f84e9409aa280c9db723a5c737d1ef1",
+      "source_git_blob": "5dd5a4b3f90997d6e7be254271f52f5ed3742277"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszCenteredPartitionUniform.lean",
+      "sha256": "b5e255d8dd2cd61fc37549a0eac3270581a0b100d6f8deac76719ad3e323e42d",
+      "source_git_blob": "000fb9ac8c957d90a576b3e332a17269d79e9c2f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ReplacementHaarSwap.lean",
+      "sha256": "fb04977769bb70cfd53ae9fbae945386c2f6e778ce6e169c4da022fe45f159f1",
+      "source_git_blob": "d6ca7e861a8828cb14394f82e6f86c4e30499b49"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ReplacementHaarInvariant.lean",
+      "sha256": "1be48ca5b98aa760317f9c669485049335d204f94891df8762895943ff6b08df",
+      "source_git_blob": "ee08e233d288fdc70eece42461f869d9e3d24bf2"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszBackgroundConvolutionBounds.lean",
+      "sha256": "a43b6e6414330ac103433f763e554bba593ce35b0fd3c50e7f8ea742ea55c9f9",
+      "source_git_blob": "ff0c2646c5fcc92adb9f07ac37f920fc11155cea"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ReplacementRectangle.lean",
+      "sha256": "5f977ef9c974c1956ff1d2820b7ad034fc5c4ce7f7dc8dbdf51faca044b0f003",
+      "source_git_blob": "e4d36ec0e39fce04a4576e8517f3ab8a8bf0989c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszCenteredDisintegration.lean",
+      "sha256": "816f0e6cbd302ef01bc09dbf384290ebe0f73d056ae47231d95fd6902977869d",
+      "source_git_blob": "814ca8697337ab1e97da9741bce99e52b7e72adf"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/Replacement.lean",
+      "sha256": "29bcb9bbce9331faa4e0215c86c36649f56fd5d81d00288d62a28949cbf76b0f",
+      "source_git_blob": "df2057cdafa497b53047bbdce9afa4cdf2dfefe8"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ReplacementRectangleExchange.lean",
+      "sha256": "4ed42704f4635b5c8ad2417c3f672ff2b51b08f75a79c9ca17cda397601d4f24",
+      "source_git_blob": "da0810e020d7b8f82089805c0afddc0aebf7297c"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ReplacementEdgeWeight.lean",
+      "sha256": "b595033bed5f6b3ba92b157e8c2fb7e331e92774efcfea803069f6e6b6747281",
+      "source_git_blob": "847207060d36a1b4f62293b2affb40ee2124f9b4"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszCenteredSquareEntropyLower.lean",
+      "sha256": "c62cf787e40919e17c8a2181cd9ce6b9ff349ba74b81e6523714e2a70d8e5058",
+      "source_git_blob": "fea8ba33e83da06dd2d478eada04a5ce71df8f5a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ReplacementJointBalance.lean",
+      "sha256": "314f0a2ea717ea78cb2e49ac4dfdf5cfa6296174c63ec10a48de8e50925f0767",
+      "source_git_blob": "2368369538b9ce1a1b827351732db6150321cd6f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ReplacementCoercivity.lean",
+      "sha256": "a868083944a12c428cbe4b4cf514947065f8a5243beb06edd9becc42779425fc",
+      "source_git_blob": "f5f9165f79bd451df0ca005794beb57846e365b3"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszCenteredHeatPartitionComparison.lean",
+      "sha256": "8080e3918cb2d169c71648289230bd36a568ac7a94bf195827cff836cac55fef",
+      "source_git_blob": "401990c1da398372a82301b51d903e80e656c89f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszCenteredFourierTailOperator.lean",
+      "sha256": "ab635485b404e091fe088c9beeb88681ff3bc74d0217a1b2adcced5b552f6bb1",
+      "source_git_blob": "d1b14c599071e2edf88b60e8f02120e83eeec1d1"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszAtomicPotentialBounds.lean",
+      "sha256": "1acfabe4c753d876be10f1deb611e1429a80775acddddb470862bfdc0b92f4a1",
+      "source_git_blob": "b331f5afa6abc338d578c6bcd2e7c97ba1db1ffe"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszHeatTail.lean",
+      "sha256": "0e4503cfd7e55951fb45f2a205cb732ed027b61b0abf7bf3ccf0d262ad1ec1ad",
+      "source_git_blob": "3ab70965e73170853ff5674c62b9bba6bc566860"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinCoefficientBounds.lean",
+      "sha256": "ce414ad0c17a6c820ff60127086a3cdccaf7a0d8ea1c82aa44bbf5a30478d16d",
+      "source_git_blob": "68db94c18dfcef31c1f833fbf41de88b2d4b970a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinFourier.lean",
+      "sha256": "7afd213032aec5ba89213a507bf58ae4b60de3c5503e2c74f6777135ee51e799",
+      "source_git_blob": "c562b27a5f5c4f8b9013359e0079f339d8f6c26f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszHeatSourceTransfer.lean",
+      "sha256": "0a33f35fce3a1d0fd96084e4dc4d8af22c6965827f02c4d70520ba201fc972d6",
+      "source_git_blob": "7910e66514d08c7cec1d29f78d538ec07ad3ee03"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszKernel.lean",
+      "sha256": "e01b99fe6cb4320279b9da1127426441c194f7294c95fd84731cc275113737e8",
+      "source_git_blob": "5953841ec21f0ae5ce08d932e682198fd0bcd6d6"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszFourierCoefficients.lean",
+      "sha256": "cd3e96caf381a50aeed297a58a30cde0bf85e6a6f0c97059f3f51fbcbc5c9f09",
+      "source_git_blob": "a69c79e70b7519c1f8f45353c2ea3525138edb21"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszCutoffContinuity.lean",
+      "sha256": "b3ca24698884d9b5090f0ffbb566f9ec50b33cac4bc56f28a2971948d9b8c370",
+      "source_git_blob": "e45a8d025be90479ff94bc64523616446e33ed53"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszLocalStructure.lean",
+      "sha256": "a3e5780520b497e54de2d5465a8342e50011602d185e8bad0e909eeb2cdd06d5",
+      "source_git_blob": "f945069ee50e3001a12d6a38e358d6cabeac9d80"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszHeatSource.lean",
+      "sha256": "1d69d81077872946fc112f2877ad9635baf882ee40fa83404eb2a4dc513c3da3",
+      "source_git_blob": "49249f5e0b86f3494108e0f626b9046072b551c1"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszCoulombTranslatedFormBound.lean",
+      "sha256": "05b94ead0d12f9a621f8240cb2e96eaa4b761aedcc1708851afe11120d6976c9",
+      "source_git_blob": "e74b62cc4f75610792a69e6465f7e85dcb081514"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszL1Foundation.lean",
+      "sha256": "c3035f0aa39cbf41a62bd7c7fedc96c00b2b5b52f696c9a058c9b6f8bed0105a",
+      "source_git_blob": "e02124f70b912c5d61f2fcf76a4405788dc94326"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinDecomposition.lean",
+      "sha256": "1f8eed0916b0e41e17c6674e4925a16e5b874fa3f5c611dce8706d95a6bf84fc",
+      "source_git_blob": "8c11c9063cac9a6d5f074d7660787c0733d99d18"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszGaussianImageRemainder.lean",
+      "sha256": "7f3a7b0dbf11175cddbd1420ffa14b86dd153feb81830ee9f1bb25ea47539952",
+      "source_git_blob": "9c600bce8301d71a2043c1502a5601ceb7c5a167"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszL2Threshold.lean",
+      "sha256": "fcc671a46a2c9ee59088b0991f6b094cd2a25bff7d07ee6c982855d87d003dca",
+      "source_git_blob": "49b900733147a1999cb3cd50239dcee1ccb3d5d8"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinCoefficient.lean",
+      "sha256": "66303f2b46c5e3f8cc200dfde53d81a191e2c956c4cfa09fbdd98e93c4928e41",
+      "source_git_blob": "413b227a38adb042af2d130eac12aa2219bc2d06"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinLong.lean",
+      "sha256": "0e5c157e5a3603dcd3e084e8aeb466fb3e54deb6de314b43797a824f1271fcae",
+      "source_git_blob": "529ce8280140f3696ff2eb8f24c9d52bae4e96b2"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszThermalConditionalLogSobolev.lean",
+      "sha256": "7484927616240eebe208cb9779e37bbbd5f22f86b07c578e44163787a964648f",
+      "source_git_blob": "38c6c95687759639ad1a024fecd7a5d94dc8e9af"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszThermalEulerLagrange.lean",
+      "sha256": "e047a8779d5976ede22cf445058fc32b058b5afce2c1fe5894f49dc7eccb0ff8",
+      "source_git_blob": "b0bb46e4f9aa649adb6ff3fbeebc199c7258aa9d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinRadialCenteredFiberBound.lean",
+      "sha256": "1510ff2a80ccb14b3acbc68c5b73aa81bcc186cbb680216a8f25ae89648c2b71",
+      "source_git_blob": "b799b6e619b225dd0adacca4522638c30fa67d1f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszPositiveConvolution.lean",
+      "sha256": "224adff7030dc1fbd133b8746f4567fd886db5cf0b1052f0976ad4ea4f08b184",
+      "source_git_blob": "ca192ca02ba1dd03faf8f8efeeff2ffde24f61f5"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinLongCenteredEnergyBound.lean",
+      "sha256": "2427ebc236e5e3ee5c70283bdb032278b82778ac8c5e74685893da44a45cd66d",
+      "source_git_blob": "fbbf117aa3f4b195a51af440dd801c61f83eb0a4"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinNear.lean",
+      "sha256": "6cc5931d9008c77d944681fed99c623c1ca342f2f4c0e75d1ae41a4281a98aaf",
+      "source_git_blob": "567d100379496efb01db95625ce31d7bf66c25fa"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszSourceMeasure.lean",
+      "sha256": "10191bc24e0b7af75856416160a5459c17bf9f95620af1df8d7be8c7c58a24eb",
+      "source_git_blob": "984a1c1e7aece8d90c8920f0b73951cef1f0a217"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszThermalReferenceUniform.lean",
+      "sha256": "f71c973b7cd51d34f8697d7676561599e471d365a6aa74ee2c87faf73a758c79",
+      "source_git_blob": "43ea86ed842b48134a81c963ce671d9b1529373d"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinLongBound.lean",
+      "sha256": "e61b5e1e106785435788322f88a36b4952c74c2c52ffb1c35dd71bc373b975e9",
+      "source_git_blob": "1db5a57640a2420af551c5a8f61fdd469ec32b5f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszStrictSourceDomination.lean",
+      "sha256": "112459fb4b7d7878c1194a26ccb2ac41251183e754239a3b481d94fd9dbf441d",
+      "source_git_blob": "365f6e33aed5703484d91cfce2a814775f51ed3a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszModulatedBackground.lean",
+      "sha256": "238430880e503c574eeaa9070178ef1eb0b83d00ef688b05e6920d89436d21a0",
+      "source_git_blob": "781e576c3277f0baedfcdfafbc070b8837a91b4f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinNearCap.lean",
+      "sha256": "96ecc8d45012ca88d6e6c3740036f2446f08703a5ed4a57ba0b911c8de0f8fae",
+      "source_git_blob": "be016be06991469a21733e146414be0c8b60c555"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszThermalConditionalEntropyBound.lean",
+      "sha256": "83073c8e0791402ca17e5247b5ff1e3978a4c9c133c321ddcaf6d1bda0a96657",
+      "source_git_blob": "8d848703d277e89e67347d10d3e241b9e913ecbb"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinLowCenteredEnergyBound.lean",
+      "sha256": "2cf4eeaf7a59f6680315ff6009bea4d3f89a93e6cbbe9637eeda285c453139e2",
+      "source_git_blob": "3da28fe8ef1901d8f6c84de2851620e92d8759d1"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszRadialMultiplierBound.lean",
+      "sha256": "c50cab06c4581665de33a9ec89649cfedc7db20a51a7b64a8447230a89202e83",
+      "source_git_blob": "4fc882fa88018501ae0df7b264cbbacce8fc7bab"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszMellinRadialSquaredTailBound.lean",
+      "sha256": "457214e21572ac07dcef64c6c5e054abb77a6054b811094d254cbda757c9f76e",
+      "source_git_blob": "6c0fbfe5ccebc1d17b0cd1e4874bc4c3ce280e86"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TiltNormalization.lean",
+      "sha256": "24300865ba5e7488ede091535a4075eabdadbe85c9004ef488b484e98747a19d",
+      "source_git_blob": "358b0ac2c21b8944adc9a6107b4ad099c1d858a0"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszWeakSource.lean",
+      "sha256": "030bb10cc690265b8a8a412b925d1aac0b988b98794583ff7340dc7d22cdfd83",
+      "source_git_blob": "93fe6f6ebadb2dbe371853fd05ab60fe90e85c57"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/SplitStationarityTransfer.lean",
+      "sha256": "b94904b2e40cdca97576505a7531f28629667f0b7d4eef7033fc33a911aa5ec3",
+      "source_git_blob": "a40784adb414e5be22e363d3affa4a51d6f2ec0e"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/SmoothCore.lean",
+      "sha256": "63a4b65e2381c4436ebb0af86a0c93f45dd32ed9dc05ded79d0df20deefb719d",
+      "source_git_blob": "7714e6c5044e875d59be9d68403681b14d2a0a26"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/SquareDensityRelativeEntropy.lean",
+      "sha256": "de96b45a95e64a8b330076f014d5a401d4ff5bbcc0135c719602c4842e3ab08c",
+      "source_git_blob": "952e11b2304baf4dee0557bc8879acccbe925a3f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/SummableGramEnergyBound.lean",
+      "sha256": "0cb81b346c89309307cf00d32f9a794256b286e2642464b785316e192472113d",
+      "source_git_blob": "c0ee11fd96df9a3c8f37ba31cf3d38fd9dcbcb03"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ThermalDensityBounds.lean",
+      "sha256": "a243aff56436967e3152d0c8f0bfb45a5b314c22c287147adcd7cf9a306190e6",
+      "source_git_blob": "7f352233640e810629e1fb38fa1f79519a6dcf87"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/SummableGramCentering.lean",
+      "sha256": "80a69ff7c65201188fd87be0e3cbddc2608bff799c41d037a8992c9413339fe6",
+      "source_git_blob": "4a70d03746a646877279d6005d315690bcd57ff4"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/StrongMidpointMinimum.lean",
+      "sha256": "2327f8bfd1a9825ad0db0eacee37dbf61f38f4adf49b330fd53795dfb4b50c7c",
+      "source_git_blob": "e577c32bd640afecddc766648debce7818330d9f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/SplitCoordinateEquivalence.lean",
+      "sha256": "f54bc410c15dc76350f9bee0abf38700209bde68193f5443ac1be771cf6dafb1",
+      "source_git_blob": "81d1102e4d9bd94049501cca166da43a3ec43518"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszZeroCutoffAsymptotic.lean",
+      "sha256": "2acc07cbf9f03f694473e3d022dd16698842a727e0d55e52a25ef3791ec07cdb",
+      "source_git_blob": "6ba357e30b03f2368030add7a760b0c5c83e7b69"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ThermalNormalizerJensen.lean",
+      "sha256": "21170dbae1a2d5eb68b708fc12de62df12149d5c94bc3d289ca1e2ceae87819b",
+      "source_git_blob": "920498004e89df04f4fecb54c33a08c69368d706"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ScaledBoundedCenteredCanonicalKernel.lean",
+      "sha256": "ad3697c7440ee38b6b72a5ced2c7b688d80177d461dcb2aa597892fbefa905db",
+      "source_git_blob": "eb1b2947594fd361f92e0629c1fed5ecd1b92daf"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/StationaryKernelDisintegration.lean",
+      "sha256": "e3ee806e8ead8960508a96af5289fce9b0d8a80c93625b129f5798615b78c74e",
+      "source_git_blob": "2e7d85fa47f0c30f90b98108ba82acd699a259ab"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/SplitConditionalSquareEntropyIdentity.lean",
+      "sha256": "2936c0e4293ca200306ae8f70197c6c194d96623f9c7c621d60493e63a362c37",
+      "source_git_blob": "1f3217facc286bbe10008ffc3b674a1c714b4232"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszZeroCutoffSmooth.lean",
+      "sha256": "17ba8b4b3509fcc87d414b86f2882555f3649fe282b06a3ea6fb0cff9955c2ab",
+      "source_git_blob": "72e20f9d0862f5403ee4b8c84c4692ddf65be8e3"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusGroundStateTransform.lean",
+      "sha256": "4f94ea58e8c9013533ed3c5b087362fa1507ed19afa3d4c647f78ebaf5f3bc7b",
+      "source_git_blob": "b59e69d254869404c8c2369b3cc458c62517236a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusCosineSeriesParseval.lean",
+      "sha256": "2aaab2f7280e56a034d384893337055c9c16a4d961e55f3f2ca7f976170cfdc8",
+      "source_git_blob": "6bac95e47aca950d8098da81d765347ee36cae23"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TiltPushforwardEquivalence.lean",
+      "sha256": "7f9060d4c761615bb3eb8111f6b0d80b7a8e6eb68c57406a28e23437173863ab",
+      "source_git_blob": "f1c9722ac54db9e84155e94725ab039eb3a359a1"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusFourierLaplacian.lean",
+      "sha256": "afb36c86cbcbc49ebb4a92acbf2fcb33470698ca2fe93385fc97b81c56a9b07c",
+      "source_git_blob": "6f5779de22cb1ede8d2dd49c99e988c80f2327fe"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusIntegrationByParts.lean",
+      "sha256": "007bc403ee6e47f09099c06ecb8ceecc20005d2911fd9f721148c9e0cafcf7ef",
+      "source_git_blob": "dfc55ff0e6e8c8191986e6c30e58f836e04ffafd"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusHaarLogSobolev.lean",
+      "sha256": "3873a0064199117f76b007d64d5d8c51d5f9fa64e6cd599bb31f683474f66daf",
+      "source_git_blob": "334a6a0a2db3ec9eb849dae93197f9bdbb462305"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusDefectiveLogSobolev.lean",
+      "sha256": "863bfa5b57031acc81e5973ee656a1bc175ca6ed933a6ceddf81f88f5255378f",
+      "source_git_blob": "1952ac91c761ff12d70772172da5251848cbb347"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusLift.lean",
+      "sha256": "50e818bbb481a596d3799da2aa26b80ad4fbae23996b394f7cca667f7c411d78",
+      "source_git_blob": "623f31a689e39bcbc0d405a690fe4b0bdf86a452"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusConvolutionAssociativity.lean",
+      "sha256": "f70a889a11fc87b73c8292774ba0a3dbe4d7077ac4d2a4ddd8613362cb1876d3",
+      "source_git_blob": "6d4113e9062c7f69e559c27f18e874225330d01a"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusGradient.lean",
+      "sha256": "9ef0fb26c2f1d86fbe2a9bd1fe6f58a272632500f4986456b647037cb03a1ae5",
+      "source_git_blob": "10d85804e4570f46af6d615c4e75606cfc0c60ce"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusCharacterCalculus.lean",
+      "sha256": "c1f5241ef0fb825b01c94690aacae52b4703ea6c922bf7ccc6cc9fab72c042d6",
+      "source_git_blob": "bb916b230e5d2e539d0d6069872516eac6121a79"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusGroundState.lean",
+      "sha256": "7e1d92f72d78aaa7f34612d554a0291701600defdfcdbfe300b65ceba1753b26",
+      "source_git_blob": "6e310fe692c37ae6668bc855fe7cf1dbd1478bc7"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusLaplacian.lean",
+      "sha256": "84caba837bc0bfbe415ad6828771fab9c9b1a680d55bf13ddac39d9b9db44da5",
+      "source_git_blob": "69ecc1a54f8c6b766e0df1eaaea25b1f1ec13bb9"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusSmooth.lean",
+      "sha256": "959462c2a88e63f29a7131f7621a95500be47ec145e3f7180229077efd646c49",
+      "source_git_blob": "2eab22d549bf6d8e87c4a20de97119d307677a32"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusSmoothFourierSummable.lean",
+      "sha256": "aeb66b727cbb9c430314707df18a7402d8a0d2d2e88f0378ee4c5e944a7a7665",
+      "source_git_blob": "f86af570b0512be5afc6efe42ef014498c238a54"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusHaarPoincare.lean",
+      "sha256": "5c8acebda284b8be5b2d5232b372bc0b1082aaf9e646d3349b9202427a72eaeb",
+      "source_git_blob": "58b7f3066bb18e9e133cc41c666bdfa55c62e2c6"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/UniformClosedGradientLogSobolev.lean",
+      "sha256": "ebf393c7e0e8cd169c8c5131c2840283dbf691a1fe219643102285b35dc2430e",
+      "source_git_blob": "ba7ba43a18171082991d00c8fd10ad2ec6526116"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet.lean",
+      "sha256": "1b162b6bb5c8c13c375d1da990a166cd287ef2f9a36c18093c7d5e94820f7af5",
+      "source_git_blob": "d11492ce123df0bdf7541d1ac713b87d47a7bc54"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/UniformLogSobolevFromPartitionBounds.lean",
+      "sha256": "9bbb22fb2497795935996de238b2e3244b16589c7ab057559fa1924ca8a037e2",
+      "source_git_blob": "78ad05ae557dba2d2348d277ca66e936487a34b9"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/UniformFullGradientInequalities.lean",
+      "sha256": "541dbd88866b9b4c4f31b17e760c99b82cc9c00aaa48d0cb963b2244cab0f73b",
+      "source_git_blob": "5bad5d26a96d083a954c0be1669fd20aabab4a67"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusSummableGramCenteredEnergy.lean",
+      "sha256": "2ae422c63b5e2b5b8f8d1f3fca856d26b67c40e5fb631b8b4a4b46c919fb838f",
+      "source_git_blob": "0971b2e03f8851086dec9973c51dc8f7f24dfee7"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicCoercivityExtension.lean",
+      "sha256": "aba6de1d349fc1699db86134527cf91ab4f3c37c4ea94e54156f8bad67198dbd",
+      "source_git_blob": "d391461d53e3b74e446fa0a4c5850797027f806c"
+    },
+    {
+      "path": "trials/periodic/project/lake-manifest.json",
+      "sha256": "4fdd7a6e1c7682fa953f455afd57a10bd36dc86744f743504f5d6add3370bee1",
+      "source_git_blob": "c55d43195e8015c3b49d6db0b4fb61b7f7630611"
+    },
+    {
+      "path": "trials/periodic/project/lakefile.lean",
+      "sha256": "bcd0b340535b7946ac4a8111b2ad9210137383d48ea0040127eedb0b7433817e",
+      "source_git_blob": "16c2a0a4c5416f51d6026bed39d1511040772acf"
+    },
+    {
+      "path": "trials/periodic/project/lean-toolchain",
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+      "source_git_blob": "025e59548e48cf71f2744154e2890beefe30a258"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/TorusSobolev.lean",
+      "sha256": "c8dccdceb89f888a75a02abf61e0668b87a9a61d8b9e4924ff690e0ba0924e67",
+      "source_git_blob": "2cc23348cdbdefd2ec478333195f5e9c95f78014"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/UniformClosedGradientPoincare.lean",
+      "sha256": "ba8c6575dde2ba5a9d6e40a0dd56eb66122ee69be94fd3bc6ab4f8a4c8d3d72e",
+      "source_git_blob": "798a237d0ed1052e2e8339473e42ccb8d409cef1"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/VarianceVariational.lean",
+      "sha256": "e238f24c2d0ba81cd66e8c7284b0002ccaca1c9e8935d9fef34645c0dec552ce",
+      "source_git_blob": "ec848494cadd9d7b987b797dd75124b6f6a5ae6f"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/UniformRegularizedLogSobolev.lean",
+      "sha256": "5fb23fe28600968c66b1472fceef4ebb4093feea4a843f9d9c0730f33ec42ea7",
+      "source_git_blob": "2f26c468015f5bd3cab7b173e3c797c27405a338"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/UniformSmoothPoincare.lean",
+      "sha256": "53b22edc5424378c9e9641b293b87856be231371d17b928121fbc80c3ee71bc8",
+      "source_git_blob": "fa05f7a576e780b79c5ad45a1ac39322b7902608"
+    },
+    {
+      "path": "trials/whole-space/project/APPROVED_AXIOMS.json",
+      "sha256": "89ed8929c27388e82bdcac42326611463102aaa9c9846cae1a0536db42198feb",
+      "source_git_blob": "26e749a1b5a8a1ed38a00d0e98b197542b5adc39"
+    },
+    {
+      "path": "trials/periodic/project/Tablet/UniformRegularizedPoincare.lean",
+      "sha256": "16f306a8edb408ea87c5190d4742c42510d4fb7d8cacd14d87c8520b2b7900ec",
+      "source_git_blob": "3826327c6bb355155a0d041437317ecb9400a471"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicForceForm.lean",
+      "sha256": "66ad0b1cd04ff3e83e251b32ae7d78f80fd1d1813cdedfdf7b727426e9c7c004",
+      "source_git_blob": "2c403f863b3fb98111bc6f66b5868b8918c71504"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicSquaredTestTail.lean",
+      "sha256": "de71275b1e6e8bf962996194af12f65d37489da210e0f5bf7b88f90597abf98e",
+      "source_git_blob": "26581a2ddf1906513724ef89ba55b61e2d364fb1"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicLawTestControls.lean",
+      "sha256": "d9ae597aa48c717f64b34165a14a0141e3214e1ceca2bffeefcc50411a1b927a",
+      "source_git_blob": "a3b8c53e5306ec3923bb7bf0e71e15ffe3e9b27a"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicForceWeak.lean",
+      "sha256": "bb043d9d6eeab4b0b606c9057249afa687b1f4904e56860f2e2c1cb4faa5da33",
+      "source_git_blob": "8ea32a757b058c6fe4165f50697bafc743b4ffc5"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/BoundedHessianAllCutoffsClosedPI.lean",
+      "sha256": "810ae6298f92d930171a313c5ff6683d63a8825c52a67ab4edaff215d57cda0f",
+      "source_git_blob": "5c37d167078c105bb3582a496380be243ee5e0e3"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicCompactCoercivity.lean",
+      "sha256": "eb7ff8672baa93057dcf3451ffddb8efd75b08344e7ae4a2ece09624aee27d41",
+      "source_git_blob": "e261f97a6243d2bcdb006c7ec9cb72bbac0e2fd8"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicReferenceDensity.lean",
+      "sha256": "8ef0914d06a64fec6f9dd85af31fc87ede752d08f645c53e7cb9efe42dd86174",
+      "source_git_blob": "f047bd05ae7738f8ef2747bfa2af881e7e177726"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicLocalCutoffEnergy.lean",
+      "sha256": "e04fa700b5a065c1e9ad167e35c1874f6c20025c11b6654090e06b6270c9382d",
+      "source_git_blob": "6ad01eba7acd306eec945676b1e07aa25c3509ab"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicNormalizedSobolev.lean",
+      "sha256": "27b929b99a42df223a069fed5ca7f8c5db0f3da9de58b2c567c4f220cbbf0222",
+      "source_git_blob": "0418ef2cd1a0e9db383aaee3bb1fc86fd9057092"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicTestClipping.lean",
+      "sha256": "d7f8a81224c8f7b944100c44baf1e704cfc8bc8ad8a9df4e03ca7a6e367587ad",
+      "source_git_blob": "2aa27ec267a9c87e24f76b379efadb697ad33a58"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/BoundedHessianGrowthData.lean",
+      "sha256": "3589fc3157565e1ca59c466bcc6d525467f4e57245b3bdaea80c966c064fc305",
+      "source_git_blob": "0ba7afaf9e9858c5f287d27e592e66d4a65e6c64"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicLocalRieszBounds.lean",
+      "sha256": "cbf1beb4f82d523219c95ee753984447e9b34687f8d31bd225bac14d943c21e4",
+      "source_git_blob": "fb1c3acf58e4c5e9bdd6049c7c121695e342236e"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicInteractionSource.lean",
+      "sha256": "03bce5471fedc50f676de04927282103d8fc6ea95790f85975d04ad10d3bc67f",
+      "source_git_blob": "f013b23c9002afc772b47e9f045f854a6a09f955"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/BoundedMultiplier.lean",
+      "sha256": "88e8be88b33cb440e74a81a472ad0a9b7a727afdcf536ab5f868bf9e7cbc0e28",
+      "source_git_blob": "2f2e89da2685d96dbb6448a435fb691e9cb090cc"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicOneSitePI.lean",
+      "sha256": "50cd8cfa13e216bf17cb596a6a213bf4fde18e3e34663c3969a3e4a8821913b5",
+      "source_git_blob": "b0f685ab897af04eb752baf5473992c95e29e84d"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicCoulombSourceMass.lean",
+      "sha256": "5e09bb2d2e38bbbc347e50e8ae633583c28648381a690c874f2aa496e7b2d06e",
+      "source_git_blob": "e4df453966a6c5eb1fb72aa92f7e6bd89b714f4d"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/CollisionNull.lean",
+      "sha256": "7a2b2beab371deb672165c09cc7a7cf4635806a0cbb0869601cf21ed57774cfe",
+      "source_git_blob": "9ed2ae555becf686bbfbc80b95aff79089ebd0ac"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/CollisionSet.lean",
+      "sha256": "b8d553dfb92f37ae43cb92969a8ca7553fb2bf946397e4e2227bf4768f573357",
+      "source_git_blob": "7ebd0d51e536330d80a2d49b7b2c967e0904ceec"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationCollisionNull.lean",
+      "sha256": "792b78e213d98bb1e25c3f5b963d087124ca3bfbc2d576a15dd3b5685600f575",
+      "source_git_blob": "8053c431cac8096fea9c0d70deb43e5f3a2643a8"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ClosedGradientGraph.lean",
+      "sha256": "136e666d39ac71673c95085a9a6567d3e85e4fffcadb823261c6879e48495e91",
+      "source_git_blob": "d36d66d861fc38200230ff7a2b93acb7ccd2f30f"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationLawTranslation.lean",
+      "sha256": "111b502e7097a2e14001764b03793a6d7daa6b6a4e16ebf60e326fa84f5fa593",
+      "source_git_blob": "c23c2df9dff5bd0e53492c04cb1ca2d826507388"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationCoordinateTransport.lean",
+      "sha256": "231d6ecf8c21b566686813bffd1eb0acad78890565be82a2b0e29eda07a33b52",
+      "source_git_blob": "1b31d280a9fadf18f6e0fbcf359699a0ae7cac78"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationReferenceProbability.lean",
+      "sha256": "1369fef774e02145caebb6557fb65a2819a06f613e37bfe88da600bebb04974b",
+      "source_git_blob": "9a685b20d9726c7733d7b90ff2295b979f05403b"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationGradientPullback.lean",
+      "sha256": "7f1621054ba1c87e1737869d95ec6de8677c64cb0d91546b9fa5f7b5b9d34683",
+      "source_git_blob": "968532da415fe733cc32f1bf6c8ec5091a285792"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ClosedPhysicalEnergy.lean",
+      "sha256": "7d38574db8a5f83f7e30a422f034d8c13f3f7c970649e41cd990b95cc56ce2da",
+      "source_git_blob": "508d752c03a46ceab4a8dca91fcb79b6a81e3c0e"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/CommonReferenceDensity.lean",
+      "sha256": "fd999204f80d780d9a367af9d53d0cf1af534d4ca1737d69d29c561c3790a2db",
+      "source_git_blob": "a9eb04e04e99a1d75d3b6a50710df45e47f34b1f"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/CollisionFreeGradientCore.lean",
+      "sha256": "2da569fb018c01c09468624947d2230d1d72da962699d6d5d1985d09de1ee942",
+      "source_git_blob": "6d84b9bed5ad38053d3fac859551197350f941b4"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/CompactGradientCalculus.lean",
+      "sha256": "c49c38f7f9719f28f00179edbd60018417162e3a17c43f44959a92f0f2be4641",
+      "source_git_blob": "8e282499b2ef2dc267d2f1b6bc35142af0529eaf"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationClosedGradientTransport.lean",
+      "sha256": "8387e40dc01fab7147e2b8970faa7335f42b13330f3980fd2fe1a3039c9ae652",
+      "source_git_blob": "7e26d08bd38c5ab320226e88a9409deb8ad4f0c3"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/CenteredPotentialDerivatives.lean",
+      "sha256": "4521caec107081baabffc4b3c8a85d172c2f8154f33c9451e5d61acd9546347e",
+      "source_git_blob": "ea203d415635cdcca558c4acfc318187ec2f130e"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationFlatten.lean",
+      "sha256": "af8c86bcdefc6f7b55564a02fefa33247c6f1a3b95978804175cb72d40d53bb9",
+      "source_git_blob": "101f9ee9b4a2c53498748d8974fd36756a6855c4"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationReference.lean",
+      "sha256": "c95a1c1ede1e47bf4dec4407a6b056c2baa5efbc5c0f437c4569c977cd69d0df",
+      "source_git_blob": "2b7563431b78ad98c82200c4ca846e03e0c57614"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/CutoffCubeApproximation.lean",
+      "sha256": "18194f9dee6a67f329d5e68f1ff9bdfb0b6c4640a96360dfd7b5fc252658b693",
+      "source_git_blob": "622baaeb4ddb08dda80f9e011baaa10b40de0373"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/EuclideanSobolev.lean",
+      "sha256": "2720a8d594a296b466959c264c65de4527888e3c4de185d086f84421f24cf27c",
+      "source_git_blob": "f36aa03de016e00e4899c6988dbea2fc75503060"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/EuclideanDerivativeCoordinates.lean",
+      "sha256": "c8c5f1c71bec8d9a316a6c52443a4717fdbcce7abff24380710e9e06bb1621a4",
+      "source_git_blob": "f38d64ea6e9a079cc2b96e427bded8600ae5554b"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/EuclideanGradient.lean",
+      "sha256": "eb70eea5f3ebf9d9bbb21aa30bcd6b9df53905b989c829ce27c1a099f0179f5a",
+      "source_git_blob": "825aa8e420ee8ee8884438b53d7aa0e82bd19b28"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/EuclideanLaplacian.lean",
+      "sha256": "82d2f3216ea1a91b22e15ecbbde788eae2c26e0af9e037f9fc0a4affdb7d066d",
+      "source_git_blob": "6b4a310707507a700d32b1c812a744440affafc5"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FiniteGibbsCommonDensity.lean",
+      "sha256": "3d8a897a90c0fa9f035c948f2d8e2a3c9c7edd91feec261ee504c3a4d0283734",
+      "source_git_blob": "9bbbc7b8392ebfd426ff9e43e71dd598a0737e9f"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConvexReferenceNormalization.lean",
+      "sha256": "bceeeeaeb78ca79fed4a12a497a69493a5359015cba6bd65eeea89e4411a99e3",
+      "source_git_blob": "a0cd6f64ffe37b4a8d93c93ba8dcbbd47915e92a"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/EuclideanCubeNeumann.lean",
+      "sha256": "f8a94ef2f90887649ca728549e61060fde4b95a737ff4e4ff816b9e972eda173",
+      "source_git_blob": "e4a785354c959d6b2651f20654c3d08cf5e7cd8d"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationTranslation.lean",
+      "sha256": "96bf9308ffdfc8bb263d487e7bcd3b6f2ad76611a79b0e00eede666d39d60da4",
+      "source_git_blob": "d7bef6452e77453c41f9a71d472035a30ea8ecbc"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/EuclideanHessian.lean",
+      "sha256": "0586c14c634fa359cb4107c391c53e96044dba19c084bb79f5d7c133e9f68ef3",
+      "source_git_blob": "5815f88f735bdd27104a4c1b7f90d14c5698c0ff"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/EuclideanHardy.lean",
+      "sha256": "8996026f51d034c3ddf18c8ccb87e5a4df4106b707681f4e2b146066d053196f",
+      "source_git_blob": "1427f021c0ddc6f7f7b37667360845494cd8d999"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FiniteGibbsMeanPartition.lean",
+      "sha256": "feb04938f4cf40662b8655983e4c19da3cac8d8cce0845ffc1997ad6b6c9bb96",
+      "source_git_blob": "b57129bc3ecf3cedd74e07b01cf05fa3b56ec640"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/EuclideanGroundState.lean",
+      "sha256": "f0f4e25bae6a03b8d320ca493b639565d467a8d05a16cce769e1c21a25fe06a5",
+      "source_git_blob": "f42020d139de53463f465b9951cb51af139851af"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ConfigurationTranslationGeometry.lean",
+      "sha256": "370272f4005547f8c89894695c88df39249c43f97cf2bfee5f62b824a78d7cef",
+      "source_git_blob": "b818e9040967850503ea09be6a777d783e071170"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FiniteGibbsCompactNormalizedSobolev.lean",
+      "sha256": "339f433c34f5ada99eafdf8969c722b32258b2017478afe4ef706441d7da2853",
+      "source_git_blob": "9068ab918e3168ac4305ae385fc7b71fcd943cf3"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/CriticalNormControls.lean",
+      "sha256": "25686855701bd3af7d8685ef47274b05c7998debaa6c001393dc526306a02d9c",
+      "source_git_blob": "95031d59c788bf6a56c9f14eb76c8d41a2174fd0"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FinitePairLocalRieszControl.lean",
+      "sha256": "fb404b22f5e2cb35b6f8072aec7981d6268450c8b96608d8473cc0ed9e19f2f1",
+      "source_git_blob": "f4427ad5220aa82573d243f2d5d57679c96b2633"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ForceExponent.lean",
+      "sha256": "c1dae347df9dd6c9d0bab4bd3ddf398c2e6ceb7eab4c2cbce419cf23d9c9d63f",
+      "source_git_blob": "cb54de17732d25298ffa6b7329105dd0da661be1"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsCompactTestCutoffLimit.lean",
+      "sha256": "2d16ebf7e179d7f7279b8bb79af394b5c27a5f7eff19ae515b29239bf9b78256",
+      "source_git_blob": "5f79021a1005304b5e83b08dc60a8e9a3718dcb7"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsInsertionReference.lean",
+      "sha256": "3c23bff16f236e4ca4420e0156617177cdb3b3e0fa7b1018dbf443ed08dfad30",
+      "source_git_blob": "4ff387591904cfd5f97c8b60f33dab678aba777f"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsJumpPhysicalComparison.lean",
+      "sha256": "fdd5a509da1cdc400259565ca9a9a79ec4e9bb3eb8b5bee344fcd3f84a2fdb85",
+      "source_git_blob": "8907189b22cd1cd83a970d545e975737781b54d2"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GaussianConfinementIntegral.lean",
+      "sha256": "248e023bf6308ee619e7de52cfeee372259b9cc5a188e7329a0194e73a68f00f",
+      "source_git_blob": "53ba43e58aab101db7369804ed61d43514bd9cfa"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsClosedCoreEquality.lean",
+      "sha256": "c4b463c2340965edd17472de6b899d4f55dc3b2404c5a29f1aac46455d5f531b",
+      "source_git_blob": "584b316a7c1baea43b9268257a57969fde51bc38"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ForceExponentRange.lean",
+      "sha256": "b181e4a417a4f909453eeb385040dc3398c5bffe87caeaa66e99c8a057e10b1a",
+      "source_git_blob": "e93acdb81eca6f69fc575ee2806405da73ffd94b"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsClosedGradientUnique.lean",
+      "sha256": "c04ddfd1a7bb9d159790878e7db083284817838f9f3bd3c6d56bd208c29d27af",
+      "source_git_blob": "1a3d369241f84582b359f2dc7088936d25211977"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FixedNGibbsBoundedBackgroundPI.lean",
+      "sha256": "861274fc0a647b07e5775dcbd7cd1d435b25752e0a76770df0d345a95eeb6711",
+      "source_git_blob": "02eea47cd74ea15c3039492c834c1f1d4f485b7b"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FixedNProductCoercivity.lean",
+      "sha256": "3e2755ae2d38a04436c102bdefb86dc650ede6f72616501af5f69feec5d1840f",
+      "source_git_blob": "886b7fa282b4ac3439f452602d30140a37258ef3"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FixedNGibbsAmplitudeClipping.lean",
+      "sha256": "183eedaa5be0934f7bdb0cffe5b47efed6cf0852cbe8c44a6f8a93bfea15c342",
+      "source_git_blob": "152d833d9528803468d44df18f6c97b185b63628"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FiniteGibbsProductBoundedTilt.lean",
+      "sha256": "0210b548e632e271c0bb45055436db7080d6100c7b8f524f5e173878c062347c",
+      "source_git_blob": "989a02b3693960bcd7e3ef9345c9dcf1021d7555"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsClosedConstants.lean",
+      "sha256": "e3ee3b9f35ac9e94515039ddd7e704843558ee86497827450d0743c503baa21a",
+      "source_git_blob": "97aafc9c0e41dd24fec1650d679caf912fabc22d"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FiniteGibbsSquaredTestTail.lean",
+      "sha256": "a1f0e2dae698ff928fa9d3a59bc88ce71ac441d507cd8a52e832e4e2a952d36f",
+      "source_git_blob": "dec40b24e0a4f58b80fb0f610afad09732767047"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/FinitePairLocalCutoffEnergy.lean",
+      "sha256": "05b44c5b74296f33888790c0b483a5889ddf77c34f44c3480c9ae0f6dda56d17",
+      "source_git_blob": "9978a9d7792ac36e65474252b76bdbf02c847c83"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GrowthClassZeroCutoffClosedPI.lean",
+      "sha256": "c301101b4053cc9b0107b05227fd58bbc084f7a00d23c6f4278201d60161b281",
+      "source_git_blob": "91d652c5f602f0ca5b0832847168a0f8f32f7df6"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/InteractionWeightBounds.lean",
+      "sha256": "e6380d94eb77d1cce77c1dffdddbbc87e48fe05eb164429465b84717e072929d",
+      "source_git_blob": "ceac2b64dbae2050bca001b5792156200cba1c81"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsPartition.lean",
+      "sha256": "68fdd21ccacba0daca855ad180d13069bac53c2a5edf5fc75f2ed4de7644eab0",
+      "source_git_blob": "259231a76e8f256412c424623607677e234a837f"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsSingularClosedTransfer.lean",
+      "sha256": "4d4ce3fb8b1fcf3a67bb8d43c2f8965b91d1b603a839dbeed28fc5b4d1555dde",
+      "source_git_blob": "c52839204b042ea3fef29722d3c67a80ba4eeb85"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsLocalDensityBounds.lean",
+      "sha256": "09776db4a0a755c1730bf9474677cdc4545d7f8dff2d878744304b13433e8635",
+      "source_git_blob": "1b987eecf23500d8ee3c7d148f9ff4cf439f96aa"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/HessianQuadraticSupport.lean",
+      "sha256": "69f9975e5004c288b0ae8710aef5b6541ad2c8eeaafb1b238ae9467b6ae2d72e",
+      "source_git_blob": "ad0e16618c2c9ba7e90a045263e9fd31856f36ef"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsLebesgueDensity.lean",
+      "sha256": "f83c81dde7184e93c6de12b5f56e33eea4cb068876c4d131380bcc61c6c4c21b",
+      "source_git_blob": "11f5100b8652ae09fb09791eedc216bb0d995dde"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GradientNormIdentity.lean",
+      "sha256": "4b658ec2c60e5ccef4fc1878ceb6ba0a86cd002ef12545461808189cc2ffb842",
+      "source_git_blob": "9d745b60490cc7573f5965cbcf17df681e9b0b88"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsLaw.lean",
+      "sha256": "b7c6d13831e4fe1295161537c6b2ca381c5131d5fe8f616280d6e00da0a5205d",
+      "source_git_blob": "3ad1ef35a52d58b745296fe3516a15db1c9489ff"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsRawDensity.lean",
+      "sha256": "e52c4cfd0970f848aef27a19717e883d125a536580c978c2ab09026a825a1555",
+      "source_git_blob": "6031ee437ccc5cffb2b90c2a418503e251f95be9"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/HessianMinimizer.lean",
+      "sha256": "24061c94179d77e6f8ff38d858cf3f66e6a7c206bee01c9190af5bbff1b4063d",
+      "source_git_blob": "73a975d6bf0ae8a11771d8f44f769ad2946e6065"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/InteractionWeight.lean",
+      "sha256": "d041b680d91cbc88d9f798473c000087700fabd06b34f320d127eea081edfa0c",
+      "source_git_blob": "d63c5263bb40eed7ca49a89bb7238c21fbc6b666"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GrowthClassPositiveCutoffClosedPI.lean",
+      "sha256": "d8fbb7bae82ab0986669dd09770c0a8ba8fb8ca7a75a94203e945bc5cec99de3",
+      "source_git_blob": "b43a1ad079c1e16f2a8095a8622453ec9318a2c6"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GrowthClassNormalization.lean",
+      "sha256": "3506206847d8706e39fa4323c6501424ed98905fa4d375ee56bd6a2809a58724",
+      "source_git_blob": "cc4788ccdc420e120ae42176ba98c4beb3f81fc5"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GibbsObservableCutoffLimit.lean",
+      "sha256": "837aa6bd943b47db02e0cf827fc931c33b33cefd51c180526a6d2f25c4ebf498",
+      "source_git_blob": "ed27ab5f071771fd37c8014ff6f04d65cdf51772"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/GrowthClassPotential.lean",
+      "sha256": "534c52cf35b18bbcb4981b4f58214f11fa6086bb397a205279078863210528f9",
+      "source_git_blob": "367dd561f15422e17345a60adba1782db9330b56"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeAllNRegularizedPI.lean",
+      "sha256": "0a440efd62d18451211593206d61d77aa5ede6f4bf7b703734e05c1f6c0b7f41",
+      "source_git_blob": "85277d6109e4929c3b991ebb8b1210f8b34d3346"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsLargeNJumpGap.lean",
+      "sha256": "2be525b8d1a43094050d0393c17fa13931af969d8ced67bd8591feafb72c8e91",
+      "source_git_blob": "e9dca77f958588ae045c9244018b9fe192a307e3"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/MayerUniformRemainder.lean",
+      "sha256": "62afaf6a718c188e83227f2fcc1285365cdb89b4d1c3482e1f448795bff1198a",
+      "source_git_blob": "cc6675391a3fb60aabf620cc57c49fce65e34679"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsBochner.lean",
+      "sha256": "3e9dec9fe053be8bbc944181be707aa5ba6f150c7f6dd9f3b3d89ad6c22eca57",
+      "source_git_blob": "82eff8e6752cc65a82fa4cec9e7b2ed17b3cca66"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/LpVarianceContinuity.lean",
+      "sha256": "edb3bc9b4e2cc9d73b9161d78ca6a8ea9105f09d59aaebd519a559ccdbc595da",
+      "source_git_blob": "6cde07fca471474e3842fbe2f8b10c5159904339"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/InteractionWeightOffCollision.lean",
+      "sha256": "6ad50d6413407149d857b4b2f4bd38d5a4a52eb985711840e15d7c17b9acbb45",
+      "source_git_blob": "5e302d8ecd8654c1b5e955619749ba52dc41779f"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/LawVariance.lean",
+      "sha256": "2778e850dcddc84c7cf842c72acb7fb3709fa4917dd9d7f7ccbb643d400943cc",
+      "source_git_blob": "00dd59aac719bf6cf4d4ef9af67179b45166a584"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsJumpVariance.lean",
+      "sha256": "505ea2587a4fe6fea1e4c06aa6010db5d316a9ec6ba907f93e15516715e20082",
+      "source_git_blob": "357b6b6cb3d742723fe5588725d9c3b4fec6dd42"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/InteractionWeightMeasurable.lean",
+      "sha256": "f723b416ace88837df45977b0fb0604b247b02894d743f4dc252d10fe707fe49",
+      "source_git_blob": "12ab501965cfea98da4c3aa8caf335e752609297"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/L2MeasurePullback.lean",
+      "sha256": "759a571797f34afd387176c0062dd180fec4160cbd456b534c2125a3f4818801",
+      "source_git_blob": "0fd5eadbca19c497b8719910a86dd0cebbd0647e"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsJumpOperator.lean",
+      "sha256": "3ac13682358080ed4fd7b5d34bbd476d92a34ec235205eeeecef39a1b60872d1",
+      "source_git_blob": "5705b5f4dc952b5765c5653366d0a8957fd24c3b"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/InteractionWeightCutoffLimit.lean",
+      "sha256": "7a13001f5ab50f66daceca0ec54327aa77b2557fe4bc3d43558d964e542f9665",
+      "source_git_blob": "80f7e6b4110cb41920b442ea2eb683bbf5d2d51d"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsReplacementBalance.lean",
+      "sha256": "1f7f9f93910372507dd3fdbcbeae659f8bde7cd9fea24b0c297d7daeab2633bf",
+      "source_git_blob": "1c878489348cacdbe92dcac3d2871290ea987e50"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsJumpKernel.lean",
+      "sha256": "bcd7d9dd69271119caaecb3fadbc22934baea8337343c55d91d27400358e673e",
+      "source_git_blob": "de8f56ae3e391bb5225d76b145159c736fb026b8"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsFourCorner.lean",
+      "sha256": "f408e85ef6b6bc66d988490e57760ea932853da10ca970ed54ecd16a737a7dcf",
+      "source_git_blob": "76b90310d0faecb9835e998c9ef65de4b18f09be"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsMayerContribution.lean",
+      "sha256": "21f2af4cbfad8988ef82377ecb9eee0515b015705137f0443c4e2a6341316a68",
+      "source_git_blob": "7e3a2baae36955cdef6cdc9e966e38b8e37730d9"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/PairRelativeGradient.lean",
+      "sha256": "ea35b63f5fbae039bfe8e36a7219aed67746b00045c45052a6c34ef34ff7154e",
+      "source_git_blob": "2e9980568ce663373a4d89289d49d33767fdf71d"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsSameLabel.lean",
+      "sha256": "4ca3777d338e05d8e078820c8c3250f1ef3b272b281ed51dc194f98ab2103bdb",
+      "source_git_blob": "94f49bd070d4bfa7d21e5cab790918c5de46ccc1"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ParticlePosition.lean",
+      "sha256": "ea67711ce9b94b5670a11f110b169a471ab655193cded40ff686ab3634f4024d",
+      "source_git_blob": "32965fe9cc54ba96790d1c8f7f7eb4781df7f3a4"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ParticleGradientEnergyIdentity.lean",
+      "sha256": "6935ad1e37a8f39c9927e097d56c6612d1f423238c12b8a5fed5c2ec7c0c673d",
+      "source_git_blob": "eeb0f33b1ad5b8b52c7114e65079e008c44be66f"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/PairRelativeLaplacian.lean",
+      "sha256": "ed2928bc4a3428559841dd883a00114de1c01e8062d99de9554420c9717b6ca1",
+      "source_git_blob": "74a822a5b4ff93bcc60ea3fa4b9b8e80d3b85a67"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ParticleInsertion.lean",
+      "sha256": "048501700181eb2f371d68309851ad7ea2ccb2d528f5feb9d8f2f555e3e3010b",
+      "source_git_blob": "410dab77ae1e1e0e4d042a13bce2436b7fbdb851"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeLargeNPhysicalPI.lean",
+      "sha256": "3a185ad7eb77abcac8ac7adae7a8dbfc8513f5b5b0b48eeedbda32c0423afa06",
+      "source_git_blob": "c094322af7073fda400650592d1549bdded048a1"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/OneParticle.lean",
+      "sha256": "3a48876b7fe7687a0e526cd352cc72d428fed2f21c28f19796cd72c3816aec0b",
+      "source_git_blob": "bbbb56d3c86f69fd2cd6fd8acb4ae4baf91bc8f4"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ParticleInsertionCalculus.lean",
+      "sha256": "73b0bac4504ed335a6bfdc4719a1ab58ea638f2b5eb3bcf99cdfed1879b08020",
+      "source_git_blob": "9df5f0f0931ec34d1a2fa27abad1226ca23aceea"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/PairInteractionSource.lean",
+      "sha256": "22d19ce4c9cd534c981e0e74fa679acb0bbba09c4875ea7ce245af340f286223",
+      "source_git_blob": "ad513a1af0ba4d8a8e55af8ee5bbbd6bcb958a2d"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/PairInteractionCalculus.lean",
+      "sha256": "b7c050e287d3f6f26a073009ac77583ef67b93514518aaba447812720f6b6a6f",
+      "source_git_blob": "96eccb9431b476bf329f63e804a21cd49c899eca"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ParticleConfig.lean",
+      "sha256": "1ae338927bcbee309cf4fad5c88623b4e97171fdde2951b1147161094ea46689",
+      "source_git_blob": "31824343d7704573a6dac2c8228961a40727dfec"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeReferenceMayerOperator.lean",
+      "sha256": "935dcf79aede4386ce04dd0546353f083e8b0727e5753179cf73bdb8cc4af985",
+      "source_git_blob": "4751a086037aa746481cc8ef8456856adc8ea65e"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/PairInteraction.lean",
+      "sha256": "6e6554f98fe3fe6cfadaabc7854e46ef1a1d32b3c0c6893c1308416a6d8fe965",
+      "source_git_blob": "21902f0793695e7b541cfd5f74e12df11ed8b53b"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/PairInteractionForceForm.lean",
+      "sha256": "e24e00e3ee7e45fc183de0d167782f3726597e7db4f1e6528fc373f562bdd0d7",
+      "source_git_blob": "41ca608f797c0968aed70d4cbbc86c15db5bb626"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/NativeGibbsTransformedL2.lean",
+      "sha256": "8b5f917f923fee229c3cb5bc07da483a97cc895bb0d05024ef587ab385a423f8",
+      "source_git_blob": "ccaeda956f7f4657e8e1b3cd0fd7c4a19719a82b"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ProductReferenceDensity.lean",
+      "sha256": "a38e79bf509dc788acbe57cd56ce5826e3794c712ae02091d44c3ae28af40a93",
+      "source_git_blob": "34cdebcbbdef2da1d1c915fa07243e6fcb1d09d2"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ReferenceKernelSchur.lean",
+      "sha256": "efe44e467458d022ac6e195f484629f60e02396f1d4c3edc8fca4d21af5f4893",
+      "source_git_blob": "007eb0b6ca69683dcda4bd08369a79d821103f8d"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ReferenceLaw.lean",
+      "sha256": "0f6f6a7a172222e898b11581b0ebd2025c446206747fe34b4ec11adc4b03adb9",
+      "source_git_blob": "3883c2a078cf395229e52a2d224f96e43cc05bff"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/RawL2OperatorDescent.lean",
+      "sha256": "88f97b44c694a8f7cbf9f58e919eb3231cac2ff8100bff42c8a56dca6aa769ef",
+      "source_git_blob": "dbba57d5d5c7192b40d012a82dc8a5ed5e3157a0"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/PotentialBounds.lean",
+      "sha256": "b3f41d64600725c27d7bc83768379217a681fbb380355aa23b7f25b4524014dc",
+      "source_git_blob": "fa561b94bfb80ef277b2f6d37692e6ec468b7b15"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/QuadraticGaussianReference.lean",
+      "sha256": "b4a7fe13357e7a887a59e89e56475b4f236d5cfe6123b78c03d97f2665277bd7",
+      "source_git_blob": "41f0c22d49cd4b5ae2bf8a5dfa304219a3fec7ca"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ReferenceQuadraticNormalization.lean",
+      "sha256": "3f1bb0f1e4a05b0d91e103f446d60bbbfc121137f3a2b543e4fbf92cceab9f66",
+      "source_git_blob": "dd2d229d15f36aa7bd8f448f975fb6409f63404f"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ProductConfinementCalculus.lean",
+      "sha256": "2cbbe283689d82db95d8dbe7ae779325614d24f16625b62bc0f3ed4e548f9d97",
+      "source_git_blob": "a33c1336d63007f1b4f3e64fe4564b40b289f2a5"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/Preamble.lean",
+      "sha256": "a7da240ef2909808f511cacfb471f46a55ff800e625c573adae16939c3f86de6",
+      "source_git_blob": "5a0da7e73b5336db148ce0187440b7bbff9f3b13"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ReferenceTranslation.lean",
+      "sha256": "b098f2c7c2b6911f337294077ee102010a2cea89268289999987b41613bab98e",
+      "source_git_blob": "e26981806f126700cc6b33c81d0ed68763e2f861"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ReferenceLawProbability.lean",
+      "sha256": "a2ab17e0f79844619c31c6a5bb7cd8b0e02bd6cf46ca0d6a1645a2e6271238e7",
+      "source_git_blob": "0417c576d0998677ca072f1d00eeaaaa3200bfb0"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ReferencePartition.lean",
+      "sha256": "8ec1a7bbfd4881b7539515c609d92227cd8823d517a7fbb3fba0688d9f25aaea",
+      "source_git_blob": "84d87de7f8a8577a8a4ab9528ec64a9a2f971fcb"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ReferenceOffsetDensity.lean",
+      "sha256": "6784cfcbc8408c9159ca2324f890d58fbbef23ba5b2ee177e81bf0f196e93eba",
+      "source_git_blob": "c8031a79fe75d6095cb886704acbfe093b0bb912"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/QuadraticGaussianClass.lean",
+      "sha256": "795d05dbfbe815d82a059e4b07aae3f8ce8911b139c3a627d9bace41d9854f26",
+      "source_git_blob": "6f80a3eafabace2e84c7c19456b4c2db54cd74f3"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/PhysicalEnergy.lean",
+      "sha256": "e6b8afc73e127e2878780d33d166fe1e6f795e4a5df2f5c26ccc0ea844298d0e",
+      "source_git_blob": "a672cc486d198b7be0b015e2626c25aed05cbda8"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/RelativeCollisionCutoffs.lean",
+      "sha256": "34cbd59b36e67894264000353edf5df25ad9360b434b1344dc0481748627c2db",
+      "source_git_blob": "98b4cc07dbccfd10c483c9ccf7cc3425265943ce"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/TwoSidedPotential.lean",
+      "sha256": "3844fb97c522f434978fcd12d5bcbcf10e6884f517cb8785b0981184f4b42508",
+      "source_git_blob": "c8d5a99d1566968fe8dcc4cb3380e5e2a0116d03"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/SingularGibbsNormalization.lean",
+      "sha256": "fd8e6aecbe22688ddb650d73b48a2416cfd4c5305c0900df6102302ea5901bc6",
+      "source_git_blob": "af66bed0ef1770ce4f0a219f1d4d5ed06331dbd5"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/SmoothGradientCore.lean",
+      "sha256": "9df9d02bdd432724cddc3cad114a3457080ab3f3f0326a5f228f78f256acac44",
+      "source_git_blob": "b31542beb8fbf388896a2e9cc045c05c216355b6"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/SmoothCoreClosedPI.lean",
+      "sha256": "5a8f01254b4514213087a11eaec7f86ed94c415a52a52a91e3c847cb93e3fcc8",
+      "source_git_blob": "cb16758a647df10992683451a161f05e7707c9e6"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/RowFlattenVolumePreserving.lean",
+      "sha256": "d1eb83e4787b680af2195227f780af8ed13e73b5ce494a07d351b065f5eb96ab",
+      "source_git_blob": "8f7cfe0f27b5e9b28baae363e017b22ee863c95c"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/SpatialCutoffApproximation.lean",
+      "sha256": "bbc3f0748b6b4d959591e36df7adee9d4d6c142dd08d3bc67a5fc64ad2c11c78",
+      "source_git_blob": "02c181bb0121ec9ef21d83c6a813241e5665ccf1"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/RieszKernel.lean",
+      "sha256": "60fb2ebb98723ad82ce770ed3f146dd6a2930b172101648878669129ae07d7ca",
+      "source_git_blob": "896613634b3ed672deed6249bb014146425a9b40"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/RieszKernelBounds.lean",
+      "sha256": "55781adc9d9a2583581f78c0180f4b71a9b85c43724577edfe5df4180d95c455",
+      "source_git_blob": "9366e195a48a06d1bc92d77bd22992fbf8a176ca"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/RieszProbabilityRows.lean",
+      "sha256": "4d5020571b8fb500f66758bbd8128399574a4889311fe596b94a3abec38a1d57",
+      "source_git_blob": "7ddd8f5884ee5c0532951ab198baedaf19fbe58a"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/SoftGibbsNormalization.lean",
+      "sha256": "1d1d60f13dfa4df8165e15948b561b5ed74fba211569435e2aae21dc65f99a52",
+      "source_git_blob": "3feb82c34da09e5d319413b7d30d8d422a28b4cc"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/RelativePairCoordinates.lean",
+      "sha256": "ea4251761d68c39b18c6ce31ddb6341cbb56041e3fd29837e8ff24a91b430b67",
+      "source_git_blob": "476508f030981b59b54d2334fee6ff36e21c8775"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/ShiftedReference.lean",
+      "sha256": "8ea00cd873c70eb1428335e8cf917c63cfd38f8c3d20c28994c7c276024ecbe7",
+      "source_git_blob": "219dcc14430e6de04310f74d98dda7ee5a05febb"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/SinglePairGraphApproximation.lean",
+      "sha256": "65cfdd686270b37ae68b012305296fb43da488be3bc4b2804a7785ba357effc8",
+      "source_git_blob": "0224172d105b7b134a3225a4ab17d0d3e59a77d1"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/SoftInteractionRegularity.lean",
+      "sha256": "e108629bb9d7eec6fb01b375133917d98b3f35f6ddbbf129c82caf25a86d5ec6",
+      "source_git_blob": "3d2bdfc6994a861705e07486b6dae7128b34b4d7"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/SoftRieszReferencePositive.lean",
+      "sha256": "71ed0c7ed536e7957802346893b217813d7732c31fca6c8bab64595faf4d4070",
+      "source_git_blob": "ff2776b26c76e7843b9eb98087b649e6930f8097"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/SobolevExponent.lean",
+      "sha256": "adbb20eea7c81768395feb61436429ab70d80ae851bf1a80244fc47c11868a51",
+      "source_git_blob": "d75f32d8e654d834894702d918aa53d9096ea828"
+    },
+    {
+      "path": "trials/whole-space/project/lake-manifest.json",
+      "sha256": "4fdd7a6e1c7682fa953f455afd57a10bd36dc86744f743504f5d6add3370bee1",
+      "source_git_blob": "c55d43195e8015c3b49d6db0b4fb61b7f7630611"
+    },
+    {
+      "path": "trials/whole-space/project/lakefile.lean",
+      "sha256": "bcd0b340535b7946ac4a8111b2ad9210137383d48ea0040127eedb0b7433817e",
+      "source_git_blob": "16c2a0a4c5416f51d6026bed39d1511040772acf"
+    },
+    {
+      "path": "trials/whole-space/project/lean-toolchain",
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+      "source_git_blob": "025e59548e48cf71f2744154e2890beefe30a258"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/WeightedIntegralCauchySchwarz.lean",
+      "sha256": "606dbd1a42ae221a970c9d01b04863296377ed10ef4a3722cc56ac32d8b55a78",
+      "source_git_blob": "33405292efec97d03968e7f22664a23c516eb0c8"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/WeightedJointRowL2.lean",
+      "sha256": "a03e4579a9dbd914c6aacc4374aa09ed64b7c4979aba9b00d21a1f9aab85fa1b",
+      "source_git_blob": "8c72b82f748d90eb82fefb4570065a5790f2fca7"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/WeightedMeanJointL2.lean",
+      "sha256": "9962d4f39f76e246a33ab57102ad676ee8fd0c24cbb6e349aee60becfe4cab64",
+      "source_git_blob": "64d649cd3058a04a3039b8716006bec85e226c12"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/UniformTraceAbsorption.lean",
+      "sha256": "d90f21433480840f4bb4b789fb2f909eda042480c93b937e56d4297c1332ee5c",
+      "source_git_blob": "084e0e6f87c98856445ff685314a999f28c63b02"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/WeightedPairCapacity.lean",
+      "sha256": "f8d6c173a2c16efd7a076320bf7a48112b5c84ac859b4a86c0ce0b06192e719e",
+      "source_git_blob": "5c3255730dd92aaf094d95fb0c336cb6a6f59d9c"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/WeakPotentialForm.lean",
+      "sha256": "6a33dde04c967dd5e6f2fa3c7fea17b6a5a2d857a63f0f09927240bf02fae0c6",
+      "source_git_blob": "679ca70f2471608e7891cedfc6b3ced2efa65fef"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/WeightedGradientClosability.lean",
+      "sha256": "0d4e1f2c5f3c004336a891746cfd0e6d982672b2ab4f8826e14451af2edfbb2b",
+      "source_git_blob": "aa015cc60e3c9b60d5315821ff4860d0eacadb6e"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/WeightedLocalRestriction.lean",
+      "sha256": "b2076693366aafd06353501d2712ea4aaa6c1a08b64e7ac86d676f31ccdb4f0f",
+      "source_git_blob": "7bee698aa2327b1bac6fa8ad332ab0cd4394b226"
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/WeightedSpatialApproximation.lean",
+      "sha256": "713cd23328710948c74c71229049ecbbef2b72a1e4159115ac6abc485b7fe561",
+      "source_git_blob": "bd45561489b65e685567f66ebd088475f8f67294"
+    },
+    {
+      "path": "trials/whole-space/applications/EndpointScope.lean",
+      "original_path": "trials/whole-space/applications/EndpointScope.lean",
+      "sha256": "5bb2a67716087b77c81accd49bb2006c30a072aee42ad3a71eb84191cfe01108",
+      "source_git_blob": "79a040c947f4d0cd601933ff28a5c59ccaad0a24"
+    },
+    {
+      "path": "trials/whole-space/applications/TranslatedAnisotropicPI.lean",
+      "original_path": "trials/whole-space/applications/TranslatedAnisotropicPI.lean",
+      "sha256": "9b887836856b117ac7d87b9cf38e283b55522cb9dafbf0dce4439fa8f439916a",
+      "source_git_blob": "04506533b359293dd9f1e9f662b563d21447d9c1"
+    },
+    {
+      "path": "trials/whole-space/applications/RoughMultiplierPI.lean",
+      "original_path": "trials/whole-space/applications/RoughMultiplierPI.lean",
+      "sha256": "c6160a10aeed5b2a6dced527d893145a31900b3d49c8640eeaba81f6a6b78fd5",
+      "source_git_blob": "a032127d0ededbaff3068360640ef8a4f45e1a5b"
+    },
+    {
+      "path": "trials/whole-space/applications/Collective140.lean",
+      "original_path": "trials/whole-space/applications/Collective140.lean",
+      "sha256": "30f1b94352a46341af85776252840635c75a8b8d6b9ee67de119a40322912daf",
+      "source_git_blob": "23f0bbf92dfc2dd1b8134c5608f7786e4dadbf3c"
+    },
+    {
+      "path": "trials/whole-space/applications/SuperquadraticFixedPI.lean",
+      "original_path": "trials/whole-space/applications/SuperquadraticFixedPI.lean",
+      "sha256": "469edc561e0dceccc45db5fca1aef8163ecd1309330eddf230cbf149cfe6678b",
+      "source_git_blob": "6481abeee1c993d6d4de51776559584c85d27168"
+    },
+    {
+      "path": "trials/whole-space/applications/Applications/CutoffSingularPI.lean",
+      "original_path": "trials/whole-space/applications/Applications/CutoffSingularPI.lean",
+      "sha256": "a53ca345f227fc30e866649da82cd5295b010cf0d8fa83eabaeafb4f98fdf31a",
+      "source_git_blob": "69a9821297c7e312388df5c5134090161c7c3fb6"
+    },
+    {
+      "path": "trials/whole-space/applications/Applications/SingularClosedDomain.lean",
+      "original_path": "trials/whole-space/applications/Applications/SingularClosedDomain.lean",
+      "sha256": "0dda1b4a236832cadb0789d170c7b65db78d3b88d5b8ed3e205b95d80dcaecd5",
+      "source_git_blob": "ef8b51b7e26d7ed4b7e56bc0b85440e2f99d47d1"
+    },
+    {
+      "path": "trials/periodic/applications/ActualFinalSpecializationBridge.lean",
+      "original_path": "trials/periodic/evidence/terminal312/workspace/trellis-evidence/final-targets/actual-terminal312-source-only/project/ActualFinalSpecializationBridge.lean",
+      "sha256": "038c70030de3ccf87c40acd915c853e5b922088da822b6a3e5e214ea090dee11",
+      "source_git_blob": "f5406b99e7645d8b2c16b0cdf33fd893203f3313"
+    },
+    {
+      "path": "trials/periodic/applications/SpecializationChecks.lean",
+      "original_path": "trials/periodic/evidence/terminal312/workspace/trellis-evidence/final-targets/actual-terminal312-source-only/project/SpecializationChecks.lean",
+      "sha256": "2e18852070b53e38c0505bcc4289358da1f6442ed54e947a5c91250d036d2660",
+      "source_git_blob": "e45a0aab1d4e66302a939157eabfc933de8eb87e"
+    }
+  ]
+}
