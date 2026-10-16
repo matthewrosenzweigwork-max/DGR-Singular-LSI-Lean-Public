@@ -26,3 +26,11 @@ A further separate review covered five source files against `ced0f993feea8effa50
 ## Remaining periodic API repair review
 
 A separate review against `de829336d27215bb067d91a561f251585f84fc80` covered eight periodic source files. Seven map-probability API replacements retain the original measurable maps and source probability instances. The `RieszZeroCutoffSmooth` theorem receives a local 800,000-heartbeat limit. `RieszCenteredFourierTailOperator` applies the existing field-simplification and ring argument to generated conversion goals without positional assumptions. All declaration signatures, mathematical definitions, and hypotheses are unchanged; no new axiom or hole was found. Elaboration remains subject to the hosted build.
+
+## Atomic normalized Sobolev API review
+
+A separate review against `03809e829d9c941b506214ad0eecd76049e084b9` covered `AtomicNormalizedSobolev`. All eight public/private declaration signatures, including the private norm-identity helper, were preserved. Canonical Mathlib's unconditional `measurable_fderiv` composed with continuous inverse Riesz duality supplies proof-local gradient measurability without a new regularity assumption. The norm-limit call uses existing continuity evidence. No mathematical definition, assumption, axiom, or proof hole changed. No elaboration or kernel pass was asserted by this source review.
+
+## Adjacent whole-space scope review
+
+A separate review against `03809e829d9c941b506214ad0eecd76049e084b9` verified byte-for-byte that the changes in `NativeGibbsMayerContribution`, `NativeGibbsJumpKernel`, and `NativeGibbsLargeNJumpGap` remove only the unused `InnerProduct` token from their scope openings. No adjoint notation occurs in those files. `NativeGibbsJumpOperator` retains its explicit adjoint import, scope opening, and three dagger uses unchanged. No statement, definition, assumption, axiom, or proof hole changed.

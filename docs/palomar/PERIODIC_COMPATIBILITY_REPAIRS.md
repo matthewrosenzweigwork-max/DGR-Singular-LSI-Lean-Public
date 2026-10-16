@@ -47,14 +47,23 @@ the following unchanged tactic block. All theorem signatures and all other
 proof text remain unchanged. No old `Finset.prod_le_prod` application remains in
 the periodic Tablet sources.
 
-## Remove unused inner-product scope
+## Explicit adjoint applications and scoped notation
 
-`JumpL2Construction` writes all inner products explicitly as `inner ℝ ...`.
-The `open scoped InnerProduct` command was removed, and its three adjoint dagger
-uses were replaced by explicit `ContinuousLinearMap.adjoint` applications. The
-[pinned adjoint source](https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Analysis/InnerProductSpace/Adjoint.lean#L104)
-defines the dagger as exactly that function, so the operators are unchanged.
-Existing `InnerProductSpace` scopes in other modules were retained.
+`JumpL2Construction` writes its inner products explicitly as `inner ℝ ...`, but
+its original proof also used three adjoint daggers. The scope was therefore not
+wholly unused. Pinned Mathlib still defines the `InnerProduct` scope for dagger
+notation in the
+[pinned adjoint source](https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Analysis/InnerProductSpace/Adjoint.lean#L104);
+its availability depends on the import closure, and it has not been globally
+removed.
+
+After the initial removal of `open scoped InnerProduct`, compilation at
+`7c214cc881fd32d92f56750dda8251946f6734b1` reported the dagger parse error in this
+proof. The completed repair replaces all three daggers with explicit
+`ContinuousLinearMap.adjoint` applications and leaves the scope command removed.
+The pinned notation denotes exactly that function, so the operators and
+mathematical argument are unchanged. Existing `InnerProductSpace` scopes in
+other modules were retained.
 
 ## Scan for old `MemLp` pair constructors/projections
 

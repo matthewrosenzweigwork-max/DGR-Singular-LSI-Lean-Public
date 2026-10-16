@@ -297,3 +297,78 @@ build adds that module.
 | `FiniteGibbsCompactNormalizedSobolev.lean` | `ab93dabff31ef3105871d22f43236604d8817b835b01be1f146237aa0449b3d2` | `c4855a319c6501dfad599dd588d93048799cf81d22d1659bcd93ce6fa28175b9` |
 | `NativeGibbsJumpVariance.lean` | `0a5ff3a0fedefdd774bb3a5a584bec4b0f62444aad978d5894169e61a5c6716a` | `df4e59d81918dcb6f54557fc012bf0c845e8c2a4ecddc804153b5c1e72f3d237` |
 | `NativeGibbsTransformedL2.lean` | `4ff2d7afb5b836b43168d82b8ad1ebf9732143898025d27710cd5669b5dd05cc` | `16a13d141f17256692935bd74ea32e4e4a76a19c338377a03229b4f647d7eb1b` |
+
+## Reachable atomic norm helper and limit repair
+
+The parent confirmed `AtomicNormalizedSobolev` is reachable through the
+positive-cutoff endpoint and atomic test-control route. It is therefore no
+longer deferred. Only `AtomicNormalizedSobolev.lean` is changed in this batch.
+
+The norm identity helper in this file is a standalone private theorem, not
+a local `have`. Its original statement assumes integrability of the squared
+gradient norm but no C¹ hypothesis. That exact statement is preserved.
+
+The pinned canonical
+[FDeriv/Measurable.lean](https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Analysis/Calculus/FDeriv/Measurable.lean)
+provides `measurable_fderiv ℝ g` for an arbitrary function into a complete
+codomain. Added this import and the following evidence inside the existing
+private theorem proof:
+
+```lean
+have hgm : AEStronglyMeasurable (EuclideanGradient g) volume :=
+  ((InnerProductSpace.toDual ℝ (OneParticle d)).symm.continuous.measurable.comp
+    (measurable_fderiv ℝ g)).aestronglyMeasurable
+```
+
+The inverse Riesz dual map converts the derivative to exactly the existing
+Euclidean gradient. The helper now passes `hgm` as the third argument to
+`eLpNorm_eq_lintegral_rpow_enorm_toReal`, as required by the pinned norm API.
+No premise is added to the helper or main theorem; no definition is changed.
+
+The final `Lp.eLpNorm_le_of_ae_tendsto` call now receives
+`(htrreg f hf).continuous.aestronglyMeasurable` between the approximation
+measurability and the unchanged pointwise convergence arguments, matching
+the pinned `LpSpace/Complete.lean` signature recorded above.
+
+All public and private theorem headers and top-level definition declarations
+were compared with HEAD and are unchanged. No axiom or proof hole was added.
+No local build, commit, push, ledger or configuration edit was performed.
+
+| File | Before this repair | After this repair |
+|---|---|---|
+| `AtomicNormalizedSobolev.lean` | `93c78a5f175670adcbdccba167d25cadd84af6d27f8f62758849ed63874f41a2` | `653bc1d1e094a3ef681d271065258bfc88721c9446bcc871451d7064bcf5f71a` |
+
+## InnerProduct scope audit after source build 03809
+
+The build reports an unavailable `InnerProduct` scope in
+`NativeGibbsMayerContribution.lean`. Inspected every whole-space Tablet
+`open scoped` command containing that exact scope token, including
+commands opening several scopes together.
+
+The precise API distinction is that the pinned
+[Adjoint.lean](https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Analysis/InnerProductSpace/Adjoint.lean)
+still defines `InnerProduct` for the postfix dagger denoting
+`ContinuousLinearMap.adjoint`. The scope is not globally removed; prior
+notes calling it obsolete refer to unused scope openings unavailable through
+the affected files' imports. Adding an adjoint import is unnecessary when
+no dagger notation is used.
+
+| Module | Action | Notation evidence |
+|---|---|---|
+| `NativeGibbsMayerContribution` | Remove only `InnerProduct` from its grouped scope opening | No dagger or bracket inner-product notation; products use `inner ℝ` |
+| `NativeGibbsJumpKernel` | Remove only unused `InnerProduct` token | No dagger or bracket inner-product notation |
+| `NativeGibbsLargeNJumpGap` | Remove only unused `InnerProduct` token | No dagger/bracket notation; retain `InnerProductSpace`, `ENNReal`, `BigOperators` |
+| `NativeGibbsJumpOperator` | Preserve existing opening | Explicitly imports `Adjoint`; three dagger occurrences denote operator adjoints |
+
+Each changed file differs only by removal of that one scope token. Every
+declaration statement, definition and proof expression is therefore
+unchanged. The required adjoint notation and meaning are preserved. No
+remaining `InnerProduct` opening exists in Tablet except the inspected
+`NativeGibbsJumpOperator` opening with its explicit defining import. No
+local build, commit, push, ledger or configuration edit was performed.
+
+| File | Before this repair | After this repair |
+|---|---|---|
+| `NativeGibbsMayerContribution.lean` | `3e5183d96816a655fd6fa144cb820a0b63dfea2eca03fbaa344104f9a269c94f` | `928eaf246b406d01b5e42f5c2121839fe4b0ba5f689ffaa1ec8fd6e12f9e1e02` |
+| `NativeGibbsJumpKernel.lean` | `d718d7ceccbd31e959abfffac69632d3f8c80d044aae47d34234307cac01a4c2` | `a27ba7819d28513a3e082ed0820839cd6ebfea351f9d5ff8fab24a8d5fc75430` |
+| `NativeGibbsLargeNJumpGap.lean` | `1d7a7e9d678e7e01293f8eca0e3db5ecdda541b497ea26fc339688d64f8d68c6` | `205e32651243305fd50ef67371c0310d4201faaca5ce3f4e83dda1e08ac4907a` |

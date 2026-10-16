@@ -3,6 +3,7 @@ module
 public import Tablet.AtomicCoercivityExtension
 public import Tablet.EuclideanSobolev
 public import Mathlib.MeasureTheory.Function.LpSpace.Complete
+public import Mathlib.Analysis.Calculus.FDeriv.Measurable
 public import Mathlib.Tactic
 
 @[expose] public section
@@ -45,8 +46,11 @@ private theorem gradient_L2 {d : ℕ} (g : OneParticle d → ℝ)
     (hi : Integrable (fun x => ‖EuclideanGradient g x‖^2)) :
     eLpNorm (EuclideanGradient g) 2 volume =
       ENNReal.ofReal (∫ x, ‖EuclideanGradient g x‖^2) ^ (1/2 : ℝ) := by
+  have hgm : AEStronglyMeasurable (EuclideanGradient g) volume :=
+    ((InnerProductSpace.toDual ℝ (OneParticle d)).symm.continuous.measurable.comp
+      (measurable_fderiv ℝ g)).aestronglyMeasurable
   rw [eLpNorm_eq_lintegral_rpow_enorm_toReal (by norm_num : (2 : ℝ≥0∞) ≠ 0)
-    (by norm_num : (2 : ℝ≥0∞) ≠ ⊤)]
+    (by norm_num : (2 : ℝ≥0∞) ≠ ⊤) hgm]
   norm_num only [ENNReal.toReal_ofNat]
   congr 1
   rw [ofReal_integral_eq_lintegral_ofReal hi (Eventually.of_forall (fun x => sq_nonneg _))]
@@ -214,6 +218,7 @@ theorem AtomicNormalizedSobolev (d : ℕ) (hd : 3 ≤ d) (s A κ : ℝ)
   have hnorm : eLpNorm (tr f) (SobolevExponent d hd) volume ≤ T :=
     Lp.eLpNorm_le_of_ae_tendsto hnormbound
       (fun n => (htrreg (fn n) (hreg n).1).continuous.aestronglyMeasurable)
+      (htrreg f hf).continuous.aestronglyMeasurable
       (Eventually.of_forall (fun x => by
         exact ((hval x).mul_const (Real.exp (-H x/2))).const_mul (Real.sqrt r)))
   exact ⟨htrreg f hf, hiMass, hg.1, hcap, hnorm⟩

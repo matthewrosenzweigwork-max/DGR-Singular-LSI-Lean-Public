@@ -19,7 +19,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        component: [periodic, whole-space]
+        # This filter affects diagnostic builds only; full verification always checks both components.
+        component: ${{ fromJSON(contains(github.event.head_commit.message, '[whole-space-only]') && '["whole-space"]' || '["periodic", "whole-space"]') }}
     defaults:
       run:
         shell: bash

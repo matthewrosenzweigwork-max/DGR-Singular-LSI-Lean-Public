@@ -4,7 +4,7 @@
   "baseline_manifest": "SOURCE_MANIFEST.json",
   "target_lean": "leanprover/lean4:v4.35.0-rc2",
   "target_mathlib": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
-  "verification_status": "FULL_PREFLIGHT_PENDING",
+  "verification_status": "EXACT_COMMIT_FULL_REPORT_REQUIRED",
   "module_transformation": "Original declaration/proof text is unchanged in module-interface-only files. Explicit compatibility-repair files have separately recorded before/after hashes and rationale. No theorem statement or physical definition is intentionally changed; a fresh kernel/Comparator pass is required.",
   "changes": [
     {
@@ -2069,9 +2069,11 @@
     },
     {
       "path": "trials/whole-space/project/Tablet/AtomicNormalizedSobolev.lean",
-      "kind": "module-interface-only",
+      "kind": "compatibility-repair",
       "before_sha256": "27b929b99a42df223a069fed5ca7f8c5db0f3da9de58b2c567c4f220cbbf0222",
-      "after_sha256": "93c78a5f175670adcbdccba167d25cadd84af6d27f8f62758849ed63874f41a2"
+      "after_sha256": "653bc1d1e094a3ef681d271065258bfc88721c9446bcc871451d7064bcf5f71a",
+      "interface_only_sha256": "93c78a5f175670adcbdccba167d25cadd84af6d27f8f62758849ed63874f41a2",
+      "rationale": "Minimal compiler/library API repair; unchanged declaration statements and fixed mathematical definitions. See the component COMPATIBILITY_REPAIRS.md record; Linux kernel verification is required."
     },
     {
       "path": "trials/whole-space/project/Tablet/AtomicOneSitePI.lean",
@@ -2579,9 +2581,11 @@
     },
     {
       "path": "trials/whole-space/project/Tablet/NativeGibbsJumpKernel.lean",
-      "kind": "module-interface-only",
+      "kind": "compatibility-repair",
       "before_sha256": "bcd7d9dd69271119caaecb3fadbc22934baea8337343c55d91d27400358e673e",
-      "after_sha256": "d718d7ceccbd31e959abfffac69632d3f8c80d044aae47d34234307cac01a4c2"
+      "after_sha256": "a27ba7819d28513a3e082ed0820839cd6ebfea351f9d5ff8fab24a8d5fc75430",
+      "interface_only_sha256": "d718d7ceccbd31e959abfffac69632d3f8c80d044aae47d34234307cac01a4c2",
+      "rationale": "Minimal compiler/library API repair; unchanged declaration statements and fixed mathematical definitions. See the component COMPATIBILITY_REPAIRS.md record; Linux kernel verification is required."
     },
     {
       "path": "trials/whole-space/project/Tablet/NativeGibbsJumpOperator.lean",
@@ -2603,15 +2607,17 @@
       "path": "trials/whole-space/project/Tablet/NativeGibbsLargeNJumpGap.lean",
       "kind": "compatibility-repair",
       "before_sha256": "2be525b8d1a43094050d0393c17fa13931af969d8ced67bd8591feafb72c8e91",
-      "after_sha256": "1d7a7e9d678e7e01293f8eca0e3db5ecdda541b497ea26fc339688d64f8d68c6",
+      "after_sha256": "205e32651243305fd50ef67371c0310d4201faaca5ce3f4e83dda1e08ac4907a",
       "interface_only_sha256": "2fa322bff4a7e191fcc95a4aac04660fb2bfa9299cc713b98f63a9016636d6df",
       "rationale": "Minimal compiler/library API repair; unchanged declaration statements and fixed mathematical definitions. See the component COMPATIBILITY_REPAIRS.md record; Linux kernel verification is required."
     },
     {
       "path": "trials/whole-space/project/Tablet/NativeGibbsMayerContribution.lean",
-      "kind": "module-interface-only",
+      "kind": "compatibility-repair",
       "before_sha256": "21f2af4cbfad8988ef82377ecb9eee0515b015705137f0443c4e2a6341316a68",
-      "after_sha256": "3e5183d96816a655fd6fa144cb820a0b63dfea2eca03fbaa344104f9a269c94f"
+      "after_sha256": "928eaf246b406d01b5e42f5c2121839fe4b0ba5f689ffaa1ec8fd6e12f9e1e02",
+      "interface_only_sha256": "3e5183d96816a655fd6fa144cb820a0b63dfea2eca03fbaa344104f9a269c94f",
+      "rationale": "Minimal compiler/library API repair; unchanged declaration statements and fixed mathematical definitions. See the component COMPATIBILITY_REPAIRS.md record; Linux kernel verification is required."
     },
     {
       "path": "trials/whole-space/project/Tablet/NativeGibbsReplacementBalance.lean",
