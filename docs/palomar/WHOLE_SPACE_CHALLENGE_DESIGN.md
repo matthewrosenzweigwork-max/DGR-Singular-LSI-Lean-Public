@@ -3,8 +3,8 @@
 ## Scope and construction
 
 `trials/whole-space/project/Challenge.lean` is a self-contained statement surface
-for the whole-space **Poincare** results. It contains 291 physical lines and
-16,135 UTF-8 bytes. It imports only canonical Mathlib modules, including the
+for the whole-space **Poincare** results. It contains 296 physical lines and
+18,323 UTF-8 bytes. It imports canonical Lean and Mathlib modules, including the
 multivariate standard Gaussian law, and has no project-specific import.
 
 The three configured theorem targets retain their full accepted statements:
@@ -99,4 +99,6 @@ docstring. These explain the potential/multiplier classes, normalizing
 constants and measures, singular collision convention, derivatives, and
 closed-gradient graph and energy. Declaration bodies and theorem statements
 are unchanged. The documented Challenge remains within the preferred
-300-line / 32 KiB limits (291 lines / 16,135 bytes).
+300-line / 32 KiB limits (296 lines / 18,323 bytes).
+
+Two canonical Lean meta imports support explicit auxiliary-proof cache boundaries before the copied definitions. Only the nonlogical auxiliary-lemma memoization table is cleared; logical constants and kernel options are retained. This reproduces the original per-module auxiliary names without changing mathematical formulas or statements. See `WHOLE_SPACE_COMPARATOR_REPAIRS.md`; the exact-commit full report remains required.

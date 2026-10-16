@@ -12,7 +12,7 @@ This branch is a compatibility candidate for Palomar. Its new toolchain, module 
 
 - [Periodic library](trials/periodic/project/Tablet.lean): uniform, modulated, and external-potential full-gradient inequalities.
 - [Whole-space library](trials/whole-space/project/Tablet.lean): bounded-Hessian and growth-class closed Poincaré inequalities.
-- [Periodic Challenge](trials/periodic/project/Challenge.lean) and [whole-space Challenge](trials/whole-space/project/Challenge.lean): compact statements using canonical Mathlib, with exact physical definitions and hypotheses.
+- [Periodic Challenge](trials/periodic/project/Challenge.lean) and [whole-space Challenge](trials/whole-space/project/Challenge.lean): compact statements using canonical Lean and Mathlib imports, with exact physical definitions and hypotheses.
 - Each project's `Solution.lean` imports the existing implementation; `comparator.json` selects every Challenge hole. Its `formalization.yaml` records provenance, authorship, automation, and scope.
 - [Periodic application checks](trials/periodic/applications/) and [whole-space application checks](trials/whole-space/applications/) retain historical specializations outside the Lake library roots.
 

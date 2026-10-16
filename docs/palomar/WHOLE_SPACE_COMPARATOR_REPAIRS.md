@@ -125,3 +125,107 @@ fixture's subset of names. The script's `main` is public and executable
 with `lean --run`. No project compilation, Mathlib cache or source build
 was performed locally. The hosted run must still test it under pinned rc2
 and inspect the actual declarations.
+
+## Confirmed cause and cache-boundary repair
+
+The hosted diagnostic at source `392b80e` succeeded. Its hash-verified output
+`migration-reference-evidence/whole-constant-inspection-392b80e/constants.jsonl`
+checks 69 declarations: 60 equal and nine different or missing. All actual
+root-value differences are references to compiler-generated proof auxiliaries,
+not different formulas, instances, universes or mathematical hypotheses.
+
+The seven differing fixed roots are `ClosedGradientGraph`,
+`ClosedPhysicalEnergy`, `ForceExponent`, `ParticlePosition`, `ReferenceLaw`,
+`RieszKernel`, and `SmoothGradientCore`. The two additional differences concern
+the numbering/types of `SmoothGradientCore._proof_2` and `_proof_3`; reuse
+also suppresses an auxiliary generated in the separate-module build.
+For example, the compact Challenge's energy references auxiliary proofs
+created earlier by `SmoothGradientCore` and `ConfigurationReference`, while
+the original separately compiled energy references its own `_proof_1`,
+`_proof_2`, and `_proof_3`.
+
+Pinned Lean's
+[AuxLemma.lean](https://github.com/leanprover/lean4/blob/v4.35.0-rc2/src/Lean/Meta/Tactic/AuxLemma.lean)
+registers `auxLemmasExt` as a local cache. Its `mkAuxLemma` uses the proof
+type as a cache key. The source explicitly states that this cache is not
+persisted in `.olean` files. Thus each original single-node module begins
+with a fresh cache, but simply concatenating the definitions allows an
+earlier declaration's proof auxiliary to be reused. Lake's strict raw
+constant comparison observes those different proof references.
+
+### Selected transparent administrative fix
+
+Added these two canonical Lean imports to the Challenge:
+
+```lean
+public meta import Lean.Meta.Tactic.AuxLemma
+public meta import Lean.Elab.Command
+```
+
+Immediately before each of the 26 copied original declarations, added the
+following readable command recreating the original source-module boundary:
+
+```lean
+run_cmd Lean.modifyEnv fun env => Lean.Meta.auxLemmasExt.setState env {}
+```
+
+This command changes only the auxiliary-proof **cache**. It never alters
+the logical constant map, declarations, kernel options, mathematical
+instances or axioms. It does not disable checking, weaken any definition,
+introduce an extra comparator hole, or import project source. An explanatory
+comment is included directly in the Challenge. The parent inspected current
+Palomar policy and verifier source: canonical Lean imports remain allowed,
+and neither source imposes a ban on this transparent cache-only command.
+Registry trust and verification outcomes still require the hosted rerun.
+
+An ordinary `section ... end` boundary was tested and does not clear this
+cache. No standard cache-reset option was found in the inspected definition
+abstraction path. Using explicit named auxiliary proof reconstructions
+would require expanding and maintaining implementation-specific instance
+arguments; recreating the original cache boundary preserves the copied
+mathematical declarations verbatim instead.
+
+### Tiny Lean-only reproduction
+
+Using installed Lean `v4.35.0-rc3`, compiled minimal exposed modules in
+`/tmp/palomar-aux-cache-smoke`. The first module defines:
+
+```lean
+def ReferencePartition : Fin (1+1) := ⟨1, by decide⟩
+```
+
+A second module imports it and defines:
+
+```lean
+def ClosedPhysicalEnergy : Fin (1+1) := ⟨1, by decide⟩
+```
+
+A merged module containing the same two declarations, even with a section
+around the second, reuses `ReferencePartition._proof_1`; raw comparison of
+`ClosedPhysicalEnergy` fails. A merged module with the cache-only command
+before both declarations creates `ClosedPhysicalEnergy._proof_1` separately.
+The diagnostic confirms exact equality of both root `ConstantInfo` values
+and both generated proof auxiliaries with the separate-module target.
+All fixture compilation and diagnostic commands exited zero after using
+the module system's required `public meta import` form for both Lean
+implementation imports. No project compilation or Mathlib cache ran locally.
+
+### Exact source preservation and pending verification
+
+The patch changes only those two imports, an explanatory comment, and the
+26 cache commands (which replace blank lines). Removing exactly these
+administrative additions reproduces the previous Challenge byte for byte.
+All 26 mathematical definition/structure texts, all three complete endpoint
+statements, existing docstrings and comparator holes are therefore unchanged.
+The final Challenge is **296 physical lines / 18,323 UTF-8 bytes**, remaining
+inside both preferred limits. Solution and original project proofs are
+untouched. No configuration, workflow, ledger, commit or push was made by
+this subtask.
+
+| Challenge SHA-256 before | Challenge SHA-256 after |
+|---|---|
+| `cb1ab8d40e77e43b51c471d5d78bd5726ebcbfea52d5c142cfed81f4442ffd23` | `7050ed2b11b1b80830e338c97bb5d0fb326a4c38df82842168cd905ad877da75` |
+
+Hosted all-constant diagnostics and full exact-commit comparator/kernel
+verification remain necessary; the tiny fixture proves the mechanism but
+is not a whole-space verification receipt.

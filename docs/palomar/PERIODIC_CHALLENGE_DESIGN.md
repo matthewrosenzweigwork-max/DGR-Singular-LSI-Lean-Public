@@ -1,8 +1,8 @@
 # Periodic Challenge design
 
 `trials/periodic/project/Challenge.lean` is a standalone statement surface for
-Palomar, with only canonical Mathlib imports. It contains **279 physical lines**
-and **16,133 UTF-8 bytes**, below both the preferred 300-line/32-KiB size and the
+Palomar, with canonical Lean and Mathlib imports. It contains **286 physical lines**
+and **17,774 UTF-8 bytes**, below both the preferred 300-line/32-KiB size and the
 hard 1,000-line/100-KiB size.
 
 ## Scope and correspondence
@@ -73,3 +73,5 @@ counting, canonical coordinate representatives, the distinction between the two
 smooth cores, product-L² graph closure and form domains, and extended entropy.
 Only comments were added; all definition bodies and endpoint statements remain
 the accepted strings.
+
+The two canonical Lean meta imports support explicit auxiliary-proof cache boundaries before copied definitions. These clear only a nonlogical compiler memoization table, reproducing the original separate-module elaboration without changing formulas, theorem statements, constants, or kernel options. See `PERIODIC_COMPARATOR_REPAIRS.md`; acceptance still requires the exact-commit full report.

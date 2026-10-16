@@ -3003,7 +3003,7 @@
   "additional_statement_inputs": [
     {
       "path": "trials/periodic/project/Challenge.lean",
-      "sha256": "3d25492ea6ea97b627a30739cdabe34c0a83c385de942abaa5f2675a73d09b8c"
+      "sha256": "7b77ad7b30b65b54e4db5e8f21a16ac09dee92e5717929dfcd4e17d5b1cd31e2"
     },
     {
       "path": "trials/periodic/project/Solution.lean",
@@ -3019,7 +3019,7 @@
     },
     {
       "path": "trials/whole-space/project/Challenge.lean",
-      "sha256": "cb1ab8d40e77e43b51c471d5d78bd5726ebcbfea52d5c142cfed81f4442ffd23"
+      "sha256": "7050ed2b11b1b80830e338c97bb5d0fb326a4c38df82842168cd905ad877da75"
     },
     {
       "path": "trials/whole-space/project/Solution.lean",
