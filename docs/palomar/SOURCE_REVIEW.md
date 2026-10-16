@@ -34,3 +34,7 @@ A separate review against `03809e829d9c941b506214ad0eecd76049e084b9` covered `At
 ## Adjacent whole-space scope review
 
 A separate review against `03809e829d9c941b506214ad0eecd76049e084b9` verified byte-for-byte that the changes in `NativeGibbsMayerContribution`, `NativeGibbsJumpKernel`, and `NativeGibbsLargeNJumpGap` remove only the unused `InnerProduct` token from their scope openings. No adjoint notation occurs in those files. `NativeGibbsJumpOperator` retains its explicit adjoint import, scope opening, and three dagger uses unchanged. No statement, definition, assumption, axiom, or proof hole changed.
+
+## Periodic function-inference repair
+
+The next source build isolated one periodic error: the exponent comparison in `RieszCoulombTranslatedFormBound` could not infer the function type after its former measurability argument was removed. Explicitly setting `(f := f)` retains exactly the same norm inequality, measure, and exponents. Root inspection confirmed that this is the sole source change in that batch; all theorem statements, definitions, assumptions, and proof obligations are retained. Read-only scans of the thirteen remaining blocked modules in each component found no additional definite use of the already diagnosed APIs. Fresh compilation remains required.

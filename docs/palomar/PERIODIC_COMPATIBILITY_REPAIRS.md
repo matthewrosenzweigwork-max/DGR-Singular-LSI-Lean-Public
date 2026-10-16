@@ -156,3 +156,18 @@ or mathematical construction changes.
 
 All repairs in this batch are based on the complete diagnostic log. No Mac
 build was performed; hosted compilation and Palomar verification remain pending.
+
+## Explicit function in the Coulomb exponent comparison
+
+The periodic diagnostic source build at commit prefix `03809`
+(job `117093144094`)
+compiled the preceding map, heartbeat, and conversion repairs, and reported one
+remaining typeclass-inference error in `RieszCoulombTranslatedFormBound`.
+Removing the obsolete explicit measurability argument from the exponent
+comparison had also removed the argument that previously determined its function.
+The invocation now supplies `(f := f)` explicitly, retaining `(μ := volume)`
+and the same `4 ≤ 6` exponent comparison. This fixes the otherwise unconstrained
+function/domain and volume `MeasureSpace` metavariables without changing the
+inequality, theorem statement, assumptions, or mathematical argument. The pinned
+lemma signature is the `CompareExp.lean` source linked above. No local build was
+performed.

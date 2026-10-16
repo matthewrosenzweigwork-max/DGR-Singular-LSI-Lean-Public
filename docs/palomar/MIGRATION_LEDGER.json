@@ -1495,7 +1495,7 @@
       "path": "trials/periodic/project/Tablet/RieszCoulombTranslatedFormBound.lean",
       "kind": "compatibility-repair",
       "before_sha256": "05b94ead0d12f9a621f8240cb2e96eaa4b761aedcc1708851afe11120d6976c9",
-      "after_sha256": "68c519d1e0246c12a33dd0ddb3c3f18513d3cbb6a06b4f69593b12b2574e667e",
+      "after_sha256": "a177d8acd3fc4d7151a89b557002dd041d2e0cb924f97cfcca406cd9f251dd7f",
       "interface_only_sha256": "077e4a800398799603fccf42356faf004b46f14d993af724145dab5c0445d5fa",
       "rationale": "Minimal compiler/library API repair; unchanged declaration statements and fixed mathematical definitions. See the component COMPATIBILITY_REPAIRS.md record; Linux kernel verification is required."
     },
