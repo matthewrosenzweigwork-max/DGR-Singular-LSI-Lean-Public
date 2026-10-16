@@ -32,8 +32,8 @@ theorem ProductBackgroundFacts (d N : ℕ) (l u : ℝ)
   filter_upwards [MeasureTheory.ae_all_iff.mpr hcoord] with X hX
   constructor
   · simpa [ProductDensity] using
-      (Finset.prod_le_prod (s := Finset.univ)
+      (Finset.prod_le_prod₀ (s := Finset.univ)
         (fun (_ : Fin N) _ => q.lower_pos.le) (fun i _ => (hX i).1))
   · simpa [ProductDensity] using
-      (Finset.prod_le_prod (s := Finset.univ)
+      (Finset.prod_le_prod₀ (s := Finset.univ)
         (fun i _ => q.lower_pos.le.trans (hX i).1) (fun i _ => (hX i).2))

@@ -115,7 +115,7 @@ theorem NativeGibbsLargeNJumpGap (d : ℕ) (hd : 3 ≤ d) (s B κ L M1 : ℝ)
         filter_upwards [hg.coeFn_toLp] with x hx
         simp [v₀,hx,g,pow_two]
       rw [integral_congr_ae he]
-      simpa [c] using (ProbabilityTheory.variance_eq_integral hf.1.aemeasurable).symm
+      simpa [c] using (ProbabilityTheory.variance_eq_integral hf.aestronglyMeasurable.aemeasurable).symm
     have hpair : inner ℝ v₀ (L v₀)=inner ℝ v (L v) := by
       rw [hLv,hsub,inner_sub_left]
       rw [hself w v,hw,inner_zero_left,sub_zero]

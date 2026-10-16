@@ -34,7 +34,7 @@ theorem FiniteRademacherEvenMoment (N:ℕ)(a:Fin N→ℝ)(m:ℕ)(hm:1≤m) :
     rw[hcard,←mul_assoc,inv_mul_cancel₀ (by positivity),one_mul]
     calc
       (∏i:Fin N,Real.cosh (t*a i))≤∏i:Fin N,Real.exp ((t*a i)^2/2):=
-        Finset.prod_le_prod (fun i _=>(Real.cosh_pos _).le) (fun i _=>Real.cosh_le_exp_half_sq _)
+        Finset.prod_le_prod₀ (fun i _=>(Real.cosh_pos _).le) (fun i _=>Real.cosh_le_exp_half_sq _)
       _=Real.exp (t^2/2*∑i:Fin N,a i^2):=by
         rw[←Real.exp_sum,Finset.mul_sum]
         congr 1

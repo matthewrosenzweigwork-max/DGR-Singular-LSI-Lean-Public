@@ -90,7 +90,7 @@ theorem IndependentVarianceMGF {Ω : Type*} [MeasurableSpace Ω]
         simp_rw [Finset.mul_sum,Real.exp_sum]
         exact integral_fintype_prod_eq_prod (fun i x => Real.exp (t*f i x))
       _ ≤ ∏ i : Fin N,Real.exp (t^2*V) :=
-        Finset.prod_le_prod (fun i _ => integral_nonneg (fun x => Real.exp_nonneg _))
+        Finset.prod_le_prod₀ (fun i _ => integral_nonneg (fun x => Real.exp_nonneg _))
           (fun i _ => (hsingle i).2)
       _ = _ := by
         rw [←Real.exp_sum]

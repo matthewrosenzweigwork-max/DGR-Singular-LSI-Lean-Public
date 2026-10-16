@@ -1,0 +1,28 @@
+name: Palomar full exact-commit preflight
+run-name: Palomar full preflight at ${{ github.sha }}
+on:
+  push:
+    branches: [palomar-migration-2026-10-16]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  palomar:
+    if: ${{ github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[palomar-full]') }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - component: periodic
+            request_id: per202610161
+          - component: whole-space
+            request_id: whl202610161
+    uses: PalomarRegistry/PalomarSubmission/.github/workflows/submission.yml@d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44
+    with:
+      repository: ${{ github.repository }}
+      commit: ${{ github.sha }}
+      pipeline_commit: d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44
+      request_id: ${{ matrix.request_id }}
+      mode: full
+      execution_profile: palomar-standard-v1
+      options: '{"project_path":"trials/${{ matrix.component }}/project","comparator_config_path":"trials/${{ matrix.component }}/project/comparator.json","authorization_relationship":"I have approval from a responsible author or maintainer"}'

@@ -118,7 +118,7 @@ theorem TorusSmoothFourierSummable (d : ℕ) (f : UnitAddTorus (Fin d)→ℝ)
     have hP : 0<P := Finset.prod_pos (fun i _=>by positivity)
     have hPL : P≤2^d*L^d := by
       have hprod : P≤∏i:Fin d,(2*L) := by
-        apply Finset.prod_le_prod (fun i _=>by positivity)
+        apply Finset.prod_le_prod₀ (fun i _=>by positivity)
         intro i _
         have hi : (k i:ℝ)^2≤S := Finset.single_le_sum (fun j _=>sq_nonneg (k j:ℝ)) (Finset.mem_univ i)
         linarith

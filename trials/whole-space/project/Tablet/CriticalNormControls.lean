@@ -68,7 +68,7 @@ theorem CriticalNormControls {α : Type*} [MeasurableSpace α]
   have hp' : 0 < (p : ℝ) := by linarith
   have hp0 : p ≠ 0 := by exact_mod_cast hp'.ne'
   have hpE : (p : ℝ≥0∞) ≠ 0 := by exact_mod_cast hp0
-  have hmem : MemLp ψ p μ := ⟨hψ, hcap.trans_lt hT⟩
+  have hmem : MemLp ψ p μ := hcap.trans_lt hT
   have hi : Integrable (fun x => |ψ x|^(p : ℝ)) μ := by
     simpa only [ENNReal.coe_toReal, Real.norm_eq_abs] using
       (integrable_norm_rpow_iff hψ hpE ENNReal.coe_ne_top).2 hmem
@@ -80,7 +80,7 @@ theorem CriticalNormControls {α : Type*} [MeasurableSpace α]
     rw [heq]
     simpa [Real.rpow_natCast, Real.norm_eq_abs] using hsquare
   have H := ENNReal.rpow_le_rpow hcap hp'.le
-  rw [eLpNorm_nnreal_pow_eq_lintegral hp0] at H
+  rw [eLpNorm_nnreal_pow_eq_lintegral hp0 hψ] at H
   have heq : (∫⁻ x, ‖ψ x‖ₑ^(p : ℝ) ∂μ) =
       ENNReal.ofReal (∫ x, |ψ x|^(p : ℝ) ∂μ) := by
     rw [ofReal_integral_eq_lintegral_ofReal hi

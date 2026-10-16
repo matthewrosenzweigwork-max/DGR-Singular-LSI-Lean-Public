@@ -1,0 +1,44 @@
+version: v0.4
+classification:
+  arxiv:
+  - math.PR
+  - math.AP
+  msc2020: []
+automation:
+  methods:
+  - method: agent
+    tool_setup: Historical source development used automated proof agents. This compatibility migration
+      and compact statement extraction used Codex agents. Exact historical per-declaration model versions
+      and costs have not been reconstructed.
+review:
+  status: self-assessed
+  notes: The compact statement surface was checked against the accepted source text by its preparation
+    agents. This is a writer self-check, not an independent mathematical review or a completed Palomar
+    run. Historical kernel and source-review evidence is identified separately in the README and migration
+    records.
+project:
+  name: Whole-space Riesz Poincare inequalities beyond Gaussian references
+  description: Particle-number-uniform whole-space Riesz Poincare inequalities in dimension d >= 3
+    for 0 < s <= d-2. The recorded bounded-Hessian and growth-class endpoints cover uniformly convex
+    one-particle references, bounded positive measurable multipliers, bounded nonnegative coupling
+    intervals, positive cutoffs and the singular zero-cutoff limit. Both growth-class statements retain
+    their complete class-uniform, individual-potential, and Gaussian-specialization clauses. The inequalities
+    apply on the closed physical gradient graph. No whole-space logarithmic Sobolev inequality is
+    claimed.
+  authors:
+  - Matias Delgadino
+  - Rishabh Gvalani
+  - Matthew Rosenzweig
+  responsible_maintainers:
+  - Matthew Rosenzweig
+  license: Apache-2.0
+sources:
+- type: other
+  title: Whole-space Riesz Poincare inequalities beyond Gaussian references
+  relationship: formalizes
+  notes: Research-continuation source dated 2 October 2026, preserved at trials/whole-space/project/paper/whole_space_riesz_reference_extension_20261002T202217Z.tex
+    in original source repository commit 664d3fdb102267d3e7440fd4889dc2fe1a354855. This is a source-note
+    relationship, not a claim of journal publication.
+known_gaps: The growth assumptions and uniformity parameters in the formal statements are material.
+  This entry covers Poincare inequalities only. Migration and new Comparator/kernel results must be
+  read from the exact-commit workflow report.

@@ -54,7 +54,7 @@ theorem CenteredProductMean (d N : ℕ) (g r : UnitAddTorus (Fin d) → ℝ)
     constructor
     · exact Finset.prod_nonneg (fun k _ => (hx k).1)
     · simpa only [ProductDensity,Finset.prod_const,Finset.card_univ,Fintype.card_fin] using
-        Finset.prod_le_prod (s := Finset.univ) (fun k _ => (hx k).1) (fun k _ => (hx k).2)
+        Finset.prod_le_prod₀ (s := Finset.univ) (fun k _ => (hx k).1) (fun k _ => (hx k).2)
   have hpair (i j : Fin N) (hij : i ≠ j) :
       MeasurePreserving (fun X : Configuration d N => (X i,X j))
         volume ((volume : Measure (UnitAddTorus (Fin d))).prod volume) := by
@@ -120,7 +120,7 @@ theorem CenteredProductMean (d N : ℕ) (g r : UnitAddTorus (Fin d) → ℝ)
       filter_upwards [ae_all_iff.mpr hcoord] with X hx
       rw [Real.norm_eq_abs,abs_of_nonneg (Finset.prod_nonneg (fun k _ => (hx k).1))]
       simpa only [b,Finset.prod_const] using
-        Finset.prod_le_prod (s := T) (fun k _ => (hx k).1) (fun k _ => (hx k).2)
+        Finset.prod_le_prod₀ (s := T) (fun k _ => (hx k).1) (fun k _ => (hx k).2)
     have hind : IndepFun a b (volume : Measure (Configuration d N)) := by
       have hST : Disjoint S T := by simp [S,T,Finset.disjoint_left]
       have hI := iIndepFun_pi (μ := fun _ : Fin N =>

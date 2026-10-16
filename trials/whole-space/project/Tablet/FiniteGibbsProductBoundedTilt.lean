@@ -41,10 +41,10 @@ theorem FiniteGibbsProductBoundedTilt (N d : ℕ) (hd : 0 < d)
     ⟨(hbounds x).1,(hbounds x).2.trans ((div_le_iff₀ hm).mp hcontrast)⟩
   have hprod (X : ParticleConfig d N) : m^N ≤ w X ∧ w X ≤ L^N*m^N := by
     constructor
-    · have h := Finset.prod_le_prod (s:=Finset.univ) (fun i _ => hm.le)
+    · have h := Finset.prod_le_prod₀ (s:=Finset.univ) (fun i _ => hm.le)
         (fun i _ => (hbound (ParticlePosition X i)).1)
       simpa [w] using h
-    · have h := Finset.prod_le_prod (s:=Finset.univ)
+    · have h := Finset.prod_le_prod₀ (s:=Finset.univ)
         (fun i _ => hm.le.trans (hbound (ParticlePosition X i)).1)
         (fun i _ => (hbound (ParticlePosition X i)).2)
       simpa only [w,Finset.prod_const,Finset.card_univ,Fintype.card_fin,mul_pow] using h

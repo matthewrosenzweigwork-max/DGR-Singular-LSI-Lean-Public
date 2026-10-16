@@ -16,7 +16,6 @@ public import Tablet.ReplacementHaarInvariant
 @[expose] public section
 
 open MeasureTheory
-open scoped InnerProduct
 
 -- [TABLET NODE: JumpL2Construction]
 theorem JumpL2Construction (d N : ℕ) (hN : 2 ≤ N) (l u β : ℝ)

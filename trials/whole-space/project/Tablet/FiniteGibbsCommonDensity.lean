@@ -154,7 +154,7 @@ theorem FiniteGibbsCommonDensity (d Nmax : ℕ) (hd : 3 ≤ d) (hNmax : 1 ≤ Nm
     have hprod : (∏ i : Fin N, q (ParticlePosition X i)) ≤ Q^N*Real.exp (-(κ/2)*‖X‖^2) := by
       calc
         _ ≤ ∏ i : Fin N, Q*Real.exp (-(κ/2)*‖ParticlePosition X i‖^2) :=
-          Finset.prod_le_prod (s:=Finset.univ) (fun i _ => hqnonneg (ParticlePosition X i))
+          Finset.prod_le_prod₀ (s:=Finset.univ) (fun i _ => hqnonneg (ParticlePosition X i))
             (fun i _ => hqupper (ParticlePosition X i))
         _ = _ := by
           rw [Finset.prod_mul_distrib,Finset.prod_const,Finset.card_univ,← Real.exp_sum,he]
@@ -178,7 +178,7 @@ theorem FiniteGibbsCommonDensity (d Nmax : ℕ) (hd : 3 ≤ d) (hNmax : 1 ≤ Nm
     let a := Real.exp (-Mloc R)/(L*G)
     have ha : 0 < a := div_pos (Real.exp_pos _) (mul_pos (by linarith) hG)
     have hp : a^N ≤ ∏ i : Fin N, q (ParticlePosition X i) := by
-      have h := Finset.prod_le_prod (s:=Finset.univ) (fun i _ => ha.le)
+      have h := Finset.prod_le_prod₀ (s:=Finset.univ) (fun i _ => ha.le)
         (fun i _ => hqlower R hR (ParticlePosition X i) ((hposnorm X i).trans hx))
       simpa only [Finset.prod_const,Finset.card_univ,Fintype.card_fin] using h
     have hn := mul_le_mul hp (Real.exp_le_exp.mpr (neg_le_neg hU))

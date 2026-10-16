@@ -209,7 +209,7 @@ theorem NativeGibbsSameLabel (d : ℕ) (hd : 3 ≤ d) (s B κ L M1 : ℝ)
     filter_upwards [conditional_slice_L2 f hf i] with X hX
     have hm : (∫ z, f (ParticleInsertion X i z) ∂νi X)=mi X :=
       conditional_integral_formula X i _
-    rw [ProbabilityTheory.variance_eq_integral hX.1.aemeasurable,hm,
+    rw [ProbabilityTheory.variance_eq_integral hX.aestronglyMeasurable.aemeasurable,hm,
       conditional_integral_formula X i]
     change _=Zi X*((∫ z, ri (X,z)*(f (ParticleInsertion X i z)-mi X)^2 ∂μ)/Zi X)
     field_simp [show Zi X ≠ 0 from (hZ X i).ne']

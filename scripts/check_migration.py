@@ -58,4 +58,6 @@ for path, change in changes.items():
     if change["kind"] == "module-interface-only":
         assert (root / path).read_bytes() == port(original[path]), path
 assert (root / "LICENSE").read_bytes() == subprocess.check_output(["git", "show", "HEAD:LICENSE"], cwd=root)
-print("Verified", len(manifest["files"]), "baseline inputs against", len(changes), "recorded migration changes; original declaration/proof text preserved.")
+for row in ledger.get("additional_statement_inputs", []):
+    assert hashlib.sha256((root / row["path"]).read_bytes()).hexdigest() == row["sha256"], row["path"]
+print("Verified", len(manifest["files"]), "baseline inputs against", len(changes), "explicitly recorded migration changes; interface-only files retain original declaration/proof text.")

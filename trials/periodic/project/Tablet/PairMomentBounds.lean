@@ -169,7 +169,7 @@ theorem PairMomentBounds (d N : ℕ) (hN : 1 ≤ N) (l u : ℝ)
       constructor
       · exact Finset.prod_nonneg (fun k _ => (h k).1)
       · simpa only [b, Finset.prod_const] using
-          (Finset.prod_le_prod (s := T) (fun k _ => (h k).1) (fun k _ => (h k).2))
+          (Finset.prod_le_prod₀ (s := T) (fun k _ => (h k).1) (fun k _ => (h k).2))
     have hboundbnorm : ∀ᵐ X : Configuration d N, ‖b X‖ ≤ u^T.card := by
       filter_upwards [hboundb] with X h
       simpa only [Real.norm_eq_abs, abs_of_nonneg h.1] using h.2

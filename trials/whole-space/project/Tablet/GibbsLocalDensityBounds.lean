@@ -39,9 +39,9 @@ theorem GibbsLocalDensityBounds {d N : ℕ} (hd : 0 < d) (V b : OneParticle d �
     constructor
     · calc
         _ = ∏ _ : Fin N, blo := by simp
-        _ ≤ B X := Finset.prod_le_prod (fun _ _ => hlo.le) (fun i _ => (hbounds _).1)
+        _ ≤ B X := Finset.prod_le_prod₀ (fun _ _ => hlo.le) (fun i _ => (hbounds _).1)
     · calc
-        B X ≤ ∏ _ : Fin N, bhi := Finset.prod_le_prod
+        B X ≤ ∏ _ : Fin N, bhi := Finset.prod_le_prod₀
           (fun i _ => hlo.le.trans (hbounds _).1) (fun i _ => (hbounds _).2)
         _ = _ := by simp
   have he : Continuous e := by

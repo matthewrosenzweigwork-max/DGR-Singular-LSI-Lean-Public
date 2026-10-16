@@ -1,0 +1,44 @@
+version: v0.4
+classification:
+  arxiv:
+  - math.PR
+  - math.AP
+  msc2020: []
+automation:
+  methods:
+  - method: agent
+    tool_setup: Historical source development used automated proof agents. This compatibility migration
+      and compact statement extraction used Codex agents. Exact historical per-declaration model versions
+      and costs have not been reconstructed.
+review:
+  status: self-assessed
+  notes: The compact statement surface was checked against the accepted source text by its preparation
+    agents. This is a writer self-check, not an independent mathematical review or a completed Palomar
+    run. Historical kernel and source-review evidence is identified separately in the README and migration
+    records.
+project:
+  name: Periodic logarithmic Sobolev and Poincare inequalities for singular Riesz gases
+  description: Particle-number-uniform periodic Poincare inequalities and logarithmic Sobolev inequalities
+    for log/Riesz Gibbs laws with measurable backgrounds bounded above and away from zero, including
+    modulated laws and bounded external potentials. The statements include closed-gradient domain
+    identities. The Poincare range is 0 <= s <= d-2 for d >= 2; LSI additionally requires s < d/2.
+    Rates are uniform over bounded nonnegative coupling intervals and nonnegative cutoff parameters,
+    with the bounds and other kernel parameters fixed. This entry selects the periodic component;
+    whole-space results require the separate whole-space configuration.
+  authors:
+  - Matias Delgadino
+  - Rishabh Gvalani
+  - Matthew Rosenzweig
+  responsible_maintainers:
+  - Matthew Rosenzweig
+  license: Apache-2.0
+sources:
+- type: other
+  title: All-temperature logarithmic Sobolev inequalities for inhomogeneous periodic log/Riesz gases
+  relationship: formalizes
+  notes: Research-continuation source dated 2 October 2026, preserved at trials/periodic/project/paper/inhomogeneous_periodic_riesz_lsi_20261002T115113Z.tex
+    in original source repository commit 664d3fdb102267d3e7440fd4889dc2fe1a354855. This is a source-note
+    relationship, not a claim of journal publication.
+known_gaps: This periodic entry makes no whole-space logarithmic Sobolev claim. The strict Hilbert-Schmidt
+  exponent condition for LSI is retained explicitly. Migration and new Comparator/kernel results must
+  be read from the exact-commit workflow report.

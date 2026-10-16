@@ -113,8 +113,8 @@ theorem NativeGibbsJumpOperator (d N : ℕ) (μ : Measure (OneParticle d))
        ‖h.toLp (f ∘ T)‖ ≤ ‖hf.toLp f‖ := by
      dsimp only
      rw [Lp.norm_toLp,Lp.norm_toLp]
-     apply ENNReal.toReal_mono hf.2.ne
-     rw [← eLpNorm_map_measure (hf.mono_measure hdom).1 hT.aemeasurable]
+     apply ENNReal.toReal_mono hf.ne
+     rw [← eLpNorm_map_measure (hf.mono_measure hdom).aestronglyMeasurable hT.aemeasurable]
      exact eLpNorm_mono_measure f hdom
   dsimp only
   let P := GibbsLaw (N:=N) μ s coupling ε
@@ -201,13 +201,13 @@ theorem NativeGibbsJumpOperator (d N : ℕ) (μ : Measure (OneParticle d))
       simp only [Function.comp_def] at ho hn
       have htriangle : eLpNorm (delta f i) 2 J ≤
           eLpNorm (fun p => f (ParticleInsertion p.1 i p.2)) 2 J+eLpNorm (fun p => f p.1) 2 J :=
-        eLpNorm_sub_le hs.2.1.1 hs.1.1 (by norm_num)
+        eLpNorm_sub_le (by norm_num)
       calc
         _ ≤ (eLpNorm (fun p => f (ParticleInsertion p.1 i p.2)) 2 J+
             eLpNorm (fun p => f p.1) 2 J).toReal :=
-          ENNReal.toReal_mono (ENNReal.add_ne_top.mpr ⟨hs.2.1.2.ne,hs.1.2.ne⟩) htriangle
+          ENNReal.toReal_mono (ENNReal.add_ne_top.mpr ⟨hs.2.1.ne,hs.1.ne⟩) htriangle
         _ = (eLpNorm (fun p => f (ParticleInsertion p.1 i p.2)) 2 J).toReal+
-            (eLpNorm (fun p => f p.1) 2 J).toReal := ENNReal.toReal_add hs.2.1.2.ne hs.1.2.ne
+            (eLpNorm (fun p => f p.1) 2 J).toReal := ENNReal.toReal_add hs.2.1.ne hs.1.ne
         _ ≤ (eLpNorm f 2 P).toReal+(eLpNorm f 2 P).toReal := add_le_add hn ho
         _ = _ := by ring
     exact RawL2OperatorDescent (delta · i) 2 (by norm_num) hmem hae hadd hsmul hbound
