@@ -1,0 +1,17 @@
+name: Frozen source byte integrity
+on:
+  push:
+    branches: [release-preparation-2026-10-16]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  integrity:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Check accepted source manifest bytes
+        run: python3 scripts/check-source-integrity.py
