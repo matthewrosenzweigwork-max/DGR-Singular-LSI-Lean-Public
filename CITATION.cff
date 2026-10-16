@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite this Lean formalization when using the source."
+title: "Singular Riesz functional inequalities in Lean"
+authors:
+  - family-names: Delgadino
+    given-names: Matias
+  - family-names: Gvalani
+    given-names: Rishabh
+  - family-names: Rosenzweig
+    given-names: Matthew
+repository-code: "https://github.com/matthewrosenzweigwork-max/DGR-Singular-LSI-Lean-Public"
+abstract: >-
+  Lean proof sources for periodic logarithmic Sobolev and Poincaré
+  inequalities and whole-space Riesz Poincaré inequalities.
+  The whole-space component does not claim a logarithmic Sobolev inequality.

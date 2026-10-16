@@ -1,0 +1,89 @@
+{
+  "commit": "933ab9a859aaa54a26246a4aeac1d92972c20c2d",
+  "method": "git archive; lexical leading-token scan; LF/CRLF physical line count; no Lean build",
+  "regular_files": 490,
+  "regular_file_bytes": 3354973,
+  "lean_files_outside_git_and_lake": 479,
+  "module_headers_found": 0,
+  "lakefile_header_exemptions": 2,
+  "missing_module_headers": 477,
+  "missing_headers_by_directory": {
+    "trials/periodic/applications": 2,
+    "trials/periodic/project": 1,
+    "trials/periodic/project/Tablet": 312,
+    "trials/whole-space/applications": 5,
+    "trials/whole-space/applications/Applications": 2,
+    "trials/whole-space/project": 1,
+    "trials/whole-space/project/Tablet": 154
+  },
+  "missing_header_examples": [
+    "trials/periodic/applications/ActualFinalSpecializationBridge.lean",
+    "trials/periodic/applications/SpecializationChecks.lean",
+    "trials/periodic/project/Tablet.lean",
+    "trials/periodic/project/Tablet/AtomicPotential.lean",
+    "trials/periodic/project/Tablet/AtomicPotentialFormBound.lean",
+    "trials/periodic/project/Tablet/BackgroundPairMean.lean",
+    "trials/periodic/project/Tablet/BackgroundPotential.lean",
+    "trials/periodic/project/Tablet/BernoulliSplitJensen.lean",
+    "trials/periodic/project/Tablet/BoundedBackground.lean",
+    "trials/periodic/project/Tablet/BoundedCenteredCanonicalKernel.lean"
+  ],
+  "over_10000_lines": [],
+  "largest_lean_files": [
+    {
+      "path": "trials/periodic/project/Tablet/RieszCenteredFourierTailOperator.lean",
+      "physical_lines": 758,
+      "bytes": 41786
+    },
+    {
+      "path": "trials/periodic/project/Tablet/JumpL2Construction.lean",
+      "physical_lines": 739,
+      "bytes": 37871
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ClipCutoffApproximation.lean",
+      "physical_lines": 701,
+      "bytes": 39073
+    },
+    {
+      "path": "trials/periodic/project/Tablet/MayerConvolutionBounds.lean",
+      "physical_lines": 689,
+      "bytes": 38839
+    },
+    {
+      "path": "trials/periodic/project/Tablet/ReplacementRectangle.lean",
+      "physical_lines": 683,
+      "bytes": 39329
+    },
+    {
+      "path": "trials/periodic/project/Tablet/JumpConditionalBalance.lean",
+      "physical_lines": 678,
+      "bytes": 38129
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/AtomicLocalCutoffEnergy.lean",
+      "physical_lines": 660,
+      "bytes": 34261
+    },
+    {
+      "path": "trials/whole-space/project/Tablet/EuclideanCubeNeumann.lean",
+      "physical_lines": 646,
+      "bytes": 32792
+    },
+    {
+      "path": "trials/periodic/project/Tablet/JumpPhysicalComparison.lean",
+      "physical_lines": 626,
+      "bytes": 34523
+    },
+    {
+      "path": "trials/periodic/project/Tablet/RieszZeroCutoffSmooth.lean",
+      "physical_lines": 606,
+      "bytes": 33928
+    }
+  ],
+  "symlinks": [],
+  "lfs_pointers": [],
+  "compiled_artifacts_outside_lake": [],
+  "submodules": [],
+  "limitations": "Not a Lean-parser, dependency-authentication, build, axiom, correspondence, Comparator, or registry check."
+}

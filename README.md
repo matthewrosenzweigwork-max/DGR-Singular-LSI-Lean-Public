@@ -14,14 +14,16 @@ All 466 proof modules are dependencies of their respective library entrypoint. T
 
 ## Build
 
-Install elan from its official distribution. In either `trials/periodic/project` or `trials/whole-space/project`, run:
+Install elan from its official distribution. From the repository root, build the two independent projects in separate subshells:
 
 ```sh
-lake exe cache get
-lake build
+(cd trials/periodic/project && lake exe cache get && lake build)
+(cd trials/whole-space/project && lake exe cache get && lake build)
 ```
 
 Both projects pin Lean 4.33.0 and Mathlib commit `db584cd6d46c92f209a44c0f1c829460d327499d`. The exact transitive dependency revisions are in each `lake-manifest.json`.
+
+These commands build the `Tablet` libraries. The application files are outside their Lake source directories and are not additional default build targets. Their historical checking commands and logs are not included in this mirror.
 
 To run a Lean kernel replay after building, use `lake env leanchecker Tablet.ModuleName`, replacing `ModuleName` with the module being checked. Application checks are supplied separately and may require adding their containing directory to the Lean search path.
 
@@ -37,4 +39,14 @@ The upstream snapshot is commit `664d3fdb102267d3e7440fd4889dc2fe1a354855`. No u
 
 See [CITATION.bib](CITATION.bib). This repository is a software source release; it is not a substitute for the forthcoming mathematical paper.
 
-No new license is assigned by this publication. Third-party dependencies retain their respective licenses.
+## Release status and license
+
+The frozen public source baseline is commit `933ab9a859aaa54a26246a4aeac1d92972c20c2d`. Check its 485 source/configuration inputs from the repository root:
+
+```sh
+python3 scripts/check-source-integrity.py
+```
+
+No root license file is present and no new license is assigned by this publication. Third-party dependencies retain their respective licenses. A repository license decision is still needed before a Palomar submission.
+
+See the [release inventory and staged submission plan](docs/RELEASE_PREPARATION.md). The metadata draft there is incomplete and is not a submission. Current registry compatibility requires a separate migration of Lean, Mathlib, and module interfaces; the frozen snapshot and its historical verification evidence remain identified independently.

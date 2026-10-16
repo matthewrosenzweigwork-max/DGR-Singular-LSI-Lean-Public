@@ -1,0 +1,28 @@
+# DRAFT ONLY: intentionally incomplete; not a Palomar submission file.
+# Author names follow existing public citation records; confirm submission attribution.
+version: v0.4
+project:
+  name: "Singular Riesz functional inequalities in Lean"
+  description: >-
+    Periodic logarithmic Sobolev and Poincaré inequalities and whole-space Riesz Poincaré inequalities in Lean. Precise hypotheses are in the formal declarations. The whole-space component does not claim a whole-space logarithmic Sobolev inequality.
+  authors:
+    - "Matias Delgadino"
+    - "Rishabh Gvalani"
+    - "Matthew Rosenzweig"
+  responsible_maintainers: [] # TODO: obtain the responsible humans' confirmation.
+  license: null # TODO: owner-approved SPDX identifier matching one root LICENSE.
+classification:
+  arxiv: [math.PR, math.AP] # Proposed classification; confirm with final statement.
+  msc2020: []
+# TODO: exact source title/authors/identifier and relationship: formalizes, adapts,
+# independently-proves, background, or other. Do not infer original-proof status.
+sources: []
+automation:
+  methods: [] # TODO: reconstruct material proof-production methods and model roles.
+review:
+  status: unchecked
+  notes: >-
+    Draft release metadata has not had an independent correspondence audit.
+    Historical kernel-verification provenance is described in the repository;
+    it is not a current Palomar workflow report. Confirm the actual historical
+    mathematical review status before replacing this conservative draft value.
