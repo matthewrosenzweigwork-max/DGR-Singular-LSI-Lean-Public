@@ -110,3 +110,40 @@ These edits address diagnostics from full preflight commit
 `7c214cc881fd32d92f56750dda8251946f6734b1`. Its bounded log omitted the locations
 and goals for the `RieszZeroCutoffSmooth` failures. No speculative edits to that
 module were made. Full source-build diagnostics and subsequent CI are required.
+
+## Confirmed diagnostic build at `ced0f99`: map probability
+
+[Diagnostic run 38931158085, job 117075181181](https://github.com/matthewrosenzweigwork-max/DGR-Singular-LSI-Lean-Public/actions/runs/38931158085/job/117075181181)
+confirmed that `Measure.isProbabilityMeasure_map` has been removed. The seven
+periodic calls now use `(Measure.isProbabilityMeasure_map_iff hmeas).mpr
+inferInstance`, retaining each site's original almost-everywhere measurability
+proof and existing source probability-measure instance. Sites: two in
+`RieszCenteredSquareEntropyLower`, and one each in
+`ProductDeletionConditionalEntropy`, `CenteredInteractionEntropyLower`,
+`FiniteProductEntropyShearer`, `SplitConditionalSquareEntropyIdentity`, and
+`SplitStationarityTransfer`. The supported lemma is in the pinned
+[Probability source](https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/MeasureTheory/Measure/Typeclasses/Probability.lean#L124).
+No theorem hypothesis or resulting measure changes.
+
+## Bounded elaboration budget for `RieszZeroCutoffSmooth`
+
+The same diagnostic job reported a deterministic `whnf` timeout at the default
+200,000-heartbeat budget for `RieszZeroCutoffSmooth`. The theorem now has
+`set_option maxHeartbeats 800000 in` immediately before its declaration, applying
+only to this one existing proof. The proof text, statement, definitions, and
+assumptions are unchanged. This is a finite, fourfold elaboration budget increase;
+no global or unlimited resource option is introduced.
+
+## Convert goal handling in `RieszCenteredFourierTailOperator`
+
+The diagnostic job showed that `convert hs using 1` now leaves only the algebraic
+equality between `M * σ * ‖f‖ * ‖g‖` and
+`M * (σ / C) * ‖f‖ * ‖g‖ * C`. The old first `rfl` bullet therefore targeted the
+non-reflexive algebraic goal, and the next bullet had no goal. The repair applies
+the original `field_simp [hC.ne']` and `ring` steps uniformly after `convert`,
+without positional bullets. The existing `hC : 0 < C` supplies exactly the
+nonzero denominator fact used by the original argument. No estimate, assumption,
+or mathematical construction changes.
+
+All repairs in this batch are based on the complete diagnostic log. No Mac
+build was performed; hosted compilation and Palomar verification remain pending.

@@ -60,7 +60,7 @@ theorem SplitConditionalSquareEntropyIdentity {I Ω:Type u}[Fintype I][Decidable
   classical
   let e:=SplitCoordinateEquivalence (Ω:=Ω) i
   let P':=P.map e
-  haveI:IsProbabilityMeasure P':=Measure.isProbabilityMeasure_map e.measurable.aemeasurable
+  haveI:IsProbabilityMeasure P':=(Measure.isProbabilityMeasure_map_iff e.measurable.aemeasurable).mpr inferInstance
   let μ:=P'.fst
   haveI:IsProbabilityMeasure μ:=inferInstance
   let F:=fun p=>f (e.symm p)

@@ -49,7 +49,7 @@ theorem SplitStationarityTransfer {I Ω : Type u} [Fintype I] [DecidableEq I]
   let e := SplitCoordinateEquivalence (Ω := Ω) i
   let a := MeasurableEquiv.funUnique ({i} : Finset I) Ω
   let S := P.map e
-  haveI : IsProbabilityMeasure S := Measure.isProbabilityMeasure_map e.measurable.aemeasurable
+  haveI : IsProbabilityMeasure S := (Measure.isProbabilityMeasure_map_iff e.measurable.aemeasurable).mpr inferInstance
   apply StationaryKernelDisintegration S κ
   intro F hmF hbF
   let G := fun x => ∫ y, F (x,y) ∂κ x

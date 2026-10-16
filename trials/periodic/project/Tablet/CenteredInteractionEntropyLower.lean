@@ -34,7 +34,7 @@ theorem CenteredInteractionEntropyLower {I Ω : Type*}
     (Measurable.of_eval fun j => measurable_pi_apply j.val).prodMk
       (Measurable.of_eval fun j => measurable_pi_apply j.val)
   let T := fun i => S.map (F i)
-  have hpT (i : I) : IsProbabilityMeasure (T i) := Measure.isProbabilityMeasure_map (hmF i).aemeasurable
+  have hpT (i : I) : IsProbabilityMeasure (T i) := (Measure.isProbabilityMeasure_map_iff (hmF i).aemeasurable).mpr inferInstance
   let η := fun i => Measure.pi (fun j : ({i} : Finset I) => μ j)
   let z := fun (i : I) x => ∫ y, Real.exp (-U i (x,y)) ∂η i
   let R := fun i => ((T i).fst.prod (η i)).withDensity

@@ -48,7 +48,7 @@ theorem ProductDeletionConditionalEntropy {I Ω : Type*}
     (Measurable.of_eval fun j => measurable_pi_apply j.val).prodMk
       (Measurable.of_eval fun j => measurable_pi_apply j.val)
   let T := S.map F
-  haveI : IsProbabilityMeasure T := Measure.isProbabilityMeasure_map hm.aemeasurable
+  haveI : IsProbabilityMeasure T := (Measure.isProbabilityMeasure_map_iff hm.aemeasurable).mpr inferInstance
   have ht : T.fst = S.map (fun x : I → Ω => fun j : s => x j) := by
     rw [Measure.fst, Measure.map_map measurable_fst hm]
     rfl

@@ -593,9 +593,7 @@ theorem RieszCenteredFourierTailOperator (d:ℕ)(s a:ℝ)(hsd:s<(d:ℝ))(ha:0<a)
     simp_rw[hq,div_mul_eq_mul_div,integral_div] at hh
     rw[abs_div,abs_of_pos hC] at hh
     have hs:=(div_le_iff₀ hC).mp hh
-    convert hs using 1
-    · rfl
-    · field_simp [hC.ne'] <;> ring
+    convert hs using 1 <;> field_simp [hC.ne'] <;> ring
   classical
   dsimp only
   have volume_eq_haar (d:ℕ):

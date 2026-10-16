@@ -108,7 +108,7 @@ theorem FiniteProductEntropyShearer {I Ω : Type*}
         (Measurable.of_eval fun i => measurable_pi_apply i.val)).prodMk
         (Measurable.of_eval fun i => measurable_pi_apply i.val)
     let T := S.map F
-    haveI : IsProbabilityMeasure T := Measure.isProbabilityMeasure_map hm.aemeasurable
+    haveI : IsProbabilityMeasure T := (Measure.isProbabilityMeasure_map_iff hm.aemeasurable).mpr inferInstance
     have hh := three_observation_local s t u T (Measure.pi (fun i : s => μ i))
       (Measure.pi (fun i : t => μ i)) (Measure.pi (fun i : u => μ i))
     have hfst : T.fst = S.map (fun x : I → Ω => ((fun i : s => x i), (fun i : t => x i))) := by

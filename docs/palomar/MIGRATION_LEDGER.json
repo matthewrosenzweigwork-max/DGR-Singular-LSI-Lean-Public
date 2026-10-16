@@ -321,7 +321,7 @@
       "path": "trials/periodic/project/Tablet/CenteredInteractionEntropyLower.lean",
       "kind": "compatibility-repair",
       "before_sha256": "33c5dd465fecf8fcd3892ed09168dc8d9ce3bb4c2c5a8edd0f785852ce94d5c6",
-      "after_sha256": "90031b349ea2a07b224bc4da51155c30b4c58aef7d2de58210761466f1a4a81d",
+      "after_sha256": "f391b090b333528b343caa0eddbdef461e47cd49dcc66c6ef00d33ebf65c26e6",
       "interface_only_sha256": "28aae8add50c62f36c465725454fe1ecac6c78e294d0ab0572a1001ee63e0cdc",
       "rationale": "Minimal compiler/library API repair; unchanged declaration statements and fixed mathematical definitions. See the component COMPATIBILITY_REPAIRS.md record; Linux kernel verification is required."
     },
@@ -813,7 +813,7 @@
       "path": "trials/periodic/project/Tablet/FiniteProductEntropyShearer.lean",
       "kind": "compatibility-repair",
       "before_sha256": "3b05e716f4260c7790df37c1ecdac4f9b58860bab67edb442e5e84ffdb89b48b",
-      "after_sha256": "17954ffe29aff960b300d6bc6e3c2d0115fa74027b4825818526477c237179c1",
+      "after_sha256": "c92e87563a997671189b2ec78df58183b8730abe23c7d98bb4d2bfbdd950b173",
       "interface_only_sha256": "ab1d7f9b927b868dbba1ad2d6e23beb2d883b9c0a3b7b5b4fb19a3d1c0e2fa53",
       "rationale": "Minimal compiler/library API repair; unchanged declaration statements and fixed mathematical definitions. See the component COMPATIBILITY_REPAIRS.md record; Linux kernel verification is required."
     },
@@ -1343,7 +1343,7 @@
       "path": "trials/periodic/project/Tablet/ProductDeletionConditionalEntropy.lean",
       "kind": "compatibility-repair",
       "before_sha256": "c406b76817f8965db170530c40cb2c73b0d1f24782099749adeb51f6c05aa074",
-      "after_sha256": "c30360fbbb81946c0e8657086c5ae6881f7442501f03f870c452f8a916385ac8",
+      "after_sha256": "e435f5632e4654fd788bbc1c6f5c51cdb8cd51472ec9f00880e83512b3794b5e",
       "interface_only_sha256": "c33c0f8b7e55145b62e99dba6d0f84a734f7677dc620824bc99d94105e1864e6",
       "rationale": "Minimal compiler/library API repair; unchanged declaration statements and fixed mathematical definitions. See the component COMPATIBILITY_REPAIRS.md record; Linux kernel verification is required."
     },
@@ -1459,9 +1459,11 @@
     },
     {
       "path": "trials/periodic/project/Tablet/RieszCenteredFourierTailOperator.lean",
-      "kind": "module-interface-only",
+      "kind": "compatibility-repair",
       "before_sha256": "ab635485b404e091fe088c9beeb88681ff3bc74d0217a1b2adcced5b552f6bb1",
-      "after_sha256": "76a38c3df2749e43cbf9fde13ac5702e8965c5ae4a7b00afc83c6d70d42a3093"
+      "after_sha256": "ea2bc4a2e779b0e9c265504dba9e06d1ae04ce659e589cf6bab36cedc89f6fbe",
+      "interface_only_sha256": "76a38c3df2749e43cbf9fde13ac5702e8965c5ae4a7b00afc83c6d70d42a3093",
+      "rationale": "Minimal compiler/library API repair; unchanged declaration statements and fixed mathematical definitions. See the component COMPATIBILITY_REPAIRS.md record; Linux kernel verification is required."
     },
     {
       "path": "trials/periodic/project/Tablet/RieszCenteredHeatPartitionComparison.lean",
@@ -1483,9 +1485,11 @@
     },
     {
       "path": "trials/periodic/project/Tablet/RieszCenteredSquareEntropyLower.lean",
-      "kind": "module-interface-only",
+      "kind": "compatibility-repair",
       "before_sha256": "c62cf787e40919e17c8a2181cd9ce6b9ff349ba74b81e6523714e2a70d8e5058",
-      "after_sha256": "659f44c08f86d39e04e972fe6424b3e557a633e1fb3d4ba30d3d7720d8a39b78"
+      "after_sha256": "9b3ecaa8332005e90a2ff3d0c90a0601103ce6b507113f95c091b298368acb98",
+      "interface_only_sha256": "659f44c08f86d39e04e972fe6424b3e557a633e1fb3d4ba30d3d7720d8a39b78",
+      "rationale": "Minimal compiler/library API repair; unchanged declaration statements and fixed mathematical definitions. See the component COMPATIBILITY_REPAIRS.md record; Linux kernel verification is required."
     },
     {
       "path": "trials/periodic/project/Tablet/RieszCoulombTranslatedFormBound.lean",
@@ -1695,9 +1699,11 @@
     },
     {
       "path": "trials/periodic/project/Tablet/RieszZeroCutoffSmooth.lean",
-      "kind": "module-interface-only",
+      "kind": "compatibility-repair",
       "before_sha256": "17ba8b4b3509fcc87d414b86f2882555f3649fe282b06a3ea6fb0cff9955c2ab",
-      "after_sha256": "11f785e5b0f9430210cb76c631b63032fb96836302723723dfed938d08f1a3af"
+      "after_sha256": "4f5ae499bd929dc1d2faa0a145373bdd48c3c484933ce31cfc223b2dece21dcc",
+      "interface_only_sha256": "11f785e5b0f9430210cb76c631b63032fb96836302723723dfed938d08f1a3af",
+      "rationale": "Minimal compiler/library API repair; unchanged declaration statements and fixed mathematical definitions. See the component COMPATIBILITY_REPAIRS.md record; Linux kernel verification is required."
     },
     {
       "path": "trials/periodic/project/Tablet/ScaledBoundedCenteredCanonicalKernel.lean",
@@ -1713,9 +1719,11 @@
     },
     {
       "path": "trials/periodic/project/Tablet/SplitConditionalSquareEntropyIdentity.lean",
-      "kind": "module-interface-only",
+      "kind": "compatibility-repair",
       "before_sha256": "2936c0e4293ca200306ae8f70197c6c194d96623f9c7c621d60493e63a362c37",
-      "after_sha256": "4999b26d1848d09fb4e57cde2ec410617d96e8d2b02c0002c4483da2d0041d9c"
+      "after_sha256": "53d05347c260edb82da21dd18b0893a61ec17e03fa7bae94c0dc018932d58c25",
+      "interface_only_sha256": "4999b26d1848d09fb4e57cde2ec410617d96e8d2b02c0002c4483da2d0041d9c",
+      "rationale": "Minimal compiler/library API repair; unchanged declaration statements and fixed mathematical definitions. See the component COMPATIBILITY_REPAIRS.md record; Linux kernel verification is required."
     },
     {
       "path": "trials/periodic/project/Tablet/SplitCoordinateEquivalence.lean",
@@ -1729,7 +1737,7 @@
       "path": "trials/periodic/project/Tablet/SplitStationarityTransfer.lean",
       "kind": "compatibility-repair",
       "before_sha256": "b94904b2e40cdca97576505a7531f28629667f0b7d4eef7033fc33a911aa5ec3",
-      "after_sha256": "070392d85db71972b080ca9d6b2676b4e4c416882157b96d64ac9fd5d13bc6ba",
+      "after_sha256": "dea5da26651d53274b70c3deae5c09343ffd1f9e7af7456535d74fb0252049f7",
       "interface_only_sha256": "d04e054269b4539d85e436c697bdabf7b8c20df150fc77a7bae6cae5dcc74589",
       "rationale": "Minimal compiler/library API repair; unchanged declaration statements and fixed mathematical definitions. See the component COMPATIBILITY_REPAIRS.md record; Linux kernel verification is required."
     },

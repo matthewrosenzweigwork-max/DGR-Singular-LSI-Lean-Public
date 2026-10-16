@@ -22,3 +22,7 @@ Later source repairs require their own review and fresh machine verification; th
 ## Further whole-space API repair review
 
 A further separate review covered five source files against `ced0f993feea8effa50ce8d247b9449206d9a1ff`: `NativeReferenceMayerOperator`, `WeakPotentialForm`, `FiniteGibbsCompactNormalizedSobolev`, `NativeGibbsJumpVariance`, and `NativeGibbsTransformedL2`. Public/private declaration signatures, mathematical definitions, and helper predicates were unchanged. Added measurability evidence follows from existing hypotheses; one added parameter is confined to a proof-local helper and supplied from existing C1 regularity at its sole call. No axiom or proof hole was introduced. This review did not assert successful elaboration.
+
+## Remaining periodic API repair review
+
+A separate review against `de829336d27215bb067d91a561f251585f84fc80` covered eight periodic source files. Seven map-probability API replacements retain the original measurable maps and source probability instances. The `RieszZeroCutoffSmooth` theorem receives a local 800,000-heartbeat limit. `RieszCenteredFourierTailOperator` applies the existing field-simplification and ring argument to generated conversion goals without positional assumptions. All declaration signatures, mathematical definitions, and hypotheses are unchanged; no new axiom or hole was found. Elaboration remains subject to the hosted build.

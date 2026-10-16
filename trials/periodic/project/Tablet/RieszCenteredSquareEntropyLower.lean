@@ -119,7 +119,7 @@ theorem RieszCenteredSquareEntropyLower (d N : ℕ) (hd : 2 ≤ d) (hN : 2 ≤ N
           (fun p => ENNReal.ofReal (Real.exp (-CenteredDeletionPotential g r.density β i p) /
             (∫ y, Real.exp (-CenteredDeletionPotential g r.density β i (p.1,y))
               ∂Measure.pi (fun _ : ({i} : Finset (Fin N)) => μ)))) := by
-      haveI : IsProbabilityMeasure (T i) := Measure.isProbabilityMeasure_map (SplitCoordinateEquivalence i).measurable.aemeasurable
+      haveI : IsProbabilityMeasure (T i) := (Measure.isProbabilityMeasure_map_iff (SplitCoordinateEquivalence i).measurable.aemeasurable).mpr inferInstance
       apply GibbsConditionalKernelCompProd _ _ _ (hmU i)
       intro x
       apply (integrable_const (Real.exp (|β/(N:ℝ)| *(N:ℝ)*(C+3*(ru*∫z,|g z|∂volume))))).mono'
@@ -195,7 +195,7 @@ theorem RieszCenteredSquareEntropyLower (d N : ℕ) (hd : 2 ≤ d) (hN : 2 ≤ N
     have hprob : IsProbabilityMeasure (K i X) := by
       change IsProbabilityMeasure (NormalizedTilt μ (fun z => Real.exp (-β/(N:ℝ)*∑j:Fin N,if j=i then 0 else CenteredKernel g r.density z (X j))))
       rw [← hproj X]
-      exact Measure.isProbabilityMeasure_map (MeasurableEquiv.funUnique ({i} : Finset (Fin N)) (UnitAddTorus (Fin d))).measurable.aemeasurable
+      exact (Measure.isProbabilityMeasure_map_iff (MeasurableEquiv.funUnique ({i} : Finset (Fin N)) (UnitAddTorus (Fin d))).measurable.aemeasurable).mpr inferInstance
     haveI := hprob
     exact (BoundedSquareEntropyProperties (K i X) (fun z=>f (Replacement X i z))
       (hfm.comp (measurable_update X)) R (fun z=>hfb _)).2.2.1

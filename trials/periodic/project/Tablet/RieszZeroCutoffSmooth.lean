@@ -25,6 +25,7 @@ public import Mathlib.MeasureTheory.Integral.Bochner.Set
 open MeasureTheory Set Function Filter
 open scoped ContDiff Topology
 -- [TABLET NODE: RieszZeroCutoffSmooth]
+set_option maxHeartbeats 800000 in
 theorem RieszZeroCutoffSmooth (d : ℕ) (s a : ℝ) (hsd : s < (d : ℝ)) :
     ContDiffOn ℝ ∞
       (fun y : EuclideanSpace ℝ (Fin d) => RieszKernel d s a 0 (TorusLift d y))
