@@ -8,7 +8,7 @@ permissions:
   contents: read
 concurrency:
   # A full-preflight marker skips this job and must not cancel an active source build.
-  group: migration-${{ github.repository }}-${{ github.ref }}${{ contains(github.event.head_commit.message, '[palomar-full]') && '-full-skip' || '' }}
+  group: migration-${{ github.repository }}-${{ github.ref }}${{ contains(github.event.head_commit.message, '[palomar-full]') && '-full-skip' || '' }}${{ contains(github.event.head_commit.message, '[const-inspect]') && github.sha || '' }}
   cancel-in-progress: true
 jobs:
   build:
@@ -62,7 +62,7 @@ jobs:
         if: ${{ contains(github.event.head_commit.message, '[const-inspect]') }}
         run: |
           set -o pipefail
-          lake env lean --run ../../../scripts/compare_whole_space_constants.lean 2>&1 | tee "$RUNNER_TEMP/constants.jsonl"
+          lake env lean --run ../../../scripts/compare_whole_space_constants.lean Challenge Solution ${{ matrix.component }} 2>&1 | tee "$RUNNER_TEMP/constants.jsonl"
       - name: Check migrated source did not drift
         if: always()
         working-directory: .

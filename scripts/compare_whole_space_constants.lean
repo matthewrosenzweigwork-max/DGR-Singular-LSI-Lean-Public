@@ -3,9 +3,11 @@ module
 import Lean
 
 /-! Read-only diagnostic for strict Challenge/Solution constant correspondence.
-Run from a built whole-space project with:
+Run from either built project with:
   lake env lean --run ../../../scripts/compare_whole_space_constants.lean
 Optional positional arguments replace the Challenge and Solution module names.
+The third positional argument selects `whole-space` (default) or `periodic`:
+  lake env lean --run ../../../scripts/compare_whole_space_constants.lean Challenge Solution periodic
 Output is JSON Lines; mismatches are findings, not a nonzero diagnostic exit.
 This imports the modules into separate environments and never mixes their
 identically named declarations into one environment. No declarations are changed.
@@ -13,7 +15,7 @@ identically named declarations into one environment. No declarations are changed
 
 open Lean
 
-private def fixedNames : Array Name := #[
+private def wholeSpaceFixedNames : Array Name := #[
   `OneParticle, `ParticleConfig, `ReferencePartition, `ReferenceLaw,
   `ConfigurationReference, `RieszKernel, `ParticlePosition, `PairInteraction,
   `CollisionSet, `InteractionWeight, `GibbsPartition, `GibbsLaw, `LawVariance,
@@ -22,9 +24,20 @@ private def fixedNames : Array Name := #[
   `EuclideanLaplacian, `PotentialBounds, `TwoSidedPotential, `ForceExponent,
   `ShiftedReference, `GrowthClassPotential]
 
-private def theoremNames : Array Name := #[
+private def wholeSpaceTheoremNames : Array Name := #[
   `BoundedHessianAllCutoffsClosedPI, `GrowthClassPositiveCutoffClosedPI,
   `GrowthClassZeroCutoffClosedPI]
+
+private def periodicFixedNames : Array Name := #[
+  `Configuration, `ConfigurationLift, `HeatKernel, `RieszKernel, `BoundedBackground,
+  `NormalizedTilt, `PairEnergy, `ProductDensity, `GibbsWeight, `CanonicalLaw,
+  `BackgroundPotential, `BackgroundPairMean, `SmoothCore, `CollisionSet,
+  `CollisionFreeCore, `CoordinateGradient, `GradientGraphClosure,
+  `GradientFormDomain, `ClosedGradientEnergy, `ExtendedEntropy]
+
+private def periodicTheoremNames : Array Name := #[
+  `UniformFullGradientInequalities, `ModulatedFullGradientInequalities,
+  `ExternalPotentialFullGradientInequalities]
 
 private def namesJson (ns : List Name) : Json :=
   toJson (ns.map toString)
@@ -129,6 +142,11 @@ public def main (args : List String) : IO Unit := do
   initSearchPath (← findSysroot)
   let challengeModule := (args[0]?.getD "Challenge").toName
   let solutionModule := (args[1]?.getD "Solution").toName
+  let component := args[2]?.getD "whole-space"
+  let (fixedNames, theoremNames) ← match component with
+    | "whole-space" => pure (wholeSpaceFixedNames, wholeSpaceTheoremNames)
+    | "periodic" => pure (periodicFixedNames, periodicTheoremNames)
+    | _ => throw (IO.userError s!"Unknown component {component}; expected whole-space or periodic")
   let challenge ← importModules #[{ module := challengeModule }] {}
   let solution ← importModules #[{ module := solutionModule }] {}
   emit [("event", toJson "environments"),
@@ -137,7 +155,7 @@ public def main (args : List String) : IO Unit := do
     ("separate_environments", toJson true)]
   let mut names := fixedNames ++ theoremNames
   -- Include every generated field, constructor, recursor, instance and helper
-  -- belonging to the Challenge module, not merely the 26 hand-listed roots.
+  -- belonging to the Challenge module, not merely the selected hand-listed roots.
   let some challengeIdx := challenge.getModuleIdx? challengeModule
     | throw (IO.userError s!"No module index for {challengeModule}")
   for (n, _) in challenge.constants.toList do
