@@ -7,7 +7,8 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: migration-${{ github.repository }}-${{ github.ref }}
+  # A full-preflight marker skips this job and must not cancel an active source build.
+  group: migration-${{ github.repository }}-${{ github.ref }}${{ contains(github.event.head_commit.message, '[palomar-full]') && '-full-skip' || '' }}
   cancel-in-progress: true
 jobs:
   build:
