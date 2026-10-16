@@ -65,5 +65,13 @@ python3 scripts/check-full-report-evidence.py docs/palomar/reports/periodic-mech
 python3 scripts/check-full-report-evidence.py docs/palomar/reports/whole-space-mechanical-report.json . 587bf340cfd5fcf808d37105532d470dd3552b3b whole-space
 ```
 
+The checker binds the reported Challenge, Solution, Lake configuration, dependency
+manifest, formalization metadata and toolchain to the immutable candidate. It
+also checks the protected selections, kernel acceptance messages, license bytes,
+and preserved report index. Authenticating the GitHub run, job and artifact
+identities and archive digest is a separate check; a local receipt cannot
+authenticate itself. Those GitHub identities and digests were checked when the
+reports were preserved.
+
 Intake and publication remain separate owner decisions. A later changed commit
 requires its own full report.
