@@ -98,7 +98,7 @@ theorem NativeGibbsTransformedL2 (d N : ℕ) (μ : Measure (OneParticle d))
   refine ⟨hmem, ?_, ?_⟩
   · apply eventually_all.mpr
     intro i
-    filter_upwards [(hmem i).1.1.prodMk_left, (hmem i).1.integrable_sq.prod_right_ae] with X hm hi
+    filter_upwards [(hmem i).1.aestronglyMeasurable.prodMk_left, (hmem i).1.integrable_sq.prod_right_ae] with X hm hi
     exact (memLp_two_iff_integrable_sq hm).mpr hi
   · intro i j
     let Q := (P.prod μ).prod μ

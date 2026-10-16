@@ -200,9 +200,11 @@ theorem FiniteGibbsCompactNormalizedSobolev (N d : ℕ) (hN : 0 < N) (hd : 3 ≤
     (((henergylim.add (hmasslim.const_mul C)).const_mul 2).eventually
       (eventually_lt_nhds hlt)).mono fun n hn => hn.le
   have gradient_L2 (g : ParticleConfig d N → ℝ)
+      (hgm : AEStronglyMeasurable (EuclideanGradient g) volume)
       (hi : Integrable (fun X => ‖EuclideanGradient g X‖^2) volume) :
       eLpNorm (EuclideanGradient g) 2 volume=ENNReal.ofReal (∫ X, ‖EuclideanGradient g X‖^2)^(1/2:ℝ) := by
-    rw [eLpNorm_eq_lintegral_rpow_enorm_toReal (by norm_num : (2:ℝ≥0∞) ≠ 0) (by norm_num : (2:ℝ≥0∞) ≠ ⊤)]
+    rw [eLpNorm_eq_lintegral_rpow_enorm_toReal (by norm_num : (2:ℝ≥0∞) ≠ 0)
+      (by norm_num : (2:ℝ≥0∞) ≠ ⊤) hgm]
     norm_num only [ENNReal.toReal_ofNat]
     congr 1
     rw [ofReal_integral_eq_lintegral_ofReal hi (Eventually.of_forall fun X => sq_nonneg _)]
@@ -216,7 +218,8 @@ theorem FiniteGibbsCompactNormalizedSobolev (N d : ℕ) (hN : 0 < N) (hd : 3 ≤
     have hgn := hgb (fn n) (hreg n).1 (hreg n).2
     have hs := hSob (tr (fn n)) (htr (fn n) (hreg n).1) hcomp
     change eLpNorm (tr (fn n)) p volume ≤ S*eLpNorm (EuclideanGradient (tr (fn n))) 2 volume at hs
-    rw [gradient_L2 _ hgn.1] at hs
+    rw [gradient_L2 _
+      (continuous_gradient (tr (fn n)) (htr (fn n) (hreg n).1)).aestronglyMeasurable hgn.1] at hs
     apply hs.trans
     exact mul_le_mul_of_nonneg_left (ENNReal.rpow_le_rpow (ENNReal.ofReal_le_ofReal (hgn.2.trans hn)) (by norm_num : (0:ℝ) ≤ 1/2)) (by positivity)
   let q := fun X : ParticleConfig d N => Real.exp (-Htot X/2)
@@ -274,6 +277,7 @@ theorem FiniteGibbsCompactNormalizedSobolev (N d : ℕ) (hN : 0 < N) (hd : 3 ≤
   have hnorm : eLpNorm (tr f) p volume ≤ T :=
     Lp.eLpNorm_le_of_ae_tendsto hnormbound
       (fun n => (htr (fn n) (hreg n).1).continuous.aestronglyMeasurable)
+      (htr f hf).continuous.aestronglyMeasurable
       (Eventually.of_forall fun X => ((hval X).mul_const (Real.exp (-Htot X/2))).const_mul (Real.sqrt r))
   have hcrit := CriticalNormControls volume p hpcrit T hT (tr f) (htr f hf).continuous.aestronglyMeasurable hnorm
   rw [heq]

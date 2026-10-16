@@ -162,7 +162,7 @@ theorem NativeGibbsJumpVariance (d : ℕ) (hd : 3 ≤ d) (s B κ L M1 : ℝ)
     have hw := WeightedJointRowL2 P μ (r i) (hrm i) (hr i) (fun q => f (ParticleInsertion q.1 i q.2)) hj
     have hAC : P.prod μ ≪ J i := withDensity_absolutelyContinuous' (hrm i).ennreal_ofReal.aemeasurable
       (Eventually.of_forall fun q => ne_of_gt (ENNReal.ofReal_pos.mpr (Real.exp_pos _)))
-    have hfm := hj.1.mono_ac hAC
+    have hfm := hj.aestronglyMeasurable.mono_ac hAC
     filter_upwards [hw.2.1.prod_right_ae,hfm.prodMk_left] with X hX hXm
     rw [htilt X i]
     have hn (z : OneParticle d) : 0 ≤ (Z X i)⁻¹*r i (X,z) := mul_nonneg (inv_nonneg.mpr (hZ X i).le) (hr i (X,z)).1

@@ -8,7 +8,6 @@ public import Mathlib.Tactic
 
 @[expose] public section
 open MeasureTheory Filter Set
-open scoped InnerProduct
 set_option autoImplicit false
 set_option maxHeartbeats 1500000
 

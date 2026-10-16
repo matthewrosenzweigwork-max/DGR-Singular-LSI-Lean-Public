@@ -217,3 +217,83 @@ No local Lean build, commit, push, ledger or configuration edit was performed.
 | `EuclideanSobolev.lean` | `061ea96bedf01f206e7b7fb4a36cad953cddb3dc611f13881bfa7d5fab25609b` | `07c48a58440465f86428cd283e474804c51380fb8be20ee12b7fc06c9f4f56d7` |
 | `ConfigurationLawTranslation.lean` | `7072224dbfbbc47dc57c7d6f0d9ebdaa136aa59ffa9cb2f315180a61f610b347` | `74d2bd53f34077957628ffcf7f9b55ef0c8fe44699b0d691e29fcb5d19961270` |
 | `WeakPotentialForm.lean` | `447a1094ceeb6186cd87943b87df48f615cbf9239b8af1e85ddd2db50bd2e8e8` | `16cb0239f75c211ac7a58c9ccffab2dfe37f5408933a915b2205dbf14324ed25` |
+
+## Complete source-build log repairs, source ced0f99
+
+Reviewed every actual `error:` in
+`migration-reference-evidence/whole-build-ced0f99.log`. Its five failing
+modules receive only the following compatibility edits. Warnings and
+deprecations unrelated to failures are left unchanged. Linux CI must check
+these edits; no local compilation was run.
+
+### NativeReferenceMayerOperator
+
+Removed the unused `open scoped InnerProduct`, the same obsolete scope
+opening repaired earlier in two other modules.
+
+### WeakPotentialForm
+
+- The `eLpNorm_mono` call in `ramp_level_lp_lower` now passes
+  `aestronglyMeasurable_const.indicator hE` before the unchanged
+  pointwise norm comparison. This establishes the lower indicator function's
+  measurability from the existing measurable level set.
+- The indicator norm formula receives `hE.nullMeasurableSet` in place of `hE`,
+  following the pinned
+  [Indicator.lean](https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/MeasureTheory/Function/LpSeminorm/Indicator.lean)
+  signature. Neither set nor indicator constant changes.
+- The norm-power identity in `ramp_level_sobolev` receives
+  `(Hr.continuous_fderiv (by norm_num)).aestronglyMeasurable`, derived from
+  the already proved C¹ regularity of the same ramp composition.
+
+These resolve the subsequent level-bound and measurability goals without
+changing the ramp, level set, exponent, or inequality.
+
+### FiniteGibbsCompactNormalizedSobolev
+
+The proof-local `have gradient_L2` helper previously invoked the norm-integral
+identity without proving measurability of its arbitrary gradient argument.
+The upgraded norm definition requires that measurability explicitly. The
+local helper now accepts
+`hgm : AEStronglyMeasurable (EuclideanGradient g) volume` and passes it to
+`eLpNorm_eq_lintegral_rpow_enorm_toReal`. At the helper's sole use, `g` is
+the smooth transformed approximation `tr (fn n)`; the existing
+`continuous_gradient` and `htr` facts supply `hgm`. This adds no public
+hypothesis, changes no declaration statement, and changes neither the energy
+nor the approximation.
+
+The limit norm bound also receives the existing
+`(htr f hf).continuous.aestronglyMeasurable` proof before its unchanged
+pointwise limit. The pinned
+[LpSpace/Complete.lean](https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/MeasureTheory/Function/LpSpace/Complete.lean)
+requires measurability of the limit as a separate argument.
+
+### Remaining MemLp projections
+
+- `NativeGibbsJumpVariance.lean`: `hj.1.mono_ac hAC` becomes
+  `hj.aestronglyMeasurable.mono_ac hAC`.
+- `NativeGibbsTransformedL2.lean`: `(hmem i).1.1.prodMk_left` becomes
+  `(hmem i).1.aestronglyMeasurable.prodMk_left`.
+
+The outer conjunction projection in the second expression is retained; only
+the obsolete projection inside its MemLp fact is replaced.
+
+### Validation and deferred unused source
+
+Compared every public and private theorem header and top-level definition,
+abbreviation and structure declaration against HEAD: all are unchanged in
+the five repaired files. No hole or axiom was introduced. No ledger,
+configuration, workflow, README, formalization metadata or source-review
+file was edited by this batch. No commit or push was performed.
+
+The unbuilt `AtomicNormalizedSobolev.lean` contains analogous old norm-integral
+and limit API uses. It was not among actual errors in this log and was left
+untouched for this narrowly scoped repair; it needs attention if a later
+build adds that module.
+
+| File | Before this repair | After this repair |
+|---|---|---|
+| `NativeReferenceMayerOperator.lean` | `f8169b5282d5d0ca61a05b8728e3c2a42b8c7df490ad4672b86415e022f64884` | `7369bda6dd4a97a8a7aa018ffbd4b36f3c4909d24036344ebd350c15b094fa0b` |
+| `WeakPotentialForm.lean` | `16cb0239f75c211ac7a58c9ccffab2dfe37f5408933a915b2205dbf14324ed25` | `0d005719419ef16e4ac098e7215d6bf697a1f22349ad337e58905f9fe7ac94eb` |
+| `FiniteGibbsCompactNormalizedSobolev.lean` | `ab93dabff31ef3105871d22f43236604d8817b835b01be1f146237aa0449b3d2` | `c4855a319c6501dfad599dd588d93048799cf81d22d1659bcd93ce6fa28175b9` |
+| `NativeGibbsJumpVariance.lean` | `0a5ff3a0fedefdd774bb3a5a584bec4b0f62444aad978d5894169e61a5c6716a` | `df4e59d81918dcb6f54557fc012bf0c845e8c2a4ecddc804153b5c1e72f3d237` |
+| `NativeGibbsTransformedL2.lean` | `4ff2d7afb5b836b43168d82b8ad1ebf9732143898025d27710cd5669b5dd05cc` | `16a13d141f17256692935bd74ea32e4e4a76a19c338377a03229b4f647d7eb1b` |

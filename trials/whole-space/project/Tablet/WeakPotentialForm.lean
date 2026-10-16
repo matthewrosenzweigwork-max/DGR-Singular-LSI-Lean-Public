@@ -379,12 +379,12 @@ private theorem ramp_level_lp_lower {Ω : Type*} [MeasurableSpace Ω] (μ : Meas
     measurableSet_le measurable_const (continuous_abs.measurable.comp hψ)
   have H : eLpNorm (({x | 2 * t ≤ |ψ x|} : Set Ω).indicator (fun _ => t)) p μ ≤
       eLpNorm (fun x => squareRamp t (ψ x)) p μ := by
-    apply eLpNorm_mono
+    apply eLpNorm_mono (aestronglyMeasurable_const.indicator hE)
     intro x
     by_cases hx : 2 * t ≤ |ψ x|
     · simp [Set.indicator, hx, squareRamp_one_of_double_le_abs t (ψ x) ht hx]
     · simp [Set.indicator, hx]
-  rw [eLpNorm_indicator_const hE hp hpfin, Real.enorm_eq_ofReal (le_of_lt ht)] at H
+  rw [eLpNorm_indicator_const hE.nullMeasurableSet hp hpfin, Real.enorm_eq_ofReal (le_of_lt ht)] at H
   exact H
 
 -- Squaring the genuine Euclidean Sobolev inequality gives the precise measure exponent.
@@ -428,6 +428,7 @@ private theorem ramp_level_sobolev (d : ℕ) (hd : 3 ≤ d) :
   rw [he] at Hsq
   have hn := eLpNorm_nnreal_pow_eq_lintegral (μ := volume)
     (f := fderiv ℝ (fun y => squareRamp t (ψ y))) (p := (2 : ℝ≥0)) (by norm_num)
+    (Hr.continuous_fderiv (by norm_num)).aestronglyMeasurable
   norm_num only [NNReal.coe_ofNat, ENNReal.rpow_natCast] at hn
   have hc : ((2 : ℝ≥0) : ℝ≥0∞) = 2 := by norm_num
   rw [hc] at hn

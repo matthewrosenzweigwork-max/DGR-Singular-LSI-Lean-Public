@@ -12,19 +12,22 @@ automation:
       and costs have not been reconstructed.
 review:
   status: self-assessed
-  notes: The compact statement surface was checked against the accepted source text by its preparation
-    agents. This is a writer self-check, not an independent mathematical review or a completed Palomar
-    run. Historical kernel and source-review evidence is identified separately in the README and migration
-    records.
+  notes: Preparation agents checked the compact statement surface against the accepted source. A separate
+    fresh agent then performed a bounded read-only comparison of selected statements and fixed definitions,
+    with English-first reconstruction of the selected mathematical statements; no discrepancy was
+    found in that scope. Subsequent API-repair diffs were separately checked for unchanged statements, definitions
+    and hypotheses. This agent source review is not a full manuscript proof-argument audit, external human
+    review, or a mechanical verification pass. Historical evidence and current exact-commit workflow reports
+    are identified separately.
 project:
   name: Periodic logarithmic Sobolev and Poincare inequalities for singular Riesz gases
   description: Particle-number-uniform periodic Poincare inequalities and logarithmic Sobolev inequalities
-    for log/Riesz Gibbs laws with measurable backgrounds bounded above and away from zero, including
-    modulated laws and bounded external potentials. The statements include closed-gradient domain
-    identities. The Poincare range is 0 <= s <= d-2 for d >= 2; LSI additionally requires s < d/2.
-    Rates are uniform over bounded nonnegative coupling intervals and nonnegative cutoff parameters,
-    with the bounds and other kernel parameters fixed. This entry selects the periodic component;
-    whole-space results require the separate whole-space configuration.
+    for log/Riesz Gibbs laws with measurable backgrounds bounded above and away from zero, including modulated
+    laws and bounded external potentials. The statements include closed-gradient domain identities. The
+    Poincare range is 0 <= s <= d-2 for d >= 2; LSI additionally requires s < d/2. Rates are uniform over
+    bounded nonnegative coupling intervals and nonnegative cutoff parameters, with the bounds and other
+    kernel parameters fixed. This entry selects the periodic component; whole-space results require the
+    separate whole-space configuration.
   authors:
   - Matias Delgadino
   - Rishabh Gvalani
